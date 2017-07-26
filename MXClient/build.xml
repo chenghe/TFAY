@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="MXSDK" basedir="." default="build">
+    <!-- ant 环境-->
+    <property environment="env"/>
+    <!-- 需要编码的源代码目录-->
+    <property name="src.dir" value="src"/>
+    <!-- 编译后class存放的目录-->
+    <property name="class.dir" value="classes"/>
+    <!-- 项目依赖包的路径-->
+    <property name="extern-libs" value="libs"></property>
+    <!-- 加载android项目对于sdk版本，需要保证target属性存在-->
+    <property file="project.properties" />
+    <property file="build.properties" />
+    
+    <!-- SDK 指定目录 -->
+    <property name="sdk-platform-folder" value="${sdk-location}/platforms/${target}"></property>
+    <property name="framework-aidl" value="${sdk-platform-folder}/framework.aidl" /> 
+    <property name="outdir-gen" value="gen" /> 
+    <property name="aapt" value="${sdk-platform-tools}/aapt" />
+    <property name="android-jar" value="${sdk-platform-folder}/android.jar" />
+    
+    <property name="manifest-xml" value="AndroidManifest.xml" /> 
+    <property name="resource-dir" value="res" />  
+    <property name="asset-dir" value="assets" />
+    
+    
+    <!-- 编译后的文件放置目录 -->
+ 
+    <property
+        name="outdir-bin"
+        value="bin" />
+    <!-- 生成class目录 -->
+ 
+    <property
+        name="outdir-classes"
+        value="${outdir-bin}" />
+    
+    
+    <!-- java源文件目录 -->  
+    <property name="srcdir" value="src" />
+    
+     <!-- 代码混淆配置 -->
+    <property
+        name="proguard-home"
+        value="E:/tools/proguard5.0/lib" />
+    
+    
+      
+    <!-- 引入第三方jar包和android。jar-->
+     <path id="extern.libs.classpath"> 
+            <fileset dir="${extern-libs}">    
+                <include name="*.jar"/>    
+            </fileset>    
+          <fileset dir="${sdk-platform-folder}">
+            <include name="*.jar"/>
+         </fileset>
+      </path>
+     
+    <!-- 初始化 -->
+    <target name="init" >
+        <echo>init...</echo> 
+        <mkdir dir="${class.dir}"/>
+    </target>
+    
+    <target name="gen-R">  
+        <echo>Generating R.java from the resources...</echo>  
+        <exec executable="${aapt}" failonerror="true">  
+            <arg value="package" />
+            <arg value="-f" />  
+            <arg value="-m" />  
+            <arg value="-J" />  
+            <arg value="${outdir-gen}" />  
+            <arg value="-S" />  
+            <arg value="${resource-dir}" />  
+            <arg value="-M" />  
+            <arg value="${manifest-xml}" />  
+            <arg value="-I" />  
+            <arg value="${android-jar}" />
+        </exec>  
+        
+        <copy todir="./" file="gen/com/minxing/R.java" />
+    </target>
+    
+    <!-- 编译源文件-->
+    <target name="compile" depends="gen-R">
+        <echo>complie...</echo> 
+        <!-- <fileset dir="${outdir-gen}">  
+            <include name="tools.jar" />  
+        </fileset>   -->
+        <javac srcdir="${comlie.dir}" encoding="UTF-8" destdir="${class.dir}" includeantruntime="true" classpathref="extern.libs.classpath">
+        </javac>
+    </target>
+    <!-- 将源文件 打包成jar包 -->
+    <target name="jar" description="class to jar">
+        <echo>jar...</echo> 
+        <jar destfile="${dest.jar.dir}/${sdk.name}.jar" 
+            encoding="UTF-8" basedir="${class.dir}">
+        <manifest>
+                <!--指定main-class-->  
+                <!--指定Class-Path-->  
+                <attribute name="Class-Path" value="${extern.libs.classpath}">  
+                </attribute>  
+         </manifest> 
+        </jar>
+    </target>
+    
+    <target
+        name="proguard"
+        depends="compile" >
+     <echo>
+        Proguad ....
+        </echo>
+ 
+        <java
+            failonerror="true"
+            fork="true"
+            jar="${proguard-home}/proguard.jar" >
+ 
+            <jvmarg value="-Dmaximum.inlined.code.length=32" />
+ 
+            <arg value="-injars ${dest.jar.dir}/${sdk.name}.jar" />
+ 
+            <arg value="-outjars mx_sdk_pro.jar" />
+ 
+            <arg value="-libraryjars ${android-jar}"/>
+ 			<!-- <arg value="-libraryjars ${extern-libs}/*.jar"/> -->
+            <arg value="-dontpreverify" />
+ 
+            <arg value="-dontoptimize" />
+ 
+            <arg value="-dontusemixedcaseclassnames" />
+ 
+            <arg value="-repackageclasses &apos;&apos;" />
+ 
+            <arg value="-allowaccessmodification" />
+ 
+            <!-- 混淆配置的引用 -->
+             
+            <arg value="@proguard-project.txt"/>
+           
+ 
+        </java>
+ 
+       <!--  <delete file="temp.jar" /> -->
+ 
+        <delete dir="${outdir-classes}" />
+        <delete file="${dest.jar.dir}/${sdk.name}.jar" />
+ 
+        <mkdir dir="${outdir-classes}" />
+ 
+        <!-- <unzip
+            dest="${outdir-classes}"
+            src="optimized.jar" /> -->
+ 
+      <!--   <delete file="optimized.jar" /> -->
+    </target>
+    
+    <!-- 清除class文件 -->
+    <target name="clean">
+        <echo>clean...</echo> 
+        <delete dir="${class.dir}"/>
+    </target>
+   
+    <target name="build" depends="clean, init, compile, jar, proguard"></target>
+    
+</project>

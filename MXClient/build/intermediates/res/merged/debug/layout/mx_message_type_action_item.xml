@@ -1,0 +1,218 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:text="@string/mx_work_circle_action_mark"
+                android:textColor="@color/mx_grey_light"
+                android:textSize="@dimen/mx_circle_item_task_mark_text_size" />
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/schedual_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mx_circle_item_name_margin_top"
+                android:textColor="@color/mx_black"
+                android:textSize="@dimen/mx_circle_item_content_text_size" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mx_circle_item_task_status_margin_top"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mx_task_icon_clock" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/schedual_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mx_circle_item_task_subitem_margin"
+                    android:textColor="@color/mx_black"
+                    android:textSize="@dimen/mx_circle_item_sub_content_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/action_status_expired"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mx_circle_item_task_status_margin_top"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:background="@drawable/mx_task_icon_status_expired"
+                    android:text="@string/mx_work_circle_task_status_expired"
+                    android:textColor="@color/mx_white"
+                    android:textSize="@dimen/mx_circle_item_content_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mx_circle_item_task_status_margin_top_large"
+                android:gravity="top"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/mx_task_icon_location" />
+
+                    <com.minxing.kit.ui.widget.MXVariableTextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/mx_circle_item_sub_content_text_size" />
+                </LinearLayout>
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/schedual_location"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mx_circle_item_task_subitem_margin"
+                    android:textColor="@color/mx_black"
+                    android:textSize="@dimen/mx_circle_item_sub_content_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/schedual_content_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mx_circle_item_task_status_margin_top_large"
+                android:gravity="top"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/mx_task_icon_content" />
+
+                    <com.minxing.kit.ui.widget.MXVariableTextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/mx_circle_item_sub_content_text_size" />
+                </LinearLayout>
+
+                <com.minxing.kit.internal.common.view.SpannableTextView
+                    android:id="@+id/desc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="@dimen/mx_circle_item_task_subitem_margin"
+                    android:textColor="@color/mx_black"
+                    android:textSize="@dimen/mx_circle_item_sub_content_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mx_circle_item_task_status_margin_top_large"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mx_task_icon_date" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/schedual_confirm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mx_circle_item_task_subitem_margin"
+                    android:textColor="@color/mx_black"
+                    android:textSize="@dimen/mx_circle_item_sub_content_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mx_circle_item_task_subitem_btn_margin"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <com.minxing.kit.ui.widget.MXVariableTextView
+                        android:id="@+id/my_choice"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/mx_grey_light"
+                        android:textSize="@dimen/mx_circle_item_sub_content_text_size"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <com.minxing.kit.ui.widget.MXButton
+                        android:id="@+id/answer_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/mx_circle_item_task_subitem_btn_height"
+                        android:layout_marginBottom="@dimen/mx_circle_item_task_subitem_btn_margin_vertical"
+                        android:layout_marginRight="@dimen/mx_circle_item_task_subitem_btn_margin"
+                        android:layout_marginTop="@dimen/mx_circle_item_task_subitem_btn_margin_vertical"
+                        android:background="@drawable/mx_comm_blue_button"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:maxWidth="@dimen/mx_circle_item_task_subitem_btn_width"
+                        android:text="@string/mx_modify_selected"
+                        android:textColor="@color/mx_white"
+                        android:textSize="@dimen/mx_circle_item_button_text_size" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/mx_divider_variable" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/action_response"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dip"
+                    android:layout_weight="1"
+                    android:textColor="@color/mx_grey_light"
+                    android:textSize="@dimen/mx_circle_item_sub_content_small_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

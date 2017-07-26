@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mx_common_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/system_title"
+        layout="@layout/mx_system_title" />
+
+    <LinearLayout
+        android:id="@+id/call_remind_state_container"
+        style="@style/mx_bg_setting_item_narrow_checkbox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:text="@string/mx_settings_contacts_call_remind_enable"
+            android:textColor="@color/mx_black" />
+
+        <Switch
+            android:id="@+id/call_remind_state"
+            style="@style/mx_switch_custom_style"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/mx_bg_setting_item_narrow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dip"
+        android:background="@color/mx_bg_grey_dark"
+        android:orientation="horizontal">
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mx_settings_contacts_call_remind_tips"
+            android:textColor="@color/mx_darkgrey" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:background="@color/mx_bg_grey_dark"
+        android:orientation="horizontal">
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mx_settings_contacts_call_remind_tips_permission"
+            android:textColor="@color/mx_darkgrey" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/firstloading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/call_remind_download_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/contacts_downloading_bar"
+            style="@style/mx_bg_setting_item_narrow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mx_bg_grey_dark"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/contacts_data_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/mx_darkgrey" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/contacts_downloading_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="0%"
+                    android:textColor="@color/mx_darkgrey" />
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/contacts_pb_download"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="10.0dip"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <com.minxing.kit.ui.widget.MXButton
+                android:id="@+id/call_remind_download"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="20dip"
+                android:background="@drawable/mx_comm_white_button"
+                android:maxHeight="80.0dip"
+                android:minHeight="36.0dip"
+                android:minWidth="50.0dip"
+                android:text="@string/mx_button_download"
+                android:textColor="@color/mx_lightblue_2"
+                android:textSize="16.0dip" />
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/call_remind_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dip"
+                android:textColor="@color/mx_darkgrey" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,3 @@
+<resources>
+      <dimen name="login_box_margin">350dip</dimen>
+</resources>

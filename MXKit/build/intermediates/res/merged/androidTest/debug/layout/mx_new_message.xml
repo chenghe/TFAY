@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mx_bg_grey_dark" >
+
+    <!-- titlebar -->
+
+    <include
+        android:id="@+id/system_title"
+        layout="@layout/mx_system_title" />
+
+    <com.minxing.kit.internal.common.view.NewMessageBottomBar
+        android:id="@+id/new_message_bottombar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <ScrollView
+        android:id="@+id/new_message_scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/new_message_bottombar"
+        android:layout_below="@id/system_title"
+        android:background="@color/mx_common_bg">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- send to -->
+
+            <LinearLayout
+                android:id="@+id/send_contact"
+                style="@style/mx_bg_setting_item"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <!-- 发送至提示 -->
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mx_sendto"
+                    android:textColor="@color/mx_black"
+                    android:textSize="@dimen/mx_middle_textsize" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mx_new_message_sendto_margin_right"
+                    android:layout_marginRight="@dimen/mx_new_message_sendto_margin_right"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <com.minxing.kit.ui.widget.MXVariableTextView
+                        android:id="@+id/sendto"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:textColor="@color/mx_blue_gray"
+                        android:textSize="@dimen/mx_middle_textsize" />
+
+                    <ImageView
+                        android:id="@+id/arrow_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/mx_new_message_sendto_and_arrwo_space"
+                        android:src="@drawable/mx_icon_forward" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 插件区域 -->
+
+            <RelativeLayout
+                android:id="@+id/plugin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/send_contact"
+                android:layout_marginLeft="@dimen/mx_new_message_plugin_margin"
+                android:layout_marginRight="@dimen/mx_new_message_plugin_margin"
+                android:layout_marginTop="@dimen/mx_new_message_plugin_margin" >
+            </RelativeLayout>
+
+            <com.minxing.kit.internal.common.view.FlowLayout
+                android:id="@+id/topic_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/plugin"
+                android:layout_marginLeft="@dimen/mx_new_message_plugin_margin"
+                android:layout_marginRight="@dimen/mx_new_message_plugin_margin"
+                android:layout_marginTop="5dip"
+                android:visibility="gone" />
+
+            <!-- 附件栏 -->
+
+            <com.minxing.kit.internal.common.view.ImageViewColumn
+                android:id="@+id/attachement_file"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/topic_container"
+                android:layout_marginLeft="@dimen/mx_new_message_attachement_file_margin"
+                android:layout_marginRight="@dimen/mx_new_message_attachement_file_margin"
+                android:layout_marginTop="@dimen/mx_new_message_attachement_file_margin" />
+        </RelativeLayout>
+    </ScrollView>
+    <!-- 底部工具栏 -->
+
+</RelativeLayout>

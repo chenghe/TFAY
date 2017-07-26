@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@drawable/mx_list_item_selector"
+    android:orientation="vertical" >
+
+    <com.minxing.kit.ui.widget.MXVariableTextView
+        android:id="@+id/index_label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mx_bg_grey_dark"
+        android:gravity="center_vertical"
+        android:paddingBottom="2dp"
+        android:paddingLeft="@dimen/mx_contact_item_padding_left"
+        android:paddingTop="2dp"
+        android:textColor="@color/mx_contact_item_index"
+        android:textSize="@dimen/mx_contact_index_text_size"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/mx_contact_item_padding_left"
+        android:paddingRight="30dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+            
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="@dimen/mx_avatar_dimen"
+                android:layout_height="@dimen/mx_avatar_dimen"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="@dimen/mx_contacts_item_avatar_margin"
+                android:layout_marginBottom="@dimen/mx_contacts_item_avatar_margin"
+                android:focusable="false"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mx_default_icon_avatar" />
+                <View
+                    android:id="@+id/mx_contacts_avatar_cover"
+                    android:layout_width="@dimen/mx_avatar_dimen"
+                    android:layout_height="@dimen/mx_avatar_dimen"
+                    android:layout_gravity="center"
+                    android:background="@color/mx_contacts_avatar_cover"
+                    android:visibility="gone"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:orientation="vertical"
+                android:paddingLeft="8dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.minxing.kit.ui.widget.MXVariableTextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/mx_black"
+                        android:textSize="@dimen/mx_middle_textsize" />
+
+                    <ImageView
+                        android:id="@+id/mx_contacts_status_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dip"
+                        android:background="@drawable/mx_contacts_online_mobile"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/department"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:textColor="@color/mx_dark_gray"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textSize="@dimen/mx_small_textsize"
+                    android:visibility="gone"  />
+                
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/cell_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:textColor="@color/mx_dark_gray"
+                    android:textSize="@dimen/mx_small_textsize" />
+                
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/mail_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:textColor="@color/mx_dark_gray"
+                    android:textSize="@dimen/mx_small_textsize"
+                    android:visibility="gone" />
+            </LinearLayout>
+            
+            <ImageView
+                android:id="@+id/email_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/mx_contacts_item_plugin_icon_margin_right"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:focusable="false"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mx_email_icon"
+                android:visibility="gone" />
+            
+            <ImageView
+                android:id="@+id/sms_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/mx_contacts_item_plugin_icon_margin_right"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:focusable="false"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mx_sms_icon"
+                android:visibility="gone" />
+            
+            <ImageView
+                android:id="@+id/chat_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/mx_contacts_item_plugin_icon_margin_right"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:focusable="false"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mx_chat_icon"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/call_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:focusable="false"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mx_call_icon"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/selectIcon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:focusable="false"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

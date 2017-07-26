@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mx_mail_button_minWidth">100sp</dimen>
+    
+    
+    <dimen name="mx_mail_indicator_right_padding">10dp</dimen>
+    <dimen name="mx_mail_indicator_corner_radius">12dp</dimen>
+    <dimen name="mx_mail_indicator_internal_padding">4dp</dimen>
+    <dimen name="mx_mail_header_footer_left_right_padding">24dp</dimen>
+    <dimen name="mx_mail_header_footer_top_bottom_padding">12dp</dimen>
+    
+    <dimen name="mx_mail_message_list_from_width">210.0dip</dimen>
+    
+    <dimen name="mx_mail_address_size">14dip</dimen>
+</resources>

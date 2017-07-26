@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/title_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mx_title_bar_height"
+        android:background="@color/mx_title_bar_color"
+        android:gravity="center_vertical" >
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/title_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/mx_white"
+            android:text="@string/mx_app_diagnostic"
+            android:textSize="@dimen/mx_max_textsize" />
+
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip">
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/mx_log_upload"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="上传日志文件"
+            android:textColor="@color/mx_black"
+            android:textSize="@dimen/mx_middle_textsize" />
+
+        <com.minxing.kit.ui.widget.MXButton
+            android:id="@+id/mx_upload"
+            android:layout_width="@dimen/mx_common_blue_or_red_button_width"
+            android:layout_height="@dimen/mx_switch_button_height"
+            android:background="@drawable/mx_comm_blue_button"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/mx_upload"
+            android:textColor="@color/mx_white"
+            android:textSize="@dimen/mx_small_textsize" />
+        
+    </RelativeLayout>
+
+    <com.minxing.kit.ui.widget.MXButton
+        android:id="@+id/export_database"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/mx_comm_blue_button"
+        android:visibility="gone"
+        android:text="@string/mx_export_database"
+        android:textColor="@color/mx_white" />
+
+
+</LinearLayout>

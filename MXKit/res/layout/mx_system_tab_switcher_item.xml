@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_weight="1.0"
+    android:orientation="vertical" >
+
+    <com.minxing.kit.ui.widget.MXVariableTextView
+        android:id="@+id/switch_item_label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/mx_switch_label_no_selected"
+        android:textSize="17.0dip" />
+
+</LinearLayout>

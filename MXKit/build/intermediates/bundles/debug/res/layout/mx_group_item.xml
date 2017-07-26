@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@drawable/mx_list_item_selector"
+    android:padding="10.0dip" >
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/mx_net_dimen"
+        android:layout_height="@dimen/mx_net_dimen"
+        android:layout_centerVertical="true"
+        android:src="@drawable/mx_default_icon_attach" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/mx_group_item_avatar_name_space"
+        android:layout_marginRight="@dimen/mx_common_blue_or_red_button_width"
+        android:layout_toRightOf="@id/avatar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:textColor="@color/mx_black"
+            android:textSize="@dimen/mx_middle_textsize" />
+
+        <ImageView
+            android:id="@+id/lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mx_group_item_lock_name_space"
+            android:src="@drawable/mx_icon_sns_private_group"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <com.minxing.kit.ui.widget.MXButton
+        android:id="@+id/join_or_quit"
+        android:layout_width="@dimen/mx_common_blue_or_red_button_width"
+        android:layout_height="@dimen/mx_switch_button_height"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="@string/mx_request_in"
+        android:textColor="@color/mx_white"
+        android:textSize="@dimen/mx_small_textsize" />
+
+</RelativeLayout>

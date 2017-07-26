@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mx_common_bg" >
+
+    <include android:id="@+id/system_title" layout="@layout/mx_system_title" />
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/system_title"
+        android:layout_marginLeft="@dimen/mx_comm_container_marginboth"
+        android:layout_marginRight="@dimen/mx_comm_container_marginboth" >
+
+        <LinearLayout
+            style="@style/mx_mm_body"
+            android:padding="10.0dip" >
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                style="@style/mx_mm_line_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/mx_contact_search_account_hint" />
+
+            <com.minxing.kit.ui.widget.MXVariableEditText
+                android:id="@+id/contact_search_account_et"
+                style="@style/mx_mm_line_edit_text"
+                android:inputType="phone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

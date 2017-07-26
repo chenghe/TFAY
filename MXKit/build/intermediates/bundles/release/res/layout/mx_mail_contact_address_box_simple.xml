@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.minxing.kit.internal.common.view.AddressBoxSimple xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/mx_mail_compose_addr_view_simple_wrap"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/to_contact_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dip"
+        android:layout_weight="1.0" >
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/mail_sent_to_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5.0dip"
+            android:textColor="@color/mx_mail_text_gray"
+            android:textSize="@dimen/mx_mail_address_size"
+            android:layout_marginTop="7dip" />
+
+        <com.minxing.kit.internal.common.view.FlowLayout
+            android:id="@+id/contact_btn_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/mail_sent_to_text" >
+
+            <com.minxing.kit.internal.common.view.MailAddressAutoCompleteSimple
+                android:id="@+id/to_address"
+                style="@style/mx_mail_compose_addr_view_input"
+                android:dropDownVerticalOffset="5dip"
+                android:fadingEdge="vertical"
+                android:fadingEdgeLength="4.0dip"
+                android:fitsSystemWindows="true"
+                android:inputType="textEmailAddress" />
+        </com.minxing.kit.internal.common.view.FlowLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/arrow_right_container"
+        android:layout_width="50dip"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:paddingRight="10dip"
+        android:layout_alignParentRight="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/mx_mail_arrow_left_black" />
+    </RelativeLayout>
+
+</com.minxing.kit.internal.common.view.AddressBoxSimple>

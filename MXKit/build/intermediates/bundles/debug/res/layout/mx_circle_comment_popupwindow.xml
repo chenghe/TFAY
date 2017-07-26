@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mx_circle_items_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:weightSum="4.0"
+    android:layout_marginLeft="20dip"
+    android:background="@drawable/mx_circle_popup_window_bg">
+    <LinearLayout
+        android:id="@+id/more_container"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/mx_reply_popupwindow_height"
+        android:minWidth="@dimen/mx_reply_popupwindow_item_width"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center" >
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mx_work_circle_message_item_more"
+            android:textColor="@color/mx_white"
+            android:textSize="@dimen/mx_circle_item_reply_popup_text_size" />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

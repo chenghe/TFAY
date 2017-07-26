@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 49,
+                    "endOffset": 100
+                },
+                "from": {
+                    "file": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/res/values-xlarge/dimens.xml",
+                    "position": {
+                        "startLine": 1,
+                        "startColumn": 6,
+                        "startOffset": 18,
+                        "endColumn": 51,
+                        "endOffset": 63
+                    }
+                }
+            }
+        ]
+    }
+]

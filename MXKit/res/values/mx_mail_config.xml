@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="client_conf_http_host">http://test.dehuinet.com:8030</string>
+    <string name="client_conf_push_host">ssl://test.dehuinet.com:1830</string>
+    <string name="client_server_grant_type">password</string>
+    
+    <string name="client_show_sliding">true</string>
+    <string name="client_show_handle">true</string>
+    <string name="client_show_ext_network">true</string>
+    <string name="client_show_contact_ocu">true</string>
+    <string name="client_show_contact_company">true</string>
+    <string name="client_show_scan">true</string>
+    <!-- control encrypt the cell phone number -->
+    <!-- 
+    <string name="client_encrypt_cellphone">3,7</string>
+     -->
+    <string name="client_conf_sdcard_root">/minxing_dev</string>
+
+    <!--自动下载的邮件大小-->
+    <string name="mx_mail_maximum_auto_download_message_size">32768</string>
+
+    <!--非wifi环境下发送邮件时弹出提示对话框的限定值,单位是字节(b)-->
+    <string name="mx_mail_send_message_size">10485760</string>
+    <!--可以添加的邮件附件的最大值,单位是字节(b)-->
+    <string name="mx_mail_message_max_size">52428800</string>
+
+</resources>

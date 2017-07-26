@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mx_mail_message_list_item_footer_background">#eeeeee</color>
+    
+    <color name="mx_mail_openpgp_red">#CC0000</color>
+    <color name="mx_mail_openpgp_orange">#FF8800</color>
+    <color name="mx_mail_openpgp_green">#669900</color>
+    <color name="mx_mail_openpgp_blue">#336699</color>
+    
+    
+    <color name="mx_mail_text_blue">#1a85ff</color>
+    <color name="mx_mail_text_gray">#707070</color>
+    <color name="mx_mail_lightgrey">#f5f5f5</color>
+    <color name="mx_mail_lightblue">#348EFE</color>
+
+    <color name="mx_mail_search_tab_bottom_gray">#cbcbcb</color>
+</resources>

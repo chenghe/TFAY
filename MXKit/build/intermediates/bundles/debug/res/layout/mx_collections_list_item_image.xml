@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mx_white"
+    android:orientation="vertical"
+    android:padding="15.0dip" >
+
+    <include layout="@layout/mx_collections_list_item_header" />
+
+    <LinearLayout
+        android:id="@+id/message_image_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15.0dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/image_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="matrix"
+            android:src="@drawable/mx_image_placeholder" />
+    </LinearLayout>
+
+</LinearLayout>

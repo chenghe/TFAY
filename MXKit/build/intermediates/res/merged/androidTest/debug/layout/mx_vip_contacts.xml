@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mx_bg_grey_dark" >
+
+    <include
+        android:id="@+id/system_title"
+        layout="@layout/mx_system_title" />
+
+    <RelativeLayout
+        android:id="@+id/searchbar_and_contact_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/system_title" >
+
+        <LinearLayout
+            android:id="@+id/search_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/mx_bg_edittext_selector"
+                    android:orientation="horizontal"
+                    android:padding="5dip" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:focusable="false"
+                        android:src="@drawable/mx_search_bar_icon_normal" />
+
+                    <com.minxing.kit.ui.widget.MXVariableEditText
+                        android:id="@+id/searchName"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@null"
+                        android:hint="@string/mx_contact_list_search_hint"
+                        android:singleLine="true"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/remove_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/mx_comm_delete_up"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/search_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5.0dip"
+                    android:background="@drawable/mx_comm_white_button_search"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:text="@string/mx_common_search"
+                    android:textColor="@color/mx_contact_search_text"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/search_layout" >
+
+            <ListView
+                android:id="@+id/contact_list"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@color/mx_no_color"
+                android:divider="@drawable/mx_divider_horizontal"
+                android:scrollbars="none" />
+
+            <LinearLayout
+                android:id="@+id/index"
+                android:layout_width="60.0dip"
+                android:layout_height="60.0dip"
+                android:layout_gravity="center"
+                android:background="@drawable/mx_show_head_toast_bg"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/show_head_toast_text"
+                    android:layout_width="79.0dip"
+                    android:layout_height="79.0dip"
+                    android:gravity="center"
+                    android:textColor="@color/mx_white"
+                    android:textSize="48.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/index_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="5.0dip"
+                android:paddingRight="5.0dip"
+                android:visibility="gone" >
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+    <com.minxing.kit.ui.widget.MXVariableTextView
+        android:id="@+id/nodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true" 
+        android:textColor="@color/mx_lightgrey"
+        android:text="@string/mx_vip_contact_list_empty_tip"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/firstloading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

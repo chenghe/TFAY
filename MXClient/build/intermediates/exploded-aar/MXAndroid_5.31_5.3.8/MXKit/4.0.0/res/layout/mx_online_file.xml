@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mx_white" >
+
+    <!-- titlebar -->
+
+    <include
+        android:id="@+id/system_title"
+        layout="@layout/mx_system_title" />
+
+    <com.minxing.kit.internal.common.view.XListView
+        android:id="@+id/xlist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/system_title"
+        android:cacheColorHint="@color/mx_no_color"
+        android:divider="@drawable/mx_divider_horizontal"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" />
+
+    <ImageView
+        android:id="@+id/nodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/mx_comm_nodata"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/firstloading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

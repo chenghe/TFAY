@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="32dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="32dp"
+        android:layout_height="32dp" >
+
+        <ImageView
+            android:id="@+id/mx_vote_option_img_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/mx_radio_button_unchecked" />
+
+        <ImageView
+            android:id="@+id/mx_vote_option_img_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/mx_check_button_checked" />
+    </RelativeLayout>
+
+    <com.minxing.kit.ui.widget.MXVariableTextView
+        android:id="@+id/mx_vote_option_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/mx_black"
+        android:textSize="@dimen/mx_circle_item_pull_radio_textsize" />
+
+</LinearLayout>

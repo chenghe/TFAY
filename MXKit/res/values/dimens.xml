@@ -1,0 +1,184 @@
+<resources>
+    <dimen name="mx_circle_avatar_size">38.0dip</dimen>
+    <dimen name="mx_circle_item_padding_top">17.0dip</dimen>
+    <dimen name="mx_circle_item_padding_left">12.0dip</dimen>
+    <dimen name="mx_circle_item_padding_right">15.0dip</dimen>
+    <dimen name="mx_circle_item_padding_bottom">11.0dip</dimen>
+    <dimen name="mx_circle_item_content_text_size">15.0dip</dimen>
+    <dimen name="mx_circle_item_sub_order_text_size">9.0dip</dimen>
+    <dimen name="mx_circle_item_sub_content_text_size">14.0dip</dimen>
+    <dimen name="mx_circle_item_sub_content_small_text_size">12.0dip</dimen>
+    <dimen name="mx_circle_item_sub_content_text_size_small">13.0dip</dimen>
+    <dimen name="mx_circle_item_search_content_text_size">12.0dip</dimen>
+    <dimen name="mx_circle_item_search_name_text_size">12.0dip</dimen>
+     <dimen name="mx_circle_item_search_content_padding_left">22.0dip</dimen>
+    <dimen name="mx_layout_hight_size">50.0dip</dimen>
+    <dimen name="mx_circle_item_reply_popup_text_size">15.0dip</dimen>
+    
+    <dimen name="mx_circle_item_button_text_size">15.0dip</dimen>
+    <dimen name="mx_circle_item_footer_margin_top">15.0dip</dimen>
+    <dimen name="mx_circle_item_name_margin_top">15.0dip</dimen>
+    <dimen name="mx_circle_item_task_status_margin_top">13.0dip</dimen>
+    <dimen name="mx_circle_item_task_status_margin_top_large">15.0dip</dimen>
+    <dimen name="mx_circle_item_vote_margin_top">10.0dip</dimen>
+    
+    <dimen name="mx_reply_popupwindow_height">35.0dip</dimen>
+    <dimen name="mx_reply_popupwindow_item_width">50.0dip</dimen>
+    <dimen name="mx_circle_item_task_subitem_margin">6.0dip</dimen>
+    <dimen name="mx_circle_item_task_subitem_btn_margin">25.0dip</dimen>
+    <dimen name="mx_circle_item_task_subitem_btn_width">125.0dip</dimen>
+    <dimen name="mx_circle_item_task_subitem_btn_height">39.0dip</dimen>
+    <dimen name="mx_circle_item_task_subitem_btn_margin_vertical">5.0dip</dimen>
+    <dimen name="mx_circle_item_task_vote_subitem_margin_vertical">5.0dip</dimen>
+    
+    <dimen name="mx_circle_item_action_popup_tittle_text_size">17.0dip</dimen>
+    <dimen name="mx_circle_item_action_popup_gridview_spacing">5.0dip</dimen>
+    <dimen name="mx_circle_item_action_popup_margin_left_right">10.0dip</dimen>
+    <dimen name="mx_circle_item_action_popup_margin_right">5.0dip</dimen>
+    <dimen name="mx_circle_item_action_popup_avatar_size">34.0dip</dimen>
+    <dimen name="mx_circle_item_action_popup_gridview_height">35.0dip</dimen>
+    
+    <dimen name="mx_circle_item_vote_btn_divider_margin">24.0dip</dimen>
+    <dimen name="mx_circle_item_task_vote_divider_height">14.0dip</dimen>
+    <dimen name="mx_circle_item_vote_modify_btn_margin_top">18.0dip</dimen>
+    
+    <dimen name="mx_circle_item_avatar_margin">12.0dip</dimen>
+    <dimen name="mx_contacts_item_avatar_margin">12.0dip</dimen>
+    <dimen name="mx_contacts_item_plugin_icon_margin_right">12.0dip</dimen>
+    <dimen name="mx_message_detail_name_group_space">6.0dip</dimen>
+    <dimen name="mx_circle_item_reply_margin_top">10.0dip</dimen>
+    <dimen name="mx_circle_item_reply_text_size">14.0dip</dimen>
+    <dimen name="mx_circle_item_reply_like_icon_margin_right">7.0dip</dimen>
+    
+    <dimen name="mx_circle_item_task_reply_margin_top">8.0dip</dimen>
+
+    
+    
+    <dimen name="mx_circle_item_vote_button_margin_top">15.0dip</dimen>
+    
+    <dimen name="mx_circle_item_pull_radio_textsize">14.0dip</dimen>
+    <dimen name="mx_circle_item_sender_title_textsize">16.0dip</dimen>
+    
+    <dimen name="mx_conversation_message_pic_size">60.0dip</dimen>
+    
+    <dimen name="mx_conversation_message_smiley_size">35.0dip</dimen>
+    <dimen name="mx_conversation_message_smiley_input_size">25.0dip</dimen>
+    
+    <dimen name="mx_max_textsize">18dp</dimen> <!-- 系统大号字 -->
+    <dimen name="mx_middle_textsize">16dp</dimen> <!-- 系统中号字 -->
+    <dimen name="mx_avatar_margin">6dp</dimen> <!-- 头像的margin -->
+    <dimen name="mx_message_type_item_name_maxwidth">70dp</dimen>
+    
+    <dimen name="mx_message_type_poll_progress_width">170dp</dimen>
+    <dimen name="mx_message_avatar_and_content_space">6dp</dimen> <!-- 消息流页面中消息体和头像的间隙 -->
+    <dimen name="mx_modify_drawable_space">4dp</dimen> <!-- 修改和喜欢数的间隙 -->
+    <dimen name="mx_attachement_column_margintop">3dp</dimen>
+    <dimen name="mx_task_progress_value_and_prgress_space">5dp</dimen> <!-- 任务进度条调和显示的value之间间隙 -->
+    
+    <!-- <dimen name="action_dialog_margin_left_and_right">40dp</dimen>活动确认和活动修改时候弹出的对话框的与屏幕左右的间隙 -->
+    <dimen name="mx_dialog_title_padding">10dp</dimen> <!-- 弹出的对话框title只padding -->
+    <dimen name="mx_comm_container_marginboth">10dp</dimen>
+    <dimen name="mx_comm_container_margintop">20dp</dimen>
+    <dimen name="mx_new_message_sendto_and_arrwo_space">10dp</dimen>
+    <dimen name="mx_new_message_plugin_margin">10dp</dimen>
+    <dimen name="mx_new_message_attachement_file_margin">10dp</dimen>
+    <dimen name="mx_new_message_sendto_margin_right">6dp</dimen>
+    <dimen name="mx_group_avatar_dimen">60dp</dimen>
+    <!-- 组头像大小 -->
+    <dimen name="mx_group_item_padding">10dp</dimen>
+    <dimen name="mx_group_item_avatar_name_space">10dp</dimen>
+    <dimen name="mx_group_item_lock_name_space">6dp</dimen>
+    <dimen name="mx_new_message_action_view_space">10dp</dimen>
+    <dimen name="mx_new_message_text_area_min_height">200dp</dimen>
+    <dimen name="mx_new_message_arraw_view_space">10dp</dimen>
+    <dimen name="mx_single_task_content_margin_top">10dp</dimen>
+    <dimen name="mx_director_and_completed_date_margintop">10dp</dimen>
+    <dimen name="mx_new_message_plus_view_space">10dp</dimen>
+    <dimen name="mx_file_dimen">60dp</dimen>
+    <dimen name="mx_net_dimen">40dp</dimen>
+    <dimen name="mx_message_reply_content_margin_top">20dp</dimen>
+    <dimen name="mx_private_sms_title_marginleft">8dp</dimen>
+    <dimen name="mx_contact_sidebar_font_size">5dp</dimen>
+    <dimen name="mx_contact_searchbar_space_margin_top">45dp</dimen>
+    <dimen name="mx_contact_searchBar_edit_marginleft">5dp</dimen>
+    <dimen name="mx_about_info_padding">20dp</dimen>
+    <dimen name="mx_visit_button_margintop">10dp</dimen>
+    <dimen name="mx_visit_button_width">260dp</dimen>
+    <dimen name="mx_info_desc_line_space">6dp</dimen>
+    <dimen name="mx_about_minxing_logo_and_info_space">10dp</dimen>
+    <dimen name="mx_edit_account_block_space">10dp</dimen>
+    <dimen name="mx_select_uploadfile_icon_margin">20dp</dimen>
+    <dimen name="mx_center_pop_width">130dp</dimen>
+    <dimen name="mx_center_pop_height">200dp</dimen>
+	<dimen name="mx_reply_popupwindow_padding">2dip</dimen>
+    
+    <!-- 邮件 -->
+    <dimen name="mx_mail_list_padding">8dip</dimen>
+    <dimen name="mx_mail_list_item_tittle_margin_top">14dip</dimen>
+    <dimen name="mx_mail_list_item_tittle_margin_bottom">10dip</dimen>
+    <dimen name="mx_mail_list_item_content_padding">10dip</dimen>
+    <dimen name="mx_mail_list_item_content_text_size">12dip</dimen>
+    <dimen name="mx_mail_list_item_sub_text_size">10dip</dimen>
+    
+    
+    
+    <dimen name="mx_mail_list_item_avatar_margin_top">10dip</dimen>
+    <dimen name="mx_mail_list_item_att_pic_size">30dip</dimen>
+    <dimen name="mx_mail_list_item_att_pic_margin_right">4dip</dimen>
+    <dimen name="mx_mail_list_item_arrow_size">12dip</dimen>
+    <dimen name="mx_mail_list_item_tittle_text_size">16dip</dimen>
+    <dimen name="mx_mail_list_item_sub_tittle_text_size">14dip</dimen>
+    
+    <dimen name="mx_wb_common_arrow_size">50dip</dimen>
+    <dimen name="mx_wb_common_tittle_text_size">18dip</dimen>
+    <dimen name="mx_wb_common_content_text_size">15dip</dimen>
+    <dimen name="mx_wb_common_sub_content_text_size">13dip</dimen>
+    <dimen name="mx_wb_common_message_bg_max_width">200dip</dimen>
+    <dimen name="mx_attach_dimen_size">75dip</dimen>
+    <dimen name="mx_attach_dimen_size_spacing">2dip</dimen>
+    <dimen name="mx_attach_dimen_gridview_width">229dip</dimen>
+    <dimen name="mx_mail_auto_contact_list_padding">10dip</dimen>
+    
+    <dimen name="mx_dgv_overlap_if_switch_straight_line">16dp</dimen>
+    
+    <dimen name="mx_pop_menu_item_padding">12dip</dimen>
+    <dimen name="mx_pop_menu_margin">10dip</dimen>
+    <dimen name="mx_btn_small_height">36dip</dimen>
+    <dimen name="mx_common_btn_height">48dip</dimen>
+    
+    <dimen name="mx_message_new_red_btn_text_size">10dip</dimen><!-- 特小字号 -->
+    
+    <dimen name="mx_common_avatar_mini_size">37dip</dimen>
+    <dimen name="mx_common_avatar_size">55dip</dimen>
+    <dimen name="mx_ocu_sub_menu_devider_height">1px</dimen>
+
+    <dimen name="mx_common_setting_padding_left">12dip</dimen>
+    <dimen name="mx_common_setting_item_height">59dip</dimen>
+    <dimen name="mx_appcenter_grid_item_stroke">1px</dimen>
+    <dimen name="mx_custom_dialog_title_size">18dp</dimen>
+
+    <dimen name="mx_public_setting_item_left">20dp</dimen>
+    <dimen name="mx_public_setting_item_right">10dp</dimen>
+
+    <dimen name="mx_export_dabase_margin_top">30dp</dimen>
+    <dimen name="mx_export_dabase_margin">15dp</dimen>
+    
+    <dimen name="mx_no_data">20dp</dimen>
+
+
+    <dimen name="mx_appcenter_icon_width">35dp</dimen>
+    <!--初始化每列宽度-->
+    <dimen name="mx_default_grid_item_width">80dp</dimen>
+    <!--右上角标大小-->
+    <dimen name="top_right_image_size">65dp</dimen>
+    <dimen name="mx_contact_index_text_size">12dp</dimen>
+
+    <!--图片大小-->
+    <dimen name="image_size">35dp</dimen>
+
+    <dimen name="mx_contact_item_padding_left">12dp</dimen>
+    <dimen name="mx_chat_item_padding_left">12dp</dimen>
+
+    <dimen name="mx_circle_pop_center_vertical">350.0dip</dimen>
+    
+</resources>

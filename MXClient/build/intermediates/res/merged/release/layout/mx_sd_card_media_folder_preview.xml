@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/system_title"
+        layout="@layout/mx_system_title" />
+
+    <FrameLayout style="@style/mx_nav_page" >
+
+        <GridView
+            android:id="@+id/media_in_folder_gv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="6.0dip"
+            android:layout_marginRight="6.0dip"
+            android:background="@null"
+            android:cacheColorHint="#00000000"
+            android:columnWidth="100.0dip"
+            android:fastScrollEnabled="true"
+            android:descendantFocusability="blocksDescendants"
+            android:fadingEdgeLength="0.0dip"
+            android:gravity="center"
+            android:horizontalSpacing="4.0dip"
+            android:listSelector="#00ffffff"
+            android:numColumns="auto_fit"
+            android:overScrollMode="never"
+            android:paddingBottom="50.0dip"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="4.0dip" /><RelativeLayout
+            android:id="@+id/album_footer_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_gravity="bottom"
+            android:background="@drawable/mx_bg_bottombar_white"
+            android:orientation="horizontal" >
+            
+           <CheckBox
+            android:id="@+id/orign_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:button="@drawable/mx_radio_btn"
+            android:focusable="false"
+            android:textColor="@color/mx_darkgrey"
+            android:textSize="@dimen/mx_middle_textsize"
+            android:text="@string/mx_button_send_original_pic" />
+
+            <com.minxing.kit.ui.widget.MXButton
+                android:id="@+id/media_send"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/mx_btn_small_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/mx_comm_blue_button"
+                android:enabled="false"
+                android:gravity="center"
+                android:minWidth="90.0dip"
+                android:text="@string/mx_ok"
+                android:textColor="@color/mx_mm_title_btn_text" />
+
+            <include
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                layout="@layout/mx_media_selected_count" />
+        </RelativeLayout>
+
+    </FrameLayout>
+</LinearLayout>

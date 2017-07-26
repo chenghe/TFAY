@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dip"
+    android:background="@drawable/mx_comm_blue_button_up"
+    android:gravity="center"
+    android:layout_gravity="top"
+    android:orientation="vertical" >
+    
+<com.minxing.kit.ui.widget.MXVariableTextView 
+   android:id="@+id/call_info_number" 
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:gravity="center"
+   android:textSize="20dip"
+   android:textColor="@color/mx_white"/>
+</LinearLayout>

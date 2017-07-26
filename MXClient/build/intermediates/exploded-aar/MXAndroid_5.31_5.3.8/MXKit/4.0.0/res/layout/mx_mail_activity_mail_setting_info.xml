@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_mx_mail_message_setting_info_header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/mx_title_bar_height"
+        android:background="@drawable/nv_title_bg">
+
+        <ImageButton
+            android:id="@+id/btn_mx_mail_message_setting_info_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/mx_btn_back" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/tv_mx_message_setting_info_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/mx_white"
+                android:textSize="@dimen/mx_max_textsize" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/mail_setting_mute"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:duplicateParentState="true" >
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                style="@style/mx_slid_setting_item_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:duplicateParentState="true"
+                android:text="@string/mx_label_mute" />
+
+            <CheckBox
+                android:id="@+id/mail_setting_mute_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:button="@drawable/mx_mm_checkbox_btn"
+                android:clickable="false"
+                android:focusable="false"
+                android:textColor="@color/mx_darkgrey" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_below="@id/item"
+            android:background="@drawable/mx_divider_white" />
+    </LinearLayout>
+
+    
+
+    <LinearLayout
+        android:id="@+id/mx_mail_account_setting_mail_check_frequency"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:duplicateParentState="true" >
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                style="@style/mx_slid_setting_item_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:drawableRight="@drawable/mx_mail_arrow_right_black_light"
+                android:duplicateParentState="true"
+                android:text="@string/mx_mail_account_setup_options_mail_check_frequency_label" />
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/folder_check_frequency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dip"
+                android:duplicateParentState="true"
+                android:text="@string/mx_mail_account_setup_options_mail_check_frequency_never"
+                android:textColor="@color/mx_dark_gray_2"
+                android:textSize="15dip" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_below="@id/item"
+            android:background="@drawable/mx_divider_white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mx_mail_account_settings_incoming"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:duplicateParentState="true" >
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                style="@style/mx_slid_setting_item_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:drawableRight="@drawable/mx_mail_arrow_right_black_light"
+                android:duplicateParentState="true"
+                android:text="@string/mx_mail_account_settings_incoming_label" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_below="@id/item"
+            android:background="@drawable/mx_divider_white" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/mx_mail_account_settings_outgoing"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:duplicateParentState="true" >
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                style="@style/mx_slid_setting_item_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:drawableRight="@drawable/mx_mail_arrow_right_black_light"
+                android:duplicateParentState="true"
+                android:text="@string/mx_mail_account_settings_outgoing_label" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_below="@id/item"
+            android:background="@drawable/mx_divider_white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mail_setting_account_remove"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:duplicateParentState="true" >
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                style="@style/mx_slid_setting_item_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:duplicateParentState="true"
+                android:text="@string/mx_label_delete_account"
+                android:textColor="#f00" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_below="@id/item"
+            android:background="@drawable/mx_divider_white" />
+    </LinearLayout>
+
+</LinearLayout>

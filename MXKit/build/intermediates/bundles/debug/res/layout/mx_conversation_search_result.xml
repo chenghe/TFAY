@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mx_white"
+    android:orientation="vertical" >
+
+    <com.minxing.kit.ui.widget.MXVariableTextView
+        android:id="@+id/search_result_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginTop="15.0dip"
+        android:textColor="@color/mx_dark_gray"
+        android:textSize="18.0dip" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mx_divider_grey" />
+
+    <LinearLayout
+        android:id="@+id/search_result_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/search_more_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15.0dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mx_search_bar_icon_normal" />
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableRight="@drawable/mx_mm_submenu"
+                android:text="@string/mx_label_view_more"
+                android:textSize="@dimen/mx_middle_textsize" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mx_divider_grey" />
+    </LinearLayout>
+
+</LinearLayout>

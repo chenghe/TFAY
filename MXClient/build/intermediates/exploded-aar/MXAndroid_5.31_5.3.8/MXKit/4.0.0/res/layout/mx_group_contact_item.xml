@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@drawable/mx_list_item_selector"
+    android:paddingBottom="5dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="5dip" >
+
+    <RelativeLayout
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/mx_avatar_dimen_outer"
+        android:layout_height="@dimen/mx_avatar_dimen_outer"
+        android:layout_marginTop="5dip" >
+
+        <ImageView
+            android:id="@+id/conversation_avatar"
+            android:layout_width="@dimen/mx_avatar_dimen"
+            android:layout_height="@dimen/mx_avatar_dimen"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mx_default_icon_avatar" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/mx_private_sms_title_marginleft"
+        android:layout_toRightOf="@id/avatar" >
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/conversation_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/mx_black"
+            android:textSize="@dimen/mx_middle_textsize" />
+    </RelativeLayout>
+</RelativeLayout>

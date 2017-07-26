@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_grey_dark" >
+
+    <include
+        android:id="@+id/system_title"
+        layout="@layout/system_title" />
+    
+
+    <RelativeLayout
+        android:id="@+id/new_message_notification_on"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/system_title" >
+
+        <RelativeLayout
+            android:id="@+id/new_message_notification"
+            android:layout_width="fill_parent"
+            style="@style/bg_setting_item_narrow_switch" >
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/message_notification_on"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/new_message_notification"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/middle_textsize" />
+            <Switch
+                android:id="@+id/mx_system_setting_new_message_notify"
+                style="@style/mx_switch_custom_style"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/new_message_mail_notification"
+            android:layout_width="fill_parent"
+            android:layout_below="@id/new_message_notification"
+            style="@style/bg_setting_item_narrow_switch">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/mx_common_divide_line"
+                android:layout_alignParentTop="true"
+                />
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/mail_notification"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/notification_mail_setting"
+                android:textColor="@color/black"
+                android:textSize="@dimen/middle_textsize" />
+
+            <Switch
+                android:id="@+id/mx_system_setting_new_mail_notify"
+                style="@style/mx_switch_custom_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/notification_sound"
+            android:layout_width="fill_parent"
+            android:layout_below="@id/new_message_mail_notification"
+            style="@style/bg_setting_item_narrow_switch" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/mx_common_divide_line"
+                android:layout_alignParentTop="true"
+                />
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/notification_sound_check"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/new_message_notification_sound"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/middle_textsize" />
+
+            <Switch
+                android:id="@+id/mx_system_setting_sound_notify"
+                style="@style/mx_switch_custom_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/notification_shake"
+            android:layout_width="fill_parent"
+            android:layout_below="@id/notification_sound"
+            style="@style/bg_setting_item_narrow_switch">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/mx_common_divide_line"
+                android:layout_alignParentTop="true"
+                />
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/notification_shake_check"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/new_message_notification_shake"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/middle_textsize" />
+
+            <Switch
+                android:id="@+id/mx_system_setting_shake_notify"
+                style="@style/mx_switch_custom_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+        
+        <LinearLayout
+            android:id="@+id/message_disturb"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notification_shake"
+            style="@style/bg_setting_item_narrow"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal" >
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:drawableRight="@drawable/submenu"
+                android:gravity="center_vertical"
+                android:text="@string/setting_message_disturb"
+                android:textColor="@color/black"
+                android:textSize="@dimen/middle_textsize" />
+        </LinearLayout>
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/mx_system_setting_notify_tip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/message_disturb"
+            android:layout_margin="10.0dip"
+            android:gravity="center"
+            android:text="@string/settings_disturb_setting_tip"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/middle_textsize" />
+    </RelativeLayout>
+</RelativeLayout>

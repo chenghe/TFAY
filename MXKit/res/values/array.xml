@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="mx_tab_net_switcher">
+        <item>我们的社区</item>
+        <item>相关社区</item>
+        <item>我的社区</item>
+    </string-array>
+    <string-array name="mx_tab_person_switcher">
+        <item>个人信息</item>
+        <item>@string/mx_work_circles</item>
+        <item>文件</item>
+    </string-array>
+    <string-array name="mx_tab_topic_switcher">
+        <item>@string/mx_work_circles</item>
+        <item>文件</item>
+    </string-array>
+    <string-array name="mx_tab_person_or_file_switcher">
+        <item>个人信息</item>
+        <item>文件</item>
+    </string-array>
+    <string-array name="mx_group_switcher">
+        <item>@string/mx_group_all_circle</item>
+        <item>@string/mx_group_my_circle</item>
+    </string-array>
+    <string-array name="mx_tab_task_switcher">
+        <item>全部</item>
+        <item>完成</item>
+        <item>未完成</item>
+    </string-array>
+    
+    <string-array name="mx_conversation_message_type_key">
+        <item>file</item>
+        <item>image</item>
+        <item>video</item>
+        <item>voice_file</item>
+        <item>share_link</item>
+    </string-array>
+    
+    <string-array name="mx_conversation_message_type_value">
+        <item>[文件]</item>
+        <item>[图片]</item>
+        <item>[视频]</item>
+        <item>[语音]</item>
+        <item>[分享]</item>
+    </string-array>
+    
+    <string-array name="mx_file_size_units">
+        <item>B</item>
+        <item>KB</item>
+        <item>MB</item>
+        <item>GB</item>
+        <item>TB</item>
+        <item>PB</item>
+    </string-array>
+    
+    <string-array name="mx_seekbar_font_size">
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+    </string-array>
+    
+     <string-array name="mx_seekbar_lable">
+        <item>小</item>
+        <item>标准</item>
+        <item>大</item>
+        <item>加大</item>
+    </string-array>
+    
+     <string-array name="mx_font_size_web">
+        <item>80</item>
+        <item>100</item>
+        <item>120</item>
+        <item>140</item>
+    </string-array>
+    
+    <string-array name="mx_wheel_date_month">
+        <item>1月</item>
+        <item>2月</item>
+        <item>3月</item>
+        <item>4月</item>
+        <item>5月</item>
+        <item>6月</item>
+        <item>7月</item>
+        <item>8月</item>
+        <item>9月</item>
+        <item>10月</item>
+        <item>11月</item>
+        <item>12月</item>
+   </string-array>
+
+    <string-array name="mx_file_pick_switcher">
+        <item>@string/mx_conversation_file_pick_download</item>
+        <item>@string/mx_conversation_file_pick_local</item>
+    </string-array>
+
+
+</resources>

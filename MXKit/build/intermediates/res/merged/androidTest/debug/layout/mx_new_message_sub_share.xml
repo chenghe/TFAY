@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.minxing.kit.internal.common.view.ConversationEditText
+        android:id="@+id/text"
+        style="@style/mx_mm_edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mx_bg_edittext_selector"
+        android:gravity="top|left"
+        android:inputType="textCapSentences|textAutoCorrect|textMultiLine|textShortMessage"
+        android:minHeight="140.0dip"
+        android:singleLine="false"
+        android:textColor="@color/mx_black" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/mx_bg_edittext_selector"
+        android:paddingBottom="12dip"
+        android:paddingTop="10dip" >
+
+        <!-- 头像 -->
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="@dimen/mx_avatar_dimen"
+            android:layout_height="@dimen/mx_avatar_dimen"
+            android:layout_marginLeft="@dimen/mx_avatar_margin"
+            android:layout_marginRight="@dimen/mx_avatar_margin"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:id="@+id/message_simple_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mx_message_avatar_and_content_space"
+            android:layout_toRightOf="@id/avatar"
+            android:gravity="center_vertical" >
+
+            <RelativeLayout
+                android:id="@+id/name_type_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <!-- 发起人名字 -->
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:maxLength="5"
+                    android:singleLine="true"
+                    android:textColor="@color/mx_black"
+                    android:textSize="@dimen/mx_max_textsize" />
+                <!-- 消息类型 -->
+
+                <include
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/name"
+                    layout="@layout/mx_message_type_with_icon" />
+            </RelativeLayout>
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_type_time"
+                android:textColor="@color/mx_black"
+                android:textSize="@dimen/mx_middle_textsize" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

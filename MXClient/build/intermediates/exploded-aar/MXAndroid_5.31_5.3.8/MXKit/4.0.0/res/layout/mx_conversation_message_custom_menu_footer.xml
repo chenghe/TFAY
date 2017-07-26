@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/mx_mm_footer"
+        android:background="@drawable/mx_bg_bottombar_white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/footer_texttolist_container"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/mx_btn_keyboard_divider" />
+
+            <ImageView
+                android:id="@+id/conversation_footer_switch2input"
+                android:layout_width="@dimen/mx_footer_texttolist_switcher_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/mx_chatting_footer_switcher_selector" />
+            
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/mx_btn_keyboard_divider" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/conversation_footer_menu_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="horizontal"
+            android:weightSum="3.0" />
+    </LinearLayout>
+
+</LinearLayout>

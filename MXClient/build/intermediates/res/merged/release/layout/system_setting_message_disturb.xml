@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_grey_dark" >
+
+    <include
+        android:id="@+id/system_title"
+        layout="@layout/system_title" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/system_title" >
+
+        <LinearLayout
+            android:id="@+id/disturb_all_day"
+            android:layout_width="fill_parent"
+            style="@style/bg_setting_item_line"
+            android:orientation="vertical">
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/disturb_all_day_check"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:drawableRight="@drawable/sns_shoot_select_normal"
+                android:text="@string/settings_disturb_on"
+                android:textColor="@color/black"
+                android:textSize="@dimen/middle_textsize" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/mx_common_divide_line"
+                android:layout_marginLeft="5dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/disturb_night"
+            android:layout_width="fill_parent"
+            android:layout_below="@id/disturb_all_day"
+            style="@style/bg_setting_item_line"
+            android:orientation="vertical" >
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/disturb_night_check"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:drawableRight="@drawable/sns_shoot_select_checked"
+                android:text="@string/settings_disturb_on_night"
+                android:textColor="@color/black"
+                android:textSize="@dimen/middle_textsize" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/mx_common_divide_line"
+                android:layout_marginLeft="5dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/disturb_none"
+            android:layout_width="fill_parent"
+            android:layout_below="@id/disturb_night"
+            style="@style/bg_setting_item_line"
+            android:orientation="vertical" >
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/disturb_none_check"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:drawableRight="@drawable/sns_shoot_select_normal"
+                android:text="@string/settings_disturb_off"
+                android:textColor="@color/black"
+                android:textSize="@dimen/middle_textsize" />
+
+        </LinearLayout>
+        
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10.0dip"
+            android:layout_below="@id/disturb_none"
+            android:gravity="center"
+            android:text="@string/settings_disturb_time_tip"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/middle_textsize" />
+    </RelativeLayout>
+</RelativeLayout>

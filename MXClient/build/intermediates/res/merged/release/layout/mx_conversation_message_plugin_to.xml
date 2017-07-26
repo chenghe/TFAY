@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/mx_message_descript_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/mx_message_items_new_reminder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    style="@style/mx_chat_message_unread_devider" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    style="@style/mx_chatting_ui_split_visable"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:text="@string/mx_message_items_new_reminder" >
+                </com.minxing.kit.ui.widget.MXVariableTextView>
+            </RelativeLayout>
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/message_time"
+                style="@style/mx_chatting_ui_split" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/mx_chatting_ui_content">
+            
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="48.0dip"
+                    android:padding="5dip">
+                    <ImageButton
+                        android:id="@+id/message_forward_selected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/mx_btn_check_im_message_item" />
+                </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:id="@+id/ll_mx_conversation_message_plugin_to_details"
+                android:layout_width="260.0dip"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="14.0dip">
+
+                <ImageView
+                    android:id="@+id/message_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/mx_msg_state_fail_resend"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/uploading_pb"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/plugin_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/mx_chatto_bg_app" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/user_avatar"
+                style="@style/mx_chatting_ui_avatar_to"
+                android:adjustViewBounds="true"
+                android:focusable="false"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mx_default_icon_avatar" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/forward_click_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mx_transparent"
+        android:visibility="gone" />
+</FrameLayout>

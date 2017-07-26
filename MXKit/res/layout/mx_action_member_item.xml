@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="@dimen/mx_circle_item_action_popup_margin_left_right"
+    android:layout_marginRight="@dimen/mx_circle_item_action_popup_margin_left_right"
+    android:layout_marginTop="20dip"
+    android:layout_weight="1"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/member_status_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/member_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/mx_black"
+            android:textSize="@dimen/mx_middle_textsize" />
+
+        <com.minxing.kit.ui.widget.MXButton
+            android:id="@+id/member_list_status_icon"
+            android:layout_width="10dip"
+            android:layout_height="10dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/mx_arrow_down_black" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/member_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.minxing.kit.internal.common.view.SubItemGridView
+            android:id="@+id/member_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnWidth="@dimen/mx_circle_item_action_popup_avatar_size"
+            android:gravity="center"
+            android:horizontalSpacing="@dimen/mx_circle_item_action_popup_gridview_spacing"
+            android:listSelector="@null"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/mx_circle_item_action_popup_gridview_spacing" />
+    </ScrollView>
+
+</LinearLayout>

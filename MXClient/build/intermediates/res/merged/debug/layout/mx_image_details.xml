@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mx_friendactivity_mycover_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/mx_system_title" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0" >
+
+        <com.minxing.kit.internal.common.view.ImageViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <ProgressBar
+            android:id="@+id/firstloading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+        <LinearLayout
+            android:id="@+id/load_org_btn_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#e61b2226"
+            android:gravity="center" >
+
+            <com.minxing.kit.ui.widget.MXButton
+                android:id="@+id/load_org_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="10dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:background="@drawable/mx_btn_trans"
+                android:text="@string/mx_label_view_original_pic"
+                android:textColor="@color/mx_white"
+                android:textSize="16sp" />
+
+    </LinearLayout>
+    </FrameLayout>
+
+
+
+</LinearLayout>

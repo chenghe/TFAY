@@ -1,0 +1,830 @@
+-injars /Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/transforms/jarMerging/release/jars/1/1f/combined.jar
+-outjars /Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/multi-dex/release/componentClasses.jar
+
+-libraryjars /Users/hechengbin/Library/Android/sdk/build-tools/23.0.3/lib/shrinkedAndroid.jar
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontusemixedcaseclassnames
+-dontpreverify
+-dontnote **
+-dontwarn **
+-printconfiguration /Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/multi-dex/release/components.flags
+
+
+-keep class com.minxing.client.AppApplication {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep class com.minxing.client.LoadingActivity {
+    <init>();
+}
+
+-keep class com.minxing.client.LoginActivity {
+    <init>();
+}
+
+-keep class com.minxing.client.activity.SystemSettingActivity {
+    <init>();
+}
+
+-keep class com.minxing.client.activity.AdActivity {
+    <init>();
+}
+
+-keep class com.minxing.client.activity.OpenHorizontalScreenActivity {
+    <init>();
+}
+
+-keep class com.minxing.client.activity.SystemFunctionIntrodutionActivity {
+    <init>();
+}
+
+-keep class com.minxing.client.activity.SystemSettingMessageNotificationActivity {
+    <init>();
+}
+
+-keep class com.minxing.client.activity.SystemSettingDisturbActivity {
+    <init>();
+}
+
+-keep class com.minxing.client.activity.SystemNewsActivity {
+    <init>();
+}
+
+-keep class com.minxing.client.activity.SystemDiagnosisActivity {
+    <init>();
+}
+
+-keep class com.minxing.client.activity.SystemSettingGesturePasswordActivity {
+    <init>();
+}
+
+-keep class com.minxing.client.activity.GesturePasswordActivity {
+    <init>();
+}
+
+-keep class com.minxing.client.ClientTabActivity {
+    <init>();
+}
+
+-keep class com.minxing.client.activity.LaunchShareActivity {
+    <init>();
+}
+
+-keep class com.minxing.client.activity.LaunchShareCircleActivity {
+    <init>();
+}
+
+-keep class com.minxing.client.activity.LaunchApp2AppActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.video.receiver.VideoReceiver {
+    <init>();
+}
+
+-keep class com.minxing.client.demo.SystemAppDemoActivity {
+    <init>();
+}
+
+-keep class com.minxing.client.demo.SystemAppDemoAppInfo {
+    <init>();
+}
+
+-keep class com.minxing.client.demo.SystemAppDemoShareActivity {
+    <init>();
+}
+
+-keep class com.minxing.client.demo.SystemAppDemoCircle {
+    <init>();
+}
+
+-keep class com.minxing.client.demo.SystemAppDemoChatActivity {
+    <init>();
+}
+
+-keep class com.minxing.client.demo.SystemAppDemoPersonCenterActivity {
+    <init>();
+}
+
+-keep class com.minxing.client.demo.SystemAppDemoAppCenterViewActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.ui.chat.MXChatActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.ui.contacts.MXContactsActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.ui.appcenter.MXAppCenterActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.ui.appcenter.AppCenterCategoryActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.ui.circle.MXCircleActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.contact.AddPersonalContactActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.contact.ContactQueryByMobileActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.contact.ContactQueryByNameActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.contact.ContactQueryByStarActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.contact.ContactSearchActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.contact.GroupContactActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.contact.GraphGroupConversationActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.contact.ContactDetailPublicActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.contact.ContactPublicGridActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.contact.ContactDetailMeActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.contact.ContactDetailMeQRActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.contact.WorkCircleMyFavActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.contact.WorkCircleMyMessageActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.contact.WorkCircleMyFileActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.common.SystemMeActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.common.WaitForCallActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.circle.WorkcircleSettingChangeNameActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.contact.ContactDetailActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.circle.NewMessageTextActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.common.GroupActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.common.GroupMembersActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.common.GroupSelectActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.circle.MessageTopicChangeActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.circle.NewMessageActionActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.circle.NewMessageTaskActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.circle.NewMessageTaskItemActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.circle.NewMessagePollActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.circle.NewMessagePollItemActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.common.NetFileActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.circle.NewMessageThirdParty {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.common.NetListActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.circle.UpdateMessageActionActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.circle.UpdateMessageTaskActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.circle.MessageReplyActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.circle.NewMessageShareActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.circle.NewMessageShareGraphActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.common.DownloadedFileActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.im.ConversationActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.im.ConversationCatalogActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.im.ConversationSearchActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.im.ConversationSearchListActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.im.ConversationWebViewActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.im.ConversationAnnounceActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.common.ImageDetailsActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.common.MXCollectionActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.common.MXCollectionSearchActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.im.ConversationMessageCameraActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.im.ConversationMessageRecordPreviewActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.im.ConversationSettingActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.im.ConversationSettingAllUserActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.im.ConversationSettingChangeNameActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.im.ConversationSettingQRCodeActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.filepicker.FilePickerActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.common.OnlineFileActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.circle.MessageDetailActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.circle.CircleTopicsListActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.common.GalleryActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.common.GalleryGroupActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.qr.CaptureActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.contact.LargeAvatarActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.common.EditAccountChangeItemActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.contact.LocalContactListActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.common.view.crop.CropImageActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.common.SystemChangePasswordActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.common.DebugActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.im.ConversationSelecterActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.api.internal.App2AppBlankActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.circle.CircleAtPersonActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.im.ConversationAtPersonActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.circle.TopicsDetailActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.common.SystemWebViewActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.common.ContactsConfigActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.plugin.web.MXWebActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.ui.appcenter.AppsAddActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.ui.appcenter.AppDetailActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.ui.circle.CircleSearchActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.contact.VipContactActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.im.ConversationVipMessageListActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.common.UICustomActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.ui.widget.gallery.ConversationImageDetailActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.plugin.android.dignostic.DiagnosticActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.contact.ContactsChoiseActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.contact.NewCircleChoiceContactsActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.core.NetWorkStateMonitorReceiver {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.core.OSSystemEventMonitorReceiver {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.core.PushDataHandleService {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.core.PushConnectService {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.push.PushReceiver {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.receiver.PhoneStatReceiver {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.activity.Accounts {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.activity.setup.Prefs {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.activity.setup.WelcomeMessage {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.activity.setup.FontSizeSettings {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.activity.setup.AccountSetupBasics {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.activity.setup.AccountSetupAccountType {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.activity.setup.AccountSetupIncoming {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.activity.setup.AccountSetupComposition {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.activity.setup.AccountSetupOutgoing {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.activity.setup.AccountSetupOptions {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.activity.setup.AccountSetupNames {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.activity.ChooseFolder {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.activity.ChooseIdentity {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.activity.ManageIdentities {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.activity.EditIdentity {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.activity.NotificationDeleteConfirmation {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.activity.setup.AccountSetupCheckSettings {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.activity.setup.AccountSettings {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.activity.setup.FolderSettings {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.activity.FolderList {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.activity.MessageList {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.activity.MessageCompose {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.activity.Search {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.activity.LauncherShortcuts {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.activity.AccessibleEmailContentActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.activity.EmailAddressList {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.service.BootReceiver {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.service.RemoteControlReceiver {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.service.CoreReceiver {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.service.StorageReceiver {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.service.MailService {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.service.NotificationActionService {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.service.PushService {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.service.PollService {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.service.RemoteControlService {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.service.SleepService {
+    <init>();
+}
+
+-keep class com.minxing.client.service.Adservice {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.provider.AttachmentProvider {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.provider.MessageProvider {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.provider.EmailProvider {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.activity.UnreadWidgetConfiguration {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.activity.UpgradeDatabases {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.AppLoadingActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.k9.service.DatabaseUpgradeService {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.account.AccountSetupActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.setting.MailSettingActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.mail.setting.MailSettingInfoActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.im.ConversationFileAndImageActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.im.ConversationFileSearchActivity {
+    <init>();
+}
+
+-keep class com.bairuitech.main.MeetingRoomActivty {
+    <init>();
+}
+
+-keep class com.bairuitech.main.EnterLoadingActivity {
+    <init>();
+}
+
+-keep class com.bairuitech.main.SpeechManagementActivity {
+    <init>();
+}
+
+-keep class com.bairuitech.main.CallReceiveActivity {
+    <init>();
+}
+
+-keep class com.bairuitech.main.ChooseModeActivity {
+    <init>();
+}
+
+-keep class com.bairuitech.main.SelectPersonActivity {
+    <init>();
+}
+
+-keep class com.bairuitech.main.SpeechModeActivity {
+    <init>();
+}
+
+-keep class com.bairuitech.main.ExitMeetingActivity {
+    <init>();
+}
+
+-keep class com.olivephone.sdk.demo.FileChooserActivity {
+    <init>();
+}
+
+-keep class com.olivephone.sdk.demo.WordActivity {
+    <init>();
+}
+
+-keep class com.olivephone.sdk.demo.PresentationActivity {
+    <init>();
+}
+
+-keep class com.olivephone.sdk.demo.SpreadsheetActivity {
+    <init>();
+}
+
+-keep class com.olivephone.sdk.demo.PDFActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.health.RankingsActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.health.setting.HealthSettingActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.health.setting.HealthSettingPrivacyRemind {
+    <init>();
+}
+
+-keep class com.minxing.kit.health.MainPageActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.health.HealthPraiseActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.plugin.android.pedometer.PedometerActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.health.service.SensorService {
+    <init>();
+}
+
+-keep class com.minxing.kit.health.receiver.SensorReceiver {
+    <init>();
+}
+
+-keep class com.minxing.kit.plugin.web.MXPopUpWebActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.im.ConversationVipSettingActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.plugin.android.log.LogToolActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.plugin.android.log.WebAddressActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.plugin.android.log.PhoneDetailsActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.plugin.test.ShowParamsActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.circle.TopicCreateActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.internal.circle.MessageErrorPostActivity {
+    <init>();
+}
+
+-keep class com.minxing.kit.plugin.android.dev.MXTestActivity {
+    <init>();
+}
+
+-keep public class * extends android.app.Instrumentation {
+    <init>();
+}
+
+-keep public class * extends android.app.Application {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.android.tools.fd.** {
+    <fields>;
+    <methods>;
+}

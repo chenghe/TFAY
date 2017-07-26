@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item"
+        android:layout_width="fill_parent"
+        android:duplicateParentState="true"
+        android:layout_height="48dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="31dip"
+            android:layout_centerVertical="true"
+            android:duplicateParentState="true"
+            android:orientation="horizontal" >
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/mynetwork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                style="@style/slid_network_title_text" />
+
+            <TextView
+                android:id="@+id/sms_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:layout_marginRight="3dip"
+                android:background="@drawable/icon_red_pot_big"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/new_red_btn_text_size" 
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/work_circle_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/icon_red_pot_small"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/checkmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dip"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_select_mark" />
+    </RelativeLayout>
+    <View
+       android:id="@+id/divider"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/item"
+       android:background="@drawable/divider_white" />
+
+</LinearLayout>

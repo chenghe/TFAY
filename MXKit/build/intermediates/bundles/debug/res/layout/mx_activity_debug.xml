@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:padding="10dip">
+
+    <LinearLayout
+        android:id="@+id/android_version_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/mx_bg_setting_item_no_margin_horizontal">
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="android版本:" />
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/android_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/mx_bg_setting_item_no_margin_horizontal">
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="屏幕密度:" />
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/screen_density"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:gravity="center_vertical"
+            android:textColor="@color/mx_black"/>
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/mx_bg_setting_item_no_margin_horizontal">
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="屏幕宽度:"/>
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/screen_width"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/mx_black"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/mx_bg_setting_item_no_margin_horizontal">
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="屏幕高度:"/>
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/screen_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/mx_black"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/mx_bg_setting_item_no_margin_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="开启日志:" />
+
+        <CheckBox
+            android:id="@+id/mx_debug_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/mx_mm_checkbox_btn"
+            android:textColor="@color/mx_darkgrey"
+            android:textSize="@dimen/mx_middle_textsize" />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/mx_bg_setting_item_no_margin_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="开启web监测:" />
+
+        <CheckBox
+            android:id="@+id/mx_web_debug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/mx_mm_checkbox_btn"
+            android:textColor="@color/mx_darkgrey"
+            android:textSize="@dimen/mx_middle_textsize" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/mx_web_debug_output_address_container"
+        style="@style/mx_bg_setting_item_no_margin_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:visibility="gone">
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="监测输出地址:" />
+
+        <com.minxing.kit.ui.widget.MXVariableEditText
+            android:id="@+id/mx_web_debug_output_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/mx_mm_checkbox_btn"
+            android:textColor="@color/mx_black"
+            android:textSize="@dimen/mx_middle_textsize"
+            android:hint="例如:192.168.100.70:111" />
+    </LinearLayout>
+    
+    <com.minxing.kit.ui.widget.MXButton
+        android:id="@+id/debug_export_db"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mx_comm_blue_button"
+        android:layout_marginTop="10dip"
+        android:text="@string/mx_button_export_database"
+        android:textColor="@color/mx_white"
+        android:visibility="gone" />
+
+    <com.minxing.kit.ui.widget.MXButton
+        android:id="@+id/debug_btn_save"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/mx_comm_blue_button"
+        android:text="@string/mx_save"
+        android:textColor="@color/mx_white" />
+
+</LinearLayout>

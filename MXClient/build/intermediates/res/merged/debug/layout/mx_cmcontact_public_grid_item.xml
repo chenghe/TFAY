@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mx_grid_list_selector"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@+id/app_new_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@drawable/mx_icon_appstore_app_new"
+        android:visibility="gone"/>
+    <ImageView
+        android:id="@+id/app_need_install_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@drawable/mx_icon_appstore_app_not_installed"
+        android:visibility="gone"/>
+    <RelativeLayout
+        android:id="@+id/app_info_container"
+        android:layout_width="85.0dip"
+        android:layout_height="85.0dip"
+        android:layout_gravity="center">
+
+        <FrameLayout
+            android:id="@+id/avatar_container"
+            android:layout_width="70.0dip"
+            android:layout_height="70.0dip"
+            android:layout_centerHorizontal="true" >
+
+            <ImageView
+                android:id="@+id/app_avatar_iv"
+                android:layout_width="@dimen/mx_appcenter_icon_width"
+                android:layout_height="@dimen/mx_appcenter_icon_width"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mx_brand_default_head" />
+
+            <ImageView
+                android:id="@+id/app_need_install_flag_small"
+                android:layout_width="@dimen/mx_appcenter_icon_width"
+                android:layout_height="@dimen/mx_appcenter_icon_width"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                android:src="@drawable/mx_icon_appcenter_app_not_install" />
+            <ImageView
+                android:id="@+id/app_new_flag_small"
+                android:layout_width="@dimen/mx_appcenter_icon_width"
+                android:layout_height="@dimen/mx_appcenter_icon_width"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                android:src="@drawable/mx_icon_appcenter_app_new" />
+
+            <TextView
+                android:id="@+id/app_unread_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/mx_icon_red_pot_big"
+                android:gravity="center"
+                android:textColor="@color/mx_white"
+                android:visibility="gone" />
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/app_upgrade_progress"
+                android:layout_width="@dimen/mx_appcenter_icon_width"
+                android:layout_height="@dimen/mx_appcenter_icon_width"
+                android:layout_gravity="center"
+                android:background="#5000"
+                android:gravity="center"
+                android:textColor="@color/mx_white"
+                android:textSize="@dimen/mx_message_new_red_btn_text_size"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/del_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginTop="5.0dip"
+            android:contentDescription="@string/mx_app_name"
+            android:src="@drawable/mx_appitem_del_btn"
+            android:visibility="gone" />
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/brand_service_nickname"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60.0dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:gravity="center"
+            android:text="@string/mx_app_name"
+            android:textColor="@color/mx_text_common_grid_grey"
+            android:textSize="@dimen/mx_small_textsize" />
+    </RelativeLayout>
+
+</FrameLayout>

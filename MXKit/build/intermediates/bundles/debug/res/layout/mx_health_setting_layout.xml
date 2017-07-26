@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0EFF4">
+
+    <include
+        android:id="@+id/mx_health_header"
+        layout="@layout/mx_health_header"
+        />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/header_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="20dp"
+                >
+
+                <ImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="64dip"
+                    android:layout_height="64dip"
+                    android:layout_gravity="left"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mx_default_icon_avatar" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/avatar"
+                    android:textColor="@color/mx_black"
+                    android:textSize="18dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mx_health_function_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/mx_layout_hight_size"
+                android:background="@drawable/mx_preference_one_item"
+                android:layout_below="@id/header_layout" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/mx_common_divide_line"
+                    />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/function_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:text="@string/mx_health_function_label"
+                    android:textColor="#707070"
+                    android:textSize="18.0dip" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/function"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21dip"
+                    android:layout_toRightOf="@id/function_label"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dip"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/mx_common_divide_line"
+                    android:layout_alignParentBottom="true"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/mx_health_come_in_main_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/mx_layout_hight_size"
+                android:layout_below="@id/mx_health_function_layout"
+                android:background="@drawable/mx_preference_one_item"
+                android:layout_marginTop="20dp"
+                android:clickable="true" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/mx_common_divide_line"
+                    />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/mx_health_come_in_main"
+                    android:layout_marginLeft="@dimen/mx_public_setting_item_left"
+                    android:textColor="@android:color/black"
+                    android:textSize="18.0dip" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/mx_public_setting_item_right"
+                    android:src="@drawable/mx_icon_forward" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/mx_common_divide_line"
+                    android:layout_alignParentBottom="true"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mx_health_privacy_setting_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/mx_layout_hight_size"
+                android:layout_below="@id/mx_health_come_in_main_layout"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/mx_preference_one_item"
+                android:clickable="true" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/mx_common_divide_line"
+                    />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/mx_health_privacy_setting"
+                    android:layout_marginLeft="@dimen/mx_public_setting_item_left"
+                    android:textColor="@android:color/black"
+                    android:textSize="18.0dip" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/mx_public_setting_item_right"
+                    android:src="@drawable/mx_icon_forward" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/mx_common_divide_line"
+                    android:layout_alignParentBottom="true"
+                    />
+            </RelativeLayout>
+
+            <com.minxing.kit.ui.widget.MXButton
+                android:id="@+id/operation_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_below="@id/mx_health_privacy_setting_layout"
+                android:layout_gravity="center"
+                android:layout_margin="25dp"
+                android:background="@drawable/mx_comm_blue_button"
+                android:focusable="false"
+                android:textColor="@color/mx_health_white"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" 
+            android:padding="6.0dip" >
+
+                <ImageView
+                    android:id="@+id/att_pic"
+                    android:layout_width="@dimen/mx_mail_list_item_att_pic_size"
+                    android:layout_height="@dimen/mx_mail_list_item_att_pic_size"
+                    android:layout_marginRight="@dimen/mx_mail_list_item_att_pic_margin_right"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mx_default_icon_attach" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/att_pic"
+                android:layout_centerVertical="true" >
+                <LinearLayout
+                    android:id="@+id/row1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dip"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_alignParentLeft="true">
+
+                    <com.minxing.kit.ui.widget.MXVariableTextView
+                        android:id="@+id/att_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:text="@string/mx_label_attachment_name"
+                        android:textColor="@color/mx_black"
+                        android:textSize="@dimen/mx_mail_list_item_content_text_size" />
+                    
+                     <com.minxing.kit.ui.widget.MXVariableTextView
+                        android:id="@+id/att_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="bottom"
+                        android:text="@string/mx_label_attachment_size"
+                        android:textColor="@color/mx_grey_dark"
+                        android:textSize="@dimen/mx_mail_list_item_content_text_size" />
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/attach_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2.0dip"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mx_icon_forward" />
+               
+            </RelativeLayout>
+        </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/att_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mx_divider_horizontal" />
+</LinearLayout>

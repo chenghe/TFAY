@@ -1,0 +1,199 @@
+<ion-view title="智能考勤" class="smart-at-bg" hide-back-button="true">
+  <ion-nav-buttons side="left">
+
+    <button ng-if="!clear"  ng-click="closeWindow();"
+            class="button back-button buttons  button-clear header-item" style="color: #ffffff">
+      <i class="icon"
+         ng-class="{'ion-android-arrow-back':$ionicPlatform.isAndroid(),'icon ion-ios-arrow-back':!$ionicPlatform.isAndroid()}">
+        <span>返回</span>
+      </i>
+    </button>
+
+  </ion-nav-buttons>
+
+  <div class="bar bar-subheader bar-dark" ng-class="{'tfay-alert-show':showFlag,'tfay-alert-hiden':!showFlag}">
+    <h1 class="title">{{showMessage}}</h1>
+  </div>
+  <ion-content class="attendance-perInfo" on-scroll="resetBTN()" delegate-handle="SA-content">
+    <ion-refresher
+            pulling-text="下拉刷新"
+            on-refresh="doRefresh()"
+            refreshing-text={{refreshComplete}}>
+    </ion-refresher>
+    <div>
+      <a class="item item-avatar" style="border: hidden">
+        <img src="{{userInfo.avatar_url}} ">
+        <h2><p ng-bind="userInfo.name"></p></h2>
+        <p ng-bind="userInfo.dept_name"></p>
+      </a>
+    </div>
+
+    <div class="attendance" style="background: url('img/clock_bg.png'); background-size: contain ">
+      <div class="attendance-info">
+        <div class="attendance-outer-circle"></div>
+        <div class="attendance-outer-second-circle"></div>
+        <div class="attendance-inner-circle" ng-class="{true:'enable-clock',false:'disable-clock'}[canSignIn]" ng-disabled="!canSignIn" ng-click="clock()">
+          <div style="height: 10vw;line-height: 13vw">
+            <p style="text-align: center;color:white">打卡</p>
+          </div>
+
+          <div style="height: 10vw;line-height: 7vw">
+            <p style="text-align: center;color:white"><em ng-bind="nowDate"></em></p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <p class="attendance-area">
+          <img class="attendance-area-img" src="img/location.png" style="vertical-align: middle"><span class="attendance-area-detail">请在打卡区域内打卡</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="map-iframe">
+      <iframe id="mapFrame" name="mapFrame" src="templates/showMap.html" data-tap-disabled="true" style="height:100%;width:100%;">
+        <p>您的手机不支持当前页面的地图的缩放显示</p>
+      </iframe>
+      <!--<button style="width: 14vw;height: 14vw;border-radius: 7vw;background-color: #e6b500;position:absolute;left:43vw;bottom:-5vw;border: hidden">上班打卡</button>-->
+    </div>
+
+    <div id="month-work-hours" style="margin-top: 30px">
+      <div class="with-line">
+        <em style="border:1px solid #ffedc2 ;border-radius: 20px;background-color: #ffedc2;color: #654029;font-size: 24px;padding-left: 15px;padding-right: 15px"><span ng-bind="currentDateYear"></span>年<span ng-bind="currentDateMonthNoZero"></span>月</em>
+      </div>
+    </div>
+
+    <div class="average-work-time">
+      <p style="text-align: center;">本月平均日工时<span style="font-size: 26px;color: #ffb400;margin-left: 10px;margin-right: 10px" ng-bind="employeeInfo.retAttendanceVO.averageWorkTime"></span>小时</p>
+    </div>
+
+    <div class="row row-center">
+      <div class="col col-50 col-center">
+        <span style="margin-left: 5px;font-size: 16px;color: #a0a0a0">出勤</span>
+        <div class="padding-horizontal" style="position:relative;display:inline-block;-webkit-border-radius:  5px;-moz-border-radius:  5px;border-radius: 5px;width: 48%;height:10px;background-color: lightgray">
+          <div style="width:0%;position:absolute;left:0px;height:10px;background-color:#ffb400;-webkit-border-radius:  5px;-moz-border-radius:  5px;border-radius: 5px;width: {{employeeInfo.retAttendanceVO.rightDays*5.00}}%"></div>
+        </div>
+        <span style="display: inline-block;margin-left: 5px;font-size: 16px;color: #a0a0a0" ><span ng-bind="employeeInfo.retAttendanceVO.rightDays"></span>次</span>
+      </div>
+      <div class="col col-50 col-center">
+        <span style="margin-left: 5px;font-size: 16px;color: #a0a0a0">早退</span>
+        <div class="padding-horizontal" style="position:relative;display:inline-block;-webkit-border-radius:  5px;-moz-border-radius:  5px;border-radius: 5px;width: 48%;height:10px;background-color: lightgray">
+          <div style="width:0%;position:absolute;left:0px;height:10px;background-color:#ffb400;-webkit-border-radius:  5px;-moz-border-radius:  5px;border-radius: 5px;width: {{employeeInfo.retAttendanceVO.earlyTimes*5.00}}%"></div>
+        </div>
+        <span style="display: inline-block;margin-left: 5px;font-size: 16px;color: #a0a0a0"><span ng-bind="employeeInfo.retAttendanceVO.earlyTimes"></span>次</span>
+      </div>
+    </div>
+
+    <div class="row row-center">
+      <div class="col col-50 col-center">
+        <span style="margin-left: 5px;font-size: 16px;color: #a0a0a0">外勤</span>
+        <div class="padding-horizontal" style="position:relative;display:inline-block;-webkit-border-radius:  5px;-moz-border-radius:  5px;border-radius: 5px;width: 48%;height:10px;background-color: lightgray">
+          <div style="width:0%;position:absolute;left:0px;height:10px;background-color:#ffb400;-webkit-border-radius:  5px;-moz-border-radius:  5px;border-radius: 5px;width: {{employeeInfo.retAttendanceVO.outSignInTimes*5.00}}%"></div>
+        </div>
+        <span style="display: inline-block;margin-left: 5px;font-size: 16px;color: #a0a0a0"><span ng-bind="employeeInfo.retAttendanceVO.outSignInTimes"></span>次</span>
+      </div>
+      <div class="col col-50 col-center">
+        <span style="margin-left: 5px;font-size: 16px;color: #a0a0a0">迟到</span>
+        <div class="padding-horizontal" style="position:relative;display:inline-block;-webkit-border-radius:  5px;-moz-border-radius:  5px;border-radius: 5px;width: 48%;height:10px;background-color: lightgray">
+          <div style="width: 0%;position:absolute;left:0px;height:10px;background-color:#ffb400;-webkit-border-radius:  5px;-moz-border-radius:  5px;border-radius: 5px;width: {{employeeInfo.retAttendanceVO.lateTimes*5.00}}%"></div>
+        </div>
+        <span style="display: inline-block;margin-left: 5px;font-size: 16px;color: #a0a0a0"><span ng-bind="employeeInfo.retAttendanceVO.lateTimes"></span>次</span>
+      </div>
+    </div>
+    <div class="row row-center">
+      <div class="col col-50 col-center">
+        <span style="margin-left: 5px;font-size: 16px;color: #a0a0a0">缺卡</span>
+        <div class="padding-horizontal" style="position:relative;display:inline-block;-webkit-border-radius:  5px;-moz-border-radius:  5px;border-radius: 5px;width: 48%;height:10px;background-color: lightgray">
+          <div style="width:0%;position:absolute;left:0px;height:10px;background-color:#ffb400;-webkit-border-radius:  5px;-moz-border-radius:  5px;border-radius: 5px;width: {{employeeInfo.retAttendanceVO.noSignInTimes*5.00}}%"></div>
+        </div>
+        <span style="display: inline-block;margin-left: 5px;font-size: 16px;color: #a0a0a0"><span ng-bind="employeeInfo.retAttendanceVO.noSignInTimes"></span>次</span>
+      </div>
+      <div class="col col-50 col-center">
+        <span style="margin-left: 5px;font-size: 16px;color: #a0a0a0">免勤</span>
+        <div class="padding-horizontal" style="position:relative;display:inline-block;-webkit-border-radius:  5px;-moz-border-radius:  5px;border-radius: 5px;width: 48%;height:10px;background-color: lightgray">
+          <div style="width:0%;position:absolute;left:0px;height:10px;background-color:#ffb400;-webkit-border-radius:  5px;-moz-border-radius:  5px;border-radius: 5px;width: {{employeeInfo.retAttendanceVO.useFreeTimes*5.00}}%"></div>
+        </div>
+        <span style="display: inline-block;margin-left: 5px;font-size: 16px;color: #a0a0a0"><span ng-bind="employeeInfo.retAttendanceVO.useFreeTimes"></span>次</span>
+      </div>
+    </div>
+
+    <div class="row row-center">
+      <div class="col col-50 col-center">
+        <span style="margin-left: 5px;font-size: 16px;color: #a0a0a0">异常</span>
+        <div class="padding-horizontal" style="position:relative;display:inline-block;-webkit-border-radius:  5px;-moz-border-radius:  5px;border-radius: 5px;width: 48%;height:10px;background-color: lightgray">
+          <div style="width:0%;position:absolute;left:0px;height:10px;background-color:#ffb400;-webkit-border-radius:  5px;-moz-border-radius:  5px;border-radius: 5px;width: {{employeeInfo.retAttendanceVO.badTimes*5.00}}%"></div>
+        </div>
+        <span style="display: inline-block;margin-left: 5px;font-size: 16px;color: #a0a0a0"><span ng-bind="employeeInfo.retAttendanceVO.badTimes"></span>次</span>
+      </div>
+      <div class="col col-50 col-center">
+        <span style="margin-left: 5px;font-size: 16px;color: #a0a0a0">旷工</span>
+        <div class="padding-horizontal" style="position:relative;display:inline-block;-webkit-border-radius:  5px;-moz-border-radius:  5px;border-radius: 5px;width: 48%;height:10px;background-color: lightgray">
+          <div style="width:0%;position:absolute;left:0px;height:10px;background-color:#ffb400;-webkit-border-radius:  5px;-moz-border-radius:  5px;border-radius: 5px;width: {{employeeInfo.retAttendanceVO.absentTimes*5.00}}%"></div>
+        </div>
+        <span style="display: inline-block;margin-left: 5px;font-size: 16px;color: #a0a0a0"><span ng-bind="employeeInfo.retAttendanceVO.absentTimes"></span>次</span>
+      </div>
+    </div>
+
+    <div class="attendance-date">
+      <span ng-bind="currentDateMonth"></span>月<span ng-bind="currentDateDay"></span>日
+    </div>
+
+
+    <div class="item item-divider item-icon-right" style="background-color: #ffffff;height: 78px;font-size: 20px;padding-top: 33px;color: #787878">
+      勤劳小蜜蜂行部日榜
+    </div>
+
+    <div style="width: 100vw;height: 1px "></div>
+
+    <div class="list list-borderless">
+
+      <div ng-repeat="department in departmentTop">
+        <div class="item item-light item-text-wrap item-divider" >
+          <div class="row row-no-padding row-center">
+            <div class="col-67 text-sm col-center" >
+              <img src="img/rank{{$index}}.png"  width="20px" height="25px" style="vertical-align: middle"> <span style="font-size: 16px;padding-left: 16px;color: #0c0c0c" ng-bind="department.departmentName"></span>
+            </div>
+            <div class="col-33 text-right text-sm">
+              <span  style="font-size: 16px">{{department.workTime}}小时</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-no-padding row-stretch" ng-show="$index != employeeTop.length-1">
+          <div class="light-border light-bg padding-width"></div>
+          <div class="hr light-bg col"></div>
+          <div class="light-border light-bg pull-right padding-width"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="item item-divider item-icon-right" style="background-color: #ffffff;height: 78px;font-size: 20px;padding-top: 33px;color: #787878">
+      勤劳小蜜蜂个人排行榜
+    </div>
+
+    <div style="width: 100vw;height: 1px "></div>
+
+    <div class="list list-borderless" style="margin-bottom: 5px">
+
+         <div ng-repeat="employee in employeeTop">
+           <div class="item item-light item-text-wrap item-divider" >
+             <div class="row row-no-padding row-center">
+               <div class="col-67 text-sm col-center" >
+                 <img src="img/rank{{$index}}.png"  width="20px" height="25px" style="vertical-align: middle"> <span style="font-size: 16px;padding-left: 16px;color: #0c0c0c" ng-bind="employee.employeeName"></span>
+               </div>
+               <div class="col-33 text-right text-sm">
+                 <span  style="font-size: 16px">{{employee.workTime}}小时</span>
+               </div>
+             </div>
+           </div>
+
+           <div class="row row-no-padding row-stretch" ng-show="$index != employeeTop.length-1">
+             <div class="light-border light-bg padding-width"></div>
+             <div class="hr light-bg col"></div>
+             <div class="light-border light-bg pull-right padding-width"></div>
+           </div>
+         </div>
+     </div>
+  </ion-content>
+</ion-view>

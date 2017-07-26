@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/mx_bg_bottombar_white"
+    android:id="@+id/ll_pop_muti_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="7dp"
+    android:paddingBottom="5dp">
+    <TextView
+        android:id="@+id/tv_multi_forward"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/mx_ask_forward_conversation_message"
+        android:textSize="11sp"
+        android:textColor="@color/mx_chat_pop_muti_textcolor"
+        android:drawablePadding="1dp"
+        android:drawableTop="@drawable/mx_chat_muti_forward_icon"/>
+
+    <TextView
+        android:id="@+id/tv_multi_delete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/mx_work_circle_delete_message_reply"
+        android:textColor="@color/mx_chat_pop_muti_textcolor"
+        android:textSize="11sp"
+        android:drawablePadding="1dp"
+        android:drawableTop="@drawable/mx_chat_muti_delete_icon"/>
+
+    <TextView
+        android:id="@+id/tv_multi_more"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/mx_work_circle_message_item_more"
+        android:textColor="@color/mx_chat_pop_muti_textcolor"
+        android:textSize="11sp"
+        android:drawablePadding="1dp"
+        android:drawableTop="@drawable/mx_chat_muti_more_icon"/>
+</LinearLayout>
+
+</LinearLayout>

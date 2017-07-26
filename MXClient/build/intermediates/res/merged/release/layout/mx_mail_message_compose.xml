@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_mx_mail_message_compose_view_header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/mx_title_bar_height"
+        android:background="@drawable/nv_title_bg">
+
+        <ImageButton
+            android:id="@+id/btn_mx_mail_message_compose_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/mx_btn_back" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/tv_mx_message_compose_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/mx_white"
+                android:textSize="@dimen/mx_max_textsize" />
+
+        </LinearLayout>
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/tv_mx_mail_message_compose_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/mx_white"
+            android:textSize="@dimen/mx_mail_address_size"
+            android:text="发送" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbarStyle="insideOverlay">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:paddingTop="6dp">
+
+                <include
+                    android:id="@+id/mail_address_box_from"
+                    layout="@layout/mx_mail_contact_address_box" />
+
+                <include
+                    android:id="@+id/mail_address_box"
+                    layout="@layout/mx_mail_contact_address_box" />
+
+                <include
+                    android:id="@+id/cc_contact_layout"
+                    layout="@layout/mx_mail_contact_address_box" />
+
+                <include
+                    android:id="@+id/bcc_contact_layout"
+                    layout="@layout/mx_mail_contact_address_box" />
+
+                <LinearLayout
+                    android:id="@+id/to_wrapper"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dip"
+                    android:layout_marginRight="6dip"
+                    android:baselineAligned="true"
+                    android:gravity="bottom"
+                    android:visibility="gone">
+
+                    <MultiAutoCompleteTextView
+                        android:id="@+id/to"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="6dip"
+                        android:layout_weight="1"
+                        android:hint="@string/mx_mail_message_compose_to_hint"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress|textMultiLine"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <ImageButton
+                        android:id="@+id/add_to"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dip"
+                        android:contentDescription="@string/mx_mail_message_compose_description_add_to"
+                        android:padding="8dip"
+                        android:src="?attr/mx_messageComposeAddContactImage" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cc_wrapper"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dip"
+                    android:layout_marginRight="6dip"
+                    android:baselineAligned="true"
+                    android:gravity="bottom"
+                    android:visibility="gone">
+
+                    <MultiAutoCompleteTextView
+                        android:id="@+id/cc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="6dip"
+                        android:layout_weight="1"
+                        android:hint="@string/mx_mail_message_compose_cc_hint"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress|textMultiLine"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <ImageButton
+                        android:id="@+id/add_cc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dip"
+                        android:contentDescription="@string/mx_mail_message_compose_description_add_cc"
+                        android:padding="8dip"
+                        android:src="?attr/mx_messageComposeAddContactImage" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bcc_wrapper"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dip"
+                    android:layout_marginRight="6dip"
+                    android:baselineAligned="true"
+                    android:gravity="bottom"
+                    android:visibility="gone">
+
+                    <MultiAutoCompleteTextView
+                        android:id="@+id/bcc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="6dip"
+                        android:layout_weight="1"
+                        android:hint="@string/mx_mail_message_compose_bcc_hint"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress|textMultiLine"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <ImageButton
+                        android:id="@+id/add_bcc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dip"
+                        android:contentDescription="@string/mx_mail_message_compose_description_add_bcc"
+                        android:padding="8dip"
+                        android:src="?attr/mx_messageComposeAddContactImage" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_encrypt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="6dip"
+                    android:paddingRight="6dip"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cb_crypto_signature"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/mx_mail_btn_crypto_sign" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingRight="2dip">
+
+                            <com.minxing.kit.ui.widget.MXVariableTextView
+                                android:id="@+id/userId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                            <com.minxing.kit.ui.widget.MXVariableTextView
+                                android:id="@+id/userIdRest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/cb_encrypt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text="@string/mx_mail_btn_encrypt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/mx_mail_compose_addr_view_wrap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/to_contact_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <com.minxing.kit.ui.widget.MXVariableTextView
+                            android:id="@+id/subject_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5.0dip"
+                            android:text="@string/mx_mail_message_compose_subject_hint"
+                            android:textColor="@color/mx_mail_text_gray"
+                            android:textSize="16dip" />
+
+                        <com.minxing.kit.ui.widget.MXVariableEditText
+                            android:id="@+id/subject"
+                            style="@style/mx_mail_compose_addr_view_input"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_toRightOf="@id/subject_title"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailSubject|textAutoCorrect|textCapSentences|textImeMultiLine"
+                            android:minHeight="39dip"
+                            android:singleLine="true"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/mx_mail_ic_attach_container"
+                        android:layout_width="50dip"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="6dip">
+
+                        <ImageView
+                            android:id="@+id/mx_mail_ic_attach"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/mx_mail_ic_attach" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!--
+                    Empty container for storing attachments. We'll stick
+                    instances of message_compose_attachment.xml in here.
+
+
+
+
+
+
+
+
+
+
+
+                -->
+
+                <!--
+                     We have to use "wrap_content" (not "0dip") for "layout_height", otherwise the
+                     EditText won't properly grow in height while the user is typing the message
+
+
+
+
+
+
+
+
+
+
+                -->
+
+                <view
+                    android:id="@+id/message_content"
+                    class="com.minxing.kit.mail.k9.activity.MessageCompose$EolConvertingEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:hint="@string/mx_mail_message_compose_content_hint"
+                    android:imeOptions="actionDone|flagNoEnterAction"
+                    android:inputType="textMultiLine|textAutoCorrect|textCapSentences"
+                    android:minLines="3"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <LinearLayout
+                    android:id="@+id/attachments"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@drawable/mx_divider_white" />
+            </LinearLayout>
+
+            <view
+                android:id="@+id/upper_signature"
+                class="com.minxing.kit.mail.k9.activity.MessageCompose$EolConvertingEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:hint="@string/mx_mail_message_compose_signature_hint"
+                android:inputType="textMultiLine|textAutoCorrect|textCapSentences"
+                android:minLines="0"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <com.minxing.kit.ui.widget.MXButton
+                android:id="@+id/quoted_text_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:padding="0dip"
+                android:text="@string/mx_mail_message_compose_show_quoted_text_action"
+                android:textSize="16sp" />
+
+            <view
+                android:id="@+id/lower_signature"
+                class="com.minxing.kit.mail.k9.activity.MessageCompose$EolConvertingEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:hint="@string/mx_mail_message_compose_signature_hint"
+                android:inputType="textMultiLine|textAutoCorrect|textCapSentences"
+                android:minLines="0"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <!-- Quoted text bar -->
+
+            <LinearLayout
+                android:id="@+id/quoted_text_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/quoted_text_detail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="----------------------转发的邮件--------------------" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f00">
+
+                    <view
+                        android:id="@+id/quoted_text"
+                        class="com.minxing.kit.mail.k9.activity.MessageCompose$EolConvertingEditText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:inputType="textMultiLine|textAutoCorrect|textCapSentences"
+                        android:minLines="3"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <com.minxing.kit.mail.k9.view.MessageWebView
+                        android:id="@+id/quoted_html"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:id="@+id/quoted_text_buttons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true">
+
+                        <ImageButton
+                            android:id="@+id/quoted_text_edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8dip"
+                            android:background="@drawable/mx_mail_btn_edit"
+                            android:contentDescription="@string/mx_mail_message_compose_description_edit_quoted_text"
+                            android:visibility="gone" />
+
+                        <ImageButton
+                            android:id="@+id/quoted_text_delete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/mx_mail_btn_dialog"
+                            android:contentDescription="@string/mx_mail_message_compose_description_delete_quoted_text"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

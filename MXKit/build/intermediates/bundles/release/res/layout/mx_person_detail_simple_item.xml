@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/item_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mx_divider_horizontal" />
+
+    <LinearLayout
+        android:id="@+id/item_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10.0dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left" >
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="@dimen/mx_person_config_key_max_width"
+                android:textColor="@color/mx_black"
+                android:textSize="@dimen/mx_middle_textsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_value_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:gravity="right" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_weight="1.0" >
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/item_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mx_black"
+                    android:textSize="@dimen/mx_middle_textsize" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/item_value_click"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mx_text_common_lightblue"
+                    android:textSize="@dimen/mx_middle_textsize"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/item_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_gravity="center"
+                android:src="@drawable/mx_icon_forward"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

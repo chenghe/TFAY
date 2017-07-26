@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>公交路线规划－使用默认样式</title>
+    <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main.css?v=1.0"/>
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=d25a2deb6303a1d282156beb654c3284&plugin=AMap.Geocoder"></script>
+    <style type="text/css">
+        .amap-logo {
+            right: 0 !important;
+            left: auto !important;
+            display: none;
+        }
+        .amap-copyright {
+            color: transparent;
+        }
+    </style>
+</head>
+<body>
+<div id="mapContainer"></div>
+</div>
+<script type="text/javascript">
+
+    var map;
+    var position;
+    var address;
+    var lnglatXY;
+
+    window.addEventListener("message", receiveMessage, false);
+    function receiveMessage(event) {
+        map = new AMap.Map('mapContainer', {
+            resizeEnable: true,
+            center: [event.data.currentLocationData.longitude, event.data.currentLocationData.latitude],
+            zoom: 16
+        });
+
+        lnglatXY = [event.data.currentLocationData.longitude, event.data.currentLocationData.latitude]
+
+        var circle = new AMap.Circle({
+            center: new AMap.LngLat(event.data.referencedLocationData.longitude, event.data.referencedLocationData.latitude),// 圆心位置
+            radius: 500, //半径
+            strokeColor: "#F33", //线颜色
+            strokeOpacity: 1, //线透明度
+            strokeWeight: 3, //线粗细度
+            fillColor: "#ee2200", //填充颜色
+            fillOpacity: 0.35//填充透明度
+        });
+        circle.setMap(map);
+
+        AMap.service(["AMap.Walking"], function() {
+            //构造不行路线
+            var walking = new AMap.Walking({
+                map: map,
+            });
+            //根据起、终点坐标规划步行路线
+            walking.search([event.data.currentLocationData.longitude, event.data.currentLocationData.latitude],[event.data.referencedLocationData.longitude, event.data.referencedLocationData.latitude]);
+        });
+
+        var icon = new AMap.Icon({
+            size: new AMap.Size(24, 24)
+        });
+        //定位标记
+        var  marker = new AMap.Marker({
+            icon: icon,
+            position: [event.data.currentLocationData.longitude, event.data.currentLocationData.latitude],
+            offset: new AMap.Pixel(-12,-12),
+            zIndex: 101,
+            map: map
+        });
+
+        regeocoder();
+
+    }
+    //获取地理位置   如：时代广场
+    function regeocoder() {
+        var _geocoder = new AMap.Geocoder({
+            radius:1000,
+            extensions:"all"
+        })
+        _geocoder.getAddress(lnglatXY,function (status,result) {
+            if(status == 'complete'&&result.info == 'OK'){
+              var  address = result.regeocode.formattedAddress;  //position,时代广场
+                parent.postMessage(address,'*');
+            }
+        })
+    }
+
+</script>
+
+</body>
+</html>

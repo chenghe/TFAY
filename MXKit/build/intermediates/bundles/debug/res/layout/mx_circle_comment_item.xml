@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="@dimen/mx_reply_popupwindow_height"
+    android:minWidth="@dimen/mx_reply_popupwindow_item_width"
+    android:layout_weight="1"
+    android:clickable="true"
+    android:gravity="center"
+    android:paddingLeft="10dip">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/mx_circle_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/mx_like"
+            android:drawablePadding="@dimen/mx_modify_drawable_space"
+            android:gravity="center"
+            android:text="@string/mx_work_circle_message_item_like"
+            android:textColor="@color/mx_white"
+            android:textSize="@dimen/mx_circle_item_reply_popup_text_size" />
+        <View
+            android:id="@+id/mx_circle_comment_item_divider"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="8dip"
+            android:layout_marginBottom="8dip"
+            android:background="#4ca0ff"></View>
+    </LinearLayout>
+
+
+
+</LinearLayout>

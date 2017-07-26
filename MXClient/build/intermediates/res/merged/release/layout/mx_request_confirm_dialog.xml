@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/radio_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15.0dip"
+            android:background="@drawable/mx_dialog_bg_complete"
+            android:orientation="horizontal" >
+
+            <com.minxing.kit.ui.widget.MXButton
+                android:id="@+id/approve_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/mx_circle_item_task_subitem_btn_height"
+                android:layout_margin="@dimen/mx_circle_item_action_popup_margin_left_right"
+                android:layout_weight="1"
+                android:background="@drawable/mx_blue_button_unselect"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:text="@string/mx_agree"
+                android:textColor="@color/mx_white"
+                android:textSize="@dimen/mx_circle_item_button_text_size" />
+
+            <com.minxing.kit.ui.widget.MXButton
+                android:id="@+id/reject_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/mx_circle_item_task_subitem_btn_height"
+                android:layout_margin="@dimen/mx_circle_item_action_popup_margin_left_right"
+                android:layout_weight="1"
+                android:background="@drawable/mx_red_button_unselect"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:text="@string/mx_refuse"
+                android:textColor="@color/mx_white"
+                android:textSize="@dimen/mx_circle_item_button_text_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

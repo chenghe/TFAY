@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="false"
+    android:focusableInTouchMode="false" >
+
+    <View
+        android:id="@+id/placeholder"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+    <LinearLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/mx_white"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/confirm_add_layout"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" >
+
+            <Button
+                android:id="@+id/confirm_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:button="@null"
+                android:drawableLeft="@drawable/mx_add_friends"
+                android:text="@string/mx_add_person_to_personal_contact"
+                android:textColor="@color/mx_contact_btn"
+                android:textSize="16.0dip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/send_sms_layout"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="@drawable/mx_divider_variable" />
+
+            <Button
+                android:id="@+id/send_sms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:button="@null"
+                android:drawableLeft="@drawable/mx_sendmessage"
+                android:text="@string/mx_send_sms"
+                android:textColor="@color/mx_contact_btn"
+                android:textSize="16.0dip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/change_vip_layout"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="@drawable/mx_divider_variable" />
+
+            <Button
+                android:id="@+id/change_vip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:button="@null"
+                android:drawableLeft="@drawable/mx_change_vip"
+                android:text="@string/mx_add_vip"
+                android:textColor="@color/mx_contact_btn"
+                android:textSize="16.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_above="@id/btn_layout"
+        android:layout_alignWithParentIfMissing="true"
+        android:background="@drawable/mx_divider_horizontal" />
+
+    <ScrollView
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/divider"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_below="@id/placeholder" >
+
+        <LinearLayout
+            android:id="@+id/detail_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/mx_comm_container_marginboth" >
+
+            <LinearLayout
+                android:id="@+id/detail_content_container"
+                style="@style/mx_bg_setting_item_narrow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

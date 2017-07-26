@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+     <include
+        android:id="@+id/system_title"
+        layout="@layout/system_title" />
+     <ScrollView 
+          android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/system_title">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+         <LinearLayout
+            android:id="@+id/demo_share_image_circle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/bg_setting_item_narrow"
+            android:orientation="horizontal">
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:drawableRight="@drawable/submenu"
+                android:text="@string/interface_share_img_circle"
+                android:textColor="@color/black"
+                android:textSize="@dimen/middle_textsize" />
+        </LinearLayout>
+         <LinearLayout
+            android:id="@+id/demo_share_images_circle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/bg_setting_item_narrow"
+            android:orientation="horizontal">
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:drawableRight="@drawable/submenu"
+                android:text="@string/interface_share_imgs_circle"
+                android:textColor="@color/black"
+                android:textSize="@dimen/middle_textsize" />
+        </LinearLayout>
+         <LinearLayout
+            android:id="@+id/demo_share_image_chat"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/bg_setting_item_narrow"
+            android:orientation="horizontal">
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:drawableRight="@drawable/submenu"
+                android:text="@string/interface_share_img_chat"
+                android:textColor="@color/black"
+                android:textSize="@dimen/middle_textsize" />
+        </LinearLayout>
+         <LinearLayout
+            android:id="@+id/demo_share_images_chat"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/bg_setting_item_narrow"
+            android:orientation="horizontal">
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:drawableRight="@drawable/submenu"
+                android:text="@string/interface_share_imgs_chat"
+                android:textColor="@color/black"
+                android:textSize="@dimen/middle_textsize" />
+        </LinearLayout>
+         <LinearLayout
+            android:id="@+id/demo_share_link_circle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/bg_setting_item_narrow"
+            android:orientation="horizontal">
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:drawableRight="@drawable/submenu"
+                android:text="@string/interface_share_link_circle"
+                android:textColor="@color/black"
+                android:textSize="@dimen/middle_textsize" />
+            </LinearLayout>
+         <LinearLayout
+            android:id="@+id/demo_share_link_chat"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/bg_setting_item_narrow"
+            android:orientation="horizontal">
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:drawableRight="@drawable/submenu"
+                android:text="@string/interface_share_link_chat"
+                android:textColor="@color/black"
+                android:textSize="@dimen/middle_textsize" />
+            </LinearLayout>
+            <LinearLayout
+            android:id="@+id/demo_autoshare_link_circle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/bg_setting_item_narrow"
+            android:orientation="horizontal">
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:drawableRight="@drawable/submenu"
+                android:text="@string/interface_auto_share_link_circle"
+                android:textColor="@color/black"
+                android:textSize="@dimen/middle_textsize" />
+            </LinearLayout>
+         <LinearLayout
+            android:id="@+id/demo_share_text_chat"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/bg_setting_item_narrow"
+            android:orientation="horizontal">
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:drawableRight="@drawable/submenu"
+                android:text="@string/interface_share_text_chat"
+                android:textColor="@color/black"
+                android:textSize="@dimen/middle_textsize" />
+            </LinearLayout>
+         <LinearLayout
+            android:id="@+id/demo_share_text_circle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/bg_setting_item_narrow"
+            android:orientation="horizontal">
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:drawableRight="@drawable/submenu"
+                android:text="@string/interface_share_text_circle"
+                android:textColor="@color/black"
+                android:textSize="@dimen/middle_textsize" />
+            </LinearLayout>
+         <LinearLayout
+            android:id="@+id/demo_share_mail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/bg_setting_item_narrow"
+            android:orientation="horizontal">
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:drawableRight="@drawable/submenu"
+                android:text="@string/interface_share_mail"
+                android:textColor="@color/black"
+                android:textSize="@dimen/middle_textsize" />
+            </LinearLayout>
+</LinearLayout>
+</ScrollView>
+</RelativeLayout>

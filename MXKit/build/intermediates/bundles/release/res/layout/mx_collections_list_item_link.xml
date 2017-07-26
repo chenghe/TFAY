@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mx_white"
+    android:orientation="vertical"
+    android:padding="15.0dip" >
+
+    <include
+        android:id="@+id/link_message_header"
+        layout="@layout/mx_collections_list_item_header" />
+
+    <LinearLayout
+        android:id="@+id/link_message_web_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/mx_collections_web_link"
+            android:textColor="@color/mx_dark_gray"
+            android:textSize="14.0dip" />
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/message_web_link_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:gravity="right"
+            android:textColor="@color/mx_dark_gray"
+            android:textSize="13.0dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mx_collection_item_bg"
+        android:orientation="vertical"
+        android:layout_marginTop="15.0dip"
+        android:padding="10.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:orientation="vertical" >
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/link_title"
+                style="@style/mx_mm_font_title_in_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3.0dip"
+                android:singleLine="false" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/link_thumb_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="5.0dip"
+                    android:layout_marginTop="3dip">
+
+                    <ImageView
+                        android:id="@+id/link_thumb"
+                        android:layout_width="60.0dip"
+                        android:layout_height="60.0dip"
+                        android:scaleType="centerCrop" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical" >
+
+                    <com.minxing.kit.ui.widget.MXVariableTextView
+                        android:id="@+id/link_desc"
+                        style="@style/mx_mm_font_tip_in_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="4"
+                        android:singleLine="false" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

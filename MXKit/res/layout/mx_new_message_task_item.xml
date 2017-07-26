@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mx_bg_grey_dark" >
+
+    <!-- titlebar -->
+
+    <include
+        android:id="@+id/system_title"
+        layout="@layout/mx_system_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/system_title"
+        android:orientation="vertical">
+
+        <!-- 请输入任务项 -->
+
+        <com.minxing.kit.ui.widget.MXVariableEditText
+            android:id="@+id/single_task_content"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="@dimen/mx_single_task_content_margin_top"
+            android:padding="10dip"
+            android:scrollbars="vertical"
+            android:background="@drawable/mx_bg_edittext_selector"
+            android:gravity="top|left"
+            android:hint="@string/mx_plx_input_task_content"
+            android:lineSpacingExtra="5dp"
+            android:minHeight="140.0dip"
+            android:textColor="@color/mx_black"
+            android:textSize="@dimen/mx_middle_textsize"
+            android:layout_marginLeft="@dimen/mx_new_message_item_padding"
+            android:layout_marginRight="@dimen/mx_new_message_item_padding"  />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mx_director_and_completed_date_margintop"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/single_task_director"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/mx_bg_setting_item">
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mx_director"
+                    android:textColor="@color/mx_black"
+                    android:textSize="@dimen/mx_middle_textsize" />
+
+                <ImageView
+                    android:id="@+id/plus_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/mx_comm_add_icon" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/director"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/mx_new_message_plus_view_space"
+                    android:layout_toLeftOf="@id/plus_icon"
+                    android:background="@drawable/mx_selected_person_bg"
+                    android:gravity="center"
+                    android:textColor="@color/mx_blue_gray"
+                    android:textSize="@dimen/mx_small_textsize"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+       
+
+            <RelativeLayout
+                android:id="@+id/single_task_completed_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/mx_bg_setting_item">
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mx_completed_date"
+                    android:textColor="@color/mx_black"
+                    android:textSize="@dimen/mx_middle_textsize" />
+
+                <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/mx_icon_forward" />
+                <!-- 完成时间 -->
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/completed_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/mx_new_message_arraw_view_space"
+                    android:layout_toLeftOf="@id/arrow"
+                    android:text="@string/mx_unmake"
+                    android:textColor="@color/mx_blue_gray"
+                    android:textSize="@dimen/mx_middle_textsize" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

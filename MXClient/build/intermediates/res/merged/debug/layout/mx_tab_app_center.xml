@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/view_header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/mx_title_bar_height"
+        android:background="@drawable/nv_title_bg" >
+
+        <ImageButton
+            android:id="@+id/title_left_button"
+            style="@style/mx_mm_title_button"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/mx_btn_back" 
+            android:visibility="gone"/>
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/mx_app_center"
+            android:textColor="@color/mx_white"
+            android:textSize="@dimen/mx_max_textsize" />
+
+        <com.minxing.kit.ui.widget.MXButton
+            android:id="@+id/finish_edit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:minWidth="55dp"
+            android:gravity="center"
+            android:text="@string/mx_work_circle_task_complete_time_complete"
+            android:background="@color/mx_transparent"
+            android:textColor="@color/mx_white"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.minxing.kit.ui.appcenter.internal.CustomPullLayout
+        android:id="@+id/mx_app_center_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view_header">
+
+        <include
+            android:id="@+id/mx_app_center_refresh"
+            layout="@layout/mx_refresh_layout" />
+
+        <com.minxing.kit.ui.appcenter.MXHeadScrollView
+            android:id="@+id/mx_app_center_header_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/app_center_header_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"/>
+
+                <com.minxing.kit.ui.appcenter.MXAppCenterView
+                    android:id="@+id/app_center_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </com.minxing.kit.ui.appcenter.MXHeadScrollView>
+    </com.minxing.kit.ui.appcenter.internal.CustomPullLayout>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item type="id" name="mx_dialog_confirm_delete"/>
+    <item type="id" name="mx_dialog_confirm_spam"/>
+    <item type="id" name="mx_dialog_attachment_progress"/>
+    <item type="id" name="mx_dialog_account_setup_error"/>
+    <item type="id" name="mx_dialog_account_setup_oauth_error"/>
+    <item type="id" name="mx_dialog_account_oauth_error"/>
+    
+    
+    <item type="id" name="mx_gridview" />
+    <item type="id" name="mx_webview" />
+    <item type="id" name="mx_scrollview" />
+
+</resources>

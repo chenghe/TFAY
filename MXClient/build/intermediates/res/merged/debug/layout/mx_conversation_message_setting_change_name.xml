@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mx_bg_grey_dark" >
+
+    <include
+        android:id="@+id/system_title"
+        layout="@layout/mx_system_title" />
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/system_title"
+        >
+
+        <LinearLayout
+            style="@style/mx_mm_body"
+            android:padding="0.0dip" >
+
+            <com.minxing.kit.ui.widget.MXVariableEditText
+                android:id="@+id/changed_name"
+                style="@style/mx_edit_group_name_text" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

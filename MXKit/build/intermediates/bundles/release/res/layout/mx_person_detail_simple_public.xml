@@ -1,0 +1,175 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ScrollView
+        android:id="@+id/member_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:paddingBottom="10dip" >
+
+            <RelativeLayout
+                android:id="@+id/header_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip" >
+
+                <ImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="55dip"
+                    android:layout_height="55dip"
+                    android:layout_gravity="left"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mx_default_icon_avatar" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/avatar"
+                    android:textColor="@color/mx_black"
+                    android:textSize="16dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/function_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/mx_layout_hight_size"
+                android:background="@drawable/mx_preference_one_item"
+                android:layout_below="@id/header_layout" >
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/function_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mx_public_setting_item_left"
+                    android:text="@string/mx_function_label"
+                    android:textColor="@color/mx_black"
+                    android:textSize="18.0dip" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/function"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="32dip"
+                    android:layout_toRightOf="@id/function_label"
+                    android:textColor="#707070"
+                    android:textSize="14dip" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/mx_common_divide_line"
+                    android:layout_marginLeft="@dimen/mx_public_setting_item_left"
+                    android:layout_alignParentBottom="true"
+                    />
+            </RelativeLayout>
+            
+<!--                 style="@style/mx_bg_setting_item_checkbox_conversation_setting" -->
+            <LinearLayout
+                android:id="@+id/conversatin_notify_layout"
+                android:layout_height="@dimen/mx_layout_hight_size"
+                android:layout_width="match_parent"
+                android:layout_below="@id/function_layout"
+                android:background="@color/mx_white"
+                android:orientation="horizontal">
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/mx_public_setting_item_left"
+                    android:layout_weight="1.0"
+                    android:text="@string/mx_label_new_message_alert"
+                    android:textColor="@color/mx_black"
+                    android:textSize="18.0dip" />
+
+                <Switch
+                    android:id="@+id/conversatin_notify_check"
+                    style="@style/mx_switch_custom_style"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/mx_public_setting_item_right"
+                     />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/history_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/mx_layout_hight_size"
+                android:layout_below="@id/conversatin_notify_layout"
+                android:background="@drawable/mx_preference_one_item"
+                android:clickable="true" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/mx_common_divide_line"
+                    android:layout_marginLeft="@dimen/mx_public_setting_item_left"
+                    android:layout_alignParentTop="true"
+                    />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/mx_public_more_historymsg"
+                    android:layout_marginLeft="@dimen/mx_public_setting_item_left"
+                    android:textColor="@color/mx_black"
+                    android:textSize="18.0dip" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/mx_public_setting_item_right"
+                    android:src="@drawable/mx_icon_forward" />
+            </RelativeLayout>
+            
+             <com.minxing.kit.ui.widget.MXButton
+                android:id="@+id/enter_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/mx_common_btn_height"
+                android:layout_below="@id/history_layout"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="@dimen/mx_edit_account_block_space"
+                android:background="@drawable/mx_comm_blue_button"
+                android:focusable="false"
+                android:text="@string/mx_open_ocu"
+                android:textColor="@color/mx_white"
+                android:textSize="@dimen/mx_max_textsize"
+                android:visibility="gone" />
+
+            <com.minxing.kit.ui.widget.MXButton
+                android:id="@+id/operation_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/mx_common_btn_height"
+                android:layout_below="@id/enter_btn"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="@dimen/mx_edit_account_block_space"
+                android:background="@drawable/mx_comm_blue_button"
+                android:focusable="false"
+                android:text="@string/mx_add_star_to_personal_contact"
+                android:textColor="@color/mx_white"
+                android:textSize="@dimen/mx_max_textsize" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

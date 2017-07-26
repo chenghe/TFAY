@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/mx_pop_menu_margin" >
+
+    <com.minxing.kit.ui.widget.MXVariableTextView
+        android:id="@+id/email_address"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/mx_common_btn_height"
+        android:layout_weight="1.0"
+        android:background="@drawable/mx_comm_blue_button"
+        android:gravity="center"
+        android:textColor="@color/mx_white"
+        android:textSize="18.0dip" />
+</LinearLayout>

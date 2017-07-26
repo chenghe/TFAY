@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mx_bg_grey_dark">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/mx_system_title" />
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/mx_bg_bottombar_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/reply_to_all_switch_btn"
+            android:layout_width="40dip"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/reply_to_all_switch_btn_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mx_reply_to_all_switch" />
+        </LinearLayout>
+
+        <com.minxing.kit.ui.widget.MXVariableEditText
+            android:id="@+id/reply_content_et"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:layout_marginBottom="6.0dip"
+            android:layout_marginTop="6.0dip"
+            android:background="@drawable/mx_bg_edittext_radius_selector"
+            android:inputType="textCapSentences|textAutoCorrect|textMultiLine|textShortMessage"
+            android:singleLine="false"
+            android:textSize="@dimen/mx_wb_common_content_text_size" />
+
+
+        <LinearLayout
+            android:id="@+id/quick_forward_btn"
+            android:layout_width="40dip"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dip"
+                android:background="@drawable/mx_reply_send" />
+        </LinearLayout>
+
+        <com.minxing.kit.ui.widget.MXButton
+            android:id="@+id/reply_send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="4.0dip"
+            android:layout_marginRight="4dip"
+            android:layout_marginBottom="6.0dip"
+            android:layout_marginTop="6.0dip"
+            android:background="@drawable/mx_comm_white_button"
+            android:maxHeight="80.0dip"
+            android:minHeight="20.0dip"
+            android:minWidth="50.0dip"
+            android:text="发送"
+            android:textSize="16.0dip"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mail_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bottom_bar"
+        android:layout_below="@id/title_bar"
+        android:paddingLeft="@dimen/mx_mail_list_padding"
+        android:paddingRight="@dimen/mx_mail_list_padding" >
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:listSelector="@drawable/mx_mm_chat_listitem"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/firstloading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

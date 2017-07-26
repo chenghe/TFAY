@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <com.minxing.kit.ui.widget.MXVariableTextView
+        android:id="@+id/subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mx_mail_list_item_tittle_margin_top"
+        android:textColor="@color/mx_black"
+        android:textSize="@dimen/mx_middle_textsize"
+        android:textStyle="bold" />
+</LinearLayout>

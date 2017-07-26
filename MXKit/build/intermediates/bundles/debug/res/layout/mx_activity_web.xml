@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mx_white"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/head_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mx_header_bg_color">
+
+        <include
+            android:id="@+id/webview_title"
+            layout="@layout/mx_system_title"/>
+
+        <ProgressBar
+            android:id="@+id/pb_download"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="3.0dip"
+            android:layout_gravity="bottom"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/mx_progress_horizontal"
+             />
+        <RelativeLayout
+            android:id="@+id/custom_header"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/mx_title_bar_height">
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/webview_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mx_bg_bottombar_white"
+        android:gravity="center_vertical"
+        android:visibility="gone" >
+
+        <com.minxing.kit.ui.widget.MXButton
+            android:id="@+id/web_back"
+            android:layout_width="@dimen/mx_webview_footer_btn_size"
+            android:layout_height="@dimen/mx_webview_footer_btn_size"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20.0dip"
+            android:background="@drawable/mx_webview_tab_back_btn" />
+
+        <com.minxing.kit.ui.widget.MXButton
+            android:id="@+id/web_forward"
+            android:layout_width="@dimen/mx_webview_footer_btn_size"
+            android:layout_height="@dimen/mx_webview_footer_btn_size"
+            android:layout_marginLeft="20.0dip"
+            android:layout_toRightOf="@id/web_back"
+            android:background="@drawable/mx_webview_tab_forward_btn" />
+
+        <com.minxing.kit.ui.widget.MXButton
+            android:id="@+id/web_refresh"
+            android:layout_width="@dimen/mx_webview_footer_btn_size"
+            android:layout_height="@dimen/mx_webview_footer_btn_size"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/mx_webview_tab_refresh_btn"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/webview_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0">
+    </LinearLayout>
+</LinearLayout>

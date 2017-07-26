@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/mx_pop_menu_margin" >
+
+    <TextView
+        android:id="@+id/callnumber"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/mx_common_btn_height"
+        android:layout_weight="1.0"
+        android:background="@drawable/mx_comm_blue_button"
+        android:gravity="center"
+        android:textColor="@color/mx_white"
+        android:textSize="18.0dip" />
+
+    <TextView
+        android:id="@+id/callplus"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/mx_common_btn_height"
+        android:layout_marginLeft="10.0dip"
+        android:background="@drawable/mx_comm_blue_button"
+        android:gravity="center"
+        android:paddingLeft="20.0dip"
+        android:paddingRight="20.0dip"
+        android:textColor="@color/mx_white"
+        android:textSize="18.0dip"
+        android:visibility="gone" />
+
+</LinearLayout>

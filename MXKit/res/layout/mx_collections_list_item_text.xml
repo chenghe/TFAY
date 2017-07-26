@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mx_white"
+    android:orientation="vertical"
+    android:padding="15.0dip" >
+
+    <include layout="@layout/mx_collections_list_item_header" />
+
+    <com.minxing.kit.ui.widget.MXVariableTextView
+        android:id="@+id/collection_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15.0dip"
+        android:textColor="@color/mx_black"
+        android:textSize="@dimen/mx_middle_textsize" />
+
+</LinearLayout>

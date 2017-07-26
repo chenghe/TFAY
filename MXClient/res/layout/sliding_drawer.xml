@@ -1,0 +1,391 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/slid_user"
+        android:layout_width="match_parent"
+        android:layout_height="90dip"
+        android:clickable="true"
+        android:background="@android:color/white"
+        android:orientation="horizontal" >
+
+        <com.minxing.client.widget.RoundImageView
+            android:id="@+id/slid_avatar"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:src="@drawable/default_icon_avatar" />
+
+        <ImageView
+            android:id="@+id/slid_name_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dip"
+            android:duplicateParentState="true"
+            android:src="@drawable/slid_item_arrow_selector" />
+
+        <LinearLayout
+            android:id="@+id/slid_qr_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dip"
+            android:layout_toLeftOf="@id/slid_name_arrow"
+            android:padding="15.0dip" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_conversation_qr" />
+        </LinearLayout>
+        
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/slid_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@id/slid_avatar"
+            android:layout_toLeftOf="@id/slid_qr_code"
+            android:singleLine="true"
+            android:textColor="@color/slid_item_text"
+            android:textSize="18dip" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/divider_white" />
+    <!-- 主社区 -->
+
+    <LinearLayout
+        android:id="@+id/slid_network_main_header"
+        style="@style/slid_network_title" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:src="@drawable/slid_item_network_icon_selector" />
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            style="@style/slid_network_title_text"
+            android:text="@string/sliding_inner_network" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/divider_white"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/slid_network_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <!-- 外部社区 -->
+
+    <LinearLayout
+        android:id="@+id/slid_network_external_header"
+        style="@style/slid_network_title" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:src="@drawable/slid_item_network_icon_selector" />
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            style="@style/slid_network_title_text"
+            android:text="@string/sliding_outer_network" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/slid_network_external_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/divider_white" />
+
+    <LinearLayout
+        android:id="@+id/slid_network_external"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <!-- 浏览外部社区 -->
+
+    <LinearLayout
+        android:id="@+id/slid_browse_external_network"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            style="@style/slid_network_title"
+            android:duplicateParentState="true" >
+
+            <ImageView
+                android:id="@+id/slid_browse_external_network_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:duplicateParentState="true"
+                android:src="@drawable/slid_item_browse_selector" />
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                style="@style/slid_network_title_text"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/slid_browse_external_network_icon"
+                android:text="@string/sliding_check_outer_network" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dip"
+                android:duplicateParentState="true"
+                android:src="@drawable/slid_item_arrow_selector" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/divider_white" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/slid_my_fav"
+        style="@style/slid_network_title" >
+
+        <ImageView
+            android:id="@+id/slid_my_fav_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/slid_item_bookmark_icon_selector"
+            android:duplicateParentState="true" />
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/slid_my_fav_icon_name"
+            style="@style/slid_network_title_text"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/slid_my_fav_icon"
+            android:text="@string/work_circle_pop_my_favmessage" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dip"
+            android:duplicateParentState="true"
+            android:src="@drawable/slid_item_arrow_selector" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/divider_white" />
+
+    <RelativeLayout
+        android:id="@+id/slid_my_message"
+        style="@style/slid_network_title" >
+
+        <ImageView
+            android:id="@+id/slid_my_message_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/slid_item_my_message_icon_selector"
+            android:duplicateParentState="true" />
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/slid_my_message_name"
+            style="@style/slid_network_title_text"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/slid_my_message_icon"
+            android:text="@string/work_circle_pop_my_message" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dip"
+            android:duplicateParentState="true"
+            android:src="@drawable/slid_item_arrow_selector" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/divider_white" />
+
+    <RelativeLayout
+        android:id="@+id/slid_my_upload"
+        style="@style/slid_network_title" >
+
+        <ImageView
+            android:id="@+id/slid_my_upload_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/slid_item_upload_icon_selector"
+            android:duplicateParentState="true" />
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/slid_my_upload_name"
+            style="@style/slid_network_title_text"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/slid_my_upload_icon"
+            android:text="@string/work_circle_my_file" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dip"
+            android:duplicateParentState="true"
+            android:src="@drawable/slid_item_arrow_selector" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/divider_white" />
+
+    <RelativeLayout
+        android:id="@+id/slid_my_download"
+        style="@style/slid_network_title" >
+
+        <ImageView
+            android:id="@+id/slid_my_download_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/slid_item_download_icon_selector"
+            android:duplicateParentState="true" />
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/slid_my_download_name"
+            style="@style/slid_network_title_text"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/slid_my_download_icon"
+            android:text="@string/downloaded_file" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dip"
+            android:duplicateParentState="true"
+            android:src="@drawable/slid_item_arrow_selector" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/divider_white" />
+
+    <!-- 设置 -->
+
+    <RelativeLayout
+        android:id="@+id/slid_setting"
+        style="@style/slid_network_title" >
+
+        <ImageView
+            android:id="@+id/slid_setting_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/slid_item_network_selector"
+            android:duplicateParentState="true" />
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/slid_setting_name"
+            style="@style/slid_network_title_text"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/slid_setting_icon"
+            android:text="@string/title_setting" />
+
+        <TextView
+            android:id="@+id/slid_newflag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/slid_setting_name"
+            android:background="@drawable/icon_red_pot_big"
+            android:gravity="center"
+            android:text="  new  "
+            android:textColor="@color/white"
+            android:textSize="@dimen/new_red_btn_text_size"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dip"
+            android:duplicateParentState="true"
+            android:src="@drawable/slid_item_arrow_selector" />
+    </RelativeLayout>
+
+    <!-- 反馈 -->
+
+    <View
+        android:id="@+id/slid_feedback_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/divider_white"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/slid_feedback"
+        style="@style/slid_network_title"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/slid_feedback_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/slid_item_feedback_selector"
+            android:duplicateParentState="true" />
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/slid_feedback_name"
+            style="@style/slid_network_title_text"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/slid_feedback_icon"
+            android:text="@string/sliding_user_feedback" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dip"
+            android:duplicateParentState="true"
+            android:src="@drawable/slid_item_arrow_selector" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_header"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/title_bar_height"
+    android:background="@drawable/nv_title_bg" >
+
+    <LinearLayout
+        android:id="@+id/title_handle_layout"
+        android:layout_width="95.0dip"
+        android:layout_height="@dimen/title_bar_height"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/title_left_back_button"
+            style="@style/title_button"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/btn_back"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/system_handle"
+            layout="@layout/header_handle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/title_btn_layout"
+        android:layout_width="95.0dip"
+        android:layout_height="@dimen/title_bar_height"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:gravity="right" >
+
+        <ImageButton
+            android:id="@+id/title_right_new_function"
+            style="@style/title_button"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right|center_vertical"
+            android:focusable="true"
+            android:src="@drawable/btn_sns_new" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/middle_title_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@id/title_btn_layout"
+        android:layout_toRightOf="@id/title_handle_layout"
+        android:layout_weight="1.0"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/title_arrow_space"
+            android:drawableRight="@drawable/btn_arrow_down"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/max_textsize" />
+    </LinearLayout>
+
+</RelativeLayout>

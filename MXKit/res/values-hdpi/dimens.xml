@@ -1,0 +1,79 @@
+<resources>
+
+    <dimen name="mx_circle_item_avatar_margin">12.0dip</dimen>
+    <dimen name="mx_contacts_item_avatar_margin">12.0dip</dimen>
+    <dimen name="mx_contacts_item_plugin_icon_margin_right">12.0dip</dimen>
+    <dimen name="mx_message_detail_name_group_space">6.0dip</dimen>
+    <dimen name="mx_circle_item_task_mark_text_size">13.0dip</dimen>
+    <dimen name="mx_circle_item_margin_name_content">0.0dip</dimen>
+    
+    
+    
+    
+    <dimen name="mx_circle_item_vote_button_margin_top">15.0dip</dimen>
+    
+    
+    <dimen name="mx_conversation_message_pic_size">133.5dip</dimen>
+    <dimen name="mx_conversation_voice_message_default_width">60.0dip</dimen>
+    <dimen name="mx_conversation_voice_message_width_unit">150.0dip</dimen>
+    
+    <dimen name="mx_conversation_message_smiley_size">30.0dip</dimen>
+    <dimen name="mx_conversation_message_smiley_input_size">25.0dip</dimen>
+
+    <dimen name="mx_max_textsize">18dp</dimen> <!-- 系统大号字 -->
+    <dimen name="mx_header_text_size">18dp</dimen><!-- 标题文字大小 -->
+    
+    <dimen name="mx_segmentation_line_little">1.0dip</dimen><!-- 分割线大小 -->
+    
+    <dimen name="mx_middle_textsize">16dp</dimen> <!-- 系统中号字 -->
+    <dimen name="mx_message_type_item_name_maxwidth">70dp</dimen>
+    <dimen name="mx_message_type_poll_progress_width">170dp</dimen>
+    <dimen name="mx_message_avatar_and_content_space">6dp</dimen> <!-- 消息流页面中消息体和头像的间隙 -->
+    <dimen name="mx_modify_drawable_space">4dp</dimen> <!-- 修改和喜欢数的间隙 -->
+    
+    <dimen name="mx_attachement_column_margintop">3dp</dimen>
+    <dimen name="mx_task_progress_value_and_prgress_space">5dp</dimen> <!-- 任务进度条调和显示的value之间间隙 -->
+    
+    <!-- <dimen name="action_dialog_margin_left_and_right">40dp</dimen>活动确认和活动修改时候弹出的对话框的与屏幕左右的间隙 -->
+    <dimen name="mx_dialog_title_padding">10dp</dimen> <!-- 弹出的对话框title只padding -->
+    <dimen name="mx_comm_container_marginboth">10dp</dimen>
+    <dimen name="mx_comm_container_margintop">20dp</dimen>
+    <dimen name="mx_new_message_sendto_and_arrwo_space">10dp</dimen>
+    <dimen name="mx_new_message_plugin_margin">10dp</dimen>
+    <dimen name="mx_new_message_attachement_file_margin">10dp</dimen>
+    <dimen name="mx_new_message_sendto_margin_right">6dp</dimen>
+    <dimen name="mx_group_avatar_dimen">60dp</dimen>
+    <!-- 组头像大小 -->
+    <dimen name="mx_group_item_padding">10dp</dimen>
+    <dimen name="mx_group_item_avatar_name_space">10dp</dimen>
+    <dimen name="mx_group_item_lock_name_space">6dp</dimen>
+    <dimen name="mx_new_message_action_view_space">10dp</dimen>
+    <dimen name="mx_new_message_text_area_min_height">200dp</dimen>
+    <dimen name="mx_new_message_arraw_view_space">10dp</dimen>
+    <dimen name="mx_single_task_content_margin_top">10dp</dimen>
+    <dimen name="mx_director_and_completed_date_margintop">10dp</dimen>
+    <dimen name="mx_new_message_plus_view_space">10dp</dimen>
+    <dimen name="mx_file_dimen">60dp</dimen>
+    <dimen name="mx_net_dimen">40dp</dimen>
+    <dimen name="mx_message_reply_content_margin_top">20dp</dimen>
+    <dimen name="mx_private_sms_title_marginleft">8dp</dimen>
+    <dimen name="mx_contact_sidebar_font_size">6dp</dimen>
+    <dimen name="mx_contact_searchbar_space_margin_top">45dp</dimen>
+    <dimen name="mx_contact_searchBar_edit_marginleft">5dp</dimen>
+    <dimen name="mx_about_info_padding">20dp</dimen>
+    <dimen name="mx_visit_button_margintop">10dp</dimen>
+    <dimen name="mx_visit_button_width">260dp</dimen>
+    <dimen name="mx_info_desc_line_space">6dp</dimen>
+    <dimen name="mx_about_minxing_logo_and_info_space">10dp</dimen>
+    <dimen name="mx_edit_account_block_space">10dp</dimen>
+    <dimen name="mx_select_uploadfile_icon_margin">20dp</dimen>
+    <dimen name="mx_center_pop_width">130dp</dimen>
+    <dimen name="mx_center_pop_height">200dp</dimen>
+	<dimen name="mx_reply_popupwindow_padding">2dip</dimen>
+
+    <dimen name="mx_common_setting_padding_left">12dip</dimen>
+    <!--初始化每列宽度-->
+    <dimen name="mx_default_grid_item_width">180dp</dimen>
+
+    <dimen name="mx_contact_index_text_size">12dp</dimen>
+</resources>

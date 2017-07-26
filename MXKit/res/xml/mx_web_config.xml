@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget
+    id="com.minxing.kit.plugin"
+    version="2.0.0"
+    xmlns="http://www.w3.org/ns/widgets" >
+
+    <name>
+			Minxing  Cordova 
+
+    </name>
+
+    <description>
+        Minxing  Cordova plugin config file.
+    </description>
+<author
+        email="dev@cordova.apache.org"
+        href="http://cordova.io" >
+        Apache Cordova Team
+
+    </author>
+
+    <content src="index.html" />
+    
+    <preference name="errorUrl" value="file:///android_asset/error_page/index.html" />
+
+    <access
+        launch-external="yes"
+        origin="*" />
+
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+    <allow-intent href="content:*" />
+
+    <preference
+        name="loglevel"
+        value="DEBUG" />
+
+    <feature name="Contacts">
+        <param name="android-package" value="org.apache.cordova.contacts.ContactManager" />
+    </feature>
+    <feature name="Accelerometer">
+        <param name="android-package" value="org.apache.cordova.devicemotion.AccelListener" />
+    </feature>
+    <feature name="Compass">
+        <param name="android-package" value="org.apache.cordova.deviceorientation.CompassListener" />
+    </feature>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="FileTransfer">
+        <param name="android-package" value="org.apache.cordova.filetransfer.FileTransfer" />
+    </feature>
+    <feature name="Globalization">
+        <param name="android-package" value="org.apache.cordova.globalization.Globalization" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <feature name="Media">
+        <param name="android-package" value="org.apache.cordova.media.AudioHandler" />
+    </feature>
+    <feature name="Capture">
+        <param name="android-package" value="org.apache.cordova.mediacapture.Capture" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Vibration">
+        <param name="android-package" value="org.apache.cordova.vibration.Vibration" />
+    </feature>
+    <feature name="Battery">
+        <param name="android-package" value="org.apache.cordova.batterystatus.BatteryListener" />
+    </feature>
+    <feature name="Camera">
+        <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
+    </feature>
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="WifiWizard">
+        <param name="android-package" value="com.minxing.kit.plugin.web.wifiwizard.WifiWizard"/>
+    </feature>
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+    </feature>
+    
+    <feature name="WhitelistPlugin" >
+        <param
+            name="android-package"
+            value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param
+            name="onload"
+            value="true" />
+    </feature>
+    <feature name="Sms">
+        <param name="android-package" value="com.cordova.plugins.sms.Sms" />
+    </feature>
+    
+    <feature name="WebUi" >
+        <param
+            name="android-package"
+            value="com.minxing.kit.plugin.web.webui.WebUi" />
+        <param
+            name="onload"
+            value="true" />
+    </feature>
+    <feature name="Chat" >
+        <param
+            name="android-package"
+            value="com.minxing.kit.plugin.web.chat.Chat" />
+    </feature>
+    <feature name="MXContacts" >
+        <param
+            name="android-package"
+            value="com.minxing.kit.plugin.web.contacts.Contacts" />
+    </feature>
+    <feature name="Circle" >
+        <param
+            name="android-package"
+            value="com.minxing.kit.plugin.web.circle.Circle" />
+    </feature>
+    <feature name="MXCommon" >
+        <param
+            name="android-package"
+            value="com.minxing.kit.plugin.web.common.MXCommon" />
+        <param
+            name="onload"
+            value="true" />
+    </feature>
+    <feature name="Share" >
+        <param
+            name="android-package"
+            value="com.minxing.kit.plugin.web.share.Share" />
+        <param
+            name="onload"
+            value="true" />
+    </feature>
+    
+    <feature name="MXOAuth" >
+        <param
+            name="android-package"
+            value="com.minxing.kit.plugin.web.common.MXOAuth" />
+        <param
+            name="onload"
+            value="true" />
+    </feature>
+    
+    <feature name="MXSetting" >
+        <param
+            name="android-package"
+            value="com.minxing.kit.plugin.web.setting.MXSetting" />
+        <param
+            name="onload"
+            value="true" />
+    </feature>
+
+    <preference
+        name="Fullscreen"
+        value="false" />
+    <preference
+        name="ShowTitle"
+        value="true" />
+    <preference
+        name="webview"
+        value="org.apache.cordova.engine.mx.SystemWebViewEngine" />
+
+</widget>

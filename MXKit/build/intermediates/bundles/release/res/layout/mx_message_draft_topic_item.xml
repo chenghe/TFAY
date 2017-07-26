@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:gravity="center_vertical" >
+
+    <FrameLayout
+        android:id="@+id/topic_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="13.0dip" >
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/topic_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mx_message_item_topic_bg"
+            android:drawableLeft="@drawable/mx_message_item_topic_icon"
+            android:drawablePadding="3.0dip"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip"
+            android:singleLine="true"
+            android:textColor="@color/mx_text_circle_name_color"
+            android:textSize="13.0dip" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/del_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/topic_container"
+        android:src="@drawable/mx_appitem_del_btn"
+        android:visibility="gone" />
+
+</RelativeLayout>

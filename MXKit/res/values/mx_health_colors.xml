@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mx_health_header_bg">#1A85FF</color>
+    <color name="mx_health_white">#FFFFFF</color>
+    <color name="mx_health_ranking_item_bg">#ffffff</color>
+
+    <color name="mx_health_smaller_text_color">#07bc08</color>
+    <color name="mx_health_bigger_text_color">#f8931a</color>
+
+</resources>

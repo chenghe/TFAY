@@ -1,0 +1,113 @@
+<resources>
+    <style name="AppBaseTheme" parent="android:Theme.Light" />
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:fadingEdge">none</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:configChanges">keyboardHidden|orientation</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <style name="tab_button">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">@drawable/menu_tab_name_selector</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/tab_bg</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">0.70000005dip</item>
+        <item name="android:layout_marginRight">0.70000005dip</item>
+        <item name="android:layout_marginBottom">3dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="slid_network_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dip</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">15.0dip</item>
+        <item name="android:background">@color/bg_grey_light</item>
+    </style>
+    
+    <style name="slid_network_title_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">8dip</item>
+        <item name="android:clickable">false</item>
+        <item name="android:textSize">17.0dip</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/slid_item_text</item>
+        <item name="android:maxWidth">190.0dip</item>
+    </style>
+    
+    <style name="title_button">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/header_bar_btn_selector</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:minWidth">55.0dip</item>
+    </style>
+    
+    <style name="bg_setting_item_narrow">
+        <item name="android:padding">10.0dip</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:background">@drawable/preference_one_item</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    
+    <style name="bg_setting_item_narrow_checkbox">
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingRight">3.0dip</item>
+        <item name="android:paddingTop">3.0dip</item>
+        <item name="android:paddingBottom">3.0dip</item>
+ 		<item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:background">@drawable/preference_one_item</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="bg_setting_item_line">
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingRight">3.0dip</item>
+        <item name="android:background">@drawable/preference_one_item</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="bg_setting_item_narrow_switch">
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingRight">3.0dip</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/preference_one_item</item>
+    </style>
+
+    <style name="menu_pop_item">
+        <item name="android:paddingTop">@dimen/pop_menu_item_padding</item>
+        <item name="android:paddingBottom">@dimen/pop_menu_item_padding</item>
+        <item name="android:layout_marginLeft">25dip</item>
+        <item name="android:layout_marginRight">25dip</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+    
+    <style name="popup_animation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_bottom_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_bottom_down</item>
+    </style>
+    
+    <style name="notification_text" parent="android:TextAppearance.StatusBar.EventContent" />
+    <!--  switch 控件标准样式  -->
+    <style name="mx_switch_custom_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+
+</resources>

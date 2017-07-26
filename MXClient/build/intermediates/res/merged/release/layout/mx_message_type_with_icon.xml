@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mx_bg_sns_group"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+<!-- 
+    <ImageView
+        android:id="@+id/message_type_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/message_type_with_icon_space"
+        android:src="@drawable/small_right_arrow" />
+ -->
+    <com.minxing.kit.ui.widget.MXVariableTextView
+        android:id="@+id/group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3.0dip"
+        android:layout_marginRight="3.0dip"
+        android:singleLine="true"
+        android:textColor="@color/mx_blue_light"
+        android:textSize="@dimen/mx_small_textsize" />
+
+</LinearLayout>

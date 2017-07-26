@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="mx_tab_net_switcher">
+        <item>Ours</item>
+        <item>Related</item>
+        <item>Mine</item>
+    </string-array>
+    <string-array name="mx_tab_person_switcher">
+        <item>Profile</item>
+        <item>@string/mx_work_circles</item>
+        <item>Files</item>
+    </string-array>
+    <string-array name="mx_tab_topic_switcher">
+        <item>@string/mx_work_circles</item>
+        <item>Files</item>
+    </string-array>
+    <string-array name="mx_group_switcher">
+        <item>@string/mx_group_all_circle</item>
+        <item>@string/mx_group_my_circle</item>
+    </string-array>
+    <string-array name="mx_tab_task_switcher">
+        <item>All</item>
+        <item>Finished</item>
+        <item>Unfinished</item>
+    </string-array>
+    
+    <string-array name="mx_conversation_message_type_key">
+        <item>file</item>
+        <item>image</item>
+        <item>video</item>
+        <item>voice_file</item>
+        <item>share_link</item>
+    </string-array>
+    
+    <string-array name="mx_conversation_message_type_value">
+        <item>[File]</item>
+        <item>[Photo]</item>
+        <item>[Video]</item>
+        <item>[Audio]</item>
+        <item>[Link]</item>
+    </string-array>
+    
+    <string-array name="mx_file_size_units">
+        <item>B</item>
+        <item>KB</item>
+        <item>MB</item>
+        <item>GB</item>
+        <item>TB</item>
+        <item>PB</item>
+    </string-array>
+    
+    <string-array name="mx_seekbar_font_size">
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+    </string-array>
+    
+     <string-array name="mx_seekbar_lable">
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Large</item>
+        <item>Extra Large</item>
+    </string-array>
+    
+     <string-array name="mx_font_size_web">
+        <item>80</item>
+        <item>100</item>
+        <item>120</item>
+        <item>140</item>
+    </string-array>
+   
+     <string-array name="mx_wheel_date_month">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+
+</resources>

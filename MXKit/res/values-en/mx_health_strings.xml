@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mx_health_date_format_y_m_d">yyyy&#047;MM&#047;dd</string>
+    <string name="mx_health_app_name">Running Man</string>
+    <string name="mx_health_app_rankings">Leaderboard</string>
+    <string name="mx_health_function_label">Introduction</string>
+    <string name="mx_health_function_content">View friends\' sports activities here.</string>
+    <string name="mx_health_come_in_health">Enter %s</string>
+    <string name="mx_health_come_in_main">Enter My Home Page</string>
+    <string name="mx_health_privacy_setting">Privacy and Notification Settings</string>
+    <string name="mx_health_setting_title">Detail</string>
+    <string name="mx_health_ranking_num">No. %d</string>
+    <string name="mx_health_first_text">%s occupied the front-page</string>
+    <string name="mx_health_no_praise">No likes by friends yet</string>
+    <string name="mx_health_praise_me_title">Those who praised me</string>
+    <string name="mx_health_join_ranking">Join Leaderboard</string>
+    <string name="mx_health_receive_ranking_msg">Receive leaderboard messages</string>
+    <string name="mx_health_receive_praise_msg">Receive like messages</string>
+    <string name="mx_conversation_ocumsg_getting">Loading...</string>
+    <string name="mx_health_before_hours">  &#160; hours ago</string>
+    <string name="mx_health_before_minutes">&#160; minutes ago</string>
+    <string name="mx_health_before_seconds">&#160; seconds ago</string>
+    <string name="mx_health_before_one_hour">one hour ago</string>
+    <string name="mx_health_before_one_minute">one minute ago</string>
+    <string name="mx_health_before_one_second">one second ago</string>
+</resources>

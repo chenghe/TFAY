@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@drawable/mx_btn_style_alert_dialog_background"
+    android:gravity="bottom">
+    
+    <LinearLayout 
+        android:id="@+id/menu_exit"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:layout_weight="1.0">
+    	
+        <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/mx_menu_exit"
+	        android:gravity="center"
+	        android:layout_gravity="center" />
+	
+	    <com.minxing.kit.ui.widget.MXVariableTextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="6.0dip"
+	        android:gravity="center"
+	        android:text="@string/mx_system_menu_quit"
+	        android:textColor="@color/mx_white"
+	        android:textSize="16.0dip" />
+    </LinearLayout>
+</LinearLayout>

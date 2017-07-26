@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mx_white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/system_title"
+        layout="@layout/mx_system_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <RelativeLayout
+            android:id="@+id/conversation_file_btn_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/mx_toast_file"/>
+
+            <View
+                android:id="@+id/conversation_file_bg"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/mx_title_bar_color"
+                />
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/vote_divider"
+            android:layout_width="1px"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/mx_divider_variable" />
+
+        <RelativeLayout
+            android:id="@+id/conversation_image_btn_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/mx_fileorimage_image"/>
+
+            <View
+                android:id="@+id/conversation_image_bg"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/mx_divider_variable"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mx_bg_grey_dark"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/mx_bg_edittext"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusable="false"
+                android:src="@drawable/mx_search_bar_icon_normal" />
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/mx_common_search"
+                android:textSize="14dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/conversation_file_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.minxing.kit.internal.common.view.XListView
+            android:id="@+id/conversation_file_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@color/mx_no_color"
+            android:divider="@drawable/mx_divider_horizontal"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:smoothScrollbar="true"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/noFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/mx_comm_nodata"
+             />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/conversation_image_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <GridView
+            android:id="@+id/conversation_imgae_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:cacheColorHint="#00000000"
+            android:listSelector="#00000000"
+            android:verticalSpacing="5dp"
+            android:numColumns="4"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/noImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/mx_comm_nodata"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

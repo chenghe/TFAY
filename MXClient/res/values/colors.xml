@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">@android:color/white</color>
+    <color name="half_alpha_black">#7f000000</color>
+    <color name="text_common_dark_grey">#707070</color>
+    <color name="text_common_lightblue">#f4cd31</color>
+    <color name="dark_gray">#707070</color>
+    <color name="bg_grey_light">#f7f7f7</color>
+    <color name="bg_grey_dark">#f5f5f5</color>
+    <color name="dark_blue">@android:color/transparent</color><!--tab title 按下时效果-->
+    <color name="black">@android:color/black</color>
+    <color name="bg_gesture_pwd_view">#f4cd31</color>
+    <color name="lightblue_3">#f4cd31</color>
+    <color name="status_bar_color">@color/black</color>
+    <color name="mx_header_bg_color">#f4cd31</color>
+    <color name="mx_dark_blue">@android:color/transparent</color><!--按下时效果-->
+    <color name="mx_common_divide_line">#cccccc</color>
+
+    <color name="trans">#00000000</color>
+    <color name="blue">#f4cd31</color>
+    <color name="dark_grey">#282828</color>
+    <color name="trans_dark_grey">#80282828</color>
+
+    <color name="mx_lightblue_3">@color/mx_header_bg_color</color>
+    <color name="mx_switch_label_selected">@color/mx_header_bg_color</color>
+    <color name="mx_contact_btn">@color/mx_header_bg_color</color>
+    <color name="mx_darkblue">@color/mx_header_bg_color</color>
+    <color name="mx_title_bar_color">@color/mx_header_bg_color</color>
+</resources>

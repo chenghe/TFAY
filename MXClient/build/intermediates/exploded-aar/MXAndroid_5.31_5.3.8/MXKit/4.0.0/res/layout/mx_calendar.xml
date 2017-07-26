@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+
+    <com.minxing.kit.ui.widget.MXVariableTextView
+        android:id="@+id/dialog_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/mx_dialog_title"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:textColor="@color/mx_white"
+        android:textSize="@dimen/mx_middle_textsize" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mx_dialog_bg"
+        android:orientation="vertical"
+        android:paddingTop="5dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" >
+
+            <com.minxing.kit.internal.common.view.cal.WheelView
+                android:id="@+id/year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.minxing.kit.internal.common.view.cal.WheelView
+                android:id="@+id/month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.minxing.kit.internal.common.view.cal.WheelView
+                android:id="@+id/day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.minxing.kit.internal.common.view.cal.WheelView
+                android:id="@+id/hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.minxing.kit.internal.common.view.cal.WheelView
+                android:id="@+id/minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="5dp"
+            android:weightSum="2" >
+
+            <com.minxing.kit.ui.widget.MXButton
+                android:id="@+id/ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/mx_comm_blue_button"
+                android:text="@string/mx_ok"
+                android:textColor="@color/mx_white"
+                android:textSize="@dimen/mx_middle_textsize" />
+
+            <com.minxing.kit.ui.widget.MXButton
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/mx_comm_blue_button"
+                android:text="@string/mx_cancel"
+                android:textColor="@color/mx_white"
+                android:textSize="@dimen/mx_middle_textsize" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

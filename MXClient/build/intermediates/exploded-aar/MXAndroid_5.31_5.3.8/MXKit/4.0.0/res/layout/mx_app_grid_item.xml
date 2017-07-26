@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <FrameLayout
+        android:layout_width="73.0dip"
+        android:layout_height="90.0dip" >
+
+        <LinearLayout
+            android:layout_width="73.0dip"
+            android:layout_height="90.0dip"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="56.0dip"
+                android:layout_height="56.0dip">
+
+                <ImageView
+                    android:id="@+id/app_grid_item_icon"
+                    android:layout_width="56.0dip"
+                    android:layout_height="56.0dip"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/mx_icon_panel_expression_normal" />
+
+                 <ImageView
+                    android:id="@+id/app_grid_item_icon_mask"
+                    android:layout_width="56.0dip"
+                    android:layout_height="56.0dip"
+                    android:focusable="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/mx_app_panel_shade" />
+            </RelativeLayout>
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/app_grid_item_name"
+                style="@style/mx_app_grid_item_name_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxWidth="78.0dip"
+                android:singleLine="true"
+                android:textColor="#ff888888" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

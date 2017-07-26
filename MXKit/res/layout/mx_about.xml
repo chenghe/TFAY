@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mx_bg_grey_dark" >
+
+    <!-- titlebar -->
+
+    <include
+        android:id="@+id/system_title"
+        layout="@layout/mx_system_title" />
+
+    <LinearLayout
+        android:id="@+id/info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/system_title"
+        android:layout_marginLeft="@dimen/mx_comm_container_marginboth"
+        android:layout_marginRight="@dimen/mx_comm_container_marginboth"
+        android:layout_marginTop="@dimen/mx_comm_container_margintop"
+        android:background="@drawable/mx_bg_edittext_selector"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/mx_about_info_padding" >
+	 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/mx_about_minxing_logo" />
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mx_about_minxing_logo_and_info_space"
+            android:lineSpacingExtra="@dimen/mx_info_desc_line_space"
+            android:text="@string/mx_minxing_info"
+            android:textColor="@color/mx_black"
+            android:textSize="@dimen/mx_middle_textsize" />
+    </LinearLayout>
+
+    <com.minxing.kit.ui.widget.MXButton
+        android:layout_width="@dimen/mx_visit_button_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/mx_visit_button_margintop"
+        android:background="@drawable/mx_comm_blue_button"
+        android:onClick="visit"
+        android:singleLine="true"
+        android:text="@string/mx_goto_minxing_website"
+        android:textColor="@color/mx_white" />
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mx_mail_address_bg">
+    <com.minxing.kit.ui.widget.MXVariableTextView
+        android:id="@+id/receiver_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user001@dehui220.com.cn"
+        android:textColor="@color/mx_black"
+        android:textSize="@dimen/mx_mail_list_item_sub_text_size" />
+</LinearLayout>

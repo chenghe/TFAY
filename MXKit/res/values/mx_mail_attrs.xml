@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="K9Styles">
+        <attr name="mx_iconFolder" format="reference" />
+        <attr name="mx_iconListItemMenu" format="reference" />
+        <attr name="mx_iconMenuInfoDetails" format="reference" />
+        <attr name="mx_iconActionAddAttachment" format="reference" />
+        <attr name="mx_iconActionAddCcBcc" format="reference" />
+        <attr name="mx_iconActionArchive" format="reference" />
+        <attr name="mx_iconActionCompose" format="reference" />
+        <attr name="mx_iconActionDelete" format="reference" />
+        <attr name="mx_iconActionMove" format="reference" />
+        <attr name="mx_iconActionCopy" format="reference" />
+        <attr name="mx_iconActionNextMessage" format="reference" />
+        <attr name="mx_iconActionPreviousMessage" format="reference" />
+        <attr name="mx_iconActionRefresh" format="reference" />
+        <attr name="mx_iconActionSearch" format="reference" />
+        <attr name="mx_iconActionSearchFolder" format="reference" />
+        <attr name="mx_iconActionSend" format="reference" />
+        <attr name="mx_iconActionSettings" format="reference" />
+        <attr name="mx_iconActionSingleMessageOptions" format="reference" />
+        <attr name="mx_iconActionSort" format="reference" />
+        <attr name="mx_iconActionSpam" format="reference" />
+        <attr name="mx_iconActionFlag" format="reference" />
+        <attr name="mx_iconActionUnflag" format="reference" />
+        <attr name="mx_iconActionMarkAsRead" format="reference" />
+        <attr name="mx_iconActionMarkAsUnread" format="reference" />
+        <attr name="mx_iconActionRemoteSearch" format="reference" />
+        <attr name="mx_iconActionAbout" format="reference" />
+        <attr name="mx_iconActionAdd" format="reference" />
+        <attr name="mx_iconActionImportExport" format="reference" />
+        <attr name="mx_iconActionUpload" format="reference" />
+        <attr name="mx_iconActionSelectAll" format="reference" />
+        <attr name="mx_iconActionSave" format="reference" />
+        <attr name="mx_iconActionCancel" format="reference" />
+        <attr name="mx_iconActionRequestReadReceipt" format="reference" />
+        <attr name="mx_iconActionExpand" format="reference" />
+        <attr name="mx_iconActionCollapse" format="reference" />
+        <attr name="mx_textColorPrimaryRecipientDropdown" format="reference" />
+        <attr name="mx_textColorSecondaryRecipientDropdown" format="reference" />
+        <attr name="mx_backgroundColorChooseAccountHeader" format="color" />
+        <attr name="mx_messageListSelectedBackgroundColor" format="reference|color"/>
+        <attr name="mx_messageListReadItemBackgroundColor" format="reference|color"/>
+        <attr name="mx_messageListUnreadItemBackgroundColor" format="reference|color"/>
+        <attr name="mx_messageListThreadCountForegroundColor" format="reference|color"/>
+        <attr name="mx_messageListThreadCountBackground" format="reference|color"/>
+        <attr name="mx_messageListActiveItemBackgroundColor" format="reference|color"/>
+        <attr name="mx_messageListDividerColor" format="reference|color"/>
+        <attr name="mx_messageListCheckbox" format="reference"/>
+        <attr name="mx_messageViewHeaderBackgroundColor" format="reference|color"/>
+        <attr name="mx_messageViewAttachmentBackground" format="reference"/>
+        <attr name="mx_messageComposeAddContactImage" format="reference"/>
+        <attr name="mx_composerBackgroundColor" format="color"/>
+        <attr name="mx_compatDividerVertical" format="reference"/>
+        <attr name="mx_compatSelectableItemBackground" format="reference"/>
+        <attr name="mx_contactPictureFallbackDefaultBackgroundColor" format="reference|color"/>
+    </declare-styleable>
+
+    <declare-styleable name="mx_SliderPreference">
+        <attr name="android:summary" />
+    </declare-styleable>
+    
+    <declare-styleable name="mx_FoldableLinearLayout">
+        <attr name="mx_foldedLabel" format="string" />
+        <attr name="mx_unFoldedLabel" format="string" />
+    </declare-styleable>
+    
+     <declare-styleable name="mx_PullToRefresh">
+
+        <!-- A drawable to use as the background of the Refreshable View -->
+        <attr name="mx_ptrRefreshableViewBackground" format="reference|color" />
+
+        <!-- A drawable to use as the background of the Header and Footer Loading Views -->
+        <attr name="mx_ptrHeaderBackground" format="reference|color" />
+
+        <!-- Text Color of the Header and Footer Loading Views -->
+        <attr name="mx_ptrHeaderTextColor" format="reference|color" />
+
+        <!-- Text Color of the Header and Footer Loading Views Sub Header -->
+        <attr name="mx_ptrHeaderSubTextColor" format="reference|color" />
+
+        <!-- Mode of Pull-to-Refresh that should be used -->
+        <attr name="mx_ptrMode">
+            <flag name="disabled" value="0x0" />
+            <flag name="pullFromStart" value="0x1" />
+            <flag name="pullFromEnd" value="0x2" />
+            <flag name="both" value="0x3" />
+            <flag name="manualOnly" value="0x4" />
+
+            <!-- These last two are depreacted -->
+            <flag name="pullDownFromTop" value="0x1" />
+            <flag name="pullUpFromBottom" value="0x2" />
+        </attr>
+
+        <!-- Whether the Indicator overlay(s) should be used -->
+        <attr name="mx_ptrShowIndicator" format="reference|boolean" />
+
+        <!-- Drawable to use as Loading Indicator. Changes both Header and Footer. -->
+        <attr name="mx_ptrDrawable" format="reference" />
+
+        <!-- Drawable to use as Loading Indicator in the Header View. Overrides value set in ptrDrawable. -->
+        <attr name="mx_ptrDrawableStart" format="reference" />
+
+        <!-- Drawable to use as Loading Indicator in the Footer View. Overrides value set in ptrDrawable. -->
+        <attr name="mx_ptrDrawableEnd" format="reference" />
+
+        <!-- Whether Android's built-in Over Scroll should be utilised for Pull-to-Refresh. -->
+        <attr name="mx_ptrOverScroll" format="reference|boolean" />
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views -->
+        <attr name="mx_ptrHeaderTextAppearance" format="reference" />
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views Sub Header -->
+        <attr name="mx_ptrSubHeaderTextAppearance" format="reference" />
+
+        <!-- Style of Animation should be used displayed when pulling. -->
+        <attr name="mx_ptrAnimationStyle">
+            <flag name="rotate" value="0x0" />
+            <flag name="flip" value="0x1" />
+        </attr>
+
+        <!-- Whether the user can scroll while the View is Refreshing -->
+        <attr name="mx_ptrScrollingWhileRefreshingEnabled" format="reference|boolean" />
+
+        <!--
+        	Whether PullToRefreshListView has it's extras enabled. This allows the user to be 
+        	able to scroll while refreshing, and behaves better. It acheives this by adding
+        	Header and/or Footer Views to the ListView.
+        -->
+        <attr name="mx_ptrListViewExtrasEnabled" format="reference|boolean" />
+
+        <!--
+        	Whether the Drawable should be continually rotated as you pull. This only
+        	takes effect when using the 'Rotate' Animation Style.
+        -->
+        <attr name="mx_ptrRotateDrawableWhilePulling" format="reference|boolean" />
+
+        <!-- BELOW HERE ARE DEPRECEATED. DO NOT USE. -->
+        <attr name="mx_ptrAdapterViewBackground" format="reference|color" />
+        <attr name="mx_ptrDrawableTop" format="reference" />
+        <attr name="mx_ptrDrawableBottom" format="reference" />
+    </declare-styleable>
+    
+     <declare-styleable name="mx_ColorPicker">
+       <attr name="mx_wheel_size" format="integer" />
+       <attr name="mx_pointer_size" format="integer" />
+   </declare-styleable>
+
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mx_common_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/system_title"
+        layout="@layout/mx_system_title" />
+
+    <RelativeLayout
+        android:id="@+id/font_size_setting_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_margin="10dip"
+        android:paddingTop="3dip"
+        android:paddingBottom="3dip"
+        android:paddingRight="3dip"
+        android:paddingLeft="10dip"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/mx_preference_one_item">
+        
+        <!--   <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingRight">3.0dip</item>
+        <item name="android:paddingTop">3.0dip</item>
+        <item name="android:paddingBottom">3.0dip</item>
+ 		<item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:background"></item>
+        <item name="android:orientation">horizontal</item> -->
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/font_size_setting_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="@string/mx_settings_font_size_setting_tittle"
+            android:textSize="@dimen/mx_middle_textsize"
+            android:textColor="@color/mx_black" />
+
+        <Spinner
+            android:id="@+id/font_size_setting_value"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\exploded-aar\MXAndroid\MXKit\4.0.0\jars\libs\joda-time-2.9.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="071eb9a3300d48d68ebb2caf443bd9d443bf0907">
+        <dex dex="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\transforms\dex\debug\folders\1000\8\joda-time-2.9.3_81d83029e946bb9cfd36e381110a67783a180a28\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4ff3e181d47464aaf0a866eea0bd1ac95f070806">
+        <dex dex="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_8daad4036c4a505bb4de64e771043c41a7aa1d07\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\exploded-aar\MXAndroid\MXKit\4.0.0\jars\libs\sqlcipher331.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9487fbab4f9269d57ff36b364029f124dc65a870">
+        <dex dex="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\transforms\dex\debug\folders\1000\8\sqlcipher331_624a873ee126ce2a6331c993af253efb3039a0ee\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\exploded-aar\MXAndroid\MXKit\4.0.0\jars\libs\org.eclipse.paho.client.mqttv3-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="5240d480e9811f196ffd687ae2c6b685e02e7f66">
+        <dex dex="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\transforms\dex\debug\folders\1000\8\org.eclipse.paho.client.mqttv3-1.0.2_7f6c053756aaa58d73ec3bb5815f18042bc45699\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\libs\umeng-analytics-v5.2.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="0f9eccf79ae6006e4346725b09114182dca0c023">
+        <dex dex="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\transforms\dex\debug\folders\1000\2\umeng-analytics-v5.2.4_969ccdb2a4eaecec980b7830992accf8710bdd4d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\exploded-aar\MXAndroid\MXKit\4.0.0\jars\libs\jzlib-1.0.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7b130115475380e7864a6637600bf3934a6b0c86">
+        <dex dex="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\transforms\dex\debug\folders\1000\8\jzlib-1.0.7_8b19f6648e83fa5841fc2aa53713cab60efe0fb0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\exploded-aar\MXAndroid\MXKit\4.0.0\jars\libs\htmlcleaner-2.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d0f0cb68e344a766b4569b3801c9532632047006">
+        <dex dex="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\transforms\dex\debug\folders\1000\8\htmlcleaner-2.2_b7fe4f5fbe8aeb46ecbfcb7fb95dcfbd3f7edfe4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\exploded-aar\MXAndroid\MXKit\4.0.0\jars\libs\mpandroidchartlibrary-2-2-4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="6442fe8201c2dda048d62b9991ec6bbb33ae8999">
+        <dex dex="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\transforms\dex\debug\folders\1000\8\mpandroidchartlibrary-2-2-4_c08140fd5a29f87fe2f94f84fe3dc919b964ca42\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\libs\universal-image-loader-1.9.3-with-sources.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="03e3948d42b8d78961a092a184af66bd86da42e6">
+        <dex dex="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\transforms\dex\debug\folders\1000\2\universal-image-loader-1.9.3-with-sources_3a2649f16163590a01e99907d6f6ff1d968fa7f0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\exploded-aar\MXAndroid\MXKit\4.0.0\jars\libs\slf4j-api-1.7.21.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7d46dcce9cc5c78669fb6492c2b2a1e86788946b">
+        <dex dex="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\transforms\dex\debug\folders\1000\8\slf4j-api-1.7.21_045bbeecbe03cfb81ca983fb2ca39db83f6567ed\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\exploded-aar\MXAndroid\MXKit\4.0.0\jars\libs\apache-mime4j-core-0.7.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a9cc2898c2a0f70e58a5640f99103e10c3ae019f">
+        <dex dex="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\transforms\dex\debug\folders\1000\8\apache-mime4j-core-0.7.2_d82058d2ebda408ebbde4ae90a6ae4ef74e059b4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\exploded-aar\MXAndroid\MXKit\4.0.0\jars\libs\mx_imageloader_1.9.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b22e00c96766aeccb3e5fc34f924543d6d6da3e0">
+        <dex dex="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\transforms\dex\debug\folders\1000\8\mx_imageloader_1.9.3_19fd9b070c117ee6f441c6aebf9e330c88cfe23c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\exploded-aar\MXAndroid\MXKit\4.0.0\jars\libs\fastjson-1.2.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="627a5d87d8434269d3f427b304f6d18866400a2c">
+        <dex dex="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\transforms\dex\debug\folders\1000\8\fastjson-1.2.7_c9833ad40721e429ca017d8cb22826bbc2f0d93e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-multidex-1.0.1_2620f8ec6bffe744c3537e548a320c21f354d4a8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\exploded-aar\MXAndroid\MXKit\4.0.0\jars\libs\mxkit-v5.3.7.042726.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a19ea9deef19d3ff0dfa618514de0ce73ea95d08">
+        <dex dex="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\transforms\dex\debug\folders\1000\8\mxkit-v5.3.7.042726_dfe09606012e4224ce567b196092037e2c492dac\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\exploded-aar\MXAndroid\MXKit\4.0.0\jars\libs\zxing-core-1.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b345756eb594f50761b1f9bbe237c9d7e3cc6525">
+        <dex dex="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\transforms\dex\debug\folders\1000\8\zxing-core-1.6_6c11adb03e803501d322ec91f85320d4a8aa0e79\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\exploded-aar\MXAndroid\MXKit\4.0.0\jars\libs\logback-android-1.1.1-5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7df593336b409f2e2cd016223f4c48c7af6c392a">
+        <dex dex="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\transforms\dex\debug\folders\1000\8\logback-android-1.1.1-5_ba20f49ba07f16b3e6875a7b964dee7577b1798b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\libs\AMap_Location_V2.6.0_20160628.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="efc1d37e992c7e1e092e6970730e8cbfe699167d">
+        <dex dex="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\transforms\dex\debug\folders\1000\2\AMap_Location_V2.6.0_20160628_9f77d89f0f06d4376dcae177c9d6fa0eec23beb0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\exploded-aar\MXAndroid\MXKit\4.0.0\jars\libs\httpmime-4.1.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="1d78fd95cfbd4d8fb6f8726347fa3bda24d162ee">
+        <dex dex="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\transforms\dex\debug\folders\1000\8\httpmime-4.1.3_1c627a8386e12a019cb77dd79069ee5018b535e4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\libs\android-support-v13.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="0c39cec0634e45ef67a1041708cf2d63b1a816b7">
+        <dex dex="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\transforms\dex\debug\folders\1000\2\android-support-v13_706e0b5c101b193b69a901126c1902afb5b8ce60\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\exploded-aar\MXAndroid\MXKit\4.0.0\jars\libs\commons-io-2.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="74b7b46175aa99713f86b41826b7c9d605c0c3d8">
+        <dex dex="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\transforms\dex\debug\folders\1000\8\commons-io-2.0.1_d43aa09dc7cafa84d02f8faec4f45fd93ec8ea77\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\exploded-aar\MXAndroid\MXKit\4.0.0\jars\libs\jutf7-1.0.1-SNAPSHOT.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="1cf6dee7193791523804fe2014c686a5945154fa">
+        <dex dex="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\transforms\dex\debug\folders\1000\8\jutf7-1.0.1-SNAPSHOT_27252e43a162c37afac2aaad3849dd217e82ff80\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\exploded-aar\MXAndroid\MXKit\4.0.0\jars\libs\apache-mime4j-dom-0.7.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7573655f8c501ff85699c61f8905d0759a7c1870">
+        <dex dex="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\transforms\dex\debug\folders\1000\8\apache-mime4j-dom-0.7.2_96515c44388e64a388eab76077a266ac27dce52f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\exploded-aar\MXAndroid\MXKit\4.0.0\jars\libs\mxgson-2.6.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="32affd6fa085e3fc892a63575d58473e50499bd4">
+        <dex dex="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\transforms\dex\debug\folders\1000\8\mxgson-2.6.1_b65d47c149fc7a09e142b66d9d612735fd365bb9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4d1434e1be4bff7e94dd5b41664fbf43fe3df351">
+        <dex dex="D:\downloads\MXClient_Demo_android_v5.3.7.04298[5.3.7.04]\MXAndroid\MXClient\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_1df68a6729665844f527206f53335562dd163350\classes.dex" />
+    </item>
+
+</items>

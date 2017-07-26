@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mx_dialog_bg_complete" >
+
+    <!-- 标题 -->
+
+    <com.minxing.kit.ui.widget.MXVariableTextView
+        android:id="@+id/dialog_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/mx_r_u_sure_join"
+        android:textColor="@color/mx_black"
+        android:textSize="@dimen/mx_circle_item_action_popup_tittle_text_size" />
+
+    <!-- 参加/不确定/不参加的radiogroup -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_title" >
+
+        <LinearLayout
+            android:id="@+id/radio_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dip"
+            android:layout_marginLeft="@dimen/mx_circle_item_action_popup_margin_left_right"
+            android:layout_marginRight="@dimen/mx_circle_item_action_popup_margin_left_right"
+            android:orientation="horizontal" >
+
+            <com.minxing.kit.ui.widget.MXButton
+                android:id="@+id/yes"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mx_circle_item_task_subitem_btn_height"
+                android:layout_marginRight="@dimen/mx_circle_item_action_popup_margin_right"
+                android:layout_weight="1"
+                android:background="@drawable/mx_blue_button_unselect"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:maxWidth="@dimen/mx_circle_item_task_subitem_btn_width"
+                android:text="@string/mx_circle_action_button_join"
+                android:textColor="@color/mx_white"
+                android:textSize="@dimen/mx_circle_item_button_text_size" />
+
+            <com.minxing.kit.ui.widget.MXButton
+                android:id="@+id/uncertainty"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mx_circle_item_task_subitem_btn_height"
+                android:layout_marginRight="@dimen/mx_circle_item_action_popup_margin_right"
+                android:layout_weight="1"
+                android:background="@drawable/mx_blue_button_unselect"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:maxWidth="@dimen/mx_circle_item_task_subitem_btn_width"
+                android:text="@string/mx_circle_action_button_uncertainty"
+                android:textColor="@color/mx_white"
+                android:textSize="@dimen/mx_circle_item_button_text_size" />
+
+            <com.minxing.kit.ui.widget.MXButton
+                android:id="@+id/no"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mx_circle_item_task_subitem_btn_height"
+                android:layout_weight="1"
+                android:background="@drawable/mx_blue_button_unselect"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:maxWidth="@dimen/mx_circle_item_task_subitem_btn_width"
+                android:text="@string/mx_circle_action_button_unjoin"
+                android:textColor="@color/mx_white"
+                android:textSize="@dimen/mx_circle_item_button_text_size" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/radio_option_divider"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/radio_option"
+            android:background="@drawable/mx_divider_variable" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio_option_divider"
+            android:orientation="vertical" >
+
+            <!-- 参加 -->
+
+            <include
+                android:id="@+id/gallery_join_member"
+                layout="@layout/mx_action_member_item" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/mx_divider_variable" />
+            <!-- 不确定 -->
+
+            <include
+                android:id="@+id/gallery_uncertainty_member"
+                layout="@layout/mx_action_member_item" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/mx_divider_variable" />
+            <!-- 不参加 -->
+
+            <include
+                android:id="@+id/gallery_unjoin_member"
+                layout="@layout/mx_action_member_item" />
+
+            <ImageView
+                android:id="@+id/member_status_list_divider"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="17dip"
+                android:background="@drawable/mx_divider_variable" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

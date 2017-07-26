@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/btn_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="12dip"
+        android:background="@drawable/mx_bg_menu_normal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/btn_shareto_conversation"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/mx_popup_menu_item_selector"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/mx_menu_pop_item"
+                android:layout_width="wrap_content"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/mx_icon_share_to_chat" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/mx_readerapp_alert_share_to_conversation"
+                    android:textColor="@color/mx_white"
+                    android:textSize="18.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/mx_bg_menu_segment1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mx_pop_menu_margin"
+            android:layout_marginRight="@dimen/mx_pop_menu_margin"
+            android:background="@drawable/mx_bg_menu_segment" />
+
+        <LinearLayout
+            android:id="@+id/btn_shareto_circle"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/mx_popup_menu_item_selector"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/mx_menu_pop_item"
+                android:layout_width="wrap_content"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/mx_icon_share_to_sns" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/mx_readerapp_alert_share_to_timeline"
+                    android:textColor="@color/mx_white"
+                    android:textSize="18.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/mx_bg_menu_segment2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mx_pop_menu_margin"
+            android:layout_marginRight="@dimen/mx_pop_menu_margin"
+            android:background="@drawable/mx_bg_menu_segment" />
+
+        <LinearLayout
+            android:id="@+id/btn_collection"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/mx_popup_menu_item_selector"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/mx_menu_pop_item"
+                android:layout_width="wrap_content"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/mx_icon_collection" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/mx_readerapp_alert_collection"
+                    android:textColor="@color/mx_white"
+                    android:textSize="18.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/mx_bg_menu_segment3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mx_pop_menu_margin"
+            android:layout_marginRight="@dimen/mx_pop_menu_margin"
+            android:background="@drawable/mx_bg_menu_segment" />
+
+        <LinearLayout
+            android:id="@+id/btn_copy_link"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/mx_popup_menu_item_selector"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/mx_menu_pop_item"
+                android:layout_width="wrap_content"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/mx_icon_copy_link" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/mx_readerapp_alert_copy_link"
+                    android:textColor="@color/mx_white"
+                    android:textSize="18.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/mx_bg_menu_segment4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mx_pop_menu_margin"
+            android:layout_marginRight="@dimen/mx_pop_menu_margin"
+            android:background="@drawable/mx_bg_menu_segment" />
+
+        <LinearLayout
+            android:id="@+id/btn_open_browser"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/mx_popup_menu_item_selector"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/mx_menu_pop_item"
+                android:layout_width="wrap_content"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/mx_icon_open_browser" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/mx_readerapp_alert_open_browser"
+                    android:textColor="@color/mx_white"
+                    android:textSize="18.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/mx_bg_menu_segment5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mx_pop_menu_margin"
+            android:layout_marginRight="@dimen/mx_pop_menu_margin"
+            android:background="@drawable/mx_bg_menu_segment" />
+
+        <LinearLayout
+            android:id="@+id/btn_browser_font_size"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/mx_popup_menu_item_selector"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/mx_menu_pop_item"
+                android:layout_width="wrap_content"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/mx_icon_font_style" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/mx_readerapp_alert_browser_font_size"
+                    android:textColor="@color/mx_white"
+                    android:textSize="18.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

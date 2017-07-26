@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/handle"
+    style="@style/title_button"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:gravity="left"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_community_list" />
+
+        <TextView
+            android:id="@+id/sms_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:background="@drawable/icon_red_pot_big"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/new_red_btn_text_size"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/work_circle_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:background="@drawable/icon_red_pot_small"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/current_network"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_textsize" />
+    </LinearLayout>
+
+</LinearLayout>

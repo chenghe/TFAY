@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        tools:ignore="UselessParent" >
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/stat_sys_download_done" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:layout_marginLeft="7dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/filename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/mx_blue_gray"
+            android:textSize="@dimen/mx_middle_textsize" />
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/filesize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mx_dark_gray"
+            	android:singleLine="true"
+           	 	android:ellipsize="end"
+            	android:textSize="@dimen/mx_small_textsize" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:focusable="false"
+            android:scaleType="centerCrop"
+            android:background="@drawable/mx_icon_checkbox_normal"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

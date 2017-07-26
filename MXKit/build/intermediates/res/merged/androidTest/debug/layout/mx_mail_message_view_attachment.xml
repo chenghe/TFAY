@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.minxing.kit.mail.k9.view.AttachmentView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="4dip">
+    <LinearLayout
+        android:id="@+id/attachment_wrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4dip">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/mx_messageViewAttachmentBackground"
+            android:gravity="center_vertical">
+            <ImageView
+                android:id="@+id/attachment_icon"
+                android:layout_width="62dip"
+                android:layout_height="62dip"
+                android:src="@drawable/mx_file_attach_90x90"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="4dip"
+                android:layout_marginBottom="4dip"
+                android:layout_marginTop="4dip" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/attachment_icon" 
+                android:layout_marginRight="100dip"
+                android:orientation="vertical">
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/attachment_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="middle"
+                    android:singleLine="true"
+                    android:textSize="16dip"/>
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/attachment_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:layout_alignLeft="@id/attachment_size"
+                    android:layout_alignWithParentIfMissing="true"
+                    android:layout_below="@id/attachment_size"
+                    android:ellipsize="middle"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="?android:attr/textColorTertiary" />
+            </LinearLayout>
+           
+            <com.minxing.kit.ui.widget.MXButton
+                android:id="@+id/download"
+                android:layout_width="wrap_content"
+                android:layout_height="25.0dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:background="@drawable/mx_comm_blue_button"
+                android:text="@string/mx_mail_message_view_attachment_down"
+                android:singleLine="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="6dip"
+                android:layout_marginRight="5dip"
+                android:textSize="12dip"
+                android:textColor="@color/mx_white" />
+            <com.minxing.kit.ui.widget.MXButton
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/buttonStyleSmall"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:text="@string/mx_mail_message_view_attachment_view_action"
+                android:singleLine="true"
+                android:layout_toLeftOf="@id/download"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_below="@id/attachment_size"
+                android:layout_marginTop="6dip"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.minxing.kit.mail.k9.view.AttachmentView>

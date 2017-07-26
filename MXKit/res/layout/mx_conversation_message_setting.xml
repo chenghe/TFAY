@@ -1,0 +1,413 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mx_bg_grey_dark">
+
+    <include
+        android:id="@+id/system_title"
+        layout="@layout/mx_system_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/system_title">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.minxing.kit.internal.common.view.ConversationSettingGridView
+                android:id="@+id/mx_gridview"
+                style="@style/mx_bg_setting_item_is_divide"
+                android:gravity="center"
+                android:listSelector="@drawable/mx_mm_trans"
+                android:numColumns="4"
+                android:stretchMode="columnWidth" />
+
+            <LinearLayout
+                android:id="@+id/mx_view_conversation_setting_one"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/mx_segmentation_line_little"
+                android:background="@color/mx_white"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/mx_segmentation_line_little"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:background="@color/mx_segmentation_line_color" />
+
+                <!-- //全体群成员 -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/conversatin_alluser_layout"
+                style="@style/mx_bg_setting_item_is_divide">
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/conversatin_alluser_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="全部群成员(%d)"
+                    android:textColor="@color/mx_black" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:drawablePadding="10dip"
+                    android:drawableRight="@drawable/mx_mm_submenu"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:textColor="@color/mx_darkgrey" />
+            </LinearLayout>
+
+            <!-- //群聊名称 -->
+            <LinearLayout
+                android:id="@+id/conversatin_name_change_layout"
+                style="@style/mx_bg_setting_item_is_divide"
+                android:layout_marginTop="10.0dip"
+                android:visibility="gone">
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/mx_label_group_chat_name"
+                    android:textColor="@color/mx_black" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/conversatin_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:drawablePadding="10dip"
+                    android:drawableRight="@drawable/mx_mm_submenu"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:textColor="@color/mx_darkgrey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mx_view_conversation_setting_two"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/mx_segmentation_line_little"
+                android:background="@color/mx_white"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/mx_segmentation_line_little"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:background="@color/mx_segmentation_line_color" />
+            </LinearLayout>
+
+            <!-- //群聊二维码 -->
+            <LinearLayout
+                android:id="@+id/conversatin_qrcode_layout"
+                style="@style/mx_bg_setting_item_is_divide"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/mx_label_group_chat_qr"
+                    android:textColor="@color/mx_black" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:drawablePadding="10dip"
+                    android:drawableRight="@drawable/mx_icon_conversation_qr"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:textColor="@color/mx_darkgrey" />
+            </LinearLayout>
+
+            <!--群公告-->
+
+            <LinearLayout
+                android:id="@+id/mx_line_file_image_bellow"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/mx_segmentation_line_little"
+                android:background="@color/mx_white">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/mx_segmentation_line_little"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:background="@color/mx_segmentation_line_color" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_mx_conversation_messagae_setting_announce"
+                style="@style/mx_bg_setting_item_is_divide"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/ll_mx_group_settings_announce_none"
+                    android:orientation="vertical">
+
+                    <com.minxing.kit.ui.widget.MXVariableTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="@string/mx_label_group_announce"
+                        android:textColor="@color/mx_black" />
+
+                    <com.minxing.kit.ui.widget.MXVariableTextView
+                        android:id="@+id/ll_mx_group_settings_announce_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:drawablePadding="10dip"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:singleLine="false"
+                        android:text=""
+                        android:textColor="@color/mx_black" />
+
+                </LinearLayout>
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@id/ll_mx_group_settings_announce_none"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:drawablePadding="10dip"
+                    android:drawableRight="@drawable/mx_mm_submenu"
+                    android:gravity="right"
+                    android:singleLine="false"
+                    android:textColor="@color/mx_darkgrey" />
+
+            </RelativeLayout>
+
+            <!-- //特别关注成员 -->
+            <LinearLayout
+                android:id="@+id/conversating_vip_setting_layout"
+                style="@style/mx_bg_setting_item_is_divide"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:visibility="gone">
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/mx_message_setting_vip"
+                    android:textColor="@color/mx_black" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/conversatin_vip_setting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:drawablePadding="10dip"
+                    android:drawableRight="@drawable/mx_mm_submenu"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:textColor="@color/mx_darkgrey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/conversatin_file_image_layout"
+                style="@style/mx_bg_setting_item_is_divide"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:visibility="gone">
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/mx_conversation_file_image_title"
+                    android:textColor="@color/mx_black" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/conversatin_file_image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:drawablePadding="10dip"
+                    android:drawableRight="@drawable/mx_mm_submenu"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:textColor="@color/mx_darkgrey" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/conversatin_top_layout"
+                style="@style/mx_bg_setting_item_checkbox_conversation_setting_no_border"
+                android:layout_below="@id/conversatin_file_image_layout"
+                android:background="@color/mx_white"
+                android:layout_marginTop="20dp"
+                android:visibility="gone">
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:text="@string/mx_message_setting_change_top"
+                    android:textColor="@color/mx_black" />
+
+                <Switch
+                    android:id="@+id/conversatin_top_check"
+                    style="@style/mx_switch_custom_style"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/mx_segmentation_line_little"
+                android:background="@color/mx_white">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/mx_segmentation_line_little"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:background="@color/mx_segmentation_line_color" />
+            </LinearLayout>
+
+            <!-- //新消息通知 -->
+            <LinearLayout
+                android:id="@+id/conversatin_notify_layout"
+                style="@style/mx_bg_setting_item_checkbox_conversation_setting_no_border"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/mx_white"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dip"
+                    android:orientation="horizontal">
+
+                    <com.minxing.kit.ui.widget.MXVariableTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.0"
+                        android:text="@string/mx_label_new_message_alert"
+                        android:textColor="@color/mx_black" />
+
+                    <Switch
+                        android:id="@+id/conversatin_notify_check"
+                        style="@style/mx_switch_custom_style"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mx_line__new_message_notice_bellow"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/mx_segmentation_line_little"
+                android:background="@color/mx_white">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/mx_segmentation_line_little"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:background="@color/mx_segmentation_line_color" />
+            </LinearLayout>
+
+
+            <!-- 保存到通讯录 -->
+            <LinearLayout
+                android:id="@+id/conversatin_add_contact_layout"
+                style="@style/mx_bg_setting_item_checkbox_conversation_setting_no_border"
+                android:background="@color/mx_white"
+                android:layout_below="@id/conversatin_notify_layout"
+                android:visibility="gone">
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:text="@string/mx_label_save_to_contacts"
+                    android:textColor="@color/mx_black" />
+
+                <Switch
+                    android:id="@+id/conversatin_add_contact_check"
+                    style="@style/mx_switch_custom_style"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/exit_btn_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/conversatin_add_contact_layout"
+                android:orientation="vertical"
+                android:padding="10.0dip"
+                android:visibility="gone">
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/exit_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45.0dip"
+                    android:background="@drawable/mx_btn_style_alert_dialog_special"
+                    android:gravity="center"
+                    android:text="@string/mx_label_delete_and_logout"
+                    android:textColor="@color/mx_white"
+                    android:textSize="18.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/enter_group_conversation_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/exit_btn_layout"
+                android:orientation="vertical"
+                android:padding="10.0dip"
+                android:visibility="gone">
+
+                <com.minxing.kit.ui.widget.MXButton
+                    android:id="@+id/enter_group_conversation"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/mx_common_btn_height"
+                    android:background="@drawable/mx_comm_blue_button"
+                    android:text="@string/mx_message_setting_enter"
+                    android:textColor="@color/mx_white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

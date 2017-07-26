@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/system_title"
+        layout="@layout/mx_system_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="25dp"
+                android:text="Debug-Gap调试"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#ffff"
+                >
+
+                <LinearLayout
+                    style="@style/mx_bg_setting_item_no_margin_horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <com.minxing.kit.ui.widget.MXVariableTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/mx_middle_textsize"
+                        android:text="@string/mx_open_develop_debug_gap" />
+                    <Switch
+                        android:id="@+id/mx_open_debug_gap"
+                        style="@style/mx_switch_custom_style"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mx_web_update_address_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone">
+
+                    <com.minxing.kit.ui.widget.MXVariableEditText
+                        android:id="@+id/mx_web_address"
+                        style="@style/mx_bg_setting_item_no_margin_horizontal"
+                        android:hint="@string/mx_web_address_ex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <com.minxing.kit.ui.widget.MXButton
+                        android:id="@+id/debug_btn_save"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/mx_about_info_padding"
+                        android:background="@drawable/mx_comm_blue_button"
+                        android:text="@string/mx_save"
+                        android:textColor="@color/mx_white" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="25dp"
+                android:text="Chrome-Remote-Debug调试"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#ffff"
+                >
+
+                <LinearLayout
+                    style="@style/mx_bg_setting_item_no_margin_horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <com.minxing.kit.ui.widget.MXVariableTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/mx_middle_textsize"
+                        android:text="@string/mx_open_develop_chrome_remote_debug" />
+                    <Switch
+                        android:id="@+id/mx_open_chrome_remote_debug"
+                        style="@style/mx_switch_custom_style"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="25dp"
+                android:text="CrossDomain"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#ffff"
+                >
+
+                <LinearLayout
+                    style="@style/mx_bg_setting_item_no_margin_horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <com.minxing.kit.ui.widget.MXVariableTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/mx_middle_textsize"
+                        android:text="@string/mx_open_develop_chrome_remote_debug" />
+                    <Switch
+                        android:id="@+id/mx_open_cross_domain"
+                        style="@style/mx_switch_custom_style"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

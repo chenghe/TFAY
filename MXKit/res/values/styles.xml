@@ -1,0 +1,671 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="mx_app_base_theme" parent="android:Theme.Light">
+    </style>
+    <style name="mx_app_theme" parent="mx_app_base_theme">
+        <item name="android:fadingEdge">none</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:configChanges">keyboardHidden|orientation</item>
+        <item name="android:actionDropDownStyle">@style/mx_listview_style</item>
+        <item name="android:dropDownListViewStyle">@style/mx_listview_style</item>
+        
+    </style>
+    <style name="mx_listview_style" parent="@android:style/Widget.ListView">
+        <item name="android:fadingEdge">none</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0px</item>
+    </style>
+
+    <style name="mx_suggest_style" parent="@android:style/Widget.ListView.DropDown">
+        <item name="android:cacheColorHint">@color/mx_no_color</item>
+        <item name="android:divider">@null</item>
+        <item name="android:scrollingCache">false</item>
+        <item name="android:fadingEdge">none</item>
+    </style>
+
+    <!-- 对话框的样式 -->
+    <style name="mx_common_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:popupBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- 自定义SlidingDrawer的方向 -->
+    <attr name="mx_direction">
+        <enum name="rightToLeft" value="0" />
+        <enum name="bottomToTop" value="1" />
+        <enum name="leftToRight" value="2" />
+        <enum name="topToBottom" value="3" />
+    </attr>
+    <!-- 自定义SlidingDrawer的属性 -->
+    <declare-styleable name="mx_multi_direction_sliding_drawer">
+        <attr name="handle" format="reference" />
+        <attr name="content" format="reference" />
+        <attr name="mx_direction" />
+        <attr name="bottomOffset" format="dimension" />
+        <attr name="topOffset" format="dimension" />
+        <attr name="allowSingleTap" format="boolean" />
+        <attr name="animateOnClick" format="boolean" />
+    </declare-styleable>
+    <!-- 活动确认弹出框中的checkbox样式 -->
+    <style name="mx_choose_radio_style">
+        <item name="android:textSize">@dimen/mx_circle_item_button_text_size</item>
+        <item name="android:textColor">@color/mx_white</item>
+        <item name="android:button">@drawable/mx_comm_blue_button</item>
+        <!-- <item name="android:gravity">center</item> -->
+        <!-- <item name="android:drawableLeft">@drawable/choose_leftdrawable</item> -->
+        <!-- <item name="android:drawablePadding">@dimen/choose_leftdrawable_padding</item> -->
+
+    </style>
+
+    <style name="mx_mm_footer">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50.0dip</item>
+    </style>
+
+    <style name="mx_mm_button">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">30.0dip</item>
+        <item name="android:minHeight">30.0dip</item>
+        <item name="android:layout_margin">3.0dip</item>
+    </style>
+    <style name="mx_smile_button">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">27.0dip</item>
+        <item name="android:minHeight">27.0dip</item>
+        <item name="android:layout_margin">3.0dip</item>
+    </style>
+
+    <style name="mx_mm_edit_text">
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/mx_middle_textsize</item>
+        <item name="android:textColorHint">@color/mx_lightgrey</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:background">@drawable/mx_bg_edittext_selector</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">25.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
+    </style>
+
+    <style name="mx_like_toast_dialog_style">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/mx_transparent</item>
+    </style>
+
+    <style name="mx_chatting_ui_split">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">@color/mx_text_common_dark_grey</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/mx_bg_time</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">15.0dip</item>
+    </style>
+
+    <style name="mx_chatting_ui_split_visable">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">@color/mx_text_common_dark_grey</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@color/mx_bg_grey_dark</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">15.0dip</item>
+    </style>
+    
+    <style name="mx_chatting_ui_content">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">15.0dip</item>
+        <item name="android:paddingLeft">6.0dip</item>
+        <item name="android:paddingRight">6.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="mx_chatting_app_ui_content">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">6.0dip</item>
+        <item name="android:paddingRight">6.0dip</item>
+        <item name="android:paddingBottom">24.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="mx_chatting_ui_avatar_from">
+        <item name="android:layout_width">48.0dip</item>
+        <item name="android:layout_height">48.0dip</item>
+        <item name="android:layout_marginRight">3.0dip</item>
+    </style>
+
+    <style name="mx_chatting_ui_sender_text">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#808080</item>
+        <item name="android:layout_marginRight">3.0dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+        <item name="android:maxWidth">240.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="mx_chatting_ui_text">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxWidth">240.0dip</item>
+        <item name="android:minHeight">15.0dip</item>
+        <item name="android:lineSpacingExtra">2.0dip</item>
+    </style>
+
+    <style name="mx_chatting_ui_avatar_to">
+        <item name="android:layout_width">48.0dip</item>
+        <item name="android:layout_height">48.0dip</item>
+        <item name="android:layout_marginLeft">3.0dip</item>
+    </style>
+
+    <style name="mx_chatting_ui_system">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">@color/mx_text_common_dark_grey</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="mx_chatting_ui_voice_length">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/mx_lightgrey</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">3.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="mx_chatting_item_source_text_view">
+        <item name="android:textSize">11.0dip</item>
+        <item name="android:textColor">@color/mx_white</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">3.0dip</item>
+    </style>
+
+    <style name="mx_mm_footer_menu_button">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/mx_text_common_dark_grey</item>
+    </style>
+
+    <style name="mx_chatting_ui_word_count">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="mx_mm_line_edit_text" parent="@style/mx_mm_edit_text">
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <style name="mx_edit_group_name_text" parent="@style/mx_mm_edit_text">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:paddingTop">15.0dip</item>
+        <item name="android:paddingBottom">15.0dip</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+    </style>
+    
+    <style name="mx_mm_line_label" parent="@style/mx_mm_label">
+        <item name="android:gravity">left</item>
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:paddingRight">5.0dip</item>
+    </style>
+
+    <style name="mx_mm_label" parent="@style/mx_mm_brief_text">
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="mx_mm_body">
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">18.0dip</item>
+        <item name="android:paddingTop">26.0dip</item>
+        <item name="android:paddingRight">18.0dip</item>
+        <item name="android:paddingBottom">18.0dip</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="mx_nav_page">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/mx_bg_grey_dark</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="mx_mm_brief_text">
+        <item name="android:textSize">@dimen/mx_middle_textsize</item>
+        <item name="android:textColor">#ff707070</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingExtra">2.0dip</item>
+    </style>
+
+    <style name="mx_mm_tab_button">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">@drawable/mx_menu_tab_name_selector</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/mx_tab_bg</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">0.70000005dip</item>
+        <item name="android:layout_marginRight">0.70000005dip</item>
+        <item name="android:layout_marginBottom">3dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="mx_mm_title_button">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/mx_header_bar_btn_selector</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:minWidth">55.0dip</item>
+    </style>
+
+    <style name="mx_app_grid_item_name_font">
+        <item name="android:textSize">12.0dip</item>
+    </style>
+
+    <style name="mx_mm_list_catalog">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">@color/mx_text_common_dark_grey</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/mx_bg_grey_dark</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">30dip</item>
+    </style>
+
+    <style name="mx_mm_list_item">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">4.0dip</item>
+        <item name="android:paddingTop">4.0dip</item>
+        <item name="android:paddingRight">4.0dip</item>
+        <item name="android:paddingBottom">4.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">60.0dip</item>
+        <item name="android:minHeight">60.0dip</item>
+    </style>
+    
+    <style name="mx_mm_font_title_in_list">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">@color/mx_mm_list_textcolor_one</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+    <style name="mx_mm_font_title_in_list_fix_text">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+    <style name="mx_mm_font_tip_in_list">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">@color/mx_mm_list_textcolor_two</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="mx_room_info_item_avatar">
+        <item name="android:layout_width">65.0dip</item>
+        <item name="android:layout_height">65.0dip</item>
+    </style>
+
+    <style name="mx_room_info_list_item">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">25.0dip</item>
+        <item name="android:paddingTop">3.0dip</item>
+        <item name="android:paddingRight">25.0dip</item>
+        <item name="android:paddingBottom">3.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="mx_mm_line_button" parent="@style/mx_mm_button">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">@color/mx_mm_style_two_btn_text</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="mx_mm_preference_text_small">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">@color/mx_mm_pref_summary</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="mx_mm_font_preference_small">
+        <item name="android:textAppearance">@style/mx_mm_preference_text_small</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="mx_mm_font_preference_large">
+        <item name="android:textAppearance">@style/mx_mm_preference_text_large</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="mx_mm_preference_text_large">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">@color/mx_mm_pref_title</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="mx_popup_animation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/mx_slide_bottom_up</item>
+        <item name="android:windowExitAnimation">@anim/mx_slide_bottom_down</item>
+    </style>
+
+    <style name="mx_notification_text" parent="android:TextAppearance.StatusBar.EventContent"></style>
+
+    <style name="mx_compose_addr_view_input">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/mx_black</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">34dip</item>
+        <item name="android:minWidth">20dip</item>
+        <item name="android:minHeight">34.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:selectAllOnFocus">true</item>
+        <item name="android:completionThreshold">1</item>
+        <item name="android:dropDownWidth">fill_parent</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:dropDownHeight">wrap_content</item>
+    </style>
+    <style name="mx_compose_addr_view_wrap">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/mx_bg_edittext</item>
+        <item name="android:paddingLeft">0dip</item>
+        <item name="android:paddingTop">0dip</item>
+        <item name="android:paddingRight">0dip</item>
+        <item name="android:paddingBottom">0dip</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">16dip</item>
+    </style>
+    
+    <style name="mx_compose_addr_view_btn">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/mx_c_black_to_white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/mx_s_compose_addr_btn_to</item>
+        <item name="android:paddingLeft">14.0dip</item>
+        <item name="android:paddingRight">19.0dip</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">34.0dip</item>
+        <item name="android:layout_marginTop">0.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:maxWidth">200.0dip</item>
+        <item name="android:minWidth">0.0dip</item>
+        <item name="android:minHeight">34.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="mx_slid_network_tittle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dip</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">15.0dip</item>
+        <item name="android:background">@color/mx_bg_grey_light</item>
+    </style>
+    <style name="mx_slid_network_tittle_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">8dip</item>
+        <item name="android:clickable">false</item>
+        <item name="android:textSize">17.0dip</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/mx_slid_item_text</item>
+        <item name="android:maxWidth">200.0dip</item>
+    </style>
+    
+    <style name="mx_slid_network_subitem">
+         <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dip</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">15.0dip</item>
+        <item name="android:textSize">17.0dip</item>
+        <item name="android:background">@color/mx_slid_background_light</item>
+    </style>
+    
+    <style name="mx_menu_pop_item">
+        <item name="android:paddingTop">@dimen/mx_pop_menu_item_padding</item>
+        <item name="android:paddingBottom">@dimen/mx_pop_menu_item_padding</item>
+        <item name="android:layout_marginLeft">25dip</item>
+        <item name="android:layout_marginRight">25dip</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+    
+    <style name="mx_bg_setting_item">
+        <item name="android:padding">10.0dip</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+        <item name="android:background">@drawable/mx_preference_one_item</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    
+    <style name="mx_bg_setting_item_is_divide">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+        <item name="android:paddingLeft">20.0dip</item>
+        <item name="android:paddingRight">20.0dip</item>
+        <item name="android:minHeight">50.0dip</item>
+        <item name="android:background">@drawable/mx_preference_one_item</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    
+    <style name="mx_bg_setting_item_checkbox">
+        <item name="android:padding">10.0dip</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:background">@drawable/mx_preference_one_item</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    
+    <style name="mx_bg_setting_item_no_margin_horizontal">
+        <item name="android:padding">10.0dip</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+        <item name="android:background">@drawable/mx_preference_one_item</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    
+    <style name="mx_bg_setting_item_narrow">
+        <item name="android:padding">10.0dip</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+        <item name="android:background">@drawable/mx_preference_one_item</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    
+    <style name="mx_bg_setting_item_narrow_checkbox">
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingRight">3.0dip</item>
+        <item name="android:paddingTop">3.0dip</item>
+        <item name="android:paddingBottom">3.0dip</item>
+ 		<item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:background">@drawable/mx_preference_one_item</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    
+    <style name="mx_bg_setting_item_checkbox_conversation_setting">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dip</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingRight">3.0dip</item>
+        <item name="android:paddingTop">1dip</item>
+        <item name="android:paddingBottom">1dip</item>
+ 		<item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+        <item name="android:background">@drawable/mx_preference_one_item</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    
+    <style name="mx_bg_setting_item_checkbox_conversation_setting_no_border">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">20.0dip</item>
+        <item name="android:paddingRight">13.0dip</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+        <item name="android:minHeight">@dimen/mx_layout_hight_size</item>
+        <item name="android:background">@drawable/mx_preference_one_item</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    
+     <style name="mx_bg_setting_item_narrow_no_margin_horizontal">
+        <item name="android:padding">10.0dip</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:background">@drawable/mx_preference_one_item</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    
+     <style name="mx_bg_setting_item_closed_no_margin_horizontal">
+        <item name="android:padding">10.0dip</item>
+        <item name="android:layout_marginTop">2.0dip</item>
+        <item name="android:background">@drawable/mx_preference_one_item</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    
+    <style name="mx_bg_edit_text">
+        <item name="android:padding">10.0dip</item>
+        <item name="android:background">@drawable/mx_bg_edittext_selector</item>
+    </style>
+    
+    <style name="mx_title_button">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/mx_header_bar_btn_selector</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:minWidth">55.0dip</item>
+    </style>
+    
+    <style name="mx_FontStyle"></style>
+
+    <style name="mx_FontStyle.Small" parent="mx_FontStyle">
+        <item name="mx_font_small">14sp</item>
+        <item name="mx_font_medium">16sp</item>
+        <item name="mx_font_large">18sp</item>
+        <item name="mx_font_xlarge">20sp</item>
+    </style>
+
+    <style name="mx_FontStyle.Medium" parent="mx_FontStyle">
+        <item name="mx_font_small">24sp</item>
+        <item name="mx_font_medium">20sp</item>
+        <item name="mx_font_large">22sp</item>
+        <item name="mx_font_xlarge">24sp</item>
+    </style>
+
+    <style name="mx_FontStyle.Large" parent="mx_FontStyle">
+        <item name="mx_font_small">34sp</item>
+        <item name="mx_font_medium">28sp</item>
+        <item name="mx_font_large">30sp</item>
+        <item name="mx_font_xlarge">32sp</item>
+    </style>
+
+      <!--  switch 控件标准样式  -->
+    <style name="mx_switch_custom_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textOn"></item>
+        <item name="android:textOff"></item>
+        <item name="android:thumbTextPadding">18dip</item>
+        <item name="android:switchMinWidth">36dip</item>
+        <item name="android:track">@drawable/mx_switch_track</item>
+
+        <item name="android:thumb">@drawable/mx_switch_thumb_normal</item>
+    </style>
+
+    <style name="activity_bg_translucent">
+        <item name="android:windowBackground">@color/mx_activity_bg_translucent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+    
+    <style name="mx_chat_message_unread_devider">
+        <item name="android:layout_marginLeft">40dip</item>
+        <item name="android:layout_marginRight">40dip</item>
+        <item name="android:background">@drawable/mx_message_devider</item>
+    </style>
+   
+</resources>

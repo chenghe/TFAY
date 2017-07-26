@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mx_white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/system_title"
+        layout="@layout/mx_system_title" />
+
+    <com.minxing.kit.internal.common.view.AddressInfoScroolView
+        android:id="@+id/mail_address_info_scroolview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:fadeScrollbars="true"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:scrollbarAlwaysDrawVerticalTrack="false" >
+
+        <LinearLayout
+            android:id="@+id/draft_mail_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="10.0dip" >
+
+            <include
+                android:id="@+id/mail_address_box"
+                layout="@layout/mx_mail_contact_address" />
+
+            <include
+                android:id="@+id/cc_contact_layout"
+                layout="@layout/mx_mail_contact_address" />
+
+            <include
+                android:id="@+id/bcc_contact_layout"
+                layout="@layout/mx_mail_contact_address" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/mx_bg_edittext"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="主题："
+                    android:textColor="@color/mx_black"
+                    android:textSize="@dimen/mx_middle_textsize" />
+
+                <com.minxing.kit.ui.widget.MXVariableEditText
+                    android:id="@+id/mail_subject"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="34.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:inputType="textCapSentences|textAutoCorrect|textShortMessage"
+                    android:singleLine="true"
+                    android:textColor="@color/mx_black" />
+
+                <ImageView
+                    android:id="@+id/add_att_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5.0dip"
+                    android:paddingRight="5.0dip"
+                    android:src="@drawable/mx_mail_att_icon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/mx_bg_edittext"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/att_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="5.0dip"
+                    android:visibility="gone" >
+
+                    <HorizontalScrollView
+                        android:id="@+id/attachement_scroll"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:fillViewport="true"
+                        android:orientation="horizontal"
+                        android:scrollbars="none" >
+
+                        <LinearLayout
+                            android:id="@+id/attachement_file"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center"
+                            android:orientation="horizontal" />
+                    </HorizontalScrollView>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2.0dip"
+                        android:background="@drawable/mx_divider_horizontal" />
+                </LinearLayout>
+
+                <com.minxing.kit.ui.widget.MXVariableEditText
+                    android:id="@+id/mail_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dip"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:gravity="top|left"
+                    android:inputType="textCapSentences|textAutoCorrect|textMultiLine|textShortMessage"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:textColor="@color/mx_black" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.minxing.kit.internal.common.view.AddressInfoScroolView>
+
+</LinearLayout>

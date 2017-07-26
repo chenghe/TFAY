@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/res/merged/androidTest/debug/anim/mx_mail_slide_in_from_bottom.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/bundles/debug/res/anim/mx_mail_slide_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/res/merged/androidTest/debug/anim/mx_mail_slide_out_right.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/bundles/debug/res/anim/mx_mail_slide_out_right.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/res/merged/androidTest/debug/anim/mx_slide_top_down.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/bundles/debug/res/anim/mx_slide_top_down.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/res/merged/androidTest/debug/anim/mx_mail_slide_in_from_top.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/bundles/debug/res/anim/mx_mail_slide_in_from_top.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/res/merged/androidTest/debug/anim/mx_slide_top_up.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/bundles/debug/res/anim/mx_slide_top_up.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/res/merged/androidTest/debug/anim/mx_mail_slide_in_right.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/bundles/debug/res/anim/mx_mail_slide_in_right.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/res/merged/androidTest/debug/anim/mx_mail_slide_out_left.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/bundles/debug/res/anim/mx_mail_slide_out_left.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/res/merged/androidTest/debug/anim/mx_slide_bottom_down.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/bundles/debug/res/anim/mx_slide_bottom_down.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/res/merged/androidTest/debug/anim/mx_mail_slide_out_to_bottom.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/bundles/debug/res/anim/mx_mail_slide_out_to_bottom.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/res/merged/androidTest/debug/anim/mx_loading.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/bundles/debug/res/anim/mx_loading.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/res/merged/androidTest/debug/anim/mx_mail_slide_out_to_top.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/bundles/debug/res/anim/mx_mail_slide_out_to_top.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/res/merged/androidTest/debug/anim/mx_mail_slide_in_left.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/bundles/debug/res/anim/mx_mail_slide_in_left.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/res/merged/androidTest/debug/anim/mx_slide_bottom_up.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/bundles/debug/res/anim/mx_slide_bottom_up.xml"
+    }
+]

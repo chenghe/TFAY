@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/attach_icon"
+        android:layout_width="@dimen/mx_attach_dimen_size"
+        android:layout_height="@dimen/mx_attach_dimen_size"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"/>
+	<com.minxing.kit.ui.widget.MXVariableTextView 
+	    android:id="@+id/mx_attach_file_name"
+	    android:layout_width="@dimen/mx_attach_dimen_size"
+        android:layout_height="17dip"
+        android:singleLine="true"
+        android:textColor="@color/mx_white"
+        android:textSize="9dip"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="center"
+        android:background="#4c000000"
+        android:visibility="gone"/>
+    <ImageView
+        android:id="@+id/play_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/mx_video_mask"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_marginLeft="@dimen/mx_attach_dimen_size"
+        android:layout_width="4.0dip"
+        android:layout_height="@dimen/mx_attach_dimen_size" />
+</FrameLayout>

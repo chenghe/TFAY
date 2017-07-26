@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mx_common_bg" >
+
+    <include
+        android:id="@+id/system_title"
+        layout="@layout/mx_system_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/mx_common_setting_padding_left"
+        android:background="#ffffff"
+        android:layout_below="@id/system_title">
+
+        <RelativeLayout
+            android:id="@+id/search_by_name"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/mx_common_setting_item_height"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/search_name_icon"
+                android:layout_width="@dimen/mx_avatar_dimen"
+                android:layout_height="@dimen/mx_avatar_dimen"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mx_contacts_icon_search_by_name" />
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/search_name_icon"
+                android:text="@string/mx_search_by_name"
+                android:textColor="@color/mx_black"
+                android:textSize="@dimen/mx_middle_textsize" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mx_icon_forward"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/mx_common_divide_line"/>
+
+        <RelativeLayout
+            android:id="@+id/find_more_star_friend"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/mx_common_setting_item_height"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/mx_add_public_num"
+                android:layout_width="@dimen/mx_avatar_dimen"
+                android:layout_height="@dimen/mx_avatar_dimen"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mx_contacts_icon_add_account" />
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/mx_add_public_num"
+                android:text="@string/mx_search_public"
+                android:textColor="@color/mx_black"
+                android:textSize="@dimen/mx_middle_textsize" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mx_icon_forward"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/mx_common_divide_line"/>
+
+        <RelativeLayout
+            android:id="@+id/search_contacts"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/mx_common_setting_item_height"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/mx_add_contacts_company"
+                android:layout_width="@dimen/mx_avatar_dimen"
+                android:layout_height="@dimen/mx_avatar_dimen"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mx_contacts_icon_compony_contacts" />
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/mx_add_contacts_company"
+                android:text="@string/mx_all_person_contact"
+                android:textColor="@color/mx_black"
+                android:textSize="@dimen/mx_middle_textsize" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mx_icon_forward"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

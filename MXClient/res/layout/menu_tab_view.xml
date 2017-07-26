@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/menu_tab_name"
+            style="@style/tab_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center" >
+        </com.minxing.kit.ui.widget.MXVariableTextView>
+
+        <TextView
+            android:id="@+id/main_tab_unread_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:layout_gravity="right|top"
+            android:background="@drawable/icon_red_pot_big"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:textColor="@color/white"
+            android:textSize="@dimen/new_red_btn_text_size" />
+
+        <ImageView
+            android:id="@+id/main_tab_unread_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="1dip"
+            android:visibility="invisible"
+            android:background="@drawable/icon_red_pot_small" />
+    </FrameLayout>
+
+</LinearLayout>

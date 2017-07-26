@@ -1,0 +1,337 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- 投票主题 -->
+
+    <com.minxing.kit.ui.widget.MXVariableEditText
+        android:id="@+id/poll_theme"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/mx_bg_edit_text"
+        android:hint="@string/mx_plx_input_poll_theme"
+        android:textColor="@color/mx_black"
+        android:textSize="@dimen/mx_middle_textsize" />
+
+    <com.minxing.kit.ui.widget.MXVariableTextView
+        android:id="@+id/poll_options"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/poll_theme"
+        android:layout_marginTop="10dp"
+        android:text="@string/mx_poll_option"
+        android:textColor="@color/mx_blue_gray"
+        android:textSize="@dimen/mx_middle_textsize" />
+    <!-- 已经添加的投票单项 -->
+
+    <LinearLayout
+        android:id="@+id/poll_options_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/poll_options"
+        android:layout_marginTop="2dp"
+        android:background="@color/mx_white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/poll_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <!-- 增加单项 -->
+
+        <RelativeLayout
+            android:id="@+id/click_add"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mx_new_message_item_padding" >
+			
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/mx_click_add"
+                android:textColor="@color/mx_black"
+                android:textSize="@dimen/mx_middle_textsize" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/poll_type_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/poll_options_layout"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:background="@drawable/mx_preference_one_item"
+        >
+        <RelativeLayout
+            android:id="@+id/poll_type_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mx_poll_type"
+                android:layout_centerVertical="true"
+                android:textColor="@color/mx_black"
+                android:textSize="@dimen/mx_middle_textsize" />
+
+            <ImageView
+                android:id="@+id/pool_type_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mx_icon_forward" />
+
+            <!-- 投票类型 -->
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/poll_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/mx_new_message_arraw_view_space"
+                android:layout_toLeftOf="@id/pool_type_arrow"
+                android:layout_centerVertical="true"
+                android:textColor="@color/mx_blue_gray"
+                android:textSize="@dimen/mx_middle_textsize" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/poll_most_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="gone">
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mx_poll_most_option"
+                android:layout_centerVertical="true"
+                android:textColor="@color/mx_black"
+                android:textSize="@dimen/mx_middle_textsize" />
+
+            <ImageView
+                android:id="@+id/poll_most_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mx_icon_forward" />
+
+            <!-- 最多选择几项 -->
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/poll_most"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/mx_new_message_arraw_view_space"
+                android:layout_toLeftOf="@id/poll_most_arrow"
+                android:layout_centerVertical="true"
+                android:textColor="@color/mx_blue_gray"
+                android:textSize="@dimen/mx_middle_textsize" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/poll_least_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="gone">
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mx_poll_least_option"
+                android:layout_centerVertical="true"
+                android:textColor="@color/mx_black"
+                android:textSize="@dimen/mx_middle_textsize" />
+
+            <ImageView
+                android:id="@+id/poll_least_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mx_icon_forward" />
+
+            <!-- 最少选择几项 -->
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/poll_least"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/mx_new_message_arraw_view_space"
+                android:layout_toLeftOf="@id/poll_least_arrow"
+                android:layout_centerVertical="true"
+                android:textColor="@color/mx_blue_gray"
+                android:textSize="@dimen/mx_middle_textsize" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/poll_time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/poll_type_layout"
+        android:layout_marginTop="30dp"
+        style="@style/mx_bg_setting_item_no_margin_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/poll_start_time_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mx_poll_start_date"
+                android:layout_centerVertical="true"
+                android:textColor="@color/mx_black"
+                android:textSize="@dimen/mx_middle_textsize" />
+
+            <ImageView
+                android:id="@+id/poll_start_time_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mx_icon_forward" />
+
+            <!-- 开始日期 -->
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/poll_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/mx_new_message_arraw_view_space"
+                android:layout_toLeftOf="@id/poll_start_time_arrow"
+                android:layout_centerVertical="true"
+                android:textColor="@color/mx_blue_gray"
+                android:textSize="@dimen/mx_middle_textsize" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/poll_confirm_item"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mx_poll_confirm_date"
+                android:layout_centerVertical="true"
+                android:textColor="@color/mx_black"
+                android:textSize="@dimen/mx_middle_textsize" />
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mx_icon_forward" />
+
+            <!-- 截止日期 -->
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/poll_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/mx_new_message_arraw_view_space"
+                android:layout_toLeftOf="@id/arrow"
+                android:layout_centerVertical="true"
+                android:textColor="@color/mx_blue_gray"
+                android:textSize="@dimen/mx_middle_textsize" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/poll_allow_change_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/poll_time_layout"
+        android:layout_marginTop="30dp"
+        style="@style/mx_bg_setting_item_no_margin_horizontal"
+        >
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mx_poll_allow_change"
+            android:layout_centerVertical="true"
+            android:textColor="@color/mx_black"
+            android:textSize="@dimen/mx_middle_textsize" />
+
+        <ImageView
+            android:id="@+id/poll_allow_change_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/mx_icon_forward" />
+
+
+        <!-- 投票后是否允许修改选择 -->
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/poll_allow_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/mx_new_message_arraw_view_space"
+            android:layout_toLeftOf="@id/poll_allow_change_arrow"
+            android:layout_centerVertical="true"
+            android:textColor="@color/mx_blue_gray"
+            android:textSize="@dimen/mx_middle_textsize" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/poll_allow_look_result_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/poll_allow_change_layout"
+        android:layout_marginTop="30dp"
+        style="@style/mx_bg_setting_item_no_margin_horizontal"
+        >
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mx_poll_allow_look_result"
+            android:layout_centerVertical="true"
+            android:textColor="@color/mx_black"
+            android:textSize="@dimen/mx_middle_textsize" />
+
+        <ImageView
+            android:id="@+id/poll_allow_look_result_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/mx_icon_forward" />
+
+
+        <!-- 投票后是否允许修改选择 -->
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/poll_allow_look_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/mx_new_message_arraw_view_space"
+            android:layout_toLeftOf="@id/poll_allow_look_result_arrow"
+            android:layout_centerVertical="true"
+            android:textColor="@color/mx_blue_gray"
+            android:textSize="@dimen/mx_middle_textsize" />
+
+    </RelativeLayout>
+</RelativeLayout>

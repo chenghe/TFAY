@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/item_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mx_divider_horizontal" />
+
+    <LinearLayout
+        android:id="@+id/item_container"
+        android:layout_width="fill_parent"
+        android:layout_height="74dp"
+        android:gravity="center_vertical"
+        android:padding="10.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:gravity="left" >
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mx_black"
+                android:textSize="@dimen/mx_middle_textsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="right" >
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="@dimen/mx_avatar_dimen"
+                android:layout_height="@dimen/mx_avatar_dimen"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mx_default_icon_avatar" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/item_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/mx_icon_forward"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,261 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_grey_dark" >
+
+    <include
+        android:id="@+id/system_title"
+        layout="@layout/system_title" />
+
+    <ScrollView
+        android:layout_below="@id/system_title"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/system_title" >
+            <LinearLayout
+                android:id="@+id/open_horizontal_screen"
+                style="@style/bg_setting_item_line"
+                android:layout_below="@id/open_horizontal_screen"
+                android:layout_width="fill_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawableRight="@drawable/submenu"
+                    android:layout_marginRight="@dimen/common_arrow_right"
+                    android:text="@string/open_horizontal_screen"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/middle_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/message_notification"
+                style="@style/bg_setting_item_line"
+                android:layout_below="@id/open_horizontal_screen"
+                android:layout_marginTop="@dimen/common_setting_top"
+                android:layout_width="fill_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawableRight="@drawable/submenu"
+                    android:layout_marginRight="@dimen/common_arrow_right"
+                    android:text="@string/setting_message_notification"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/middle_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mobil_contacts"
+                style="@style/bg_setting_item_line"
+                android:layout_width="fill_parent"
+                android:layout_below="@id/message_notification"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="top"
+                    android:background="@color/mx_common_divide_line"
+                />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:drawableRight="@drawable/submenu"
+                    android:layout_marginRight="@dimen/common_arrow_right"
+                    android:text="@string/setting_call_remind"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/middle_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gesture_password"
+                style="@style/bg_setting_item_line"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="@dimen/common_setting_top"
+                android:layout_below="@id/mobil_contacts"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/submenu"
+                    android:text="@string/setting_gesture_password"
+                    android:layout_marginRight="@dimen/common_arrow_right"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/middle_textsize" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/change_password"
+                style="@style/bg_setting_item_line"
+                android:layout_width="fill_parent"
+                android:layout_below="@id/gesture_password"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="top"
+                    android:background="@color/mx_common_divide_line"
+                />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:drawableRight="@drawable/submenu"
+                    android:layout_marginRight="@dimen/common_arrow_right"
+                    android:text="@string/setting_change_password"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/middle_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mx_ui_custom"
+                style="@style/bg_setting_item_line"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="@dimen/common_setting_top"
+                android:gravity="center_vertical"
+                android:layout_below="@id/change_password"
+                android:orientation="vertical" >
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawableRight="@drawable/submenu"
+                    android:layout_marginRight="@dimen/common_arrow_right"
+                    android:text="@string/settings_font_size_setting_tittle"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/middle_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/function_introdution"
+                style="@style/bg_setting_item_line"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="@dimen/common_setting_top"
+                android:gravity="center_vertical"
+                android:layout_below="@id/mx_ui_custom"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawableRight="@drawable/submenu"
+                    android:layout_marginRight="@dimen/common_arrow_right"
+                    android:text="@string/setting_function_introdution"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/middle_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/upgrade"
+                style="@style/bg_setting_item_line"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="@dimen/common_setting_top"
+                android:layout_below="@id/function_introdution"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" >
+
+                    <com.minxing.kit.ui.widget.MXVariableTextView
+                        android:id="@+id/upgrade_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="1.0"
+                        android:text="@string/version_upgrade"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/middle_textsize" />
+
+                    <TextView
+                        android:id="@+id/newflag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/upgrade_desc"
+                        android:background="@drawable/icon_red_pot_big"
+                        android:gravity="center"
+                        android:text="  new  "
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/new_red_btn_text_size"
+                        android:visibility="gone" />
+
+                    <com.minxing.kit.ui.widget.MXVariableTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/newflag"
+                        android:layout_marginRight="@dimen/common_arrow_right"
+                        android:drawableRight="@drawable/submenu" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/app_view_demo"
+                style="@style/bg_setting_item_line"
+                android:layout_width="fill_parent"
+                android:layout_below="@id/upgrade"
+                android:layout_marginTop="@dimen/common_setting_top"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawableRight="@drawable/submenu"
+                    android:text="App View Demo"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/middle_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/exit_btn_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/app_view_demo"
+                android:orientation="vertical" >
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/exit_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/common_btn_height"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginTop="@dimen/common_setting_top"
+                    android:background="@drawable/btn_style_alert_dialog_special"
+                    android:gravity="center"
+                    android:text="@string/setting_logout"
+                    android:textColor="@color/white"
+                    android:textSize="18.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

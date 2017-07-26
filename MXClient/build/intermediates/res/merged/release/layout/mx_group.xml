@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mx_common_bg" >
+
+    <!-- titlebar -->
+
+    <include
+        android:id="@+id/system_title"
+        layout="@layout/mx_system_title" />
+
+    <!-- 群组切换 -->
+
+    <com.minxing.kit.internal.common.view.TabSwitcher
+        android:id="@+id/group_list_switcher"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/system_title"
+        app:arrayId="@array/mx_group_switcher"
+        xmlns:app="http://schemas.android.com/apk/res-auto" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/group_list_switcher"
+        android:background="@color/mx_white"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false" />
+
+    <ProgressBar
+        android:id="@+id/firstloading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

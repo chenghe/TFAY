@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:padding="10dp" >
+
+    <!-- 文件的缩略图 -->
+
+    <FrameLayout
+        android:id="@+id/fileicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/file_thumbnail"
+            android:layout_width="@dimen/mx_file_dimen"
+            android:layout_height="@dimen/mx_file_dimen"
+            android:src="@drawable/mx_default_icon_attach" />
+
+        <ImageView
+            android:id="@+id/file_downloaded_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:src="@drawable/mx_file_downloaded"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:minWidth="60dp"
+            android:progressDrawable="@drawable/mx_progress_blue"
+            android:visibility="gone" />
+    </FrameLayout>
+    <!-- 关注与取消 -->
+<!-- 
+    <com.minxing.kit.ui.widget.MXButton
+        android:id="@+id/isfollowed"
+        android:layout_width="88dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/middle_textsize" />
+ -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/fileicon"
+        android:orientation="vertical" >
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/file_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mx_blue_gray"
+            android:textSize="@dimen/mx_middle_textsize" />
+
+        <!-- 创建者 -->
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/file_creator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/mx_dark_gray"
+            android:textSize="@dimen/mx_small_textsize" />
+        <!-- 创建时间 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/file_create_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mx_dark_gray"
+                android:textSize="@dimen/mx_small_textsize" />
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/file_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mx_dark_gray"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/mx_small_textsize" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/res/merged/androidTest/debug/menu/mx_mail_message_list_context.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/bundles/debug/res/menu/mx_mail_message_list_context.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/res/merged/androidTest/debug/menu/mx_mail_folder_select_option.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/bundles/debug/res/menu/mx_mail_folder_select_option.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/res/merged/androidTest/debug/menu/mx_mail_folder_context.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/bundles/debug/res/menu/mx_mail_folder_context.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/res/merged/androidTest/debug/menu/mx_mail_message_list_item_context.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/bundles/debug/res/menu/mx_mail_message_list_item_context.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/res/merged/androidTest/debug/menu/mx_mail_accounts_option.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/bundles/debug/res/menu/mx_mail_accounts_option.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/res/merged/androidTest/debug/menu/mx_mail_accounts_context.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/bundles/debug/res/menu/mx_mail_accounts_context.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/res/merged/androidTest/debug/menu/mx_mail_disabled_accounts_context.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/bundles/debug/res/menu/mx_mail_disabled_accounts_context.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/res/merged/androidTest/debug/menu/mx_mail_manage_identities_option.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/bundles/debug/res/menu/mx_mail_manage_identities_option.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/res/merged/androidTest/debug/menu/mx_mail_messages_list_option.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/bundles/debug/res/menu/mx_mail_messages_list_option.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/res/merged/androidTest/debug/menu/mx_mail_folder_list_option.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/bundles/debug/res/menu/mx_mail_folder_list_option.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/res/merged/androidTest/debug/menu/mx_mail_message_compose_option.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/bundles/debug/res/menu/mx_mail_message_compose_option.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/res/merged/androidTest/debug/menu/mx_mail_message_list_option.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/bundles/debug/res/menu/mx_mail_message_list_option.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/res/merged/androidTest/debug/menu/mx_mail_manage_identities_context.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/bundles/debug/res/menu/mx_mail_manage_identities_context.xml"
+    }
+]

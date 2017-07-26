@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff198eeb"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="5.0"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30.0dip" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/mx_icon_no_flux_big" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/mx_icon_no_flux_small" />
+
+            <LinearLayout
+                android:layout_width="90.0dip"
+                android:layout_height="90.0dip"
+                android:layout_centerInParent="true" >
+
+                <com.minxing.kit.internal.common.view.RoundImageView
+                    android:id="@+id/avatar_big"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/mx_default_icon_avatar" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/tv_wating_for_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/mx_white"
+            android:textSize="30.0dip" />
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="2.0dip"
+            android:text="正在呼叫..."
+            android:textColor="@color/mx_white"
+            android:textSize="20.0dip" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:background="#ff38adff"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="2.0"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:text="@string/mx_label_attention_the_callback"
+            android:textColor="#ff38adff"
+            android:textSize="20.0dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="2.0"
+        android:background="@color/mx_white"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_hangup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_cancel_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mx_single_call_hangup" />
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/tv_cancel_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:clickable="false"
+                android:text="@string/mx_label_cancel_call"
+                android:textColor="@color/mx_draft_red_text"
+                android:textSize="18.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

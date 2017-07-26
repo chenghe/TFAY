@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  Tab 页签唯一标识-->
+    <string-array name="client_tab_item_tags">
+        <!--<item>@string/client_tab_item_tag_schedule</item>-->
+        <item>@string/client_tab_item_tag_chat</item>
+        <item>@string/client_tab_item_tag_contacts</item>
+        <item>@string/client_tab_item_tag_appcenter</item>
+        <item>@string/client_tab_item_tag_circle</item>
+
+    </string-array>
+
+    <!--  Tab 页签对应地址-->
+    <!--  Activity：package+class name -->
+    <!--  Web： http://xxxx-->
+    <!--  H5 插件： launchApp:// appID-->
+    <string-array name="client_tab_item_launchers">
+        <!--<item>launchApp://tfay_smarter_kaoqing?clear=true&amp;mxLayout=0</item>-->
+        <!--<item>launchApp://dakatest</item>-->
+        <item>com.minxing.kit.ui.chat.MXChatActivity</item>
+        <item>com.minxing.kit.ui.contacts.MXContactsActivity</item>
+        <item>com.minxing.kit.ui.appcenter.MXAppCenterActivity</item>
+        <item>com.minxing.kit.ui.circle.MXCircleActivity</item>
+
+        <!--<item>launchApp://testdaka?clear=true</item>-->
+    </string-array>
+
+    <!--  Tab 页签底部菜单显示名称 -->
+    <string-array name="client_tab_item_names">
+        <!--<item>@string/tab_schedule</item>-->
+        <item>@string/tab_chat</item>
+        <item>@string/tab_contacts</item>
+        <item>@string/tab_appcenter</item>
+        <item>@string/tab_circle</item>
+
+    </string-array>
+
+    <!--  Tab 页签底部菜单图片资源-->
+    <string-array name="client_tab_item_drawables">
+        <!--<item>@drawable/tab_schedule</item>-->
+        <item>@drawable/tab_chat</item>
+        <item>@drawable/tab_contacts</item>
+        <item>@drawable/tab_appcenter</item>
+        <item>@drawable/tab_circle</item>
+
+    </string-array>
+
+    <!--<string name="client_tab_item_tag_schedule">schedule</string>-->
+    <string name="client_tab_item_tag_chat">chat</string>
+    <string name="client_tab_item_tag_contacts">contacts</string>
+    <string name="client_tab_item_tag_appcenter">appcenter</string>
+    <string name="client_tab_item_tag_circle">circle</string>
+
+
+
+</resources>

@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mx_reply_bg"
+    android:layout_marginTop="5dip"
+    android:padding="5.0dip" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- 头像 -->
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="@dimen/mx_circle_avatar_size"
+            android:layout_height="@dimen/mx_circle_avatar_size"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:id="@+id/message_simple_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mx_message_avatar_and_content_space"
+            android:layout_toRightOf="@id/avatar"
+            android:layout_centerVertical="true" >
+
+            <com.minxing.kit.internal.common.view.SpannableTextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/mx_black"
+                android:textSize="@dimen/mx_circle_item_sender_title_textsize" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

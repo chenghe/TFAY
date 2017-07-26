@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@drawable/mx_btn_style_alert_dialog_background"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+    
+    <com.minxing.kit.ui.widget.MXVariableTextView
+        android:id="@+id/mail_reply_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/mx_common_btn_height"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center"
+        android:background="@drawable/mx_comm_blue_button"
+        android:text="@string/mx_mail_reply_btn"
+        android:textColor="@color/mx_white"
+        android:textSize="18.0dip" />
+    
+    <com.minxing.kit.ui.widget.MXVariableTextView
+        android:id="@+id/mail_reply_all_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/mx_common_btn_height"
+        android:layout_marginTop="5.0dip"
+        android:background="@drawable/mx_comm_blue_button"
+        android:gravity="center"
+        android:text="@string/mx_mail_reply_all_btn"
+        android:textColor="@color/mx_white"
+        android:textSize="18.0dip" />
+    
+    <com.minxing.kit.ui.widget.MXVariableTextView
+        android:id="@+id/mail_forward_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/mx_common_btn_height"
+        android:layout_marginTop="5.0dip"
+        android:background="@drawable/mx_comm_blue_button"
+        android:gravity="center"
+        android:text="@string/mx_mail_forward_btn"
+        android:textColor="@color/mx_white"
+        android:textSize="18.0dip" />
+    
+    <com.minxing.kit.ui.widget.MXVariableTextView
+        android:id="@+id/mail_delete_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/mx_common_btn_height"
+        android:layout_marginTop="5.0dip"
+        android:background="@drawable/mx_btn_style_alert_dialog_special"
+        android:gravity="center"
+        android:text="@string/mx_mail_delete_btn"
+        android:textColor="@color/mx_white"
+        android:textSize="18.0dip" />
+
+    <com.minxing.kit.ui.widget.MXVariableTextView
+        android:id="@+id/cancel_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/mx_common_btn_height"
+        android:layout_marginTop="5.0dip"
+        android:background="@drawable/mx_btn_style_alert_dialog_cancel"
+        android:gravity="center"
+        android:text="@string/mx_cancel"
+        android:textColor="@color/mx_white"
+        android:textSize="18.0dip" />
+</LinearLayout>

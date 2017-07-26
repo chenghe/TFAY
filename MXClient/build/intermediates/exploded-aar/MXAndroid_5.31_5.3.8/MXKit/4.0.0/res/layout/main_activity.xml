@@ -1,0 +1,94 @@
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:id="@+id/LinearLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="7dp" >
+
+    <CheckBox
+        android:id="@+id/only_one_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Only one item" />
+
+    <CheckBox
+        android:id="@+id/filter_listed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show only *.jpeg and *.jpg" />
+
+    <CheckBox
+        android:id="@+id/filter_exclude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't show *.jpg" />
+    
+    <CheckBox
+        android:id="@+id/disable_new_folder_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disable New folder button" />
+    
+    <CheckBox
+        android:id="@+id/disable_sort_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disable Sort button" />
+    
+    <CheckBox
+        android:id="@+id/enable_quit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable quit button" />
+
+    <com.minxing.kit.ui.widget.MXVariableTextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="Choose files"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RadioGroup
+        android:id="@+id/choice_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/choice_type_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="All" />
+
+        <RadioButton
+            android:id="@+id/choice_type_files"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Files only" />
+
+        <RadioButton
+            android:id="@+id/choice_type_directories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Directories only" />
+    </RadioGroup>
+
+    <com.minxing.kit.ui.widget.MXButton
+        android:id="@+id/choose_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="21dp"
+        android:text="Choose files" />
+
+    <com.minxing.kit.ui.widget.MXVariableTextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+</ScrollView>

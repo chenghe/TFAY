@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_mx_mail_message_list_view_header"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/mx_title_bar_height"
+            android:background="@drawable/nv_title_bg">
+
+            <ImageButton
+                android:id="@+id/btn_mx_mail_message_list_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/mx_icon_title_bar_folder" />
+
+            <ImageButton
+                android:id="@+id/btn_mx_mail_message_list_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"
+                android:background="@drawable/mx_btn_back" />
+
+            <TextView
+                android:id="@+id/tv_mx_mail_message_list_unread_num_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:background="@drawable/icon_red_pot_big"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="10dip" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/tv_mx_message_list_fragment_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/mx_white"
+                    android:textSize="@dimen/mx_max_textsize" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/tv_mx_message_list_fragment_unread"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btn_mx_mail_message_list_exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/mx_btn_close" />
+
+        </RelativeLayout>
+
+
+        <com.minxing.kit.mail.k9.view.ViewSwitcher
+            android:id="@+id/container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#fff">
+
+            <FrameLayout
+                android:id="@+id/message_list_container"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <FrameLayout
+                android:id="@+id/message_view_container"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </com.minxing.kit.mail.k9.view.ViewSwitcher>
+
+    </LinearLayout>
+
+    <com.minxing.kit.mail.widget.SlidingMenu
+        android:id="@+id/mail_sliding_menu"
+        android:layout_width="@dimen/mx_slidemenu_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_marginTop="@dimen/mx_title_bar_height"
+        android:background="@android:color/white"
+        android:choiceMode="singleChoice"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:scrollbars="none">
+
+    </com.minxing.kit.mail.widget.SlidingMenu>
+
+
+</android.support.v4.widget.DrawerLayout>

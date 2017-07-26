@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mx_white" >
+    <ListView
+        android:id="@+id/conversation_footer_submenu_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@null"
+        android:footerDividersEnabled="true"
+        android:dividerHeight="@dimen/mx_ocu_sub_menu_devider_height" />
+</RelativeLayout>

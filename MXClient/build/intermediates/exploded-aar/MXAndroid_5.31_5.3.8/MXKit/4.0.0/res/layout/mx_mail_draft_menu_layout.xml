@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@drawable/mx_bg_bottombar_white"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <GridView
+        android:id="@+id/app_panel_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:cacheColorHint="#00000000"
+        android:fadingEdgeLength="0.0dip"
+        android:listSelector="@drawable/mx_mm_trans"
+        android:numColumns="4"
+        android:stretchMode="columnWidth" />
+
+</LinearLayout>

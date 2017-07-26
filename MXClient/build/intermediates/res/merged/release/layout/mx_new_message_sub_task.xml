@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- 活动主题 -->
+
+    <com.minxing.kit.ui.widget.MXVariableEditText
+        android:id="@+id/task_theme"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/mx_bg_edit_text"
+        android:hint="@string/mx_plx_input_task_theme"
+        android:textColor="@color/mx_black"
+        android:textSize="@dimen/mx_middle_textsize" />
+
+    <com.minxing.kit.ui.widget.MXVariableTextView
+        android:id="@+id/task_options"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/task_theme"
+        android:layout_marginTop="10dp"
+        android:text="@string/mx_task_option"
+        android:textColor="@color/mx_blue_gray"
+        android:textSize="@dimen/mx_middle_textsize" />
+    <!-- 已经添加的任务单项 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/task_options"
+        android:layout_marginTop="2dp"
+        android:background="@color/mx_white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/options_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <!-- 增加单项 -->
+
+        <RelativeLayout
+            android:id="@+id/click_add"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mx_new_message_item_padding">
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/mx_click_add"
+                android:textColor="@color/mx_black"
+                android:textSize="@dimen/mx_middle_textsize"
+                 />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- titlebar -->
+
+    <include
+        android:id="@+id/system_title"
+        layout="@layout/mx_system_title" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mx_new_message_plugin_margin"
+        android:layout_marginRight="@dimen/mx_new_message_plugin_margin"
+        android:layout_marginTop="@dimen/mx_new_message_plugin_margin" >
+
+        <com.minxing.kit.ui.widget.MXVariableEditText
+            android:id="@+id/poll_item_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mx_bg_edittext_selector"
+            android:gravity="top|left"
+            android:hint="@string/mx_plx_input_poll_item"
+            android:lineSpacingExtra="5dp"
+            android:minHeight="200dp"
+            android:textColor="@color/mx_black"
+            android:textSize="@dimen/mx_middle_textsize" />
+    </RelativeLayout>
+
+</LinearLayout>

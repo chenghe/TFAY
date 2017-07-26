@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_web_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66000000">
+
+
+    <FrameLayout
+        android:id="@+id/fl_mx_activity_web_dialog_outside"
+        android:layout_width="280dp"
+        android:layout_height="380dp"
+        android:layout_centerInParent="true">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fadingEdge="vertical"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:background="@color/mx_web_pop_background"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/mx_webView_contain"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"/>
+
+                    <LinearLayout
+                        android:id="@+id/fl_mx_activity_web_dialog_inside"
+                        android:layout_width="280dp"
+                        android:layout_height="380dp"
+                        android:background="#00000000"
+                        android:orientation="vertical"/>
+
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/mx_web_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fl_mx_activity_web_dialog_outside"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/mx_comm_delete_up" />
+</RelativeLayout>

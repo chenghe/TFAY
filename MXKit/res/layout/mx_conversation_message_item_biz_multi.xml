@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:orientation="horizontal"
+    android:paddingLeft="10.0dip"
+    android:paddingRight="10.0dip"
+    android:paddingTop="15.0dip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/mx_message_descript_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/mx_message_items_new_reminder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    style="@style/mx_chat_message_unread_devider" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    style="@style/mx_chatting_ui_split_visable"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:text="@string/mx_message_items_new_reminder" >
+                </com.minxing.kit.ui.widget.MXVariableTextView>
+            </RelativeLayout>
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/message_time"
+                style="@style/mx_chatting_ui_split" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/mx_conversation_message_item_biz_slot_header" />
+
+        <LinearLayout
+            android:id="@+id/middle_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <include
+            android:id="@+id/bottom"
+            layout="@layout/mx_conversation_message_item_biz_slot_bottom" />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10.0dip"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

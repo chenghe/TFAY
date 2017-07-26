@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="right" >
+
+    <LinearLayout
+        android:id="@+id/btn_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dip"
+        android:background="@drawable/bg_menu_normal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/btn_new_conversation"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/popup_menu_item_selector"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/menu_pop_item"
+                android:layout_width="wrap_content"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_menu_im" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/top_right_start_conversation"
+                    android:textColor="@color/white"
+                    android:textSize="18.0dip" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pop_menu_margin"
+                android:layout_marginRight="@dimen/pop_menu_margin"
+                android:background="@drawable/bg_menu_segment" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_add_contact"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/popup_menu_item_selector"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/menu_pop_item"
+                android:layout_width="wrap_content"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_menu_new_contact" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/top_right_add_contact"
+                    android:textColor="@color/white"
+                    android:textSize="18.0dip" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pop_menu_margin"
+                android:layout_marginRight="@dimen/pop_menu_margin"
+                android:background="@drawable/bg_menu_segment" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_scan"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/popup_menu_item_selector"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/menu_pop_item"
+                android:layout_width="wrap_content"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_menu_scan_qr_code" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/top_right_scan"
+                    android:textColor="@color/white"
+                    android:textSize="18.0dip" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pop_menu_margin"
+                android:layout_marginRight="@dimen/pop_menu_margin"
+                android:background="@drawable/bg_menu_segment" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_new_circle_message"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/popup_menu_item_selector"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/menu_pop_item"
+                android:layout_width="wrap_content"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_menu_sns" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/top_right_circle_message"
+                    android:textColor="@color/white"
+                    android:textSize="18.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

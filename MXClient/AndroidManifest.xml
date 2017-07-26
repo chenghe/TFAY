@@ -1,0 +1,1274 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.minxing.client"
+    android:versionCode="1000007"
+    android:versionName="1.0.7">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.sensor.accelerometer"/>
+    <uses-feature android:name="android.hardware.sensor.stepcounter" android:required="true"/>
+    <uses-feature android:name="android.hardware.sensor.stepdetector" android:required="true"/>
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+
+    <!-- 高德地图 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <!-- K9 Start -->
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <!-- Needed to mark a contact as contacted -->
+    <uses-permission android:name="org.thialfihar.android.apg.permission.READ_KEY_DETAILS" />
+    <uses-permission android:name="com.minxing.client.permission.SIGNIGNATURE" />
+
+
+    <permission
+        android:name="com.minxing.client.permission.SIGNIGNATURE"
+        android:protectionLevel="signature" />
+
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <!-- K9 end -->
+
+    <application
+        android:name="com.minxing.client.AppApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:persistent="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="9981f3da1768280b8da23d661dc4e688" />
+
+        <activity
+            android:name="com.minxing.client.LoadingActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.minxing.client.LoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.minxing.client.activity.SystemSettingActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+        />
+        <activity
+            android:name="com.minxing.client.activity.AdActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            />
+        <activity android:name="com.minxing.client.activity.OpenHorizontalScreenActivity"
+                  android:configChanges="keyboardHidden|orientation|screenSize"
+        />
+        <activity
+            android:name="com.minxing.client.activity.SystemFunctionIntrodutionActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+        />
+        <activity
+            android:name="com.minxing.client.activity.SystemSettingMessageNotificationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+        />
+        <activity
+            android:name="com.minxing.client.activity.SystemSettingDisturbActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+        />
+        <activity
+            android:name="com.minxing.client.activity.SystemNewsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+             />
+        <activity
+            android:name="com.minxing.client.activity.SystemDiagnosisActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+        />
+        <activity
+            android:name="com.minxing.client.activity.SystemSettingGesturePasswordActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.client.activity.GesturePasswordActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.client.ClientTabActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+             />
+        <activity
+            android:name="com.minxing.client.activity.LaunchShareActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/share_label_send_to_chat"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+				<action android:name="android.intent.action.SEND" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="application/mx-share"/>
+			</intent-filter>
+			
+			<intent-filter>
+				<action android:name="com.minxing.intent.action.SHARE" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="application/mx-share"/>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="com.minxing.intent.action.share.CHAT" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="application/mx-share"/>
+			</intent-filter>
+        </activity>
+        <activity
+            android:name="com.minxing.client.activity.LaunchShareCircleActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/share_label_send_to_circle"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+				<action android:name="android.intent.action.SEND" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="application/mx-share"/>
+			</intent-filter>
+			
+			<intent-filter>
+				<action android:name="com.minxing.intent.action.SHARE" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="application/mx-share"/>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="com.minxing.intent.action.share.CIRCLE" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="application/mx-share"/>
+			</intent-filter>
+        </activity>
+        <activity
+            android:name="com.minxing.client.activity.LaunchApp2AppActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            
+            android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="com.minxing.client.app2app.launcher" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.minxing.kit.video.receiver.VideoReceiver"
+            android:permission="com.minxing.client.permission.SIGNIGNATURE">
+            <intent-filter>
+                <action android:name="com.minxing.client.push.video" />
+            </intent-filter>
+        </receiver>
+
+        <!-- demo start -->
+        <activity
+            android:name="com.minxing.client.demo.SystemAppDemoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+        />
+        <activity
+            android:name="com.minxing.client.demo.SystemAppDemoAppInfo"
+             />
+        <activity
+            android:name="com.minxing.client.demo.SystemAppDemoShareActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+        />
+        <activity
+            android:name="com.minxing.client.demo.SystemAppDemoCircle"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+        />
+        <activity
+            android:name="com.minxing.client.demo.SystemAppDemoChatActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+        />
+        <activity
+            android:name="com.minxing.client.demo.SystemAppDemoPersonCenterActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+        />
+        <activity
+            android:name="com.minxing.client.demo.SystemAppDemoAppCenterViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+        />
+        <!-- demo end -->
+
+
+        <!-- 敏行Kit start -->
+        <activity
+            android:name="com.minxing.kit.ui.chat.MXChatActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.ui.contacts.MXContactsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.ui.appcenter.MXAppCenterActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.ui.appcenter.AppCenterCategoryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.ui.circle.MXCircleActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.contact.AddPersonalContactActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.contact.ContactQueryByMobileActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.contact.ContactQueryByNameActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.contact.ContactQueryByStarActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.contact.ContactSearchActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.contact.GroupContactActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.contact.GraphGroupConversationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.contact.ContactDetailPublicActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.contact.ContactPublicGridActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.contact.ContactDetailMeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.contact.ContactDetailMeQRActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.contact.WorkCircleMyFavActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.contact.WorkCircleMyMessageActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.contact.WorkCircleMyFileActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.common.SystemMeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.common.WaitForCallActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.circle.WorkcircleSettingChangeNameActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.contact.ContactDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.circle.NewMessageTextActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.common.GroupActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.common.GroupMembersActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.common.GroupSelectActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.circle.MessageTopicChangeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.circle.NewMessageActionActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.circle.NewMessageTaskActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.circle.NewMessageTaskItemActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name="com.minxing.kit.internal.circle.NewMessagePollActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.circle.NewMessagePollItemActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name="com.minxing.kit.internal.common.NetFileActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.circle.NewMessageThirdParty"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.common.NetListActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.circle.UpdateMessageActionActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.circle.UpdateMessageTaskActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.circle.MessageReplyActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.circle.NewMessageShareActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.circle.NewMessageShareGraphActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.common.DownloadedFileActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.im.ConversationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.im.ConversationCatalogActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.im.ConversationSearchActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.im.ConversationSearchListActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.im.ConversationWebViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.im.ConversationAnnounceActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.minxing.kit.internal.common.ImageDetailsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="com.minxing.kit.internal.common.MXCollectionActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="com.minxing.kit.internal.common.MXCollectionSearchActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="com.minxing.kit.internal.im.ConversationMessageCameraActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.im.ConversationMessageRecordPreviewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name="com.minxing.kit.internal.im.ConversationSettingActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.im.ConversationSettingAllUserActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.im.ConversationSettingChangeNameActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name="com.minxing.kit.internal.im.ConversationSettingQRCodeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.filepicker.FilePickerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.common.OnlineFileActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.circle.MessageDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.circle.CircleTopicsListActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.common.GalleryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.common.GalleryGroupActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.qr.CaptureActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.contact.LargeAvatarActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.common.EditAccountChangeItemActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.contact.LocalContactListActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.common.view.crop.CropImageActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.common.SystemChangePasswordActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.common.DebugActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.im.ConversationSelecterActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.api.internal.App2AppBlankActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            >
+            <intent-filter>
+                <action android:name="com.minxing.mxinterface.app2app.blank" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.minxing.kit.internal.circle.CircleAtPersonActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.im.ConversationAtPersonActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.circle.TopicsDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.common.SystemWebViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.common.ContactsConfigActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.plugin.web.MXWebActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:enabled="false"
+            
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="about" />
+                <data android:scheme="javascript" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="inline" />
+                <data android:mimeType="text/html" />
+                <data android:mimeType="text/plain" />
+                <data android:mimeType="application/xhtml+xml" />
+                <data android:mimeType="application/vnd.wap.xhtml+xml" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.minxing.kit.ui.appcenter.AppsAddActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.ui.appcenter.AppDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.ui.circle.CircleSearchActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.contact.VipContactActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.im.ConversationVipMessageListActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+
+        <activity
+            android:name="com.minxing.kit.internal.common.UICustomActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+
+        <!-- add in 5.2.9 -->
+        <activity
+            android:name="com.minxing.kit.ui.widget.gallery.ConversationImageDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+
+        <activity
+            android:name="com.minxing.kit.plugin.android.dignostic.DiagnosticActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <!-- 5.2.9 -->
+        <!-- add in 5.3.4-->
+        <activity
+            android:name="com.minxing.kit.internal.contact.ContactsChoiseActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.contact.NewCircleChoiceContactsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+         <!-- 5.3.4 -->
+
+        <receiver android:name="com.minxing.kit.internal.core.NetWorkStateMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.minxing.kit.internal.core.OSSystemEventMonitorReceiver"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+                <action android:name="android.intent.action.ACTION_DEVICE_STORAGE_OK" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.PHONE_STATE" />
+                <action android:name="android.intent.action.ACTION_TIME_TICK" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.minxing.kit.internal.core.PushDataHandleService"
+            android:exported="true" />
+        <service
+            android:name="com.minxing.kit.internal.core.PushConnectService"
+            android:exported="false"
+            android:process=":push" />
+
+        <receiver
+            android:name="com.minxing.kit.internal.push.PushReceiver"
+            android:permission="com.minxing.client.permission.SIGNIGNATURE">
+            <intent-filter>
+                <action android:name="com.minxing.kit.push.service.launch" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.minxing.kit.push.service.launch.alarm" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.minxing.kit.push.service.weakup.alarm" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.minxing.kit.internal.receiver.PhoneStatReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 敏行Kit end -->
+        <!--release key-->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="592eb3d2c62dca1f5b00175e" />
+        <!--debug key-->
+        <!--<meta-data-->
+            <!--android:name="UMENG_APPKEY"-->
+            <!--android:value="592eb4484ad1562c900010b4" />-->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="website" />
+
+        <!-- K9 Start -->
+
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value="com.minxing.kit.mail.k9.activity.Search" />
+
+        <activity
+            android:name="com.minxing.kit.mail.k9.activity.Accounts"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            
+            android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <data android:mimeType="application/x-k9settings" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.minxing.kit.mail.k9.activity.setup.Prefs"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:excludeFromRecents="true"
+            
+            android:taskAffinity="com.minxing.kit.mail.k9.activity.setup.Prefs" />
+        <activity
+            android:name="com.minxing.kit.mail.k9.activity.setup.WelcomeMessage"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.mail.k9.activity.setup.FontSizeSettings"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.mail.k9.activity.setup.AccountSetupBasics"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.mail.k9.activity.setup.AccountSetupAccountType"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.mail.k9.activity.setup.AccountSetupIncoming"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.mail.k9.activity.setup.AccountSetupComposition"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.mail.k9.activity.setup.AccountSetupOutgoing"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.mail.k9.activity.setup.AccountSetupOptions"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.mail.k9.activity.setup.AccountSetupNames"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.mail.k9.activity.ChooseFolder"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:noHistory="true"
+            
+            android:theme="@style/Theme.K9Dialog" />
+        <activity
+            android:name="com.minxing.kit.mail.k9.activity.ChooseIdentity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            
+            android:theme="@style/Theme.K9Dialog" />
+        <activity
+            android:name="com.minxing.kit.mail.k9.activity.ManageIdentities"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.mail.k9.activity.EditIdentity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.mail.k9.activity.NotificationDeleteConfirmation"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--
+             XXX Note: this activity is hacked to ignore config changes,
+             since it doesn't currently handle them correctly in code.
+
+        -->
+        <activity
+            android:name="com.minxing.kit.mail.k9.activity.setup.AccountSetupCheckSettings"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.mail.k9.activity.setup.AccountSettings"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.mail.k9.activity.setup.FolderSettings"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.minxing.kit.mail.k9.activity.FolderList"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            
+            android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+
+                <!-- This action is only to allow an entry point for launcher shortcuts -->
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.minxing.kit.mail.k9.activity.MessageList"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            >
+            <intent-filter>
+
+                <!-- This action is only to allow an entry point for launcher shortcuts -->
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:host="messages"
+                    android:scheme="email" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.minxing.kit.mail.k9.activity.MessageCompose"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:enabled="false"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO" />
+
+                <data android:scheme="mailto" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <data android:mimeType="*/*" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <data android:mimeType="*/*" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <data android:scheme="mailto" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <!-- Search Activity - searchable -->
+        <activity
+            android:name="com.minxing.kit.mail.k9.activity.Search"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            
+            android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/mx_mail_searchable" />
+        </activity>
+        <activity
+            android:name="com.minxing.kit.mail.k9.activity.LauncherShortcuts"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            >
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.CREATE_SHORTCUT" />-->
+
+            <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity
+            android:name="com.minxing.kit.mail.k9.activity.AccessibleEmailContentActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.mail.k9.activity.EmailAddressList"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+
+        <receiver
+            android:name="com.minxing.kit.mail.k9.service.BootReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.BACKGROUND_DATA_SETTING_CHANGED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.sync.SYNC_CONN_STATUS_CHANGED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.fsck.k9.service.BroadcastReceiver.scheduleIntent" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.minxing.kit.mail.k9.service.RemoteControlReceiver"
+            android:enabled="true"
+            android:permission="com.fsck.k9.permission.REMOTE_CONTROL">
+            <intent-filter>
+                <action android:name="com.fsck.k9.K9RemoteControl.set" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.fsck.k9.K9RemoteControl.requestAccounts" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.minxing.kit.mail.k9.service.CoreReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.fsck.k9.service.CoreReceiver.wakeLockRelease" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.minxing.kit.mail.k9.service.StorageReceiver"
+            android:enabled="true">
+            <intent-filter>
+
+                <!--
+android.intent.action.MEDIA_MOUNTED
+
+     * Broadcast Action:  External media is present and mounted at its mount point.
+     * The path to the mount point for the removed media is contained in the Intent.mData field.
+     * The Intent contains an extra with name "read-only" and Boolean value to indicate if the
+     * media was mounted read only.
+
+                -->
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <!--
+MEDIA_EJECT and MEDIA_UNMOUNTED are not defined here: they have to be dynamically registered
+otherwise it would make K-9 start at the wrong time
+
+                -->
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.minxing.kit.mail.k9.service.MailService"
+            android:enabled="true" />
+        <service
+            android:name="com.minxing.kit.mail.k9.service.NotificationActionService"
+            android:enabled="true" />
+        <service
+            android:name="com.minxing.kit.mail.k9.service.PushService"
+            android:enabled="true" />
+        <service
+            android:name="com.minxing.kit.mail.k9.service.PollService"
+            android:enabled="true" />
+        <service
+            android:name="com.minxing.kit.mail.k9.service.RemoteControlService"
+            android:enabled="true"
+            android:permission="com.fsck.k9.permission.REMOTE_CONTROL" />
+        <service
+            android:name="com.minxing.kit.mail.k9.service.SleepService"
+            android:enabled="true" />
+        <service
+            android:name="com.minxing.client.service.Adservice"
+            android:enabled="true" />
+
+        <provider
+            android:name="com.minxing.kit.mail.k9.provider.AttachmentProvider"
+            android:authorities="com.fsck.k9.mx.attachmentprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            android:multiprocess="false" />
+        <provider
+            android:name="com.minxing.kit.mail.k9.provider.MessageProvider"
+            android:authorities="com.fsck.k9.mx.messageprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            android:multiprocess="true" />
+        <provider
+            android:name="com.minxing.kit.mail.k9.provider.EmailProvider"
+            android:authorities="com.fsck.k9.mx.provider.email"
+            android:exported="false" />
+
+        <!-- <receiver android:name="com.minxing.kit.mail.k9.provider.UnreadWidgetProvider" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/mx_mail_unread_widget_info" />
+        </receiver> -->
+
+        <activity
+            android:name="com.minxing.kit.mail.k9.activity.UnreadWidgetConfiguration"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.minxing.kit.mail.k9.activity.UpgradeDatabases"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.mail.AppLoadingActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+
+        <service
+            android:name="com.minxing.kit.mail.k9.service.DatabaseUpgradeService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.minxing.kit.mail.account.AccountSetupActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.mail.setting.MailSettingActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.mail.setting.MailSettingInfoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <!-- K9 End -->
+
+        <activity
+            android:name="com.minxing.kit.internal.im.ConversationFileAndImageActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.internal.im.ConversationFileSearchActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+             />
+        
+        
+        
+        <!-- Anychat 清单文件-->
+        <activity
+            android:name="com.bairuitech.main.MeetingRoomActivty"
+            android:configChanges="orientation|keyboardHidden|navigation"
+             >
+        </activity>
+
+        <activity
+            android:name="com.bairuitech.main.EnterLoadingActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+             >
+        </activity>
+
+        <activity
+            android:name="com.bairuitech.main.SpeechManagementActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+             >
+        </activity>
+
+        <activity
+            android:name="com.bairuitech.main.CallReceiveActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:launchMode="singleTask"
+             >
+        </activity>
+
+        <activity
+            android:name="com.bairuitech.main.ChooseModeActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:theme="@style/activity_bg_translucent"
+             >
+        </activity>
+
+        <activity
+            android:name="com.bairuitech.main.SelectPersonActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+             >
+        </activity>
+
+        <activity
+            android:name="com.bairuitech.main.SpeechModeActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:theme="@style/activity_bg_translucent"
+             >
+        </activity>
+
+        <activity
+            android:name="com.bairuitech.main.ExitMeetingActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:theme="@style/activity_bg_translucent"
+             >
+        </activity>
+
+
+        <!-- Office start -->
+        <activity
+            android:name="com.olivephone.sdk.demo.FileChooserActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.olivephone.sdk.demo.WordActivity"
+            android:configChanges="screenSize|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale" >
+            <intent-filter>
+                <action android:name="mx.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="application/msword" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.olivephone.sdk.demo.PresentationActivity"
+            android:configChanges="screenSize|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale" >
+            <intent-filter>
+                <action android:name="mx.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="application/vnd.ms-powerpoint" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.presentation" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.olivephone.sdk.demo.SpreadsheetActivity"
+            android:configChanges="screenSize|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale" >
+            <intent-filter>
+                <action android:name="mx.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="application/vnd.ms-excel" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.olivephone.sdk.demo.PDFActivity"
+            android:configChanges="screenSize|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale" >
+            <intent-filter>
+                <action android:name="mx.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="application/pdf" />
+            </intent-filter>
+        </activity>
+        <!-- Office End -->
+        <!--   health start   -->
+        <activity
+            android:name="com.minxing.kit.health.RankingsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.health.setting.HealthSettingActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.health.setting.HealthSettingPrivacyRemind"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.health.MainPageActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.health.HealthPraiseActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <activity
+            android:name="com.minxing.kit.plugin.android.pedometer.PedometerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+             />
+        <service android:name="com.minxing.kit.health.service.SensorService"
+            android:process=":sensor"/>
+
+        <receiver
+            android:name="com.minxing.kit.health.receiver.SensorReceiver"
+            android:permission="com.minxing.client.permission.SIGNIGNATURE">
+            <intent-filter>
+                <action android:name="com.minxing.kit.push.service.launch" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.minxing.kit.push.service.launch.alarm" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.minxing.kit.push.service.weakup.alarm" />
+            </intent-filter>
+        </receiver>
+        <!--   health end   -->
+
+        <!-- popUp webView -->
+        <activity
+            android:name="com.minxing.kit.plugin.web.MXPopUpWebActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            
+            android:theme="@style/activity_bg_translucent" >
+        </activity>
+    </application>
+</manifest>

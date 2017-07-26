@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--  <item
+        android:id="@+id/select"
+        android:title="@string/mx_mail_select_action"/>
+    <item android:id="@+id/deselect"
+          android:title="@string/mx_mail_deselect_action"/>
+    <item
+         android:id="@+id/reply_all"
+         android:title="@string/mx_mail_reply_all_action"/>
+     <item
+         android:id="@+id/reply"
+         android:title="@string/mx_mail_reply_action"/>
+     <item
+         android:id="@+id/send_again"
+         android:title="@string/mx_mail_send_again_action"/>
+     <item
+         android:id="@+id/forward"
+         android:title="@string/mx_mail_forward_action"/>
+    <item
+        android:id="@+id/delete"
+        android:title="@string/mx_mail_delete_action"
+    />
+    <item
+        android:id="@+id/mark_as_read"
+        android:title="@string/mx_mail_mark_as_read_action"
+    />
+    <item
+        android:id="@+id/mark_as_unread"
+        android:title="@string/mx_mail_mark_as_unread_action"
+    />
+    <item
+        android:id="@+id/archive"
+        android:title="@string/mx_mail_archive_action"
+    />
+    <item
+        android:id="@+id/move"
+        android:title="@string/mx_mail_move_action"
+    />
+    <item
+        android:id="@+id/copy"
+        android:title="@string/mx_mail_copy_action"
+    />
+    <item
+        android:id="@+id/flag"
+        android:title="@string/mx_mail_flag_action"
+    />
+    <item
+        android:id="@+id/unflag"
+        android:title="@string/mx_mail_unflag_action"
+    />
+    <item
+        android:id="@+id/spam"
+        android:title="@string/mx_mail_spam_action"
+    />
+    <item
+        android:id="@+id/same_sender"
+        android:title="@string/mx_mail_from_same_sender" /> -->
+</menu>

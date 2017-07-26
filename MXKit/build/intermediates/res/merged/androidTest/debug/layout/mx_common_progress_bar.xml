@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <com.minxing.kit.ui.widget.MXVariableTextView
+        android:id="@+id/option_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/mx_blue_gray"
+        android:textSize="@dimen/mx_middle_textsize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical" >
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="@dimen/mx_message_type_poll_progress_width"
+            android:layout_height="5.0dip"
+            android:progressDrawable="@drawable/mx_progress_green" />
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/mx_blue_gray"
+            android:textSize="@dimen/mx_small_textsize"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

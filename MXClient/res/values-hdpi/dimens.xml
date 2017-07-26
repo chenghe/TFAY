@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="login_input_vertical_space">16dp</dimen>
+    <dimen name="login_input_left">20dp</dimen>
+    <dimen name="login_input_right">20dp</dimen>
+    
+    <dimen name="max_textsize">18dp</dimen>
+    <dimen name="middle_textsize">16dp</dimen>
+    <dimen name="title_arrow_space">6dp</dimen> 
+    
+</resources>

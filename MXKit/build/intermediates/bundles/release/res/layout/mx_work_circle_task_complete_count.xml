@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+    <com.minxing.kit.ui.widget.MXVariableTextView 
+        android:id="@+id/completed_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/mx_circle_item_task_complete_label"
+        android:textSize="14dip"
+        android:layout_marginBottom="@dimen/mx_circle_item_task_reply_margin_top"
+        android:layout_marginTop="@dimen/mx_circle_item_task_reply_margin_top"
+        android:drawablePadding="5dip"
+        android:drawableRight="@drawable/mx_arrow_down"
+        />
+
+</LinearLayout>

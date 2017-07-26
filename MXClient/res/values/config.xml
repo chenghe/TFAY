@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--敏行服务器地址 如果是80端口，千万不用写 -->
+    <!--  内：http://172.32.5.217 外：http://etest.cgnb.cn:8129 ,prod: 内：http://172.32.5.217 外：https://ebank.cgnb.cn:8098 -->
+    <!--<string name="client_conf_http_host">https://ebank.cgnb.cn:8081</string>-->
+    <!--测试地址-->
+    <!--<string name="client_conf_http_host">http://etest.cgnb.cn:2220</string>-->
+    <!--阿里云地址 -->
+    <string name="client_conf_http_host">http://im.zsmarter.com</string>
+    <!--敏行服务器推送地址 -->
+    <!--  内：172.32.5.217:1883 外：etest.cgnb.cn:8130, prod: 内：172.32.5.217:1883 外：ebank.cgnb.cn:8099 -->
+    <!--<string name="client_conf_push_host">ssl://ebank.cgnb.cn:8082</string>-->
+    <!--测试地址-->
+    <!--<string name="client_conf_push_host">ssl://etest.cgnb.cn:1883</string>-->
+    <!--阿里云地址 -->
+    <string name="client_conf_push_host">ssl://im.zsmarter.com:1883</string>
+    <!--应用中心URL-->
+    <string name="client_app_store">https://ebank.cgnb.cn:8083/tfayyyzx/</string>
+    <!--客户登录方式,默认不用修改 -->
+    <string name="client_server_grant_type">password</string>
+    <!--客户端侧边栏是否显card示 -->
+    <string name="client_show_sliding">true</string>
+    <!--客户端侧边栏按钮是否显示 -->
+    <string name="client_show_handle">true</string>
+    <!--是否显示外部社区 -->
+    <string name="client_show_ext_network">true</string>
+    <!--通讯录里是否显示公众号 -->
+    <string name="client_show_contact_ocu">true</string>
+    <!--通讯录是否显示公司通讯录 -->
+    <string name="client_show_contact_company">true</string>
+    <!--通讯录是否显示群聊 -->
+    <string name="client_show_multi_chat">true</string>
+    <!--通讯录是否显示特别关注 -->
+    <string name="client_show_contact_vip">true</string>
+    <!--客户端是否显示我的应用页面 -->
+    <string name="client_hide_appcenter">true</string>
+    <!-- 客户端tab项排序与隐藏    隐藏的可以不写-->
+    <!--<string name="client_sort_hide">app/message/contact/circle/oa</string>-->
+    <!--通讯录是否平级显示所有联系人-->
+    <string name="sync_personal_contact_all_from_server">false</string>
+
+    <!--工作圈里点赞的人是否全部显示-->
+    <string name="client_show_circle_like_by_someone">false</string>
+
+    <!-- 应用中心下载插件大小阈值 -->
+    <string name="client_app_center_auto_down_max_size">102400</string>
+    <!-- 
+    <string name="client_contact_mail_btn">false</string>
+    <string name="client_contact_sms_btn">false</string>
+    <string name="client_contact_call_btn">true</string>
+    <string name="client_contact_chat_btn">true</string>
+ 	-->
+    <!--客户端公司敏信 右上角 +  扫一扫 -->
+    <!-- <string name="client_show_scan">true</string> -->
+	<!--客户端公司敏信 右上角 +  发起群聊 -->
+	<!-- <string name="client_show_new_conversation">false</string> -->
+    <!-- 是否显示设置-功能介绍 -->
+    <string name="client_show_introduction">false</string>
+    <!-- 是否设置手机号加密显示，起止位数 -->
+    <!--<string name="client_encrypt_cellphone">3,7</string> -->
+   
+    <!--敏行程序使用的SD卡目录 -->
+    <string name="client_conf_sdcard_root">/minxing_dev</string>
+    <!--android 程序的clientID -->
+    <string name="client_app_client_id">2</string>
+    <!--是否显示水印 -->
+    <string name="client_water_mark_enable">true</string>
+    <string name="file_download_forbidden">false</string>
+    <!-- 是否隐藏手机号-->
+    <string name="cient_phone_hidden">false</string>
+    <!-- 是否显示修改ip地址-->
+    <string name="mx_config_changeip">false</string>
+    <!-- 是否禁用工作圈发消息 -->
+    <!--<string name="client_circle_disable_text">true</string> -->
+    <!-- 是否禁用工作圈发任务 -->
+    <!--<string name="client_circle_disable_task">true</string> -->
+    <!-- 是否禁用工作圈发活动 -->
+    <!--<string name="client_circle_disable_action">true</string> -->
+    <!-- 是否禁用工作圈发投票-->
+    <!--<string name="client_circle_disable_poll">true</string> --> 
+   
+    <!-- 是否允许应用中心强制刷新，设置之后，当网络环境发生切换时，会强制刷新应用中心数据，适用于内外网数据分离 -->
+    <!--<string name="client_app_center_force_refresh">true</string> -->
+    <!-- 是否禁用工作圈创建功能 -->
+    <!--<string name="client_app_circle_create_disable">true</string> --> 
+    <!-- 是否打开登录页面重置密码功能 -->
+    <!--  <string name="client_login_reset_password_url"></string> -->
+    <!-- 是否启用短信验证登录模式，启动之后，则不会再出现用户名密码登录 -->
+    <!--<string name="client_sms_password_login_enable">true</string> -->
+    <!-- 是否启动修改密码功能 -->
+    <string name="client_enable_reset_password">true</string>
+    
+    <!-- 用户反馈公众号ID，配置则会在侧边栏显示用户反馈按钮，不配置则没有此功能 -->
+    <!--<string name="client_sliding_menu_feedback_ocu">e0aefa8822bb233a693d7a0f14c8b4bd</string>-->
+    
+
+
+    <!--来电显示默认开启状态-->
+    <string name="client_call_show_on">false</string>
+    
+    <!-- 使用MxAppCenterView中的添加按钮 -->
+    <string name="app_center_add_button">true</string>
+    
+    <!--视频服务器地址-->
+    <string name="client_conf_video_server_host">www.minxing365.com:8906</string>
+    
+    <!--敏行升级地址-->
+    <!-- <string name="custom_app_upgrade_url">http://dev3.dehuinet.com:8013/clients_file/Android.apk</string> -->
+
+    <!--应用中心轮播图是否显示-->
+    <string name="client_app_center_banner_show">false</string>
+</resources>

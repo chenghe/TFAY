@@ -1,0 +1,231 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingBottom="5dip"
+    android:paddingLeft="@dimen/mx_chat_item_padding_left"
+    android:paddingRight="10dip" >
+
+    <!-- 头像和消息数 -->
+
+    <RelativeLayout
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/mx_avatar_dimen_outer"
+        android:layout_height="@dimen/mx_avatar_dimen_outer"
+        android:layout_marginTop="5dip" >
+
+        <ImageView
+            android:id="@+id/conversation_avatar"
+            android:layout_width="@dimen/mx_avatar_dimen_outer"
+            android:layout_height="@dimen/mx_avatar_dimen_outer"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mx_default_icon_avatar" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sms_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginTop="3dip"
+        android:layout_toRightOf="@id/avatar"
+        android:background="@drawable/mx_icon_red_pot_big"
+        android:gravity="center"
+        android:textColor="@color/mx_white"
+        android:textSize="@dimen/mx_message_new_red_btn_text_size" />
+
+    <ImageView
+        android:id="@+id/sms_unread_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/avatar"
+        android:layout_marginTop="2.0dip"
+        android:background="@drawable/mx_icon_red_pot_small"
+        android:visibility="gone" />
+ <!--
+    <com.minxing.kit.ui.widget.VariableTextView
+        android:id="@+id/lastmsg_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dip"
+        android:textColor="@color/mx_dark_gray"
+        android:textSize="13.0dip" />
+    <RelativeLayout 
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/mx_avatar_dimen_outer"
+        android:layout_marginLeft="@dimen/mx_private_sms_title_marginleft"
+        android:layout_marginTop="5.0dip"
+        android:layout_toLeftOf="@id/lastmsg_time"
+        android:layout_toRightOf="@id/avatar">
+        <LinearLayout 
+            android:id="@+id/row1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            
+              <com.minxing.kit.ui.widget.VariableTextView
+                    android:id="@+id/conversation_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/mx_black"
+                    android:textSize="@dimen/mx_middle_textsize" />
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/row1"
+            android:orientation="horizontal">
+            <com.minxing.kit.ui.widget.VariableTextView
+                        android:id="@+id/conversation_from_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:textColor="@color/mx_dark_gray"
+                        android:textSize="14.0dip" />
+
+                    <ImageView
+                        android:id="@+id/conversation_message_fail_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/mx_msg_state_failed"
+                        android:visibility="gone" />
+
+                    <com.minxing.kit.ui.widget.VariableTextView
+                        android:id="@+id/conversation_lastmsg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:ellipsize="end"
+                        android:gravity="bottom"
+                        android:singleLine="true"
+                        android:textColor="@color/mx_dark_gray"
+                        android:textSize="14.0dip" />
+        </LinearLayout>
+                   <ImageView
+                    android:id="@+id/image_mute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/relativeLayout1"
+                    android:layout_alignRight="@id/lastmsg_time"
+                    android:layout_marginBottom="2.0dip"
+                    android:layout_gravity="right"
+                    android:paddingRight="2.0dip"
+                    android:src="@drawable/mx_chat_mute_notify"
+                    android:visibility="gone" />
+    </RelativeLayout>
+   
+    -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/mx_private_sms_title_marginleft"
+        android:layout_marginTop="5.0dip"
+        android:layout_toRightOf="@id/avatar"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:paddingRight="5.0dip"
+                android:orientation="vertical" >
+
+                  <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/conversation_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/mx_black"
+                    android:textSize="@dimen/mx_middle_textsize" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:orientation="horizontal" >
+
+                    <com.minxing.kit.ui.widget.MXVariableTextView
+                        android:id="@+id/conversation_from_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
+                        android:text=""
+                        android:textColor="@color/mx_dark_gray"
+                        android:textSize="14.0dip" />
+
+                    <ImageView
+                        android:id="@+id/conversation_message_fail_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/mx_msg_state_failed"
+                        android:visibility="gone" />
+
+                    <com.minxing.kit.ui.widget.MXVariableTextView
+                        android:id="@+id/conversation_lastmsg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:ellipsize="end"
+                        android:gravity="bottom"
+                        android:singleLine="true"
+                        android:textColor="@color/mx_dark_gray"
+                        android:textSize="14.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/lastmsg_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=""
+                    android:textColor="@color/mx_dark_gray"
+                    android:textSize="13.0dip" />
+
+                <ImageView
+                    android:id="@+id/image_mute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_gravity="right"
+                    android:paddingRight="2.0dip"
+                    android:src="@drawable/mx_chat_mute_notify"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

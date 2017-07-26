@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center" >
+
+    <FrameLayout
+        android:id="@+id/voice_rcd_hint_rcding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/voice_rcd_hint_anim_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mx_voice_rcd_hint_bg"
+            android:gravity="bottom|center"
+            android:minWidth="160.0dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="80.0dip"
+                android:layout_height="120.0dip"
+                android:src="@drawable/mx_voice_rcd_hint" />
+
+            <ImageView
+                android:id="@+id/voice_rcd_hint_anim"
+                android:layout_width="80.0dip"
+                android:layout_height="120.0dip"
+                android:layout_alignBottom="@id/imageView1"
+                android:layout_toRightOf="@id/imageView1"
+                android:background="@drawable/mx_amp1" />
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/voice_rcd_hint_text"
+                android:layout_width="160.0dip"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView1"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:minHeight="40.0dip"
+                android:text="@string/mx_chatfooter_cancel_rcd"
+                android:textColor="@color/mx_white"
+                android:textSize="15.0dip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/voice_rcd_hint_cancel_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mx_voice_rcd_hint_bg"
+            android:gravity="center_horizontal"
+            android:minWidth="160.0dip"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/voice_rcd_hint_cancel_icon"
+                android:layout_width="160.0dip"
+                android:layout_height="120.0dip"
+                android:src="@drawable/mx_rcd_cancel_icon" />
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/voice_rcd_hint_cancel_text"
+                android:layout_width="160.0dip"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/voice_rcd_hint_cancel_icon"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/mx_rcd_cancel_bg"
+                android:gravity="center"
+                android:minHeight="40.0dip"
+                android:text="@string/mx_chatfooter_cancel_rcd_release"
+                android:textColor="@color/mx_white"
+                android:textSize="15.0dip" />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

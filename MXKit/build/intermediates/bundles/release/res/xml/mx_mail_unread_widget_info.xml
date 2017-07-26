@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialLayout="@layout/mx_mail_unread_widget_layout"
+    android:previewImage="@drawable/mx_mail_preview_unread_widget"
+    android:minHeight="60dp"
+    android:minWidth="60dp"
+    android:configure="com.minxing.kit.mail.k9.activity.UnreadWidgetConfiguration"
+    android:updatePeriodMillis="0">
+</appwidget-provider>

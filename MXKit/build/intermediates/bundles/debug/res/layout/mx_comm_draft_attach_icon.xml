@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical" >
+
+    <FrameLayout
+        android:id="@+id/attach_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10.0dip" >
+
+        <ImageView
+            android:id="@+id/attach_icon"
+            android:layout_width="@dimen/mx_attach_dimen"
+            android:layout_height="@dimen/mx_attach_dimen"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mx_default_icon_avatar" />
+
+        <ImageView
+            android:id="@+id/play_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/mx_video_mask"
+            android:visibility="gone" />
+         <ImageView
+            android:id="@+id/icon_upload_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/mx_icon_finish"
+            android:visibility="gone" />
+        <com.minxing.kit.ui.widget.MXVariableTextView 
+            android:id="@+id/upload_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dip"
+            android:layout_gravity="center"
+            android:textColor="@color/mx_white"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/del_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/attach_container"
+        android:src="@drawable/mx_appitem_del_btn" />
+
+</RelativeLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center" >
+
+        <SurfaceView
+            android:id="@+id/surface_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/video_recorder_play_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/mx_title_bar_height"
+            android:background="@drawable/nv_title_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/videorecord_cancel"
+                style="@style/mx_mm_title_button"
+                android:focusable="true"
+                android:src="@drawable/mx_btn_back" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" >
+
+            <View
+                android:id="@+id/center"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true" />
+
+            <ImageView
+                android:id="@+id/video_recorder_recording_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/center"
+                android:layout_alignTop="@id/center"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginTop="15.0dip"
+                android:src="@drawable/mx_recording_icon_light" />
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/video_recorder_recorded_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/center"
+                android:layout_alignTop="@id/center"
+                android:layout_marginRight="15.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@color/mx_half_alpha_black"
+                android:paddingLeft="3.0dip"
+                android:paddingRight="3.0dip"
+                android:textColor="@color/mx_white"
+                android:textSize="16.0dip" />
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/videorecord_start_hint"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/center"
+                android:background="@color/mx_half_alpha_black"
+                android:gravity="center_horizontal"
+                android:padding="10.0dip"
+                android:text="@string/mx_label_click_button_start_shoot"
+                android:textColor="@color/mx_white" />
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/videorecord_time_limit_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/center"
+                android:background="@color/mx_half_alpha_black"
+                android:gravity="center_horizontal"
+                android:padding="10.0dip"
+                android:textColor="@color/mx_white"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/video_recorder_size_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/center"
+                android:background="@color/mx_half_alpha_black"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10.0dip"
+                android:visibility="gone" >
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/video_recorder_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mx_white"
+                    android:textSize="14dip" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/video_recorder_length"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:textColor="@color/mx_white"
+                    android:textSize="14dip" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mx_bg_bottombar_white_high"
+            android:gravity="center" >
+
+            <com.minxing.kit.ui.widget.MXButton
+                android:id="@+id/videorecord_save_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/mx_btn_small_height"
+                android:layout_marginLeft="10.0dip"
+                android:background="@drawable/mx_comm_white_button"
+                android:gravity="center"
+                android:minWidth="70.0dip"
+                android:text="@string/mx_save"
+                android:textColor="@color/mx_text_common_lightblue"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/videorecord_control_btn"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:src="@drawable/mx_video_recorder_start_btn" />
+
+            <com.minxing.kit.ui.widget.MXButton
+                android:id="@+id/videorecord_send"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/mx_btn_small_height"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/mx_comm_white_button"
+                android:gravity="center"
+                android:minWidth="70.0dip"
+                android:text="@string/mx_send"
+                android:textColor="@color/mx_text_common_lightblue"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/video_play_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/mx_video_play_btn"
+            android:visibility="gone" />
+    </LinearLayout>
+</FrameLayout>

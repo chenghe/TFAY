@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/system_title"
+        layout="@layout/mx_system_title" />
+    <!-- 底部工具栏 -->
+
+    <com.minxing.kit.internal.common.view.NewMessageBottomBar
+        android:id="@+id/new_message_bottombar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/new_message_bottombar"
+        android:layout_below="@id/system_title" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <com.minxing.kit.internal.common.view.ConversationEditText
+                android:id="@+id/text"
+                style="@style/mx_mm_edit_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/mx_comm_container_marginboth"
+                android:layout_marginRight="@dimen/mx_comm_container_marginboth"
+                android:layout_marginTop="@dimen/mx_message_reply_content_margin_top"
+                android:background="@drawable/mx_bg_edittext_selector"
+                android:gravity="top|left"
+                android:hint="@string/mx_plx_input_reply_content"
+                android:inputType="textCapSentences|textAutoCorrect|textMultiLine|textShortMessage"
+                android:lineSpacingExtra="5.0dip"
+                android:minHeight="200.0dip"
+                android:singleLine="false"
+                android:textColor="@color/mx_black" />
+
+            <!-- 附件栏 -->
+
+            <com.minxing.kit.internal.common.view.ImageViewColumn
+                android:id="@+id/attachement_file"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text"
+                android:layout_marginLeft="@dimen/mx_new_message_attachement_file_margin"
+                android:layout_marginRight="@dimen/mx_new_message_attachement_file_margin"
+                android:layout_marginTop="@dimen/mx_new_message_attachement_file_margin" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

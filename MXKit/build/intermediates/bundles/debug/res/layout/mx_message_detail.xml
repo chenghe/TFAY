@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/mx_system_title" />
+
+    <ScrollView
+        android:id="@+id/detail_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+	    android:background="@color/mx_white"
+        android:layout_below="@id/title_bar">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            <include layout="@layout/mx_message_type_item" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/firstloading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

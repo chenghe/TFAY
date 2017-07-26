@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@drawable/mx_btn_style_alert_dialog_background"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/call_btn"
+            android:layout_width="fill_parent"
+            android:layout_weight="1.0"
+            android:layout_height="40.0dip"
+            android:background="@drawable/mx_comm_blue_button"
+            android:gravity="center"
+            android:text="@string/mx_contact_detail_call"
+            android:textColor="@color/mx_white"
+            android:textSize="18.0dip" />
+        
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/call_plus_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip"
+            android:paddingLeft="20.0dip"
+            android:paddingRight="20.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/mx_comm_blue_button"
+            android:gravity="center"
+            android:textColor="@color/mx_white"
+            android:textSize="18.0dip"
+            android:visibility="gone" />
+    </LinearLayout>
+    
+    <com.minxing.kit.ui.widget.MXVariableTextView
+        android:id="@+id/wait_call_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_marginTop="15.0dip"
+        android:background="@drawable/mx_comm_blue_button"
+        android:gravity="center"
+        android:text="@string/mx_menu_call_with_free"
+        android:textColor="@color/mx_white"
+        android:textSize="18.0dip" />
+    
+    <com.minxing.kit.ui.widget.MXVariableTextView
+        android:id="@+id/sms_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_marginTop="15.0dip"
+        android:background="@drawable/mx_comm_blue_button"
+        android:gravity="center"
+        android:text="@string/mx_contact_detail_sms"
+        android:textColor="@color/mx_white"
+        android:textSize="18.0dip" />
+    
+    <com.minxing.kit.ui.widget.MXVariableTextView
+        android:id="@+id/add_to_mobile_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_marginTop="15.0dip"
+        android:background="@drawable/mx_comm_blue_button"
+        android:gravity="center"
+        android:text="@string/mx_contact_detail_add_to_mobile"
+        android:textColor="@color/mx_white"
+        android:textSize="18.0dip" />
+
+</LinearLayout>

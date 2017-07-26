@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/mx_white"
+    android:padding="5.0dip" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/selected_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:button="@drawable/mx_btn_check_message_list_item"
+            android:clickable="true"
+            android:visibility="gone" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/mail_flag_container"
+        android:layout_width="15.0dip"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="horizontal" >
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:maxWidth="200.0dip"
+                    android:textSize="18dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/subject_flag_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:gravity="bottom" >
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/subject_unread_flag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/mx_alp_small_pattern_dot_linked"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="15.0dip" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:paddingBottom="6dp"
+            android:paddingTop="5dip" >
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/mail_status_flag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentLeft="true"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_below="@+id/subject_flag_container"
+                android:bufferType="spannable"
+                android:gravity="top"
+                android:longClickable="false"
+                android:singleLine="true"
+                android:textColor="@color/mx_mail_text_gray"
+                android:textSize="15dip" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="5dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="horizontal" >
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:maxWidth="@dimen/mx_mail_message_list_from_width"
+                    android:textSize="18dip" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/thread_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5.0dip"
+                    android:paddingRight="5.0dip"
+                    android:layout_marginLeft="3.0dip"
+                    android:background="@drawable/mx_mail_thread_unread_count_bg"
+                    android:focusable="false"
+                    android:textColor="@color/mx_white"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5.0dip"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/mx_mail_attachment_flag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2.0dip"
+                    android:background="@drawable/mx_mail_ic_email_attachment_flag"
+                    android:visibility="gone" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3.0dip"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/mx_mail_text_gray" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/subject_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:gravity="bottom" >
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="15.0dip" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/list_item_inner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:paddingBottom="6dp"
+            android:paddingTop="5dip" >
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/preview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentLeft="true"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_below="@+id/subject_container"
+                android:gravity="top"
+                android:longClickable="false"
+                android:singleLine="false"
+                android:ellipsize="end"
+                android:textColor="@color/mx_mail_text_gray"
+                android:textSize="13dip" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

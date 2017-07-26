@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/new_group_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:background="@drawable/mx_bg_edittext_selector"
+        android:orientation="horizontal" >
+
+        <com.minxing.kit.ui.widget.MXVariableEditText
+            android:id="@+id/new_group_name"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@null"
+            android:hint="@string/mx_create_group_name_hint"
+            android:padding="5dip"
+            android:singleLine="true"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/new_group_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3.0dip"
+            android:gravity="center"
+            android:paddingBottom="5dip"
+            android:paddingLeft="0dip"
+            android:paddingRight="5dip"
+            android:paddingTop="5dip"
+            android:text="@string/mx_label_please_select_mumber"
+            android:textColor="@color/mx_black"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:id="@+id/mx_search_parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/mx_bg_edittext_selector"
+            android:orientation="horizontal"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusable="false"
+                android:src="@drawable/mx_search_bar_icon_normal" />
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:background="@null"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:text="@string/mx_common_search"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

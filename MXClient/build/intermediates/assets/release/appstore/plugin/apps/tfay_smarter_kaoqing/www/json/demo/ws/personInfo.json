@@ -1,0 +1,30 @@
+{
+  "type": "unAuth",
+  "code": "00",
+  "message": "SUCCESS",
+  "context": {
+    "sysUserInfo": {
+      "oid": "E47BF734-87CC-4E1F-9AB5-F335D78BACA1",
+      "userAccount": "emp1",
+      "userPassword": "E10ADC3949BA59ABBE56E057F20F883E",
+      "accountType": "2",
+      "status": "VALID",
+      "statusName": "生效",
+      "innerUserId": "E47BF734-87CC-4E1F-9AB5-F335D78BACA1",
+      "cifSeq": "1000049994",
+      "loginErrorTimes": 0,
+      "lastLoginDate": "2017-03-29 13:48:33",
+      "loginTotalTimes": 0,
+      "openDate": "2017-03-28 11:59:06",
+      "closeDate": "2017-03-28 11:59:06",
+      "lastErrorEPwdTime": "2017-03-28 11:59:06",
+      "userLevel": "AuthenUser",
+      "userLevelName": "null",
+      "operatorTime": "2017-03-28 11:59:06",
+      "lastModifyOperatorTime": "2017-03-28 11:59:06",
+      "aInt": 0
+    },
+    "tokenId": "D285AEC404332D491B4FF87FEB80A31C"
+  },
+  "errorList": []
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mx_health_date_format_y_m_d">yyyy-MM-dd</string>
+    <string name="mx_health_app_name">健步走</string>
+    <string name="mx_health_app_rankings">排行榜</string>
+    <string name="mx_health_function_label">功能介绍</string>
+    <string name="mx_health_function_content">在这里可以看到朋友的运动情况</string>
+    <string name="mx_health_come_in_health">进入%s</string>
+    <string name="mx_health_come_in_main">进入我的主页</string>
+    <string name="mx_health_privacy_setting">隐私及提醒设置</string>
+    <string name="mx_health_setting_title">详细资料</string>
+    <string name="mx_health_ranking_num">第%d名</string>
+    <string name="mx_health_first_text">%s占领了封面</string>
+    <string name="mx_health_no_praise">还没有朋友点赞</string>
+    <string name="mx_health_praise_me_title">赞我的朋友</string>
+    <string name="mx_health_join_ranking">加入排行榜</string>
+    <string name="mx_health_receive_ranking_msg">接收排行榜消息</string>
+    <string name="mx_health_receive_praise_msg">接收朋友点赞消息</string>
+    <string name="mx_health_before_hours">小时前</string>
+    <string name="mx_health_before_minutes">分钟前</string>
+    <string name="mx_health_before_seconds">秒前</string>
+    <string name="mx_health_before_one_hour">1小时前</string>
+    <string name="mx_health_before_one_minute">1分钟前</string>
+    <string name="mx_health_before_one_second">1秒前</string>
+</resources>

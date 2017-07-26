@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:weightSum="4.0"
+    android:layout_marginLeft="20dip" >
+    <LinearLayout
+        android:id="@+id/like_container"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/mx_reply_popupwindow_height"
+        android:minWidth="@dimen/mx_reply_popupwindow_item_width"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:layout_weight="1"
+        android:background="@drawable/mx_popup_window_item_left_selector"
+        android:clickable="true"
+        android:gravity="center" >
+        
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:drawableLeft="@drawable/mx_like"
+            android:drawablePadding="@dimen/mx_modify_drawable_space"
+            android:text="@string/mx_work_circle_message_item_like"
+            android:textColor="@color/mx_white"
+            android:textSize="@dimen/mx_circle_item_reply_popup_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/comment_container"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/mx_reply_popupwindow_height"
+        android:minWidth="@dimen/mx_reply_popupwindow_item_width"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:clickable="true"
+        android:layout_weight="1"
+        android:background="@drawable/mx_popup_window_item_middle_selector"
+        android:gravity="center" >
+        
+		<com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/mx_comment"
+            android:drawablePadding="@dimen/mx_modify_drawable_space"
+            android:gravity="center"
+            android:text="@string/mx_work_circle_message_item_reply"
+            android:textColor="@color/mx_white"
+            android:textSize="@dimen/mx_circle_item_reply_popup_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/share_container"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/mx_reply_popupwindow_height"
+        android:minWidth="@dimen/mx_reply_popupwindow_item_width"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:background="@drawable/mx_popup_window_item_middle_selector"
+        android:gravity="center" >
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/mx_share"
+            android:drawablePadding="@dimen/mx_modify_drawable_space"
+            android:gravity="center"
+            android:text="@string/mx_work_circle_message_item_share"
+            android:textColor="@color/mx_white"
+            android:textSize="@dimen/mx_circle_item_reply_popup_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/more_container"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/mx_reply_popupwindow_height"
+        android:minWidth="@dimen/mx_reply_popupwindow_item_width"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:background="@drawable/mx_popup_window_item_right_selector"
+        android:gravity="center" >
+        
+		<com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mx_work_circle_message_item_more"
+            android:textColor="@color/mx_white"
+            android:textSize="@dimen/mx_circle_item_reply_popup_text_size" />
+    </LinearLayout>
+</LinearLayout>

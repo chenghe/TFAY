@@ -1,0 +1,317 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/mx_circle_item_padding_top" >
+
+    <!-- 头像 -->
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/mx_circle_avatar_size"
+        android:layout_height="@dimen/mx_circle_avatar_size"
+        android:layout_marginLeft="@dimen/mx_circle_item_padding_left"
+        android:layout_marginTop="2dip"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mx_default_icon_avatar"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/message_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mx_circle_item_avatar_margin"
+        android:layout_toRightOf="@id/avatar"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/mx_circle_item_padding_bottom"
+        android:paddingRight="@dimen/mx_circle_item_padding_right" >
+
+        <RelativeLayout
+            android:id="@+id/name_type_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <!-- 发起人名字 -->
+
+            <com.minxing.kit.internal.common.view.SpannableTextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:maxWidth="@dimen/mx_message_type_item_name_maxwidth"
+                android:singleLine="true"
+                android:textColor="@color/mx_text_circle_name_color"
+                android:textSize="@dimen/mx_circle_item_sender_title_textsize" />
+
+            <!-- 消息类型 -->
+
+            <LinearLayout
+                android:id="@+id/group_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/mx_message_detail_name_group_space"
+                android:layout_toRightOf="@id/name"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+
+                <include
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/mx_message_type_with_icon" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mx_message_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_type_time"
+            android:layout_marginTop="@dimen/mx_circle_item_margin_name_content" >
+
+            <!-- 六种类型附件占位区,在adapter看具体情形插入不同的插件 -->
+
+            <RelativeLayout
+                android:id="@+id/attachment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            
+            <com.minxing.kit.internal.common.view.FlowLayout
+                android:id="@+id/topic_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/attachment"
+                android:layout_marginTop="5dip"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/graph_attachment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/topic_container"
+                android:visibility="gone" >
+
+                <include layout="@layout/mx_share_message_main" />
+            </LinearLayout>
+
+            <!-- 附件栏 -->
+
+            <com.minxing.kit.internal.common.view.SubItemGridView
+                android:id="@+id/attachement_file"
+                android:layout_width="@dimen/mx_attach_dimen_gridview_width"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/graph_attachment"
+                android:layout_marginTop="10dip"
+                android:columnWidth="@dimen/mx_attach_dimen_size"
+                android:gravity="left"
+                android:horizontalSpacing="@dimen/mx_attach_dimen_size_spacing"
+                android:listSelector="@null"
+                android:numColumns="3"
+                android:stretchMode="none"
+                android:verticalSpacing="@dimen/mx_attach_dimen_size_spacing" >
+            </com.minxing.kit.internal.common.view.SubItemGridView>
+
+            <!-- 创建时间 -->
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/created_at"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/attachement_file"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/mx_circle_item_footer_margin_top"
+                android:textColor="@color/mx_dark_gray"
+                android:textSize="@dimen/mx_small_textsize" />
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/circle_btn_modify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/attachement_file"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="@dimen/mx_circle_item_footer_margin_top"
+                android:layout_toRightOf="@id/created_at"
+                android:text="@string/mx_modify"
+                android:textColor="@color/mx_blue_gray2"
+                android:textSize="@dimen/mx_small_textsize"
+                android:visibility="gone" />
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/mx_id_circel_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/attachement_file"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="@dimen/mx_circle_item_footer_margin_top"
+                android:layout_toRightOf="@id/circle_btn_modify"
+                android:text="@string/mx_delete"
+                android:textColor="@color/mx_blue_gray2"
+                android:textSize="@dimen/mx_small_textsize"
+                android:visibility="gone" />
+            <!-- 交互按钮 -->
+
+            <LinearLayout
+                android:id="@+id/comment_button_and_modify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/attachement_file"
+                android:layout_marginTop="@dimen/mx_circle_item_footer_margin_top" >
+
+                <ImageView
+                    android:id="@+id/comment_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="8dip"
+                    android:src="@drawable/mx_friendactivity_comment_icon"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <!-- 查看更多回复 当评论数大于当前展示评论的条数的的时候才显示 -->
+
+            <LinearLayout
+                android:id="@+id/message_like_and_reply_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/comment_button_and_modify"
+                android:layout_marginTop="@dimen/mx_circle_item_reply_margin_top"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="5.0dip"
+                android:paddingRight="2.0dip"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:id="@+id/message_like_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/mx_bg_grey_dark"
+                    android:orientation="vertical"
+                    android:padding="5dip" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <com.minxing.kit.ui.widget.MXVariableTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/mx_circle_item_reply_like_icon_margin_right"
+                            android:drawableLeft="@drawable/mx_icon_like"
+                            android:gravity="center_vertical"
+                            android:textSize="@dimen/mx_circle_item_reply_text_size" />
+
+                        <com.minxing.kit.internal.common.view.SpannableTextView
+                            android:id="@+id/like_text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/mx_blue_gray2"
+                            android:textSize="@dimen/mx_circle_item_reply_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/message_reply_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/mx_bg_grey_dark"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="5dip" >
+
+                    <LinearLayout
+                        android:id="@+id/more_reply_container"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <com.minxing.kit.ui.widget.MXVariableTextView
+                            android:id="@+id/more_reply"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/mx_blue_gray"
+                            android:textSize="@dimen/mx_circle_item_reply_text_size" />
+
+                        <ProgressBar
+                            android:id="@+id/reply_loading_pb"
+                            style="?android:attr/progressBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <!-- 最后才是回复内容 -->
+
+                    <com.minxing.kit.internal.common.view.MessageReply
+                        android:id="@+id/message_reply"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/mx_message_erroring"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_type_time"
+            android:background="@drawable/mx_reply_bg"
+            android:layout_marginTop="20dp"
+            android:visibility="gone">
+
+
+                <com.minxing.kit.internal.common.view.SpannableTextView
+                    android:id="@+id/mx_message_error_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:layout_margin="15dp"
+                    android:textColor="@color/mx_black"
+                    android:textSize="@dimen/mx_circle_item_sender_title_textsize" />
+
+            </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/news_mark"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message_content"
+        android:layout_marginTop="5.0dip"
+        android:background="@drawable/mx_news_mark"
+        android:visibility="gone" >
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/mx_message_tab_bgcolor"
+            android:gravity="center"
+            android:text="@string/mx_label_above_is_new_message"
+            android:textColor="@color/mx_grey_light"
+            android:textSize="@dimen/mx_circle_item_reply_text_size" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/message_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/mx_divider_horizontal" />
+
+</RelativeLayout>

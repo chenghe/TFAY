@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/task_title_and_actor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- 任务状态 -->
+
+   <!--      <com.minxing.widget.ScheduleStatusIcon
+            android:id="@+id/task_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" /> -->
+        <!-- 任务标题 -->
+		<com.minxing.kit.ui.widget.MXVariableTextView 
+	    android:id="@+id/circle_task_mark"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip"
+        android:textSize="@dimen/mx_circle_item_task_mark_text_size"
+        android:textColor="@color/mx_grey_light"
+        android:text="@string/mx_work_circle_task_mark"/>
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/task_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mx_circle_item_name_margin_top"
+            android:layout_below="@id/circle_task_mark"
+            android:layout_centerVertical="true"
+            android:textColor="@color/mx_black"
+            android:textSize="@dimen/mx_circle_item_content_text_size" />
+
+        <LinearLayout
+            android:id="@+id/task_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="@dimen/mx_circle_item_task_status_margin_top"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_below="@id/task_name">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mx_task_icon_clock" />
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/task_expiration_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mx_circle_item_task_subitem_margin"
+                android:layout_marginRight="@dimen/mx_circle_item_task_subitem_margin"
+                android:textColor="@color/mx_black"
+                android:textSize="@dimen/mx_circle_item_sub_content_text_size" />
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/task_status_will_expire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mx_task_icon_status_will_expire"
+                android:text="@string/mx_work_circle_task_status_will_expire"
+                android:textColor="@color/mx_white"
+                android:textSize="@dimen/mx_circle_item_content_text_size" />
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/task_status_expired"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mx_task_icon_status_expired"
+                android:text="@string/mx_work_circle_task_status_expired"
+                android:textColor="@color/mx_white"
+                android:textSize="@dimen/mx_circle_item_content_text_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="@dimen/mx_circle_item_task_status_margin_top"
+                                             
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_below="@id/task_status">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mx_task_icon_progress" />
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/task_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mx_circle_item_task_subitem_margin"
+                android:layout_marginRight="@dimen/mx_circle_item_task_subitem_margin"
+                android:textColor="@color/mx_black"
+                android:textSize="@dimen/mx_circle_item_sub_content_text_size" />
+        </LinearLayout>
+
+        <!-- 参与者头像区域 -->
+<!-- 
+        <HorizontalScrollView
+            android:id="@+id/task_actor_layout"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/task_name"
+            android:layout_marginLeft="@dimen/task_status_and_title_space"
+            android:layout_marginTop="@dimen/attachement_column_margintop"
+            android:layout_toRightOf="@id/task_status"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/task_actor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </HorizontalScrollView>
+-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/task_status_director_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/task_title_and_actor"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/mx_task_progress_value_and_prgress_space"
+            android:orientation="horizontal" >
+
+            <!-- 进度的% -->
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/task_progress_value1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/mx_grey_light_2"
+                android:textSize="@dimen/mx_circle_item_sub_content_text_size"
+                android:textStyle="bold" />
+            <!-- 进度的/ -->
+
+        </LinearLayout>
+
+        <!-- 项目进度 -->
+
+        <ProgressBar
+            android:id="@+id/task_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="5.0dip"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/rate"
+            android:progressDrawable="@drawable/mx_progress_green" />
+    </RelativeLayout>
+    <!-- 未完成的任务 -->
+
+    <LinearLayout
+        android:id="@+id/uncompleted_cells"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/task_status_director_progress"
+        android:layout_marginTop="10.0dip"
+        android:orientation="vertical" >
+    </LinearLayout>
+    <!-- 已经完成的任务 -->
+
+    <LinearLayout
+        android:id="@+id/completed_cells"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uncompleted_cells"
+        android:background="@drawable/mx_task_completed_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </LinearLayout>
+</RelativeLayout>

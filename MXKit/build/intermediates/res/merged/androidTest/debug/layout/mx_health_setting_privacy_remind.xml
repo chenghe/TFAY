@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0EFF4">
+
+    <include
+        android:id="@+id/mx_health_header"
+        layout="@layout/mx_health_header"
+        />
+
+    <LinearLayout
+        android:id="@+id/mx_health_join_ranking_layout"
+        android:layout_height="@dimen/mx_layout_hight_size"
+        android:layout_width="match_parent"
+        android:background="@color/mx_white"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/mx_public_setting_item_left"
+            android:layout_weight="1.0"
+            android:text="@string/mx_health_join_ranking"
+            android:textColor="@color/mx_black"
+            android:textSize="18.0dip" />
+
+        <Switch
+            android:id="@+id/mx_health_join_ranking_check"
+            style="@style/mx_switch_custom_style"
+            android:layout_gravity="center"
+            android:checked="true"
+            android:layout_marginRight="@dimen/mx_public_setting_item_right"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/mx_common_divide_line"
+        android:layout_marginLeft="@dimen/mx_public_setting_item_left"
+        />
+
+    <LinearLayout
+        android:id="@+id/mx_health_receive_ranking_msg_layout"
+        android:layout_height="@dimen/mx_layout_hight_size"
+        android:layout_width="match_parent"
+        android:background="@color/mx_white"
+        android:orientation="horizontal">
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/mx_public_setting_item_left"
+            android:layout_weight="1.0"
+            android:text="@string/mx_health_receive_ranking_msg"
+            android:textColor="@color/mx_black"
+            android:textSize="18.0dip" />
+
+        <Switch
+            android:id="@+id/mx_health_receive_ranking_msg_check"
+            style="@style/mx_switch_custom_style"
+            android:layout_gravity="center"
+            android:checked="true"
+            android:layout_marginRight="@dimen/mx_public_setting_item_right"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/mx_common_divide_line"
+        android:layout_marginLeft="@dimen/mx_public_setting_item_left"
+        />
+    <LinearLayout
+        android:id="@+id/mx_health_receive_praise_msg_layout"
+        android:layout_height="@dimen/mx_layout_hight_size"
+        android:layout_width="match_parent"
+        android:background="@color/mx_white"
+        android:orientation="horizontal">
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/mx_public_setting_item_left"
+            android:layout_weight="1.0"
+            android:text="@string/mx_health_receive_praise_msg"
+            android:textColor="@color/mx_black"
+            android:textSize="18.0dip" />
+
+        <Switch
+            android:id="@+id/mx_health_receive_praise_msg_check"
+            style="@style/mx_switch_custom_style"
+            android:layout_gravity="center"
+            android:checked="true"
+            android:layout_marginRight="@dimen/mx_public_setting_item_right"
+            />
+    </LinearLayout>
+</LinearLayout>

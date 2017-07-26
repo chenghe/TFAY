@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center" 
+    android:paddingLeft="10.0dip">
+
+    <!-- 回复按钮 -->
+
+    <LinearLayout
+        android:id="@+id/cell_check_and_reply_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical" >
+
+        <CheckBox
+            android:id="@+id/cell_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:button="@drawable/mx_task_status_checkbox_bg_complete"
+            android:focusable="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/cell_check_and_reply_icon"
+        android:orientation="horizontal" >
+
+        <!-- 序号 -->
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/cell_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.5dip"
+            android:background="@drawable/mx_task_order_bg"
+            android:textColor="@color/mx_white"
+            android:textSize="@dimen/mx_circle_item_sub_order_text_size" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:orientation="vertical">
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/cell_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mx_black"
+                android:textSize="@dimen/mx_circle_item_sub_content_text_size" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dip"
+                android:gravity="center_vertical" >
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/cell_director"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/mx_grey_light"
+                    android:textSize="@dimen/mx_circle_item_sub_content_text_size_small" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    android:id="@+id/cell_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/cell_director"
+                    android:textColor="@color/mx_grey_light"
+                    android:textSize="@dimen/mx_circle_item_sub_content_text_size_small" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/mx_health_header_bg">
+
+    <ImageButton
+        android:id="@+id/mx_health_header_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:minWidth="55dp"
+        android:src="@drawable/mx_btn_back"
+        android:background="@drawable/mx_header_bar_btn_selector"
+        />
+
+    <TextView
+        android:id="@+id/mx_health_header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/mx_health_white"
+        android:layout_centerInParent="true"
+        android:textSize="18dp"/>
+
+    <ImageButton
+        android:id="@+id/mx_health_header_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:minWidth="55dp"
+        android:src="@drawable/mx_btn_setting"
+        android:background="@drawable/mx_header_bar_btn_selector"
+        android:visibility="gone"/>
+
+</RelativeLayout>

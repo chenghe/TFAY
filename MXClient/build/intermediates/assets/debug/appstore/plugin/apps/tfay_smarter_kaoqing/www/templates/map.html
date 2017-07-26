@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+  <style type="text/css">
+    #r-result{width:100%; position: absolute;top: 10px;left: 5px}
+    #r-result  input{    border-radius: 5px;
+      line-height: 20px;
+      border: none;
+      color: #ffb02a;
+      outline: none;}
+    .anchorBL{display:none}
+    .amap-copyright{display:none;
+      z-index:1;}
+  </style>
+  <title>地图</title>
+  <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+  <script src="http://webapi.amap.com/maps?v=1.3&key=73e8f83d4a61c79042291f6fa2e23317"></script>
+  <script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+
+  <script>
+      var map;
+     window.addEventListener("message", receiveMessage, false);
+      function receiveMessage(event) {
+          map = new AMap.Map('container', {
+              resizeEnable: true,
+              center: [event.data.longi, event.data.lati],
+              zoom: 16
+          });
+
+          var circle = new AMap.Circle({
+              center: new AMap.LngLat(event.data.longi, event.data.lati),// 圆心位置
+              radius: 100, //半径
+              strokeColor: "#F33", //线颜色
+              strokeOpacity: 1, //线透明度
+              strokeWeight: 3, //线粗细度
+              fillColor: "#ee2200", //填充颜色
+              fillOpacity: 0.35//填充透明度
+          });
+          circle.setMap(map);
+      }
+
+  </script>
+</head>
+
+<body>
+<div id="container"></div>
+<script>
+
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mx_bg_grey_dark"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/system_title"
+        layout="@layout/mx_system_title" />
+
+    <LinearLayout
+        style="@style/mx_bg_setting_item_is_divide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.minxing.kit.internal.common.view.ConversationSettingGridView
+            android:id="@+id/vip_grid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:gravity="center"
+            android:listSelector="@drawable/mx_mm_trans"
+            android:numColumns="4"
+            android:stretchMode="columnWidth" />
+
+        <TextView
+            android:id="@+id/vip_grid_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="3.0dip"
+            android:text="@string/mx_tip_group_chat_alert"
+            android:textColor="@color/mx_light_gray"
+            android:textSize="14.0dip" />
+    </LinearLayout>
+
+</LinearLayout>

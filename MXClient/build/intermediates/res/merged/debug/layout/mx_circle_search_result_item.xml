@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mx_list_item_selector"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/mx_circle_item_padding_bottom"
+    android:paddingLeft="@dimen/mx_circle_item_padding_left"
+    android:paddingRight="@dimen/mx_circle_item_padding_right"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingTop="@dimen/mx_circle_item_padding_top" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:focusable="false"
+        android:clickable="false">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" 
+            android:focusable="false"
+                android:clickable="false">
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="@dimen/mx_avatar_dimen_mini"
+                android:layout_height="@dimen/mx_avatar_dimen_mini"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mx_default_icon_avatar" 
+                android:focusable="false"
+                android:clickable="false"  />
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dip"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/mx_dark_gray"
+                android:textSize="@dimen/mx_small_textsize"
+                android:focusable="false"
+                android:clickable="false"  />
+
+           <!--  <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dip"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="group name"
+                android:textColor="@color/mx_dark_gray"
+                android:textSize="@dimen/mx_small_textsize" /> -->
+            
+            <include
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dip"
+                    layout="@layout/mx_message_type_with_icon" 
+                    android:clickable="false" 
+                    android:focusable="false"/>
+        </LinearLayout>
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/created_at"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/mx_dark_gray"
+            android:textSize="@dimen/mx_small_textsize" 
+            android:focusable="false" 
+            android:clickable="false" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip" >
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/message_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mx_circle_item_search_content_padding_left"
+            android:textColor="@color/mx_dark_gray"
+            android:textSize="@dimen/mx_small_textsize" 
+            android:focusable="false" 
+            android:clickable="false" />
+
+        <com.minxing.kit.internal.common.view.SpannableTextView
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/mx_black"
+            android:textSize="@dimen/mx_small_textsize" 
+            android:duplicateParentState="true"/>
+    </LinearLayout>
+
+</LinearLayout>

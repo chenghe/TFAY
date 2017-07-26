@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_gesture_pwd_view"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/nine_header"
+        android:layout_width="fill_parent"
+        android:layout_height="150dip"
+        android:layout_marginTop="14dip"
+        android:layout_alignParentTop="true" >
+        
+        <LinearLayout
+            android:id="@+id/userinfo_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <com.minxing.client.widget.RoundImageView
+                android:id="@+id/my_avatar"
+                android:layout_width="75.0dip"
+                android:layout_height="75.0dip"
+                android:src="@drawable/default_icon_avatar" />
+        </LinearLayout>
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/textTip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userinfo_layout"
+            android:layout_marginTop="10dip"
+            android:textColor="@color/white"
+            android:textSize="15.0dip"
+            android:gravity="center_horizontal" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/operation_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25.0dip" >
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/left_control"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="17.0dip"
+            android:visibility="gone" />
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/right_control"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="17.0dip"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nine_icon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/operation_layout"
+        android:layout_below="@id/nine_header"
+        android:layout_weight="1.0"
+        android:orientation="horizontal" />
+
+</RelativeLayout>

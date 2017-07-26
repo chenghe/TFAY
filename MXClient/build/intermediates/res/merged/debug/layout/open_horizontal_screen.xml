@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+                android:background="@color/bg_grey_dark"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/system_title"
+        layout="@layout/system_title" />
+    <RelativeLayout
+        android:id="@+id/open_horizontal_screen"
+        android:layout_width="match_parent"
+        android:layout_below="@id/system_title"
+        style="@style/bg_setting_item_narrow_switch" >
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/open"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/open_horizontal_screen_on"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/middle_textsize" />
+        <Switch
+            android:id="@+id/mx_system_setting_open_horizontal_screen_on"
+            style="@style/mx_switch_custom_style"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+        />
+
+    </RelativeLayout>
+
+</RelativeLayout>

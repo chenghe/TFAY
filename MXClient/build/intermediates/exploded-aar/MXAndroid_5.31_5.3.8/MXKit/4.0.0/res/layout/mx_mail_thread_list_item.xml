@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@drawable/mx_list_item_selector"
+    android:paddingBottom="5dip"
+    android:paddingTop="5dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip" >
+
+    <RelativeLayout
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/mx_avatar_dimen_outer"
+        android:layout_height="@dimen/mx_avatar_dimen_outer">
+
+        <ImageView
+            android:id="@+id/mail_thread_avatar"
+            android:layout_width="@dimen/mx_wb_common_arrow_size"
+            android:layout_height="@dimen/mx_wb_common_arrow_size"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mx_default_icon_avatar" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sms_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-15dp"
+        android:layout_toRightOf="@id/avatar"
+        android:background="@drawable/mx_icon_red_pot_big"
+        android:gravity="center"
+        android:textColor="@color/mx_white"
+        android:textSize="@dimen/mx_message_new_red_btn_text_size" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/mx_avatar_dimen_outer"
+        android:layout_marginLeft="@dimen/mx_private_sms_title_marginleft"
+        android:layout_toRightOf="@id/avatar" >
+
+        <RelativeLayout
+            android:id="@+id/row1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/sender_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="发送人姓名"
+                android:textColor="@color/mx_grey_dark2"
+                android:textSize="@dimen/mx_mail_list_item_tittle_text_size" />
+
+            <ImageView
+                android:id="@+id/mail_att_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2.0dip"
+                android:layout_toRightOf="@id/sender_name"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mx_mail_att_icon"
+                android:visibility="gone" />
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/last_mail_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="这是时间"
+                android:textColor="@color/mx_dark_gray"
+                android:textSize="@dimen/mx_wb_common_content_text_size" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/row1"
+            android:orientation="horizontal"
+            android:paddingBottom="0.0dip" >
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/mail_thread_subject"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:singleLine="true"
+                android:text="这是最后的消息"
+                android:textColor="@color/mx_black"
+                android:textSize="@dimen/mx_mail_list_item_sub_tittle_text_size"
+                android:textStyle="bold" />
+            
+            <ImageView
+                android:id="@+id/mail_fail_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mx_msg_state_failed"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/mail_thread_content_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/avatar"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dip"
+        android:visibility="gone" >
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/mail_thread_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="@dimen/mx_wb_common_content_text_size"
+            android:textColor="@color/mx_grey_light_3"/>
+    </LinearLayout>
+
+</RelativeLayout>

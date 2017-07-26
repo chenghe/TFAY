@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- 活动主题 -->
+
+    <com.minxing.kit.ui.widget.MXVariableEditText
+        android:id="@+id/action_theme"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/mx_bg_edit_text"
+        android:hint="@string/mx_plx_input_action_theme"
+        android:textColor="@color/mx_black"
+        android:textSize="@dimen/mx_middle_textsize" />
+
+    <LinearLayout
+        android:id="@+id/action_date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/action_theme"
+        android:layout_marginTop="@dimen/mx_new_message_action_view_space"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <!-- 开始 -->
+
+        <RelativeLayout
+            android:id="@+id/action_start_item"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/mx_bg_setting_item_closed_no_margin_horizontal"
+            android:layout_marginTop="0dip">
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mx_start"
+                android:textColor="@color/mx_black"
+                android:textSize="@dimen/mx_middle_textsize" />
+
+            <ImageView
+                android:id="@+id/arrow_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mx_icon_forward" />
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/action_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/mx_new_message_arraw_view_space"
+                android:layout_toLeftOf="@id/arrow_start"
+                android:textColor="@color/mx_blue_gray"
+                android:textSize="@dimen/mx_middle_textsize" />
+        </RelativeLayout>
+
+        
+        <!-- 结束时间 -->
+
+        <RelativeLayout
+            android:id="@+id/action_end_item"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/mx_bg_setting_item_closed_no_margin_horizontal" >
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mx_end"
+                android:textColor="@color/mx_black"
+                android:textSize="@dimen/mx_middle_textsize" />
+
+            <ImageView
+                android:id="@+id/arrow_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mx_icon_forward" />
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/action_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/mx_new_message_arraw_view_space"
+                android:layout_toLeftOf="@id/arrow_end"
+                android:textColor="@color/mx_blue_gray"
+                android:textSize="@dimen/mx_middle_textsize" />
+        </RelativeLayout>
+
+        
+        <!-- 截止时间 -->
+
+        <RelativeLayout
+            android:id="@+id/action_confirm_item"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/mx_bg_setting_item_closed_no_margin_horizontal" >
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mx_action_confirm_date"
+                android:textColor="@color/mx_black"
+                android:textSize="@dimen/mx_middle_textsize" />
+
+            <ImageView
+                android:id="@+id/arrow_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mx_icon_forward" />
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/action_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/mx_new_message_arraw_view_space"
+                android:layout_toLeftOf="@id/arrow_confirm"
+                android:textColor="@color/mx_blue_gray"
+                android:textSize="@dimen/mx_middle_textsize" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- 活动地点 -->
+
+    <com.minxing.kit.ui.widget.MXVariableEditText
+        android:id="@+id/action_location"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/action_date"
+        android:layout_marginTop="@dimen/mx_new_message_action_view_space"
+        style="@style/mx_bg_edit_text"
+        android:hint="@string/mx_plx_input_action_location"
+        android:textColor="@color/mx_black"
+        android:textSize="@dimen/mx_middle_textsize" />
+    <!-- 活动内容 -->
+
+    <com.minxing.kit.ui.widget.MXVariableEditText
+        android:id="@+id/action_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/action_location"
+        android:layout_marginTop="@dimen/mx_new_message_action_view_space"
+        android:background="@drawable/mx_bg_edittext_selector"
+        android:padding="10dip"
+        android:gravity="top|left"
+        android:hint="@string/mx_plx_input_action_content"
+        android:lineSpacingExtra="5dp"
+        android:minHeight="@dimen/mx_new_message_text_area_min_height"
+        android:textColor="@color/mx_black"
+        android:textSize="@dimen/mx_middle_textsize" />
+
+</RelativeLayout>

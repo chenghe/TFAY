@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/move_up"
+        android:title="@string/mx_mail_manage_accounts_move_up_action" />
+    <item android:id="@+id/move_down"
+        android:title="@string/mx_mail_manage_accounts_move_down_action" />
+    <item android:id="@+id/empty_trash"
+        android:title="@string/mx_mail_empty_trash_action" />
+    <item android:id="@+id/account_settings"
+        android:title="@string/mx_mail_account_settings_action" />
+    <item android:id="@+id/delete_account"
+        android:title="@string/mx_mail_remove_account_action" />
+    <item android:id="@+id/clear"
+        android:title="@string/mx_mail_clear_action" />
+    <item android:id="@+id/recreate"
+        android:title="@string/mx_mail_recreate_action" />
+    <item android:id="@+id/clear_pending"
+        android:title="@string/mx_mail_clear_pending_action" />
+    <item android:id="@+id/export"
+        android:title="@string/mx_mail_settings_export_account" />
+</menu>

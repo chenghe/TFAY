@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mx_health_ranking_item_bg">
+
+    <include
+        android:id="@+id/mx_health_header"
+        layout="@layout/mx_health_header" />
+
+
+    <com.minxing.kit.health.view.PullToZoomScrollViewEx
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mx_health_header" />
+
+
+    <TextView
+        android:id="@+id/tv_activity_main_page_top_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:shadowColor="#cc000000"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="10"
+        android:textColor="@color/mx_health_white"
+        android:textSize="15sp" />
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  默认显示菜单项-->
+    <string-array name="circle_quick_comment_visible">
+        <item>circle_quick_comment_like</item>
+        <item>circle_quick_comment_reply</item>
+        <item>circle_quick_comment_share</item>
+    </string-array>
+
+    <!--  显示在更多中的菜单项-->
+    <string-array name="circle_quick_comment_more">
+        <item>circle_quick_comment_collection</item>
+        <item>circle_quick_comment_topic</item>
+        <!--<item>circle_quick_comment_error</item>-->
+    </string-array>
+
+
+    <!-- 赞-->
+    <string-array name="circle_quick_comment_like">
+        <item>@string/circle_quick_comment_id_like</item>//ID
+        <item>@string/mx_work_circle_message_item_like</item>//名称
+        <item>@drawable/mx_like</item>//图标
+    </string-array>
+
+    <!-- 回复-->
+    <string-array name="circle_quick_comment_reply">
+        <item>@string/circle_quick_comment_id_reply</item>
+        <item>@string/mx_work_circle_message_item_reply</item>
+        <item>@drawable/mx_comment</item>
+    </string-array>
+
+    <!-- 分享-->
+    <string-array name="circle_quick_comment_share">
+        <item>@string/circle_quick_comment_id_share</item>
+        <item>@string/mx_work_circle_message_item_share</item>
+        <item>@drawable/mx_share</item>
+    </string-array>
+
+    <!-- 收藏-->
+    <string-array name="circle_quick_comment_collection">
+        <item>@string/circle_quick_comment_id_collection</item>
+        <item>@string/mx_work_circle_message_item_fav</item>
+        <item>@drawable/mx_collection</item>
+    </string-array>
+
+    <!-- 话题-->
+    <string-array name="circle_quick_comment_topic">
+        <item>@string/circle_quick_comment_id_topic</item>
+        <item>@string/mx_work_circle_comment_topic</item>
+        <item>@drawable/mx_topic</item>
+    </string-array>
+
+    <!-- 纠错-->
+    <string-array name="circle_quick_comment_error">
+        <item>@string/circle_quick_comment_id_error</item>
+        <item>@string/mx_work_circle_comment_error</item>
+    </string-array>
+
+    <!-- 各菜单项唯一标示-->
+    <string name="circle_quick_comment_id_like">like</string>
+    <string name="circle_quick_comment_id_reply">reply</string>
+    <string name="circle_quick_comment_id_share">share</string>
+    <string name="circle_quick_comment_id_collection">collection</string>
+    <string name="circle_quick_comment_id_topic">topic</string>
+    <string name="circle_quick_comment_id_error">error</string>
+</resources>

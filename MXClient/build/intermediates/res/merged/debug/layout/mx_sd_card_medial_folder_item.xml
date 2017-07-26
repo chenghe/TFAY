@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="120.0dip"
+        android:layout_height="130.0dip"
+        android:background="@drawable/mx_albums_bg"
+        android:duplicateParentState="true" >
+
+        <ImageView
+            android:id="@+id/folder_thumb"
+            android:layout_width="90.0dip"
+            android:layout_height="90.0dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15.0dip"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@id/video_mask"
+            android:layout_width="44.0dip"
+            android:layout_height="44.0dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38.0dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mx_video_mask"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="28.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10.0dip"
+            android:background="@drawable/mx_albums_icon_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <com.minxing.kit.ui.widget.MXVariableTextView
+                android:id="@+id/media_files_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right|center"
+                android:textColor="#ff4d596a"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/folder_name"
+            style="@style/mx_mm_font_preference_large"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="1.0dip"
+            android:gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>

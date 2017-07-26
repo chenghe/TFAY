@@ -1,0 +1,23 @@
+<resources>
+    <dimen name="small_textsize">14dp</dimen> <!-- 系统小号字 -->
+    <dimen name="max_textsize">18dp</dimen> <!-- 系统大号字 -->
+    <dimen name="login_box_margin">250dip</dimen>
+    <dimen name="login_input_vertical_space">16dp</dimen>
+    <dimen name="login_input_left">20dp</dimen>
+    <dimen name="login_input_right">20dp</dimen>
+    
+    <dimen name="middle_textsize">16dp</dimen>
+    <dimen name="new_red_btn_text_size">10dip</dimen>
+    
+    <dimen name="common_btn_height">48dip</dimen>
+    <dimen name="title_bar_height">48dp</dimen>
+    <dimen name="pop_menu_margin">10dip</dimen>
+    <dimen name="title_arrow_space">6dp</dimen> 
+    <dimen name="pop_menu_item_padding">12dip</dimen>
+    <dimen name="common_arrow_right">10dp</dimen>
+    <dimen name="common_setting_top">20dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+</resources>

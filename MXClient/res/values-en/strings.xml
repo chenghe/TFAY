@@ -1,0 +1,166 @@
+<resources>
+    <string name="app_name">CGNB MESSAGE</string>
+    <string name="plx_input_email">Username</string>
+    <string name="plx_input_password">Password</string>
+    <string name="plx_input_phone_number">Please enter your cell phone number</string>
+    <string name="plx_input_sms_password">Please enter the verification code</string>
+    <string name="request_sms_password">Request verification code</string>
+    <string name="wait_for_next_sms_password_request">Resend a request after %d seconds</string>
+    <string name="login">Login</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="complete">Complete</string>
+    <string name="alert">Alert</string>
+    <string name="system_tip">Warning</string>
+    <string name="warning_logout">You won’t receive any message if you log out.</string>
+    <string name="http_error">Connection exception, please try again later.</string>
+    <string name="server_error">Unable to process the request now, please try again later.</string>
+    <string name="init_error_no_sdcard">Memory card is not available.</string>
+    <string name="download_error_no_sdcard">Please insert a SD card to download the update.</string>
+    <string name="master_clear_alert">Eliminate data, force exit.</string>
+    <string name="sms_login_wrong_cell">Please enter a valid cell phone nubmer.</string>
+    
+    <string name="login_get_autocode">Obtaining verfication code...</string>
+    <string name="login_loading">Logging...</string>
+    <string name="login_forget_password">Forgot password?</string>
+    <string name="loading">Loading...</string>
+    
+    <string name="tab_chat">Chats</string>
+    <string name="tab_contacts">Contacts</string>
+    <string name="tab_appcenter">Apps</string>
+    <string name="tab_circle">Circles</string>
+    
+    <string name="sliding_inner_network">My Internal Networks</string>
+    <string name="sliding_outer_network">My External Networks</string>
+    <string name="sliding_check_outer_network">All External Networks</string>
+    <string name="sliding_user_feedback">Feedback</string>
+    
+    <string name="title_setting">Settings</string>
+    <string name="setting_message_disturb">Do Not Disturb</string>
+	<string name="setting_message_notification">Notification</string>
+	<string name="setting_gesture_password">Gesture Password</string>
+	<string name="setting_change_password">Change Password</string>
+	<string name="setting_function_introdution">Feature Introductions</string>
+	<string name="setting_call_remind">Caller ID</string>
+	<string name="version_upgrade">Version Info(%s)</string>
+	<string name="setting_logout">Log Out</string>
+	<string name="welcome_main_start">Get Started</string>
+	
+	<string name="gesture_password_on">Turn on Gesture Password</string>
+	<string name="gesture_password_change">Change Gesture Password</string>
+	<string name="gesture_password_check_error">Wrong gesture, try again</string>
+	
+	<string name="gesture_password_setting_relogin_tip">Forgot Gesture Password, please log in again</string>
+	<string name="gesture_password_setting_relogin">ReLogin</string>
+	<string name="gesture_password_setting_forget">Forgot Gesture</string>
+	<string name="gesture_password_setting_login_changeuser">Switch User</string>
+	<string name="gesture_password_setting_first">Set gesture password</string>
+	<string name="gesture_password_setting_second">Enter gesture password again</string>
+	<string name="gesture_password_setting_secondwrong">Different from the previous gesture, please enter again.</string>
+	<string name="gesture_password_setting_reset">Reset Gesture</string>
+	<string name="gesture_password_setting_success">Set Gesture Password successfully</string>
+	<string name="gesture_password_setting_error">Please connect at least three points.</string>
+	
+	<string name="new_message_notification">New Message Notification</string>
+	<string name="new_message_notification_sound">Sound</string>
+	<string name="new_message_notification_shake">Vibrate</string>
+	<string name="settings_disturb_setting_tip">Change notification sound and vibration mode</string>
+	
+	<string name="settings_disturb_on">Enabled</string>
+    <string name="settings_disturb_on_night">Night Only</string>
+    <string name="settings_disturb_off">Disabled</string>
+    <string name="settings_disturb_time_tip">"When Do Not Disturb is enabled, notification (sound or vibration) will be silenced.
+        Select 'Night Mode' to block notifications from 22:00pm to 08:00am"</string>
+	
+	<!-- 聊天界面菜单名称 -->
+	<string name="top_right_start_conversation">Group Chat</string>
+    <string name="top_right_add_contact">Add Contacts</string>
+    <string name="top_right_scan">Scan QR Code</string>
+    <string name="top_right_circle_message">Post</string>
+    
+    <!-- 圈子界面菜单名称 -->
+	<string name="circle_menu_send_text">Post</string>
+    <string name="circle_menu_create_task">Task</string>
+    <string name="circle_menu_activity">Event</string>
+    <string name="circle_menu_poll">Poll</string>
+    <string name="error_no_network">This operation needs to connect to the internet, please check your network settings.</string>
+    <string name="share_message_unsupport">Do not support sharing this file</string>
+    
+    <string name="notification_downloading_upgrade">Download</string>
+    <string name="notification_downloading_upgrade_progress">Downloading progress:</string>
+    <string name="notification_downloading_upgrade_complete">Complete download, click to install.</string>
+    <string name="notification_mail_setting">New Email Notification</string>
+    <string name="toast_download_error">Download Error</string>
+    <string name="toast_sdcard_not_existed">SD card not found</string>
+    <string name="app_upgrade">V%1$s Version updating</string>
+    <string name="notification_downloading_smart_error_message">Incremental updating failed, whether to download the original installation file?</string>
+    <string name="app_center_finish_edit">Finish</string>
+    
+    <string name="share_label_send_to_chat">Share with friends</string>
+    <string name="share_label_send_to_circle">Share in Work Groups</string>
+    
+    <string name="app_demo_personcenter">Personal Center</string>
+    <string name="app_demo_share">Share</string>
+    <string name="app_demo_circle">Moment</string>
+    <string name="app_demo_chat">Chat</string>
+    <string name="app_demo_appinfo">App Information</string>
+    <string name="app_demo_appcenter">App Center</string>
+    <string name="interface_share_img_circle">Share photos in Moment</string>
+    <string name="interface_share_imgs_circle">Share albums in Moment</string>
+    <string name="interface_share_img_chat">Share photos in Chat</string>
+    <string name="interface_share_imgs_chat">Share albums in Chat</string>
+    <string name="interface_share_link_chat">Share links in Chat</string>
+    <string name="interface_share_link_circle">Share links in Moment</string>
+    <string name="interface_auto_share_link_circle">Automatically share links in Moment.</string>
+    <string name="interface_share_text_chat">Share text files in Chat</string>
+    <string name="interface_share_text_circle">Share text files in Monment</string>
+    <string name="interface_share_mail">Share by email</string>
+    <string name="interface_view_current_user">View current user</string>
+    <string name="interface_star_current_user_activity">Start current user interface</string>
+    <string name="interface_view_network_list">View Outer Netword List</string>
+    <string name="interface_star_personinfo_activity">Start profile interface</string>
+    <string name="interface_view_person_info_json">View User Information(josn)</string>
+    <string name="interface_view_person_info">View User Information</string>
+    <string name="interface_change_password">Start Change Password interface</string>
+    <string name="interface_star_contactsconfig">Start Contacts configuration</string>
+    <string name="interface_select_user">Select User</string>
+    <string name="interface_select_address_contacts">Select local Contacts</string>
+    <string name="interface_query_network_unread">Unread messages in current Network</string>
+    <string name="interface_query_oncurrent_network_unread">Unread messages in Outer Network</string>
+    <string name="interface_check_network_unread">Check unread messages in current Network Work Group.</string>
+    <string name="interface_switch_network">Switch Network</string>
+    <string name="interface_satr_chat_callback">Start Chat Callback</string>
+    <string name="interface_force_refresh_circle">Force refreshing Moment</string>
+    <string name="interface_set_auto_refresh_circle">Auto-refreshing Moment</string>
+    <string name="interface_create_graph">Create Group Chat</string>
+    <string name="interface_get_app_center_infos">Get App Center information</string>
+    <string name="interface_launch_app_info">Load App information</string>
+    <string name="interface_launch_app_info_ext">Load App information(EXT)</string>
+    <string name="interface_view_topics">View topics</string>
+    <string name="interface_invoke_request">Invoking Request</string>
+    <string name="share_choose_image_path">Please select an image source</string>
+    <string name="share_choose_image_capture">Take pictures</string>
+    <string name="share_choose_image_photo">Photo Gallery</string>
+    
+    <string name="work_circle_pop_my_message">Feed</string>
+    <string name="work_circle_pop_my_favmessage">Favorites</string>
+    <string name="work_circle_my_file">Uploaded Files</string>
+    <string name="downloaded_file">Downloaded Files</string>
+    
+    <string name="upgrade_network_disable">Cannot perform this operation when offline.</string>
+    <string name="upgrade_no_new_version">Latest version already.</string>
+    <string name="upgrade_info_time">Updated date：</string>
+    <string name="upgrade_info_size">Size：</string>
+    <string name="upgrade_download_complete">Complete downloading, click to install.</string>
+    
+    <string name="web_title_instrodution">Functions</string>
+    <string name="app2app_start_chat_error">Lack of required data to start a Chat</string>
+    <string name="app2app_switch_tab_error">Lack of required data to switch tabs</string>
+    
+    <string name="chat_notification_unit_start">[</string>
+    <string name="chat_notification_unit_end">Notification(s)]</string>
+    
+    <string name="gesture_password_check">Enter Gestures Password</string>
+    <string name="settings_font_size_setting_tittle">Font Size</string>
+    <string name="mx_ipadress_change">IP地址修改</string>
+</resources>

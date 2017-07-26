@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mx_white"
+    android:gravity="center_vertical"
+    android:padding="@dimen/mx_group_item_padding" >
+
+    <!-- 头像 -->
+
+    <ImageView
+        android:id="@+id/head"
+        android:layout_width="@dimen/mx_group_avatar_dimen"
+        android:layout_height="@dimen/mx_group_avatar_dimen"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/mx_group_item_avatar_name_space"
+        android:layout_toRightOf="@id/head"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mx_label_all_staff_members"
+            android:textColor="@color/mx_black"
+            android:textSize="@dimen/mx_middle_textsize" />
+
+        <ImageView
+            android:id="@+id/lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mx_group_item_lock_name_space"
+            android:src="@drawable/mx_icon_sns_private_group"
+            android:visibility="gone" />
+    </LinearLayout>
+    <!-- 对号 -->
+
+    <ImageView
+        android:id="@+id/checkmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/mx_icon_select_mark"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.minxing.kit.mail.k9.view.SingleMessageView
+        android:id="@+id/message_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <com.minxing.kit.mail.k9.view.NonLockingScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+              <!--   Header area -->
+
+                <include layout="@layout/mx_mail_message_view_header" />
+
+              <!--   Content area -->
+
+                <com.minxing.kit.mail.k9.view.MessageWebView
+                    android:id="@+id/message_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+               <!--  Attachments area -->
+
+                <LinearLayout
+                    android:id="@+id/attachments_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/attachments"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="4dip" />
+
+                    <com.minxing.kit.ui.widget.MXButton
+                        android:id="@+id/show_hidden_attachments"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:background="@drawable/mx_comm_blue_button"
+                        android:text="@string/mx_mail_message_view_show_more_attachments_action"
+                        android:textColor="@color/mx_white" />
+
+                    <LinearLayout
+                        android:id="@+id/hidden_attachments"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="4dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.minxing.kit.mail.k9.view.NonLockingScrollView>
+
+        <com.minxing.kit.ui.widget.MXButton
+            android:id="@+id/download_remainder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mx_mail_message_view_download_remainder"
+            android:visibility="gone" />
+    </com.minxing.kit.mail.k9.view.SingleMessageView>
+
+    <LinearLayout
+        android:id="@+id/mx_message_list_option_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/mx_mail_bg_bottombar_white_high"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/mx_message_list_option_reply"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:duplicateParentState="true"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/mx_mail_menu_reply_selector"
+                    android:clickable="false"
+                    android:duplicateParentState="true" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    style="@style/mx_tab_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:duplicateParentState="true"
+                    android:singleLine="true"
+                    android:text="@string/mx_mail_option_menu_reply" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mx_message_list_option_reply_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:duplicateParentState="true"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/mx_mail_menu_reply_all_selector"
+                    android:clickable="false"
+                    android:duplicateParentState="true" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    style="@style/mx_tab_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:duplicateParentState="true"
+                    android:singleLine="true"
+                    android:text="@string/mx_mail_option_menu_reply_all" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mx_message_list_option_forward"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:duplicateParentState="true"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/mx_mail_menu_forward_selector"
+                    android:clickable="false"
+                    android:duplicateParentState="true" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    style="@style/mx_tab_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:duplicateParentState="true"
+                    android:singleLine="true"
+                    android:text="@string/mx_mail_option_menu_forward" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mx_message_list_option_delete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:duplicateParentState="true"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/mx_mail_menu_delete_selector"
+                    android:clickable="false"
+                    android:duplicateParentState="true" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    style="@style/mx_tab_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:duplicateParentState="true"
+                    android:singleLine="true"
+                    android:text="@string/mx_mail_option_menu_delete" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

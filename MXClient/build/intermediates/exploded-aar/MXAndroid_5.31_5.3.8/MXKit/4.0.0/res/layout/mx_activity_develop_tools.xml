@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/system_title"
+        layout="@layout/mx_system_title" />
+    <!--开启调试日志日志-->
+    <LinearLayout
+        style="@style/mx_bg_setting_item_no_margin_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/mx_middle_textsize"
+            android:text="@string/mx_open_develop_debug" />
+        <Switch
+            android:id="@+id/mx_open_detail_log"
+            style="@style/mx_switch_custom_style"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+
+    </LinearLayout>
+    <!--上传日志-->
+    <LinearLayout
+        android:id="@+id/mx_app_diagnostic"
+        android:layout_marginTop="30dip"
+        style="@style/mx_bg_setting_item_no_margin_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingLeft="20dip"
+            android:drawableRight="@drawable/submenu"
+            android:gravity="center_vertical"
+            android:text="@string/mx_app_diagnostic"
+            android:textSize="@dimen/mx_middle_textsize" />
+    </LinearLayout>
+
+    <!--开启web监测 -->
+    <FrameLayout
+        android:id="@+id/mx_open_web_detect"
+        style="@style/mx_bg_setting_item_no_margin_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingLeft="20dip"
+            android:gravity="center_vertical"
+            android:text="@string/mx_open_web_detect"
+            android:textSize="@dimen/mx_middle_textsize" />
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:id="@+id/have_opended"
+            android:layout_gravity="right|center_vertical"
+            android:text="已开启"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/mx_public_setting_item_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/mx_icon_forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </FrameLayout>
+    <!--Demo分类 -->
+    <LinearLayout
+        android:id="@+id/mx_demo_classes"
+        style="@style/mx_bg_setting_item_no_margin_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingLeft="20dip"
+            android:drawableRight="@drawable/submenu"
+            android:gravity="center_vertical"
+            android:text="@string/mx_demo_classes"
+            android:textSize="@dimen/mx_middle_textsize" />
+    </LinearLayout>
+
+    <!--关于手机 -->
+    <LinearLayout
+        android:id="@+id/mx_about_phone"
+        style="@style/mx_bg_setting_item_no_margin_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingLeft="20dip"
+            android:drawableRight="@drawable/submenu"
+            android:gravity="center_vertical"
+            android:text="@string/mx_phone_info"
+            android:textSize="@dimen/mx_middle_textsize" />
+    </LinearLayout>
+
+    <!--测试工具 -->
+    <LinearLayout
+        android:id="@+id/mx_test_tools"
+        style="@style/mx_bg_setting_item_no_margin_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <com.minxing.kit.ui.widget.MXVariableTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingLeft="20dip"
+            android:drawableRight="@drawable/submenu"
+            android:gravity="center_vertical"
+            android:text="测试工具"
+            android:textSize="@dimen/mx_middle_textsize" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/search"
+        android:icon="?attr/mx_iconActionSearch"
+        android:showAsAction="always"
+        android:title="@string/mx_mail_search_action"/>
+    <item
+        android:id="@+id/check_mail"
+        android:alphabeticShortcut="r"
+        android:icon="?attr/mx_iconActionRefresh"
+        android:showAsAction="always"
+        android:title="@string/mx_mail_check_mail_action"/>
+    <item
+        android:id="@+id/compose"
+        android:alphabeticShortcut="c"
+        android:icon="?attr/mx_iconActionCompose"
+        android:showAsAction="always"
+        android:title="@string/mx_mail_compose_action"/>
+    <item
+        android:id="@+id/add_new_account"
+        android:icon="?attr/mx_iconActionAdd"
+        android:showAsAction="ifRoom"
+        android:title="@string/mx_mail_add_account_action"/>
+    <item
+        android:id="@+id/about"
+        android:icon="?attr/mx_iconActionAbout"
+        android:title="@string/mx_mail_about_action"/>
+    <item
+        android:id="@+id/import_export"
+        android:icon="?attr/mx_iconActionImportExport"
+        android:title="@string/mx_mail_import_export_action">
+        <menu>
+            <item
+                android:id="@+id/export_all"
+                android:title="@string/mx_mail_settings_export_all"/>
+            <item
+                android:id="@+id/import_settings"
+                android:title="@string/mx_mail_settings_import"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/edit_prefs"
+        android:icon="?attr/mx_iconActionSettings"
+        android:showAsAction="never"
+        android:title="@string/mx_mail_preferences_action"/>
+
+</menu>

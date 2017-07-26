@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <com.minxing.kit.internal.common.view.SpannableTextView
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/mx_black"
+        android:textSize="@dimen/mx_circle_item_content_text_size"
+        android:background="@drawable/mx_text_background_selector" />
+    
+    <com.minxing.kit.internal.common.view.SpannableTextView
+        android:id="@+id/short_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:textColor="@color/mx_black"
+        android:textSize="@dimen/mx_circle_item_content_text_size"
+        android:selectAllOnFocus="true"
+        android:textSelectHandle="@color/mx_dark_blue"
+        android:background="@drawable/mx_text_background_selector"  />
+
+    <com.minxing.kit.ui.widget.MXVariableTextView
+        android:id="@+id/fulltext_reply"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="@color/mx_blue_gray2"
+        android:textSize="@dimen/mx_circle_item_content_text_size"
+        android:maxLines="3"
+        android:visibility="gone" />
+<!-- 
+    <LinearLayout
+        android:id="@+id/share_message_main"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <include layout="@layout/mx_share_message_main" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/graph_attachment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+        <include layout="@layout/mx_share_message_main" />
+    </LinearLayout>
+-->
+</LinearLayout>

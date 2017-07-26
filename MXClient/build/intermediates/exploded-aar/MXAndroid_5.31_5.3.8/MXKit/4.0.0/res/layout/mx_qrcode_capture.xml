@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical" >
+
+    <include layout="@layout/mx_system_title" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <SurfaceView
+            android:id="@+id/preview_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true" />
+
+        <com.minxing.kit.internal.qr.ViewfinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/mx_no_color" />
+
+        <LinearLayout
+            android:id="@+id/result_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@drawable/mx_btn_style_alert_dialog_background"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dip"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/barcode_image_view"
+                    android:layout_width="80.0dip"
+                    android:layout_height="80.0dip"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/mx_image_placeholder" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dip"
+                    android:orientation="vertical" >
+
+                    <com.minxing.kit.ui.widget.MXVariableTextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dip"
+                        android:text="下面是扫描二维码获取的信息："
+                        android:textColor="@color/mx_black"
+                        android:textSize="16.0dip" />
+
+                    <com.minxing.kit.ui.widget.MXVariableTextView
+                        android:id="@+id/contents_text_view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:autoLink="web"
+                        android:ellipsize="end"
+                        android:maxLines="10"
+                        android:textColor="#f00"
+                        android:textSize="16.0dip" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dip"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <com.minxing.kit.ui.widget.MXVariableTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="4dip"
+                            android:text="Format:"
+                            android:textColor="@color/mx_white"
+                            android:textSize="16.0dip"
+                            android:textStyle="bold" />
+
+                        <com.minxing.kit.ui.widget.MXVariableTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/mx_white"
+                            android:textSize="16.0dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dip"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <com.minxing.kit.ui.widget.MXVariableTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="4dip"
+                            android:text="Type:"
+                            android:textColor="@color/mx_white"
+                            android:textSize="16.0dip"
+                            android:textStyle="bold" />
+
+                        <com.minxing.kit.ui.widget.MXVariableTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/mx_white"
+                            android:textSize="16.0dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dip"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <com.minxing.kit.ui.widget.MXVariableTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="4dip"
+                            android:text="Time:"
+                            android:textColor="@color/mx_white"
+                            android:textSize="16.0dip"
+                            android:textStyle="bold" />
+
+                        <com.minxing.kit.ui.widget.MXVariableTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/mx_white"
+                            android:textSize="16.0dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dip"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <com.minxing.kit.ui.widget.MXVariableTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="4dip"
+                            android:text="Meta:"
+                            android:textColor="@color/mx_white"
+                            android:textSize="16.0dip"
+                            android:textStyle="bold" />
+
+                        <com.minxing.kit.ui.widget.MXVariableTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/mx_white"
+                            android:textSize="16.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

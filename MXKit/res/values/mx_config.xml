@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--最小列数-->
+    <string name="app_center_gridview_minColum">3</string>
+    <!--最大列数-->
+    <string name="app_center_gridview_maxColum">4</string>
+
+    <string name="mx_contacts_online_status_display">false</string>
+    <string name="mx_down_file_size_limit">10485760</string>
+    <string name="mx_auto_upload_interval_time">0</string><!--分钟级别-->
+    <string name="mx_auto_upload_request_url">http://192.168.100.230:8008/test</string><!--上传地址-->
+    <string name="mx_circle_image_cache_memory">true</string>
+    <string name="mx_appcenter_storage_external">false</string>
+</resources>

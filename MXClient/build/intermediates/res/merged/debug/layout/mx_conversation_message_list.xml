@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mx_bg_grey_dark" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/mx_white"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical" >
+		<!-- //标题 -->
+        <LinearLayout
+            android:id="@+id/view_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            <include layout="@layout/mx_system_title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/graph_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="70dip"
+                android:background="@color/mx_conversation_bg"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/graph_image"
+                    android:layout_width="80.0dip"
+                    android:layout_height="60.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10.5dip"
+                    android:background="@drawable/mx_image_placeholder" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="6.0dip"
+                    android:layout_toRightOf="@id/graph_image"
+                    android:orientation="vertical" >
+
+                    <com.minxing.kit.ui.widget.MXVariableTextView
+                        android:id="@+id/graph_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12.0dip"
+                        android:textColor="#FF000000"
+                        android:textSize="17.0dip" />
+
+                    <com.minxing.kit.ui.widget.MXVariableTextView
+                        android:id="@+id/graph_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6.0dip"
+                        android:textColor="#FFAAAAAA"
+                        android:textSize="14.0dip" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/graph_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.5dip"
+                    android:background="@drawable/mx_tab_weixin_pressed" />
+            </RelativeLayout>
+        </LinearLayout>
+		<!-- //聊天内容信息 -->
+        <FrameLayout
+            android:id="@+id/chatting_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/mx_common_bg"
+            android:layout_weight="1.0" >
+			<!-- //聊天文本框 -->
+            <com.minxing.kit.internal.common.view.ConversationListView
+                android:id="@+id/listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@null"
+                android:listSelector="@drawable/mx_mm_chat_listitem"
+                android:scrollbars="vertical" />
+
+            <LinearLayout
+                android:id="@+id/ocu_submenu_layout"
+                android:layout_width="125dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:id="@+id/ocu_submenu_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mx_footer_list_moreframebg"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/firstloading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/request_loading"
+                style="@style/mx_chatting_ui_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="5.0dip"
+                android:background="@drawable/mx_bg_time"
+                android:gravity="center"
+                android:padding="5.0dip"
+                android:visibility="gone" >
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.minxing.kit.ui.widget.MXVariableTextView
+                    style="@style/mx_chatting_ui_system"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="@string/mx_conversation_ocumsg_getting" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginTop="30.0dip"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/unread_message_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mx_bg_vip_message"
+                    android:gravity="center"
+                    android:padding="5.0dip"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="2.0dip"
+                        android:background="@drawable/mx_icon_unread_message" />
+
+                    <com.minxing.kit.ui.widget.MXVariableTextView
+                        android:id="@+id/unread_message_btn_descript"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:text="@string/mx_btn_chat_unread"
+                        android:textColor="@color/mx_vip_message_label" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vip_message_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:background="@drawable/mx_bg_vip_message"
+                    android:gravity="center"
+                    android:padding="5.0dip"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="3.0dip"
+                        android:background="@drawable/mx_icon_vip_message" />
+
+                    <com.minxing.kit.ui.widget.MXVariableTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:text="@string/mx_vip_contact"
+                        android:textColor="@color/mx_vip_message_label" />
+                </LinearLayout>
+            </LinearLayout>
+            
+        </FrameLayout>
+
+        <ViewStub
+            android:id="@+id/conversation_footer_normal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/mx_conversation_message_footer"
+            android:visibility="gone" />
+
+        <ViewStub
+            android:id="@+id/conversation_footer_ocu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/mx_conversation_message_custom_menu_footer"
+            android:visibility="gone" />
+
+        <ViewStub
+            android:id="@+id/conversation_pop_multichoice"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/mx_popup_mutichoice"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/black_place_holder"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/mx_black"
+        android:visibility="gone" />
+
+</RelativeLayout>
