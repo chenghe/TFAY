@@ -4,10 +4,6 @@
         "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/res/drawable-xxhdpi/icon_gesture_pwd_dot_on.png"
     },
     {
-        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_launcher.png",
-        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/res/drawable-xxhdpi/ic_launcher.png"
-    },
-    {
         "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/drawable-xxhdpi/icon_gesture_pwd_dot_off.png",
         "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/res/drawable-xxhdpi/icon_gesture_pwd_dot_off.png"
     }

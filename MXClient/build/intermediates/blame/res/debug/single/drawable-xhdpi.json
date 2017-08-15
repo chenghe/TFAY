@@ -24,28 +24,28 @@
         "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/res/drawable-xhdpi/icon_gesture_pwd_dot_on.png"
     },
     {
-        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/drawable-xhdpi/bg_button_selected.9.png",
-        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/res/drawable-xhdpi/bg_button_selected.9.png"
-    },
-    {
         "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/drawable-xhdpi/icon_upload_selected.png",
         "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/res/drawable-xhdpi/icon_upload_selected.png"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/drawable-xhdpi/bg_button_selected.9.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/res/drawable-xhdpi/bg_button_selected.9.png"
     },
     {
         "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/drawable-xhdpi/bg_input.9.png",
         "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/res/drawable-xhdpi/bg_input.9.png"
     },
     {
-        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/drawable-xhdpi/icon_download_selected.png",
-        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/res/drawable-xhdpi/icon_download_selected.png"
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/drawable-xhdpi/icon_bottombar_app_center_normal.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/res/drawable-xhdpi/icon_bottombar_app_center_normal.png"
     },
     {
         "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/drawable-xhdpi/icon_red_pot_small.png",
         "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/res/drawable-xhdpi/icon_red_pot_small.png"
     },
     {
-        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/drawable-xhdpi/icon_bottombar_app_center_normal.png",
-        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/res/drawable-xhdpi/icon_bottombar_app_center_normal.png"
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/drawable-xhdpi/icon_download_selected.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/res/drawable-xhdpi/icon_download_selected.png"
     },
     {
         "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/drawable-xhdpi/icon_setting_normal.png",

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">天府•安逸</string>
+    <string name="app_name">慧信</string>
     <string name="plx_input_email">帐号</string>
     <string name="plx_input_password">密码</string>
     <string name="plx_input_phone_number">请输入手机号码</string>
@@ -25,7 +25,7 @@
     <string name="login_forget_password">忘记密码？</string>
     <string name="loading">登录中...</string>
     
-    <string name="tab_chat">安逸</string>
+    <string name="tab_chat">慧信</string>
     <string name="tab_schedule">打卡</string>
     <string name="tab_contacts">通讯录</string>
     <string name="tab_appcenter">我的应用</string>

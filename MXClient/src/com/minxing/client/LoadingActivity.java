@@ -198,27 +198,27 @@ public class LoadingActivity extends RootActivity {
 	}
 
 	private void launchApp() {
-//		MXCurrentUser currentUser = MXAPI.getInstance(this).currentUser();
-//		if (currentUser != null) {
-//			String tabSortHide = ResourceUtil.getConfString(this, "client_sort_hide");
-//			if (TextUtils.isEmpty(tabSortHide) || (!TextUtils.isEmpty(tabSortHide) && tabSortHide.contains("circle"))) {
-//				Utils.setShareFromExternalBrowserEnable(this, true);
-//			} else {
-//				Utils.setShareFromExternalBrowserEnable(this, false);
-//			}
-//			Intent intent = null;
-//			if (PreferenceUtils.isGesturePwdEnable(this, currentUser.getLoginName())
-//					&& PreferenceUtils.isInitGesturePwd(this, currentUser.getLoginName())) {
-//				intent = new Intent(this, GesturePasswordActivity.class);
-//				intent.putExtra(GesturePasswordActivity.PWD_SCREEN_MODE_KEY, GesturePasswordActivity.PWD_SCREEN_MODE_FORCE);
-//				MXKit.getInstance().setStartGesturePsd(true);
-//			} else {
-//				intent = new Intent(this, ClientTabActivity.class);
-//			}
-//			startActivity(intent);
-//			finish();
-//		}
-		Intent intent = new Intent(this, AdActivity.class);
-		startActivity(intent);
+		MXCurrentUser currentUser = MXAPI.getInstance(this).currentUser();
+		if (currentUser != null) {
+			String tabSortHide = ResourceUtil.getConfString(this, "client_sort_hide");
+			if (TextUtils.isEmpty(tabSortHide) || (!TextUtils.isEmpty(tabSortHide) && tabSortHide.contains("circle"))) {
+				Utils.setShareFromExternalBrowserEnable(this, true);
+			} else {
+				Utils.setShareFromExternalBrowserEnable(this, false);
+			}
+			Intent intent = null;
+			if (PreferenceUtils.isGesturePwdEnable(this, currentUser.getLoginName())
+					&& PreferenceUtils.isInitGesturePwd(this, currentUser.getLoginName())) {
+				intent = new Intent(this, GesturePasswordActivity.class);
+				intent.putExtra(GesturePasswordActivity.PWD_SCREEN_MODE_KEY, GesturePasswordActivity.PWD_SCREEN_MODE_FORCE);
+				MXKit.getInstance().setStartGesturePsd(true);
+			} else {
+				intent = new Intent(this, ClientTabActivity.class);
+			}
+			startActivity(intent);
+			finish();
+		}
+//		Intent intent = new Intent(this, AdActivity.class);
+//		startActivity(intent);
 	}
 }

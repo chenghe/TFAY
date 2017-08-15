@@ -24,10 +24,6 @@
         "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/res/drawable-hdpi/btn_style_alert_dialog_background.9.png"
     },
     {
-        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-hdpi/ic_launcher.png",
-        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/res/drawable-hdpi/ic_launcher.png"
-    },
-    {
         "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-hdpi/icon_gesture_pwd_dot_on.png",
         "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/res/drawable-hdpi/icon_gesture_pwd_dot_on.png"
     }
