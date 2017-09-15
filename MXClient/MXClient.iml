@@ -71,7 +71,6 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/rs" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/shaders" isTestSource="true" />
-      <excludeFolder url="file://$MODULE_DIR$/build/.DS_Store" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/assets" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/blame" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/classes" />
@@ -79,11 +78,14 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/multidex-instrumentation/1.0.1/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.zhy/okhttputils/2.6.2/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/jcf/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/sdk/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-safeguard" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/jniLibs" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/manifests" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/multi-dex" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/pre-dexed" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/res" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/rs" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/shaders" />
@@ -96,13 +98,33 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" scope="TEST" name="multidex-instrumentation-1.0.1" level="project" />
     <orderEntry type="library" exported="" name="okio-1.8.0" level="project" />
+    <orderEntry type="library" exported="" name="jcf-" level="project" />
     <orderEntry type="library" exported="" name="multidex-1.0.1" level="project" />
     <orderEntry type="library" exported="" name="okhttp-3.3.1" level="project" />
     <orderEntry type="library" exported="" name="umeng-analytics-v5.2.4" level="project" />
     <orderEntry type="library" exported="" name="universal-image-loader-1.9.3-with-sources" level="project" />
+    <orderEntry type="library" exported="" name="sdk-" level="project" />
     <orderEntry type="library" exported="" name="android-support-v13" level="project" />
     <orderEntry type="library" exported="" name="okhttputils-2.6.2" level="project" />
     <orderEntry type="library" exported="" name="AMap_Location_V2.6.0_20160628" level="project" />
     <orderEntry type="module" module-name="MXKit" exported="" />
+    <orderEntry type="library" exported="" name="jutf7-1.0.1-SNAPSHOT" level="project" />
+    <orderEntry type="library" exported="" name="apache-mime4j-dom-0.7.2" level="project" />
+    <orderEntry type="library" exported="" name="httpmime-4.1.3" level="project" />
+    <orderEntry type="library" exported="" name="jzlib-1.0.7" level="project" />
+    <orderEntry type="library" exported="" name="joda-time-2.9.3" level="project" />
+    <orderEntry type="library" exported="" name="mpandroidchartlibrary-2-2-4" level="project" />
+    <orderEntry type="library" exported="" name="htmlcleaner-2.2" level="project" />
+    <orderEntry type="library" exported="" name="apache-mime4j-core-0.7.2" level="project" />
+    <orderEntry type="library" exported="" name="mxkit-v5.3.8.053515" level="project" />
+    <orderEntry type="library" exported="" name="fastjson-1.2.7" level="project" />
+    <orderEntry type="library" exported="" name="logback-android-1.1.1-5" level="project" />
+    <orderEntry type="library" exported="" name="commons-io-2.0.1" level="project" />
+    <orderEntry type="library" exported="" name="mx_imageloader_1.9.3" level="project" />
+    <orderEntry type="library" exported="" name="org.eclipse.paho.client.mqttv3-1.0.2" level="project" />
+    <orderEntry type="library" exported="" name="zxing-core-1.6" level="project" />
+    <orderEntry type="library" exported="" name="mxgson-2.6.1" level="project" />
+    <orderEntry type="library" exported="" name="sqlcipher357" level="project" />
+    <orderEntry type="library" exported="" name="slf4j-api-1.7.21" level="project" />
   </component>
 </module>

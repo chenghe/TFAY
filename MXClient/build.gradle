@@ -8,11 +8,17 @@ android {
     }
     defaultConfig {
         applicationId "com.minxing.client"
-        minSdkVersion 14
+        minSdkVersion 15
         targetSdkVersion 22
         multiDexEnabled true
         ndk {
             abiFilters "armeabi", "armeabi-v7a", "arm64-v8a"
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
         }
     }
 
@@ -61,7 +67,15 @@ android {
     }
 }
 
+//aar
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
 dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':MXKit')
     compile files('libs/umeng-analytics-v5.2.4.jar')
     compile files('libs/universal-image-loader-1.9.3-with-sources.jar')
@@ -70,4 +84,7 @@ dependencies {
     compile 'com.zhy:okhttputils:2.6.2'
     compile 'com.squareup.okhttp3:okhttp:3.3.1'
     //compile ('com.android.support:support-v4:24.2.1')
+    //aar
+    compile(name: 'jcf', ext: 'aar')
+    compile(name: 'sdk', ext: 'aar')
 }

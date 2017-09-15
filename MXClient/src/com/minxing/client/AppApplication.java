@@ -305,4 +305,10 @@ public class AppApplication extends MXApplication {
 		return mUserID;
 	}
 
+	@Override
+	protected void attachBaseContext(Context base) {
+		super.attachBaseContext(base);
+		MultiDex.install(this);
+	}
+
 }

@@ -36,6 +36,12 @@
     <uses-feature android:name="android.hardware.sensor.accelerometer"/>
     <uses-feature android:name="android.hardware.sensor.stepcounter" android:required="true"/>
     <uses-feature android:name="android.hardware.sensor.stepdetector" android:required="true"/>
+    <!--cisco add -->
+    <uses-feature android:name="android.hardware.camera.front" />
+    <uses-feature android:name="android.hardware.camera.back" />
+    <uses-feature android:name="android.hardware.microphone" />
+    <uses-feature android:name="android.hardware.audio.low_latency" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.FLASHLIGHT" />
@@ -1270,5 +1276,10 @@ otherwise it would make K-9 start at the wrong time
             
             android:theme="@style/activity_bg_translucent" >
         </activity>
+
+        <!--cisco demo-->
+        <activity android:name="com.minxing.client.CiscoActivity">
+        </activity>
+
     </application>
 </manifest>

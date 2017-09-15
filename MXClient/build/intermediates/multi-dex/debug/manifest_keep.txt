@@ -191,6 +191,7 @@
 -keep class com.minxing.kit.health.service.SensorService { <init>(); }
 -keep class com.minxing.kit.health.receiver.SensorReceiver { <init>(); }
 -keep class com.minxing.kit.plugin.web.MXPopUpWebActivity { <init>(); }
+-keep class com.minxing.client.CiscoActivity { <init>(); }
 -keep class com.minxing.kit.internal.im.ConversationVipSettingActivity { <init>(); }
 -keep class com.minxing.kit.plugin.android.log.LogToolActivity { <init>(); }
 -keep class com.minxing.kit.plugin.android.log.WebAddressActivity { <init>(); }

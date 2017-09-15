@@ -85,6 +85,9 @@ public class ClientTabActivity extends TabActivity {
 	private SystemMainTopRightPopMenu functionPopMenu;
 	private CircleTopRightPopMenu circleTopRightPopMenu;
 
+	//test call demo
+	private Button btCall;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -173,6 +176,16 @@ public class ClientTabActivity extends TabActivity {
 		slidingMenu = (SlidingMenu) findViewById(R.id.sliding_menu);
 		initTabhost();
 		refreshAlertIcon();
+
+		btCall = (Button) findViewById(R.id.bt_call);
+		btCall.setOnClickListener(new View.OnClickListener(){
+
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(ClientTabActivity.this,CiscoActivity.class);
+				startActivity(intent);
+			}
+		});
 	}
 
 	/**
