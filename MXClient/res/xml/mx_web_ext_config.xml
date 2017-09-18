@@ -1,30 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<widget
-    id="com.minxing.kit.plugin"
-    version="2.0.0"
-    xmlns="http://www.w3.org/ns/widgets" >
+<widget id="com.minxing.kit.plugin" version="2.0.0" xmlns="http://www.w3.org/ns/widgets">
 
     <name>
-        Minxing  Cordova
+        Minxing Cordova
 
     </name>
 
     <description>
-        Minxing  Cordova plugin config file.
+        Minxing Cordova plugin config file.
     </description>
-    <author
-        email="dev@cordova.apache.org"
-        href="http://cordova.io" >
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
         Apache Cordova Team
 
     </author>
 
     <content src="index.html" />
 
-    <access
-        launch-external="yes"
-        origin="*" />
+    <access launch-external="yes" origin="*" />
 
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -35,32 +28,25 @@
     <allow-intent href="market:*" />
     <allow-intent href="content:*" />
 
-    <preference
-        name="loglevel"
-        value="DEBUG" />
+    <preference name="loglevel" value="DEBUG" />
 
-    <feature name="MXLocation" >
-        <param
-            name="android-package"
-            value="com.minxing.client.plugin.web.location.MXLocation" />
+    <feature name="MXLocation">
+        <param name="android-package" value="com.minxing.client.plugin.web.location.MXLocation" />
     </feature>
 
-    <feature name="ZSImei" >
-    <param
-    name="android-package"
-    value="com.minxing.client.plugin.web.zsmarter.zsimei.ZSImei" />
+    <feature name="ZSImei">
+        <param name="android-package"
+            value="com.minxing.client.plugin.web.zsmarter.zsimei.ZSImei" />
     </feature>
 
+    <feature name="ZScisco">
+        <param name="android-package"
+            value="com.minxing.client.plugin.web.zsmarter.cisco.ZScisco" />
+    </feature>
 
-    <preference
-        name="Fullscreen"
-        value="false" />
-    <preference
-        name="ShowTitle"
-        value="true" />
-    <preference
-        name="webview"
-        value="org.apache.cordova.engine.mx.SystemWebViewEngine" />
+    <preference name="Fullscreen" value="false" />
+    <preference name="ShowTitle" value="true" />
+    <preference name="webview" value="org.apache.cordova.engine.mx.SystemWebViewEngine" />
 
 </widget>
 

@@ -10,14 +10,14 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:text="call"
-        android:visibility="visible"/>
+        android:visibility="gone"/>
 
     <com.minxing.client.tab.MenuTabHost
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@android:id/tabhost"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:visibility="gone">
+        android:visibility="visible">
 
         <LinearLayout
             android:layout_width="fill_parent"

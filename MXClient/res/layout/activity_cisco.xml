@@ -16,7 +16,8 @@
         android:id="@+id/call"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:text="call"/>
+        android:text="call"
+        android:visibility="gone"/>
 
     <com.cisco.jabber.guest.sdk.SelfView
         android:id="@+id/selfView"

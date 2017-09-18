@@ -26,13 +26,18 @@ import java.util.List;
 
 public class CiscoActivity extends Activity implements View.OnClickListener {
 
-    public static final String DEFAULT_SERVER = "198.18.133.222";
-    public static final String DEFAULT_ADDRESS = "860009";
+    public static final String CISCO_SERVER = "CiscoServer";
+    public static final String CISCO_ADDRESS = "CiscoAddress";
+    public static final String CISCO_DTMF = "CiscoDtmf";
 
+
+    private String DEFAULT_SERVER = "198.18.133.222";
+    private String DEFAULT_ADDRESS = "860009";
     private Uri mCallUri;
     private JabberGuestCall mInstance;
+    private Activity context = CiscoActivity.this;
 
-    private Button btCall;
+//    private Button btCall;
     private SelfView mSelfView;
     private LinearLayout mCallPlaceholder;
 
@@ -82,6 +87,10 @@ public class CiscoActivity extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cisco);
 
+        Intent intent = getIntent();
+        DEFAULT_SERVER = intent.getStringExtra(CISCO_SERVER);
+        DEFAULT_ADDRESS = intent.getStringExtra(CISCO_ADDRESS);
+
         mSelfView = (SelfView) this.findViewById(R.id.selfView);
         mCallPlaceholder = (LinearLayout) findViewById(R.id.placeHolderLinearLayout);
 
@@ -92,10 +101,9 @@ public class CiscoActivity extends Activity implements View.OnClickListener {
         mInstance.setSelfTextureView(mSelfView.getTextureView());
         JabberGuestCall.registerInvalidCertificateHandler(mCertificateHandler);
 
-        btCall = (Button) findViewById(R.id.call);
-        btCall.setOnClickListener(this);
-
-
+//        btCall = (Button) findViewById(R.id.call);
+//        btCall.setOnClickListener(this);
+        showCall();
     }
 
     @Override
@@ -139,7 +147,7 @@ public class CiscoActivity extends Activity implements View.OnClickListener {
      * Show the Jabber Guest Call Fragment.
      */
     private void showCall() {
-        btCall.setVisibility(View.GONE);
+//        btCall.setVisibility(View.GONE);
 
         CustomCallFragment callFragment = (CustomCallFragment) getFragmentManager().findFragmentByTag("CallFragment");
 
@@ -162,7 +170,7 @@ public class CiscoActivity extends Activity implements View.OnClickListener {
      * Hide the Jabber Guest Call Fragment.
      */
     private void hideCall() {
-        btCall.setVisibility(View.VISIBLE);
+//        btCall.setVisibility(View.VISIBLE);
 //        // Hide the placeholder and progress bar
         mCallPlaceholder.setVisibility(View.GONE);
         if (mInstance != null) {
@@ -170,6 +178,8 @@ public class CiscoActivity extends Activity implements View.OnClickListener {
             // the selfview video capture.
             mInstance.setSelfTextureView(mSelfView.getTextureView());
         }
+        context.setResult(200);
+        context.finish();
     }
 
     /**
