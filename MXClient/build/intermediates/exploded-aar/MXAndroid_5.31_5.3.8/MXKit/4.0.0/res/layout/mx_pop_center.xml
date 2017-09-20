@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/nv_title_bg"
+    android:background="@color/mx_header_bg_color"
     android:orientation="vertical" >
 
     <ScrollView

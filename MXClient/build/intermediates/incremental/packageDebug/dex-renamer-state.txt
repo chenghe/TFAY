@@ -1,4 +1,4 @@
-#Fri Sep 15 17:46:08 CST 2017
+#Tue Sep 19 17:17:45 CST 2017
 base.0=/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.1=classes.dex
 renamed.0=classes2.dex

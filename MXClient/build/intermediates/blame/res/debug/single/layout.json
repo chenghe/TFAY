@@ -12,12 +12,12 @@
         "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/layout/mx_mail_split_message_list.xml"
     },
     {
-        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/mx_conversation_list_item.xml",
-        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/layout/mx_conversation_list_item.xml"
-    },
-    {
         "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/mx_mail_message_list_fragment.xml",
         "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/layout/mx_mail_message_list_fragment.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/mx_conversation_list_item.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/layout/mx_conversation_list_item.xml"
     },
     {
         "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/mx_mail_account_setup_outgoing.xml",
@@ -28,12 +28,12 @@
         "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/layout/mx_conversation_message_picture_from.xml"
     },
     {
-        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/mx_call_info_window.xml",
-        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/layout/mx_call_info_window.xml"
-    },
-    {
         "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/mx_activity_debug.xml",
         "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/layout/mx_activity_debug.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/mx_call_info_window.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/layout/mx_call_info_window.xml"
     },
     {
         "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/mx_circle_search_result_item.xml",
@@ -60,12 +60,12 @@
         "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/layout/mx_mail_widget_sliding_menu.xml"
     },
     {
-        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/mx_mail_unread_widget_layout.xml",
-        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/layout/mx_mail_unread_widget_layout.xml"
-    },
-    {
         "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/mx_activity_develop_tools.xml",
         "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/layout/mx_activity_develop_tools.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/mx_mail_unread_widget_layout.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/layout/mx_mail_unread_widget_layout.xml"
     },
     {
         "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/mx_action_join_avatar.xml",
@@ -120,24 +120,24 @@
         "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/layout/mx_contact_list_menu_item.xml"
     },
     {
-        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/user_webview_header.xml",
-        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/res/layout/user_webview_header.xml"
-    },
-    {
         "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/mx_grid_attach_icon.xml",
         "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/layout/mx_grid_attach_icon.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/user_webview_header.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/res/layout/user_webview_header.xml"
     },
     {
         "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/mx_collections_list_item_text.xml",
         "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/layout/mx_collections_list_item_text.xml"
     },
     {
-        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/mx_conversation_message_footer_custom_submenu_item.xml",
-        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/layout/mx_conversation_message_footer_custom_submenu_item.xml"
-    },
-    {
         "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/mx_mail_entity_receiver_item.xml",
         "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/layout/mx_mail_entity_receiver_item.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/mx_conversation_message_footer_custom_submenu_item.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/layout/mx_conversation_message_footer_custom_submenu_item.xml"
     },
     {
         "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/mx_mail_foldable_linearlayout.xml",
@@ -252,12 +252,12 @@
         "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/layout/mx_vip_contacts.xml"
     },
     {
-        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/sliding_drawer.xml",
-        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/res/layout/sliding_drawer.xml"
-    },
-    {
         "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/mx_online_file.xml",
         "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/layout/mx_online_file.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/sliding_drawer.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/res/layout/sliding_drawer.xml"
     },
     {
         "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/jgsdk_preview_view.xml",
@@ -328,12 +328,12 @@
         "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/layout/mx_action_dialog_checkbox.xml"
     },
     {
-        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/mx_topic_switch_detail.xml",
-        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/layout/mx_topic_switch_detail.xml"
-    },
-    {
         "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/mx_mail_wizard_welcome.xml",
         "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/layout/mx_mail_wizard_welcome.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/mx_topic_switch_detail.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/layout/mx_topic_switch_detail.xml"
     },
     {
         "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/mx_group.xml",
@@ -420,20 +420,20 @@
         "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/layout/mx_mail_activity_mail_setting.xml"
     },
     {
-        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/system_app_demo.xml",
-        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/res/layout/system_app_demo.xml"
-    },
-    {
         "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/mx_mail_folder_list.xml",
         "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/layout/mx_mail_folder_list.xml"
     },
     {
-        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/mx_health_setting_privacy_remind.xml",
-        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/layout/mx_health_setting_privacy_remind.xml"
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/system_app_demo.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/res/layout/system_app_demo.xml"
     },
     {
         "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/mx_image_details.xml",
         "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/layout/mx_image_details.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/mx_health_setting_privacy_remind.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/layout/mx_health_setting_privacy_remind.xml"
     },
     {
         "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/system_app_demo_person_center.xml",
@@ -512,12 +512,12 @@
         "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/layout/mx_mail_entity_list_header.xml"
     },
     {
-        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/mx_message_type_annouce_item.xml",
-        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/layout/mx_message_type_annouce_item.xml"
-    },
-    {
         "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/mx_person_detail_me_qr.xml",
         "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/layout/mx_person_detail_me_qr.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/mx_message_type_annouce_item.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/layout/mx_message_type_annouce_item.xml"
     },
     {
         "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/debug/layout/system_title.xml",

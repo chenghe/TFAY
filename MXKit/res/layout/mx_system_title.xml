@@ -3,7 +3,7 @@
     android:layout_width="fill_parent"
     android:layout_height="@dimen/mx_title_bar_height"
                 android:id="@+id/system_head_view"
-    android:background="@drawable/nv_title_bg"
+    android:background="@color/mx_header_bg_color"
     android:gravity="center_vertical" >
 
     <!-- 左侧按钮 -->

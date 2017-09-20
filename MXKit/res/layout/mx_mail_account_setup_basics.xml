@@ -9,7 +9,7 @@
         android:id="@+id/rl_mx_mail_message_setup_basics"
         android:layout_width="fill_parent"
         android:layout_height="@dimen/mx_title_bar_height"
-        android:background="@drawable/nv_title_bg">
+        android:background="@color/mx_header_bg_color">
 
         <ImageButton
             android:id="@+id/btn_mx_mail_message_setup_basics_back"

@@ -3,7 +3,7 @@
     android:id="@+id/view_header"
     android:layout_width="fill_parent"
     android:layout_height="@dimen/title_bar_height"
-    android:background="@drawable/nv_title_bg" >
+    android:background="@color/mx_header_bg_color" >
 
     <LinearLayout
         android:id="@+id/title_handle_layout"

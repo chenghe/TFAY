@@ -14,7 +14,8 @@
     <color name="bg_gesture_pwd_view">#f4cd31</color>
     <color name="lightblue_3">#f4cd31</color>
     <color name="status_bar_color">@color/black</color>
-    <color name="mx_header_bg_color">#f4cd31</color>
+    <!--<color name="mx_header_bg_color">#f4cd31</color>-->
+    <color name="mx_header_bg_color">#ffae09</color>
     <color name="mx_dark_blue">@android:color/transparent</color><!--按下时效果-->
     <color name="mx_common_divide_line">#cccccc</color>
 
