@@ -17,7 +17,7 @@
     <string-array name="circle_quick_comment_more">
         <item>circle_quick_comment_collection</item>
         <item>circle_quick_comment_topic</item>
-        
+        <!--<item>circle_quick_comment_error</item>-->
     </string-array>
     <string-array name="circle_quick_comment_reply">
         <item>@string/circle_quick_comment_id_reply</item>
@@ -40,7 +40,7 @@
         <item>circle_quick_comment_share</item>
     </string-array>
     <string-array name="client_tab_item_drawables">
-        
+        <!--<item>@drawable/tab_schedule</item>-->
         <item>@drawable/tab_chat</item>
         <item>@drawable/tab_contacts</item>
         <item>@drawable/tab_appcenter</item>
@@ -48,17 +48,17 @@
 
     </string-array>
     <string-array name="client_tab_item_launchers">
-        
-        
+        <!--<item>launchApp://tfay_smarter_kaoqing?clear=true&amp;mxLayout=0</item>-->
+        <!--<item>launchApp://dakatest</item>-->
         <item>com.minxing.kit.ui.chat.MXChatActivity</item>
         <item>com.minxing.kit.ui.contacts.MXContactsActivity</item>
         <item>com.minxing.kit.ui.appcenter.MXAppCenterActivity</item>
         <item>com.minxing.kit.ui.circle.MXCircleActivity</item>
 
-        
+        <!--<item>launchApp://testdaka?clear=true</item>-->
     </string-array>
     <string-array name="client_tab_item_names">
-        
+        <!--<item>@string/tab_schedule</item>-->
         <item>@string/tab_chat</item>
         <item>@string/tab_contacts</item>
         <item>@string/tab_appcenter</item>
@@ -66,12 +66,17 @@
 
     </string-array>
     <string-array name="client_tab_item_tags">
-        
+        <!--<item>@string/client_tab_item_tag_schedule</item>-->
         <item>@string/client_tab_item_tag_chat</item>
         <item>@string/client_tab_item_tag_contacts</item>
         <item>@string/client_tab_item_tag_appcenter</item>
         <item>@string/client_tab_item_tag_circle</item>
 
+    </string-array>
+    <string-array name="jgsdk_video_license_options">
+        <item>Activate</item>
+        <item>View License</item>
+        <item>Cancel</item>
     </string-array>
     <string-array name="mx_conversation_message_type_key">
         <item>file</item>
@@ -145,33 +150,35 @@
     </string-array>
     <string-array name="mx_mail_account_settings_check_frequency_entries">
         <item>@string/mx_mail_account_setup_options_mail_check_frequency_never</item>
-       
+       <!--  <item>@string/mx_mail_account_setup_options_mail_check_frequency_1min</item> -->
         <item>@string/mx_mail_account_setup_options_mail_check_frequency_1min</item>
         <item>@string/mx_mail_account_setup_options_mail_check_frequency_10min</item>
-        
+        <!-- <item>@string/mx_mail_account_setup_options_mail_check_frequency_15min</item> -->
         <item>@string/mx_mail_account_setup_options_mail_check_frequency_30min</item>
         <item>@string/mx_mail_account_setup_options_mail_check_frequency_1hour</item>
-        
-       
-       
+        <!-- <item>@string/mx_mail_account_setup_options_mail_check_frequency_2hour</item> -->
+       <!--  <item>@string/mx_mail_account_setup_options_mail_check_frequency_3hour</item> -->
+       <!--  <item>@string/mx_mail_account_setup_options_mail_check_frequency_6hour</item> -->
        <item>@string/mx_mail_account_setup_options_mail_check_frequency_4hour</item>
        <item>@string/mx_mail_account_setup_options_mail_check_frequency_8hour</item>
-        
+        <!-- <item>@string/mx_mail_account_setup_options_mail_check_frequency_12hour</item>
+        <item>@string/mx_mail_account_setup_options_mail_check_frequency_24hour</item> -->
     </string-array>
     <string-array name="mx_mail_account_settings_check_frequency_values" translatable="false">
         <item>-1</item>
-       
+       <!--  <item>1</item> -->
         <item>1</item>
         <item>10</item>
-        
+        <!-- <item>15</item> -->
         <item>30</item>
         <item>60</item>
-       
-       
-        
+       <!--  <item>120</item> -->
+       <!--  <item>180</item> -->
+        <!-- <item>360</item> -->
         <item>240</item>
         <item>640</item>
-       
+       <!--  <item>720</item>
+        <item>1440</item> -->
     </string-array>
     <string-array name="mx_mail_account_settings_display_count_entries">
         <item>@string/mx_mail_account_setup_options_mail_display_count_10</item>
@@ -836,10 +843,18 @@
     <color name="bg_grey_light">#f7f7f7</color>
     <color name="black">@android:color/black</color>
     <color name="blue">#f4cd31</color>
+    <color name="call_statistics_title_text_color">#999999</color>
+    <color name="call_statistics_value_text_color">#666666</color>
+    <color name="call_statistics_view_bg_color">#99ffffff</color>
     <color name="dark_blue">@android:color/transparent</color>
     <color name="dark_gray">#707070</color>
     <color name="dark_grey">#282828</color>
+    <color name="dialog_title_bar_bg_color">#e5e5e5</color>
+    <color name="error_dialog_btn_gradient_bottom">#009ff3</color>
+    <color name="error_dialog_btn_gradient_top">#00bff7</color>
     <color name="half_alpha_black">#7f000000</color>
+    <color name="ic_ccb_default_text_color">#999999</color>
+    <color name="ic_ccb_selected_text_color">#ffffff</color>
     <color name="lightblue_3">#f4cd31</color>
     <color name="mx_activity_bg_translucent">#99000000</color>
     <color name="mx_app_add_confirm_disable">#607594</color>
@@ -885,7 +900,7 @@
     <color name="mx_grey_light_5">#D8D8D8</color>
     <color name="mx_grid_devider_color">#f0f0f0</color>
     <color name="mx_half_alpha_black">#7f000000</color>
-    <color name="mx_header_bg_color">#f4cd31</color>
+    <color name="mx_header_bg_color">#ffae09</color>
     <color name="mx_header_text_color">@android:color/white</color>
     <color name="mx_health_bigger_text_color">#f8931a</color>
     <color name="mx_health_header_bg">#1A85FF</color>
@@ -947,12 +962,16 @@
     <color name="mx_webview_bottom_panel_border">#cbcbcb</color>
     <color name="mx_white">@android:color/white</color>
     <color name="status_bar_color">@color/black</color>
+    <color name="tab_under_line">#00ABF4</color>
+    <color name="tab_widget_divider">#E5E5E5</color>
     <color name="text_common_dark_grey">#707070</color>
     <color name="text_common_lightblue">#f4cd31</color>
     <color name="trans">#00000000</color>
     <color name="trans_dark_grey">#80282828</color>
     <color name="transparent">#00000000</color>
     <color name="white">@android:color/white</color>
+    <declare-styleable name="BaseTextureViewLayout"><attr format="dimension" name="maxWidth"/><attr format="dimension" name="maxHeight"/></declare-styleable>
+    <declare-styleable name="CallBarView"><attr name="buttons"><flag name="audio" value="0x01"/><flag name="video" value="0x02"/><flag name="keypad" value="0x08"/><flag name="hook" value="0x10"/><flag name="all" value="0xff"/></attr><attr name="android:onClick"/></declare-styleable>
     <declare-styleable name="CountDownView"><attr format="color" name="background_color"/><attr format="dimension" name="border_width"/><attr format="color" name="border_color"/><attr format="string" name="text"/><attr format="dimension" name="text_size"/><attr format="color" name="text_color"/></declare-styleable>
     <declare-styleable name="K9Styles"><attr format="reference" name="mx_iconFolder"/><attr format="reference" name="mx_iconListItemMenu"/><attr format="reference" name="mx_iconMenuInfoDetails"/><attr format="reference" name="mx_iconActionAddAttachment"/><attr format="reference" name="mx_iconActionAddCcBcc"/><attr format="reference" name="mx_iconActionArchive"/><attr format="reference" name="mx_iconActionCompose"/><attr format="reference" name="mx_iconActionDelete"/><attr format="reference" name="mx_iconActionMove"/><attr format="reference" name="mx_iconActionCopy"/><attr format="reference" name="mx_iconActionNextMessage"/><attr format="reference" name="mx_iconActionPreviousMessage"/><attr format="reference" name="mx_iconActionRefresh"/><attr format="reference" name="mx_iconActionSearch"/><attr format="reference" name="mx_iconActionSearchFolder"/><attr format="reference" name="mx_iconActionSend"/><attr format="reference" name="mx_iconActionSettings"/><attr format="reference" name="mx_iconActionSingleMessageOptions"/><attr format="reference" name="mx_iconActionSort"/><attr format="reference" name="mx_iconActionSpam"/><attr format="reference" name="mx_iconActionFlag"/><attr format="reference" name="mx_iconActionUnflag"/><attr format="reference" name="mx_iconActionMarkAsRead"/><attr format="reference" name="mx_iconActionMarkAsUnread"/><attr format="reference" name="mx_iconActionRemoteSearch"/><attr format="reference" name="mx_iconActionAbout"/><attr format="reference" name="mx_iconActionAdd"/><attr format="reference" name="mx_iconActionImportExport"/><attr format="reference" name="mx_iconActionUpload"/><attr format="reference" name="mx_iconActionSelectAll"/><attr format="reference" name="mx_iconActionSave"/><attr format="reference" name="mx_iconActionCancel"/><attr format="reference" name="mx_iconActionRequestReadReceipt"/><attr format="reference" name="mx_iconActionExpand"/><attr format="reference" name="mx_iconActionCollapse"/><attr format="reference" name="mx_textColorPrimaryRecipientDropdown"/><attr format="reference" name="mx_textColorSecondaryRecipientDropdown"/><attr format="color" name="mx_backgroundColorChooseAccountHeader"/><attr format="reference|color" name="mx_messageListSelectedBackgroundColor"/><attr format="reference|color" name="mx_messageListReadItemBackgroundColor"/><attr format="reference|color" name="mx_messageListUnreadItemBackgroundColor"/><attr format="reference|color" name="mx_messageListThreadCountForegroundColor"/><attr format="reference|color" name="mx_messageListThreadCountBackground"/><attr format="reference|color" name="mx_messageListActiveItemBackgroundColor"/><attr format="reference|color" name="mx_messageListDividerColor"/><attr format="reference" name="mx_messageListCheckbox"/><attr format="reference|color" name="mx_messageViewHeaderBackgroundColor"/><attr format="reference" name="mx_messageViewAttachmentBackground"/><attr format="reference" name="mx_messageComposeAddContactImage"/><attr format="color" name="mx_composerBackgroundColor"/><attr format="reference" name="mx_compatDividerVertical"/><attr format="reference" name="mx_compatSelectableItemBackground"/><attr format="reference|color" name="mx_contactPictureFallbackDefaultBackgroundColor"/></declare-styleable>
     <declare-styleable name="MXFlowLayout"><attr format="boolean" name="auto_select_effect"/><attr format="integer" name="max_select"/><attr name="gravity">
@@ -995,9 +1014,24 @@
     <declare-styleable name="roundedimageview"><attr format="dimension" name="border_thickness"/><attr format="color" name="border_inside_color"/><attr format="color" name="border_outside_color"/></declare-styleable>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="call_statistic_button_margin_bottom">5dp</dimen>
+    <dimen name="call_statistic_button_margin_top">5dp</dimen>
+    <dimen name="call_statistic_listview_padding">10dp</dimen>
+    <dimen name="call_statistic_tab_margin_left">0dp</dimen>
+    <dimen name="call_statistic_tab_margin_right">0dp</dimen>
+    <dimen name="call_statistic_title_text_height">40dp</dimen>
+    <dimen name="call_statistics_item_padding">10sp</dimen>
+    <dimen name="call_statistics_send_button_text_size">18sp</dimen>
+    <dimen name="call_statistics_text_size">13sp</dimen>
+    <dimen name="call_statistics_view_corners_radius">20dp</dimen>
     <dimen name="common_arrow_right">10dp</dimen>
     <dimen name="common_btn_height">48dip</dimen>
     <dimen name="common_setting_top">20dp</dimen>
+    <dimen name="dialog_corners_radius">10dp</dimen>
+    <dimen name="dialog_remote_share_end_radius">20dp</dimen>
+    <dimen name="dialog_video_license_corners_radius">20dp</dimen>
+    <dimen name="dialpad_cell_margin">2dp</dimen>
+    <dimen name="dialpad_padding">4dp</dimen>
     <dimen name="image_size">35dp</dimen>
     <dimen name="login_box_margin">250dip</dimen>
     <dimen name="login_input_left">20dp</dimen>
@@ -1163,6 +1197,9 @@
     <drawable name="mx_light_gray_dcdcdc">#dcdcdc</drawable>
     <drawable name="mx_transparent">#00000000</drawable>
     <drawable name="mx_white">@android:color/white</drawable>
+    <item name="jgsdk_preview_view" type="id"/>
+    <item name="jgsdk_remote_view" type="id"/>
+    <item name="jgsdk_self_view" type="id"/>
     <item name="mx_dgv_wobble_tag" type="id"/>
     <item name="mx_dialog_account_oauth_error" type="id"/>
     <item name="mx_dialog_account_setup_error" type="id"/>
@@ -1173,6 +1210,9 @@
     <item name="mx_gridview" type="id"/>
     <item name="mx_scrollview" type="id"/>
     <item name="mx_webview" type="id"/>
+    <integer name="call_statistic_rxview_weight">3</integer>
+    <integer name="call_statistic_tagview_weight">4</integer>
+    <integer name="call_statistic_txview_weight">3</integer>
     <plurals name="mx_mail_dialog_confirm_delete_messages">
         <item quantity="other">您确定要删除 <ns1:g id="message_count">%1$d</ns1:g> 条消息吗?</item>
     </plurals>
@@ -1229,10 +1269,10 @@
     <string name="client_app_center_auto_down_max_size">102400</string>
     <string name="client_app_center_banner_show">false</string>
     <string name="client_app_client_id">2</string>
-    <string name="client_app_store">https://ebank.cgnb.cn:8083/tfayyyzx/</string>
+    <string name="client_app_store">https://ebank.cgnb.cn:8091/tfayyyzx/</string>
     <string name="client_call_show_on">false</string>
-    <string name="client_conf_http_host">https://ebank.cgnb.cn:8081</string>
-    <string name="client_conf_push_host">ssl://ebank.cgnb.cn:8082</string>
+    <string name="client_conf_http_host">https://ebank.cgnb.cn:8098</string>
+    <string name="client_conf_push_host">ssl://ebank.cgnb.cn:8099</string>
     <string name="client_conf_sdcard_root">/minxing_dev</string>
     <string name="client_conf_video_server_host">www.minxing365.com:8906</string>
     <string name="client_enable_reset_password">true</string>
@@ -1326,6 +1366,98 @@
     <string name="interface_view_person_info">获取用户信息</string>
     <string name="interface_view_person_info_json">获取用户信息(josn)</string>
     <string name="interface_view_topics">查看话题</string>
+    <string name="jgsdk_accept">Accept</string>
+    <string name="jgsdk_activate_license">Activate License</string>
+    <string name="jgsdk_activate_license_textbody">To enable video calls, activate a free video license (H.264 AVC) from Cisco. By selecting \'Activate\', you accept the Cisco End User License Agreement and notices.</string>
+    <string name="jgsdk_audio_muted">Audio muted</string>
+    <string name="jgsdk_audio_output">Audio output</string>
+    <string name="jgsdk_auto_call_cancel">Cancel</string>
+    <string name="jgsdk_auto_call_message">Cisco Jabber Guest will call %1$s in %2$s seconds.</string>
+    <string name="jgsdk_auto_call_title">Cisco Jabber Guest</string>
+    <string name="jgsdk_automatically_startcall_message">Cisco Jabber Guest will call %1$s in %2$s seconds.</string>
+    <string name="jgsdk_available_audio_ouputs">Available Audio Outputs</string>
+    <string name="jgsdk_bluetooth">Bluetooth</string>
+    <string name="jgsdk_bluetooth_s">Bluetooth (%s)</string>
+    <string name="jgsdk_call">Call</string>
+    <string name="jgsdk_call_calling">Calling…</string>
+    <string name="jgsdk_call_dropped">Call Dropped</string>
+    <string name="jgsdk_call_ending">Ending call…</string>
+    <string name="jgsdk_call_not_completed">Call Not Completed</string>
+    <string name="jgsdk_call_ready">You are now ready to call:</string>
+    <string name="jgsdk_call_ready_short">Ready to call:</string>
+    <string name="jgsdk_call_server_no_response">No response from the server.</string>
+    <string name="jgsdk_call_statistics_alert_dialog_message">Call status changed and no statistics available. The view will be dismissed.</string>
+    <string name="jgsdk_call_statistics_alert_dialog_title">No Statistics</string>
+    <string name="jgsdk_call_statistics_copy_audio_title">Audio Statistics(Call with %1$s)\n</string>
+    <string name="jgsdk_call_statistics_copy_video_title">Video Statistics(Call with %1$s)\n</string>
+    <string name="jgsdk_call_statistics_email_subject">Call Statistics: Cisco Jabber Guest for Android</string>
+    <string name="jgsdk_call_statistics_item_channel_rate">Channel rate</string>
+    <string name="jgsdk_call_statistics_item_current_packet_loss">Current packet loss</string>
+    <string name="jgsdk_call_statistics_item_framerate">Frame rate</string>
+    <string name="jgsdk_call_statistics_item_jitter">Jitter</string>
+    <string name="jgsdk_call_statistics_item_packets">Packets</string>
+    <string name="jgsdk_call_statistics_item_procotol">Protocol</string>
+    <string name="jgsdk_call_statistics_item_resolution">Resolution</string>
+    <string name="jgsdk_call_statistics_item_roundtrip">Roundtrip/latency</string>
+    <string name="jgsdk_call_statistics_item_total_packet_loss">Total packet loss</string>
+    <string name="jgsdk_call_statistics_progress">Creating statistics file…</string>
+    <string name="jgsdk_call_statistics_receive">Receive</string>
+    <string name="jgsdk_call_statistics_screen_share_title">Presentation Statistics(Call with %1$s)\n</string>
+    <string name="jgsdk_call_statistics_send_button">Send via Email</string>
+    <string name="jgsdk_call_statistics_tab_audio">Audio</string>
+    <string name="jgsdk_call_statistics_tab_screenshare">Presentation</string>
+    <string name="jgsdk_call_statistics_tab_video">Video</string>
+    <string name="jgsdk_call_statistics_title">Call Statistics</string>
+    <string name="jgsdk_call_statistics_toast">Copied to clipboard</string>
+    <string name="jgsdk_call_statistics_transmit">Transmit</string>
+    <string name="jgsdk_call_with">Call with %s</string>
+    <string name="jgsdk_certificate_warn_message">Your device cannot confirm the identity of server %s with the certificate that the server provided.  An unknown party might be trying to access your confidential information.</string>
+    <string name="jgsdk_certificate_warn_title">Certificate not valid</string>
+    <string name="jgsdk_check_connection">Checking connection...</string>
+    <string name="jgsdk_cisco_logo">Cisco Logo</string>
+    <string name="jgsdk_control_bar_end">End</string>
+    <string name="jgsdk_control_bar_keypad">Keypad</string>
+    <string name="jgsdk_control_bar_mute">Mute</string>
+    <string name="jgsdk_control_bar_stop">Stop</string>
+    <string name="jgsdk_copy">Copy</string>
+    <string name="jgsdk_decline">Decline</string>
+    <string name="jgsdk_earphone">Earphone</string>
+    <string name="jgsdk_error_destination_busy">We\'re sorry, the person you are trying to reach is busy.  Please try your call again later.</string>
+    <string name="jgsdk_error_invalid_call_state">The server could not process the last request.</string>
+    <string name="jgsdk_error_link_disabled">We\'re sorry, it seems this link is disabled.</string>
+    <string name="jgsdk_error_link_expired">We\'re sorry, it seems this link has expired.</string>
+    <string name="jgsdk_error_link_invalid">This link is invalid.</string>
+    <string name="jgsdk_error_link_not_active">We\'re sorry, your call cannot be completed yet.  Please try your call again later.</string>
+    <string name="jgsdk_error_link_not_found">We\'re sorry, your call cannot be completed.</string>
+    <string name="jgsdk_error_networking">The server cannot be reached.  Ensure your device is connected to the network.</string>
+    <string name="jgsdk_error_networking_between_device">There was a networking error between your device and the server.</string>
+    <string name="jgsdk_error_no_WiFi_connection">No WiFi connection</string>
+    <string name="jgsdk_error_no_network_connection">No network connection</string>
+    <string name="jgsdk_error_no_network_connection_comment">You must be connected to the internet to make this call.</string>
+    <string name="jgsdk_error_no_server_connection">No server connection</string>
+    <string name="jgsdk_error_no_server_connection_comment">The Jabber Guest server is not reachable.</string>
+    <string name="jgsdk_error_no_wifi_connection_comment">For better call quality, a WiFi connection is recommended.</string>
+    <string name="jgsdk_error_server">The link resulted in a server error.</string>
+    <string name="jgsdk_error_server_api_version_failed">Please update your Jabber Guest client to the latest supported version.</string>
+    <string name="jgsdk_error_server_busy">The server is busy.</string>
+    <string name="jgsdk_error_turn_cred_acquire_failed">The server was unable to communicate with the media controller.</string>
+    <string name="jgsdk_error_unknown">An unknown error occurred - Try again or contact system administrator.</string>
+    <string name="jgsdk_finish_started_call">You must end this call before starting a new one.</string>
+    <string name="jgsdk_generic_user_avatar">Generic user avatar</string>
+    <string name="jgsdk_keypad_button">Keypad button</string>
+    <string name="jgsdk_network_unavailable">Network unavailable</string>
+    <string name="jgsdk_no_video_being_received">No video being received</string>
+    <string name="jgsdk_share">Share</string>
+    <string name="jgsdk_share_end_dialog">Cisco Jabber Guest</string>
+    <string name="jgsdk_share_end_dialog_body">Do you want to end the call and leave sharing?</string>
+    <string name="jgsdk_share_launch_dialog">Launching Desktop Share…</string>
+    <string name="jgsdk_share_viewing_remote_screen">Viewing remote screen</string>
+    <string name="jgsdk_share_viewing_remote_video">Viewing remote video</string>
+    <string name="jgsdk_speaker">Speaker</string>
+    <string name="jgsdk_switch_camera">Switch Camera</string>
+    <string name="jgsdk_toggle_self_view">Toggle self view</string>
+    <string name="jgsdk_video_muted">Video Stopped</string>
+    <string name="jgsdk_video_stopped">Video Stopped</string>
     <string name="loading">登录中...</string>
     <string name="login">登录</string>
     <string name="login_forget_password">忘记密码？</string>
@@ -3095,6 +3227,7 @@ K-9改进的功能包括：
     <string name="upgrade_info_time">更新时间：</string>
     <string name="upgrade_network_disable">离线状态不能执行该操作</string>
     <string name="upgrade_no_new_version">已是最新版本，无需升级</string>
+    <string name="url_videolicense">https://%s/call/about.jsp</string>
     <string name="version_upgrade">版本信息(%s)</string>
     <string name="wait_for_next_sms_password_request">%d秒后重新获取</string>
     <string name="warning_logout">退出后无法接收离线通知，要退出吗？</string>
@@ -3118,6 +3251,12 @@ K-9改进的功能包括：
         <item name="android:screenOrientation">portrait</item>
         <item name="android:configChanges">keyboardHidden|orientation</item>
         <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="CallStatistic.ButtonStyle" parent="android:style/Widget.Holo.Light.Button">
+        <item name="android:textColor">@drawable/jgsdk_btn_text_color</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:background">@drawable/jgsdk_btn_bg_selector</item>
     </style>
     <style name="MyTheme.ActionMode" parent="@android:style/Widget.Holo.Light.ActionBar">
     	<item name="android:actionModeBackground">@drawable/mx_mail_bg_topbar</item>
@@ -3336,6 +3475,60 @@ K-9改进的功能包括：
         <item name="android:paddingRight">3.0dip</item>
         <item name="android:layout_height">50dp</item>
         <item name="android:background">@drawable/preference_one_item</item>
+    </style>
+    <style name="jgsdk_button" parent="@android:style/Widget.Button">
+        <item name="android:textAppearance">?android:attr/textAppearanceMediumInverse</item>
+        <item name="android:background">@drawable/jgsdk_im_btn_action</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="jgsdk_button.preview" parent="@style/jgsdk_button">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal|center_vertical</item>
+        <item name="android:layout_margin">16dp</item>
+    </style>
+    <style name="jgsdk_call_stats_item">
+        <item name="android:gravity">start|left</item>
+        <item name="android:paddingStart">@dimen/call_statistics_item_padding</item>
+        <item name="android:paddingLeft">@dimen/call_statistics_item_padding</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="jgsdk_call_stats_item_value">
+        <item name="android:layout_gravity">fill_horizontal</item>
+        <item name="android:gravity">end|right</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="jgsdk_dialog">
+        <item name="android:fullDark">@drawable/jgsdk_dialog_body</item>
+        <item name="android:topDark">@drawable/jgsdk_dialog_title</item>
+        <item name="android:centerDark">@drawable/jgsdk_dialog_body</item>
+        <item name="android:bottomDark">@drawable/jgsdk_dialog_footer</item>
+
+        <item name="android:fullBright">@drawable/jgsdk_dialog_body</item>
+        <item name="android:centerBright">@drawable/jgsdk_dialog_body</item>
+        <item name="android:topBright">@drawable/jgsdk_dialog_title</item>
+
+        <item name="android:bottomBright">@drawable/jgsdk_dialog_footer</item>
+        <item name="android:bottomMedium">@drawable/jgsdk_dialog_footer</item>
+        <item name="android:centerMedium">@drawable/jgsdk_dialog_body</item>
+    </style>
+    <style name="jgsdk_dialog.textJustify">
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="jgsdk_dialog.theme" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:alertDialogStyle">@style/jgsdk_dialog</item>
+        <item name="android:textViewStyle">@style/jgsdk_dialog.textJustify</item>
+    </style>
+    <style name="jgsdk_textview.video" parent="@android:style/Widget.TextView">
+        <item name="android:textAppearance">?android:attr/textAppearanceMediumInverse</item>
+        <item name="android:background">@drawable/jgsdk_bkgd_docklet_bottom</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:gravity">center</item>
     </style>
     <style name="menu_pop_item">
         <item name="android:paddingTop">@dimen/pop_menu_item_padding</item>
@@ -3574,9 +3767,9 @@ K-9改进的功能包括：
         <item name="android:textSize">@dimen/mx_circle_item_button_text_size</item>
         <item name="android:textColor">@color/mx_white</item>
         <item name="android:button">@drawable/mx_comm_blue_button</item>
-        
-        
-        
+        <!-- <item name="android:gravity">center</item> -->
+        <!-- <item name="android:drawableLeft">@drawable/choose_leftdrawable</item> -->
+        <!-- <item name="android:drawablePadding">@dimen/choose_leftdrawable_padding</item> -->
 
     </style>
     <style name="mx_common_dialog" parent="@android:style/Theme.Dialog">

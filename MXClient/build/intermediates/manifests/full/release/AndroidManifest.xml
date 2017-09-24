@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.minxing.client"
-    android:versionCode="1000007"
-    android:versionName="1.0.7" >
+    android:versionCode="1000008"
+    android:versionName="1.0.8" >
 
     <uses-sdk
-        android:minSdkVersion="14"
+        android:minSdkVersion="15"
         android:targetSdkVersion="22" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -40,7 +40,13 @@
     <uses-feature
         android:name="android.hardware.sensor.stepdetector"
         android:required="true" />
+    <!-- cisco add -->
+    <uses-feature android:name="android.hardware.camera.front" />
+    <uses-feature android:name="android.hardware.camera.back" />
+    <uses-feature android:name="android.hardware.microphone" />
+    <uses-feature android:name="android.hardware.audio.low_latency" />
 
+    <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.FLASHLIGHT" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
@@ -1122,6 +1128,10 @@ otherwise it would make K-9 start at the wrong time
             android:name="com.minxing.kit.plugin.web.MXPopUpWebActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@style/activity_bg_translucent" >
+        </activity>
+
+        <!-- cisco demo -->
+        <activity android:name="com.minxing.client.CiscoActivity" >
         </activity>
         <activity
             android:name="com.minxing.kit.internal.im.ConversationVipSettingActivity"

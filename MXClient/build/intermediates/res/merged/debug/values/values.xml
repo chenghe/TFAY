@@ -1267,10 +1267,9 @@
     <string name="client_app_center_auto_down_max_size">102400</string>
     <string name="client_app_center_banner_show">false</string>
     <string name="client_app_client_id">2</string>
-    <string name="client_app_store">https://ebank.cgnb.cn:8083/tfayyyzx/</string>
     <string name="client_call_show_on">false</string>
-    <string name="client_conf_http_host">http://etest.cgnb.cn:2220</string>
-    <string name="client_conf_push_host">ssl://etest.cgnb.cn:2221</string>
+    <string name="client_conf_http_host">http://im.zsmarter.com</string>
+    <string name="client_conf_push_host">ssl://im.zsmarter.com:1883</string>
     <string name="client_conf_sdcard_root">/minxing_dev</string>
     <string name="client_conf_video_server_host">www.minxing365.com:8906</string>
     <string name="client_enable_reset_password">true</string>

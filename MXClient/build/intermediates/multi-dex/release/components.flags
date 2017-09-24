@@ -774,6 +774,10 @@
     <init>();
 }
 
+-keep class com.minxing.client.CiscoActivity {
+    <init>();
+}
+
 -keep class com.minxing.kit.internal.im.ConversationVipSettingActivity {
     <init>();
 }

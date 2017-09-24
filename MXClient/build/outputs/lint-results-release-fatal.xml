@@ -15,7 +15,7 @@ If the string should *not* be translated, you can add the attribute `translatabl
 By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
 
 You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
-        errorLine1="    &lt;string name=&quot;client_conf_http_host&quot;>https://ebank.cgnb.cn:8081&lt;/string>"
+        errorLine1="    &lt;string name=&quot;client_conf_http_host&quot;>https://ebank.cgnb.cn:8098&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
@@ -38,7 +38,7 @@ If the string should *not* be translated, you can add the attribute `translatabl
 By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
 
 You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
-        errorLine1="    &lt;string name=&quot;client_conf_push_host&quot;>ssl://ebank.cgnb.cn:8082&lt;/string>"
+        errorLine1="    &lt;string name=&quot;client_conf_push_host&quot;>ssl://ebank.cgnb.cn:8099&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
@@ -61,7 +61,7 @@ If the string should *not* be translated, you can add the attribute `translatabl
 By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
 
 You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
-        errorLine1="    &lt;string name=&quot;client_app_store&quot;>https://ebank.cgnb.cn:8083/tfayyyzx/&lt;/string>"
+        errorLine1="    &lt;string name=&quot;client_app_store&quot;>https://ebank.cgnb.cn:8091/tfayyyzx/&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location

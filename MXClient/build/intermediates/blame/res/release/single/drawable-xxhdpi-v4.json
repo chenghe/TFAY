@@ -1,30 +1,158 @@
 [
     {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/jgsdk_ccb_background_left_selected.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/sdk/res/drawable-xxhdpi-v4/jgsdk_ccb_background_left_selected.png"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/jgsdk_ccb_background_middle_default.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/sdk/res/drawable-xxhdpi-v4/jgsdk_ccb_background_middle_default.png"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/jgsdk_ccb_background_left_default.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/sdk/res/drawable-xxhdpi-v4/jgsdk_ccb_background_left_default.png"
+    },
+    {
         "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/mx_mail_ic_action_collapse_light.png",
         "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/drawable-xxhdpi-v4/mx_mail_ic_action_collapse_light.png"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/jgsdk_ccb_background_right_default.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/sdk/res/drawable-xxhdpi-v4/jgsdk_ccb_background_right_default.png"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/jgsdk_ic_menu_earphone.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/sdk/res/drawable-xxhdpi-v4/jgsdk_ic_menu_earphone.png"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/jgsdk_ic_avatar_large.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/sdk/res/drawable-xxhdpi-v4/jgsdk_ic_avatar_large.png"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/jgsdk_ic_ccb_stop_default.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/sdk/res/drawable-xxhdpi-v4/jgsdk_ic_ccb_stop_default.png"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/jgsdk_ccb_background_middle_selected.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/sdk/res/drawable-xxhdpi-v4/jgsdk_ccb_background_middle_selected.png"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/jgsdk_ic_viewpager_present.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/sdk/res/drawable-xxhdpi-v4/jgsdk_ic_viewpager_present.png"
     },
     {
         "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/mx_mail_menu_search_selector.xml",
         "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/drawable-xxhdpi-v4/mx_mail_menu_search_selector.xml"
     },
     {
-        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/mx_mail_ic_action_expand_light.png",
-        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/drawable-xxhdpi-v4/mx_mail_ic_action_expand_light.png"
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/jgsdk_btn_action_pressed.9.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/sdk/res/drawable-xxhdpi-v4/jgsdk_btn_action_pressed.9.png"
     },
     {
-        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/mx_work_circle_deleted.png",
-        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/drawable-xxhdpi-v4/mx_work_circle_deleted.png"
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/jgsdk_ic_ccb_end_selected.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/sdk/res/drawable-xxhdpi-v4/jgsdk_ic_ccb_end_selected.png"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/jgsdk_ccb_background.9.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/sdk/res/drawable-xxhdpi-v4/jgsdk_ccb_background.9.png"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/jgsdk_ic_ccb_keypad_selected.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/sdk/res/drawable-xxhdpi-v4/jgsdk_ic_ccb_keypad_selected.png"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/jgsdk_ic_ccb_mute_selected.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/sdk/res/drawable-xxhdpi-v4/jgsdk_ic_ccb_mute_selected.png"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/jgsdk_ic_menu_bluetooth.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/sdk/res/drawable-xxhdpi-v4/jgsdk_ic_menu_bluetooth.png"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/jgsdk_ic_menu_videostopped_normal.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/sdk/res/drawable-xxhdpi-v4/jgsdk_ic_menu_videostopped_normal.png"
     },
     {
         "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/mx_mail_ic_action_expand_dark.png",
         "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/drawable-xxhdpi-v4/mx_mail_ic_action_expand_dark.png"
     },
     {
-        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/mx_comm_nodata.png",
-        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/drawable-xxhdpi-v4/mx_comm_nodata.png"
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/jgsdk_ccb_background_middle_pressed.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/sdk/res/drawable-xxhdpi-v4/jgsdk_ccb_background_middle_pressed.png"
     },
     {
         "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/mx_mail_ic_action_collapse_dark.png",
         "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/drawable-xxhdpi-v4/mx_mail_ic_action_collapse_dark.png"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/jgsdk_ic_switch_camera.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/sdk/res/drawable-xxhdpi-v4/jgsdk_ic_switch_camera.png"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/jgsdk_ccb_background_right_pressed.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/sdk/res/drawable-xxhdpi-v4/jgsdk_ccb_background_right_pressed.png"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/jgsdk_btn_action_normal.9.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/sdk/res/drawable-xxhdpi-v4/jgsdk_btn_action_normal.9.png"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/jgsdk_ccb_background_right_selected.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/sdk/res/drawable-xxhdpi-v4/jgsdk_ccb_background_right_selected.png"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/jgsdk_btn_action_disabled.9.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/sdk/res/drawable-xxhdpi-v4/jgsdk_btn_action_disabled.9.png"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/jgsdk_ic_menu_videostopped_selected.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/sdk/res/drawable-xxhdpi-v4/jgsdk_ic_menu_videostopped_selected.png"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/jgsdk_ic_menu_speaker_normal.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/sdk/res/drawable-xxhdpi-v4/jgsdk_ic_menu_speaker_normal.png"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/jgsdk_ic_ccb_stop_selected.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/sdk/res/drawable-xxhdpi-v4/jgsdk_ic_ccb_stop_selected.png"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/jgsdk_ic_ccb_keypad_default.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/sdk/res/drawable-xxhdpi-v4/jgsdk_ic_ccb_keypad_default.png"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/mx_mail_ic_action_expand_light.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/drawable-xxhdpi-v4/mx_mail_ic_action_expand_light.png"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/jgsdk_ic_menu_toggle_selfview_selected.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/sdk/res/drawable-xxhdpi-v4/jgsdk_ic_menu_toggle_selfview_selected.png"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/mx_work_circle_deleted.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/drawable-xxhdpi-v4/mx_work_circle_deleted.png"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/jgsdk_ic_ccb_end_default.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/sdk/res/drawable-xxhdpi-v4/jgsdk_ic_ccb_end_default.png"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/jgsdk_ic_ccb_mute_default.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/sdk/res/drawable-xxhdpi-v4/jgsdk_ic_ccb_mute_default.png"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/mx_comm_nodata.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/MXAndroid_5.31_5.3.8/MXKit/4.0.0/res/drawable-xxhdpi-v4/mx_comm_nodata.png"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/jgsdk_ic_viewpager_preview.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/sdk/res/drawable-xxhdpi-v4/jgsdk_ic_viewpager_preview.png"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/jgsdk_ccb_background_left_pressed.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/sdk/res/drawable-xxhdpi-v4/jgsdk_ccb_background_left_pressed.png"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/res/merged/release/drawable-xxhdpi-v4/jgsdk_ic_menu_toggle_selfview_default.png",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXClient/build/intermediates/exploded-aar/sdk/res/drawable-xxhdpi-v4/jgsdk_ic_menu_toggle_selfview_default.png"
     }
 ]

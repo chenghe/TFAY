@@ -210,6 +210,7 @@ com/minxing/kit/lk.class
 com/minxing/kit/internal/receiver/PhoneStatReceiver$1.class
 com/github/mikephil/charting/data/LineDataSet.class
 com/minxing/kit/mail/k9/activity/setup/AccountSettings$21.class
+com/minxing/client/CiscoActivity.class
 com/minxing/kit/internal/circle/MessageDetailActivity$11.class
 com/minxing/client/activity/LaunchApp2AppActivity.class
 com/minxing/kit/ui/appcenter/AppsAddActivity$3.class
@@ -247,6 +248,7 @@ com/minxing/client/activity/OpenHorizontalScreenActivity$1.class
 com/minxing/kit/es.class
 com/github/mikephil/charting/components/MarkerView.class
 com/minxing/kit/internal/contact/LocalContactListActivity$5.class
+com/cisco/jabber/guest/sdk/JabberGuestCall$JabberGuestInvalidCertificateCallback.class
 com/minxing/kit/api/bean/MXCurrentUser.class
 com/minxing/kit/ui/appcenter/MXAppCenterView$6.class
 com/minxing/kit/mail/k9/provider/MessageProvider$q.class
@@ -271,6 +273,7 @@ com/minxing/kit/MXConstants$BroadcastAction.class
 com/minxing/kit/internal/circle/MessageDetailActivity$3.class
 com/minxing/kit/internal/contact/ContactPublicGridActivity.class
 com/minxing/kit/internal/im/ConversationActivity$15.class
+com/minxing/client/CustomCallFragment.class
 ch/qos/logback/classic/sift/SiftingAppender.class
 com/minxing/kit/mail/k9/activity/MessageCompose$16.class
 com/minxing/kit/internal/common/OnlineFileActivity$3.class
@@ -495,6 +498,7 @@ com/minxing/kit/oz.class
 com/minxing/kit/internal/common/view/SpannableTextView$2.class
 com/minxing/kit/internal/circle/NewMessageTextActivity$4.class
 com/minxing/kit/internal/im/ConversationAtPersonActivity$6.class
+com/minxing/client/CiscoActivity$1.class
 com/minxing/client/demo/SystemAppDemoChatActivity.class
 com/minxing/kit/lq$b.class
 com/minxing/kit/internal/common/view/ConversationSettingGridView.class
@@ -804,6 +808,7 @@ com/minxing/kit/internal/common/SystemMeActivity$6.class
 com/minxing/kit/health/setting/HealthSettingPrivacyRemind$7.class
 com/minxing/kit/R$dimen.class
 com/minxing/client/ClientTabActivity$28.class
+com/cisco/jabber/guest/sdk/JabberGuestCall$State.class
 com/minxing/kit/mail/k9/activity/MessageCompose$QuotedTextMode.class
 com/minxing/kit/gh$12.class
 com/minxing/kit/mail/k9/activity/setup/AccountSettings$27.class
@@ -906,6 +911,7 @@ com/minxing/kit/internal/circle/NewMessageActivity$5.class
 org/apache/commons/io/filefilter/WildcardFilter.class
 com/minxing/client/demo/SystemAppDemoCircle$2.class
 com/minxing/kit/internal/im/ConversationSettingChangeNameActivity.class
+com/minxing/client/ClientTabActivity$29.class
 com/minxing/kit/ui/appcenter/internal/CustomPullLayout.class
 com/minxing/kit/internal/common/view/crop/CropImageActivity.class
 com/minxing/kit/internal/contact/ContactDetailPublicAccountScreen$3.class
@@ -1058,6 +1064,7 @@ com/minxing/kit/health/setting/HealthSettingPrivacyRemind.class
 com/minxing/kit/internal/common/MXCollectionActivity$4.class
 com/minxing/kit/gf$9.class
 com/minxing/kit/mail/k9/activity/InsertableHtmlContent.class
+com/minxing/client/CiscoActivity$JabberGuestCertificateHandler.class
 com/minxing/kit/internal/circle/NewMessageActivity.class
 com/minxing/kit/fq.class
 com/minxing/kit/internal/contact/AddPersonalContactActivity$4.class
@@ -1081,6 +1088,7 @@ com/nostra13/universalimageloader/core/ImageLoader.class
 com/minxing/kit/internal/im/ConversationVipMessageListActivity.class
 com/minxing/kit/mail/k9/activity/MessageCompose.class
 com/minxing/kit/mail/k9/mail/ConnectionSecurity.class
+com/cisco/jabber/guest/sdk/RenderCallbacks.class
 com/minxing/kit/internal/common/MXCollectionActivity$9.class
 com/minxing/kit/cn.class
 com/minxing/kit/internal/common/bean/circle/TopicAttachmentPO.class
@@ -1231,6 +1239,7 @@ com/minxing/kit/mail/k9/activity/MessageCompose$9.class
 okhttp3/OkHttpClient.class
 com/minxing/kit/internal/contact/ContactPublicGridActivity$3.class
 com/mx/google/gson/annotations/Since.class
+com/cisco/jabber/guest/sdk/SelfView.class
 com/minxing/kit/ji.class
 com/minxing/kit/ui/circle/MXCircleActivity$2.class
 com/minxing/kit/api/callback/AppInfoCallback.class
@@ -1357,6 +1366,7 @@ com/minxing/kit/go$11.class
 com/mx/google/gson/annotations/SerializedName.class
 com/minxing/kit/gr$10.class
 com/minxing/client/widget/GesturePasswordResetPopMenu$1.class
+com/cisco/jabber/guest/sdk/AudioOutputActionProvider.class
 com/minxing/kit/health/RankingsActivity$8.class
 com/minxing/kit/mail/k9/activity/setup/Prefs$7.class
 com/minxing/kit/internal/common/bean/contact/IContact$ContactType.class
@@ -1764,6 +1774,7 @@ com/minxing/client/widget/CircleTopRightPopMenu.class
 com/minxing/kit/internal/circle/CircleTopicsListActivity$1.class
 com/github/mikephil/charting/charts/Chart.class
 com/minxing/kit/internal/common/view/crop/CropImageActivity$3.class
+com/cisco/jabber/guest/sdk/JabberGuestCall.class
 com/minxing/kit/internal/qr/CaptureActivity$1.class
 com/minxing/kit/mail/k9/activity/MessageList$7.class
 com/minxing/kit/internal/qr/CaptureActivity$4.class
@@ -2237,6 +2248,7 @@ com/minxing/client/util/BadgeUtil.class
 com/minxing/kit/internal/contact/WorkCircleMyFileActivity.class
 com/minxing/client/ClientTabActivity$19.class
 com/minxing/kit/internal/im/ConversationSettingAllUserActivity$3.class
+com/cisco/jabber/guest/sdk/BaseTextureViewLayout.class
 com/minxing/kit/internal/push/PushReceiver$1.class
 com/minxing/kit/ui/chat/MXChatActivity$8.class
 com/minxing/kit/hs.class

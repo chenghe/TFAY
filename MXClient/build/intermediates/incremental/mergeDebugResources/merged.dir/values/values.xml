@@ -17,7 +17,7 @@
     <string-array name="circle_quick_comment_more">
         <item>circle_quick_comment_collection</item>
         <item>circle_quick_comment_topic</item>
-        <!--<item>circle_quick_comment_error</item>-->
+        
     </string-array>
     <string-array name="circle_quick_comment_reply">
         <item>@string/circle_quick_comment_id_reply</item>
@@ -40,7 +40,7 @@
         <item>circle_quick_comment_share</item>
     </string-array>
     <string-array name="client_tab_item_drawables">
-        <!--<item>@drawable/tab_schedule</item>-->
+        
         <item>@drawable/tab_chat</item>
         <item>@drawable/tab_contacts</item>
         <item>@drawable/tab_appcenter</item>
@@ -48,17 +48,17 @@
 
     </string-array>
     <string-array name="client_tab_item_launchers">
-        <!--<item>launchApp://tfay_smarter_kaoqing?clear=true&amp;mxLayout=0</item>-->
-        <!--<item>launchApp://dakatest</item>-->
+        
+        
         <item>com.minxing.kit.ui.chat.MXChatActivity</item>
         <item>com.minxing.kit.ui.contacts.MXContactsActivity</item>
         <item>com.minxing.kit.ui.appcenter.MXAppCenterActivity</item>
         <item>com.minxing.kit.ui.circle.MXCircleActivity</item>
 
-        <!--<item>launchApp://testdaka?clear=true</item>-->
+        
     </string-array>
     <string-array name="client_tab_item_names">
-        <!--<item>@string/tab_schedule</item>-->
+        
         <item>@string/tab_chat</item>
         <item>@string/tab_contacts</item>
         <item>@string/tab_appcenter</item>
@@ -66,7 +66,7 @@
 
     </string-array>
     <string-array name="client_tab_item_tags">
-        <!--<item>@string/client_tab_item_tag_schedule</item>-->
+        
         <item>@string/client_tab_item_tag_chat</item>
         <item>@string/client_tab_item_tag_contacts</item>
         <item>@string/client_tab_item_tag_appcenter</item>
@@ -150,35 +150,33 @@
     </string-array>
     <string-array name="mx_mail_account_settings_check_frequency_entries">
         <item>@string/mx_mail_account_setup_options_mail_check_frequency_never</item>
-       <!--  <item>@string/mx_mail_account_setup_options_mail_check_frequency_1min</item> -->
+       
         <item>@string/mx_mail_account_setup_options_mail_check_frequency_1min</item>
         <item>@string/mx_mail_account_setup_options_mail_check_frequency_10min</item>
-        <!-- <item>@string/mx_mail_account_setup_options_mail_check_frequency_15min</item> -->
+        
         <item>@string/mx_mail_account_setup_options_mail_check_frequency_30min</item>
         <item>@string/mx_mail_account_setup_options_mail_check_frequency_1hour</item>
-        <!-- <item>@string/mx_mail_account_setup_options_mail_check_frequency_2hour</item> -->
-       <!--  <item>@string/mx_mail_account_setup_options_mail_check_frequency_3hour</item> -->
-       <!--  <item>@string/mx_mail_account_setup_options_mail_check_frequency_6hour</item> -->
+        
+       
+       
        <item>@string/mx_mail_account_setup_options_mail_check_frequency_4hour</item>
        <item>@string/mx_mail_account_setup_options_mail_check_frequency_8hour</item>
-        <!-- <item>@string/mx_mail_account_setup_options_mail_check_frequency_12hour</item>
-        <item>@string/mx_mail_account_setup_options_mail_check_frequency_24hour</item> -->
+        
     </string-array>
     <string-array name="mx_mail_account_settings_check_frequency_values" translatable="false">
         <item>-1</item>
-       <!--  <item>1</item> -->
+       
         <item>1</item>
         <item>10</item>
-        <!-- <item>15</item> -->
+        
         <item>30</item>
         <item>60</item>
-       <!--  <item>120</item> -->
-       <!--  <item>180</item> -->
-        <!-- <item>360</item> -->
+       
+       
+        
         <item>240</item>
         <item>640</item>
-       <!--  <item>720</item>
-        <item>1440</item> -->
+       
     </string-array>
     <string-array name="mx_mail_account_settings_display_count_entries">
         <item>@string/mx_mail_account_setup_options_mail_display_count_10</item>
@@ -900,7 +898,7 @@
     <color name="mx_grey_light_5">#D8D8D8</color>
     <color name="mx_grid_devider_color">#f0f0f0</color>
     <color name="mx_half_alpha_black">#7f000000</color>
-    <color name="mx_header_bg_color">#f4cd31</color>
+    <color name="mx_header_bg_color">#ffae09</color>
     <color name="mx_header_text_color">@android:color/white</color>
     <color name="mx_health_bigger_text_color">#f8931a</color>
     <color name="mx_health_header_bg">#1A85FF</color>
@@ -1269,7 +1267,6 @@
     <string name="client_app_center_auto_down_max_size">102400</string>
     <string name="client_app_center_banner_show">false</string>
     <string name="client_app_client_id">2</string>
-    <string name="client_app_store">https://ebank.cgnb.cn:8083/tfayyyzx/</string>
     <string name="client_call_show_on">false</string>
     <string name="client_conf_http_host">http://im.zsmarter.com</string>
     <string name="client_conf_push_host">ssl://im.zsmarter.com:1883</string>
@@ -3767,9 +3764,9 @@ K-9改进的功能包括：
         <item name="android:textSize">@dimen/mx_circle_item_button_text_size</item>
         <item name="android:textColor">@color/mx_white</item>
         <item name="android:button">@drawable/mx_comm_blue_button</item>
-        <!-- <item name="android:gravity">center</item> -->
-        <!-- <item name="android:drawableLeft">@drawable/choose_leftdrawable</item> -->
-        <!-- <item name="android:drawablePadding">@dimen/choose_leftdrawable_padding</item> -->
+        
+        
+        
 
     </style>
     <style name="mx_common_dialog" parent="@android:style/Theme.Dialog">

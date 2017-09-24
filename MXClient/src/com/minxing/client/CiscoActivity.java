@@ -127,7 +127,13 @@ public class CiscoActivity extends Activity implements View.OnClickListener {
         JabberGuestCall.unregisterReceiver(mBroadcastReceiver);
     }
 
-//    protected void processCallStateChanged(Intent intent) {
+    @Override
+    public void onBackPressed() {
+//        super.onBackPressed();
+//        hideCall();
+    }
+
+    //    protected void processCallStateChanged(Intent intent) {
 //        JabberGuestCall.State state = (JabberGuestCall.State) intent.getSerializableExtra(JabberGuestCall.ARG_CALL_STATE_VALUE);
 //
 //        if (state == JabberGuestCall.State.GuestCallStateDisconnecting) {

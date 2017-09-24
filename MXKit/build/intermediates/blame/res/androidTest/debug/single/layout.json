@@ -12,12 +12,12 @@
         "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/bundles/debug/res/layout/mx_conversation_message_custom_menu_item.xml"
     },
     {
-        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/res/merged/androidTest/debug/layout/mx_system_change_password.xml",
-        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/bundles/debug/res/layout/mx_system_change_password.xml"
-    },
-    {
         "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/res/merged/androidTest/debug/layout/mx_banner_layout.xml",
         "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/bundles/debug/res/layout/mx_banner_layout.xml"
+    },
+    {
+        "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/res/merged/androidTest/debug/layout/mx_system_change_password.xml",
+        "source": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/bundles/debug/res/layout/mx_system_change_password.xml"
     },
     {
         "merged": "/Users/hechengbin/BackUp/MX/MXAndroid_5.31_5.3.8/MXKit/build/intermediates/res/merged/androidTest/debug/layout/mx_conversation_message_picture_from.xml",
